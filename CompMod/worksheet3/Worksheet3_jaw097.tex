@@ -1,0 +1,124 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% PAGE DIMENSIONS
+\usepackage[top=0.6in, left=0.8in, right=0.8in, bottom=0.7in]{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margins=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{mathtools} % for math environments like align
+\usepackage{amssymb} % for symbols like \therefore
+
+%%% OPTIONAL PACKAGES
+%\usepackage{braket}
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+
+%%% ToC (table of contents) APPEARANCE
+%\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+%\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+%\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+%\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+\newif\iffinal % introduce a switch for draft vs. final document
+\finaltrue % use this to compile the final document
+\usepackage{tikz}
+
+\iffinal
+  \newcommand{\inputTikZ}[1]{%
+    \input{#1}%
+  }
+\else
+  \newcommand{\inputTikZ}[1]{%
+    \beginpgfgraphicnamed{#1-external}%
+    \input{#1}%
+    \endpgfgraphicnamed%
+  }
+\fi
+
+%%% END Article customizations
+\renewcommand{\d}{\,\mathrm{d}} % for integrals
+\newcommand{\dx}[2]{\frac{\textrm{d} #1}{\textrm{d} #2}} % for derivatives
+\newcommand{\dd}[2]{\frac{\textrm{d}^2 #1}{\textrm{d} #2^2}} % for double derivatives
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}} % for partial derivatives
+\newcommand{\pdd}[2]{\frac{\partial^2 #1}{\partial #2^2}} % for double partial derivatives
+\newcommand{\e}[1]{\text{e}^{#1}} % for exponentials
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\inter}[1]{\shortintertext{#1}}
+
+\author{Josh Wainwright \\ UID:1079596}
+
+\title{Worksheet 3 \\ Using the GNU Scientific Library (GSL)}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\vspace{1cm}\hrule \vspace{1cm}
+%\newpage
+	\setcounter{section}{2}
+
+	\subsection{Numerical Integration with GSL}
+	\subsubsection{$f(x) = \e{-x}\sin(x)$}
+	The number of functions included with the GSL is huge. We shall, therefore, examine just a single topic, that of numerical integration. Again, we shall consider the integral in figure \ref{eq:integral}
+	\begin{align}
+		\int_0^2 \e{-x}\sin{x}\d{x} \label{eq:integral}
+	\end{align}
+	Using the trapezium rule again, the relative errors when using $N$ intervals is calculated and shown in figure \ref{fig:errorstrap}. 
+	\begin{figure}[h]
+		\centering
+			\inputTikZ{Graph1}
+		\caption{\label{fig:errorstrap}Graph showing the change in error of the calculation of the integral of $\e{x}\sin(x)$ using the trapezium rule as the number of intervals increases.}
+	\end{figure}
+	This shows the error for the area calculated for each value of $N$ up to $10^8$ using the value calculated by direct analytical integration as a reference. When plotted as a log-log graph, the relation between the error in the area and the number of intervals is linear with a gradient of roughly 2. This suggests that the relation is a power law of the order of 2. As would be expected, the plot is negative since the error decreases as the number of intervals increases, i.e.\ the smaller the region to calculate over, the smaller the error generated.
+
+	This calculation can be performed with the GSL function \code{gsl\_integration\_qag}. When this is done, the error can be reduced to a much smaller value, around $5\times 10^{-15}$. As well as this, the number of times each function is called is very different. Whereas, to calculate the trapezium rule with $10^8$ separate intervals, the function in equation \ref{eq:integral} is called around 11\,million times, when using the GSL function, the function is called only once. This information is found from the size of the workspace that is used by the GSL function. Despite the much higher degree of accuracy achieved by the GSL function, the time taken is considerably smaller and so less cpu-intensive, hence their widespread use in scientific calculations.
+
+	\subsubsection{$f(x) = x\sin(30x)\cos(x)$}
+	The second integral that will be considered is shown in equation \ref{eq:integral2},
+	\begin{align}
+		\int_0^{2\pi} x\sin(30\,x)\cos(x)\d{x} \label{eq:integral2}
+	\end{align}
+	It is plotted below in figure \ref{fig:graph2} from $0$ to $2\pi$. The area for integration is shaded.
+	\begin{figure}[h]
+		\centering
+			\inputTikZ{Graph2}
+		\caption{\label{fig:graph2}Graph showing the equation $f(x) = x\sin(30x)\cos(x)$.}
+	\end{figure}
+	
+	When calculated using the GSL, the integral was found to be $-0.20990701$ with an estimated absolute error of $4.6\times10^{-9}$.
+
+	This equation is particularly difficult for the computer to integrate because of the oscillating nature of the function. The high rate of oscillation mean that a much higher number of nodal points must be calculated so that the small details of the function are included and not lost in the estimate. This can lead to a large increase in computational time. Because of this, a slightly different GSL function is used, \code{gsl\_integration\_qawo}. Using the GSL library, this is done very efficiently. 
+\end{document}
+
+
+
+
+
+

@@ -1,0 +1,262 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	4
+<table>
+Table1	30	2	19 Oct 2012 23:09:18
+geometry	66	24	445	220	
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+</data>
+</table>
+<table>
+outfile	8	3	20 Oct 2012 00:01:17
+geometry	305	55	510	220	
+header	1[X]	2[Y]	3[Y]
+ColWidth	100	100	152	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0
+HiddenColumn	0	0	0
+Comments				
+WindowLabel	/home/josh/Documents/Physics/Year 3/CompMod/worksheet3/outfile.txt	2
+<data>
+0	10	0.4464368867165	0.04327366538259
+1	100	0.4663943236965	0.0005043376268318
+2	1000	0.4666272734641	5.119968307099e-06
+3	10000	0.4666296386659	5.127677549233e-08
+4	100000	0.4666296623539	5.128598656867e-10
+5	1000000	0.4666296625908	5.148326209792e-12
+6	10000000	0.4666296625932	2.620126338115e-14
+7	100000000		5.120126338115e-16
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	19 Oct 2012 23:57:50
+geometry	104	107	1450	612	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	1427	544
+<PageGeometry>0.00346741	0.00886525	0.989598	0.964539</PageGeometry>
+PlotTitle		#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>0</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	$f(x) = x\sin(30x)\cos(x)$	$f(x)$		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	4	4
+AxesTitleDistance	5	-1	5	-1
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	9	75	0	0	0
+ScaleFont0	Sans Serif	9	75	0	0	0
+ScaleFont1	Sans Serif	9	75	0	0	0
+ScaleFont2	Sans Serif	9	75	0	0	0
+ScaleFont3	Sans Serif	9	75	0	0	0
+AxisFont0	Sans Serif	12	50	0	0	0
+AxisFont1	Sans Serif	12	50	0	0	0
+AxisFont2	Sans Serif	12	50	0	0	0
+AxisFont3	Sans Serif	12	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+<Function>
+<Type>0</Type>
+<Title>F1</Title>
+<Expression>x*sin(30*x)*cos(x)</Expression>
+<Variable>x</Variable>
+<Range>0	6.28318530718</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<Brush>
+	<Color>#000000</Color>
+	<Alpha>38</Alpha>
+	<Style>0</Style>
+</Brush>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	-8	8	0	9	5	0	0
+scale	1	-8	8	0	9	5	0	0
+scale	2	0	7	0	8	5	0	0
+scale	3	0	7	0	8	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>27.24795640327</x>
+<y>966.99669966997</y>
+<right>1.31399317406143</right>
+<bottom>5.93548387096774</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+</Text>
+<Font>Sans Serif	12	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>6.1475409836066</x>
+<y>-8.2962962962963</y>
+<right>1.31399317406143</right>
+<bottom>5.93548387096774</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+$2\pi$
+</Text>
+<Font>Sans Serif	9	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>3.0431235431235</x>
+<y>-8.1764705882353</y>
+<right>1.31399317406143</right>
+<bottom>5.93548387096774</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+$\pi$
+</Text>
+<Font>Sans Serif	9	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph2	1	1	20 Oct 2012 00:01:28
+geometry	924	84	771	461	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	753	398
+<PageGeometry>0.00655308	0.0121065	0.986894	0.96368</PageGeometry>
+PlotTitle		#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Number of Intevals	Relative Error		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	4	4
+AxesTitleDistance	5	-1	5	-1
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	9	75	0	0	0
+ScaleFont0	Sans Serif	9	75	0	0	0
+ScaleFont1	Sans Serif	9	75	0	0	0
+ScaleFont2	Sans Serif	9	75	0	0	0
+ScaleFont3	Sans Serif	9	75	0	0	0
+AxisFont0	Sans Serif	9	50	0	0	0
+AxisFont1	Sans Serif	9	50	0	0	0
+AxisFont2	Sans Serif	9	50	0	0	0
+AxisFont3	Sans Serif	9	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	outfile_1	outfile_3	2	1	#000000	0	1	7	2	#000000	#000000	0	#000000	14	1	2	0	0	7	1
+scale	0	1e-16	1	0	9	5	1	0
+scale	1	1e-16	1	0	9	5	1	0
+scale	2	10	1000000000	0	9	5	1	0
+scale	3	10	1000000000	0	9	5	1	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>

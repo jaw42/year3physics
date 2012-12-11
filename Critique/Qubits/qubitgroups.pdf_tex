@@ -1,0 +1,72 @@
+%% Creator: Inkscape inkscape 0.48.3.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'qubitgroups.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{363.40996094bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.62216102)%
+    \put(0,0){\includegraphics[width=\unitlength]{qubitgroups.pdf}}%
+    \put(0.02291785,0.55561877){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$0$}}}%
+    \put(0.06762272,0.5555297){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$1$}}}%
+    \put(0.02291785,0.43237131){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$0$}}}%
+    \put(0.06762272,0.43228226){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$1$}}}%
+    \put(0.02291785,0.34536829){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$0$}}}%
+    \put(0.06762272,0.34527921){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$1$}}}%
+    \put(0.02291828,0.2221207){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$0$}}}%
+    \put(0.06762316,0.22203165){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$1$}}}%
+    \put(0.02291828,0.13511772){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$0$}}}%
+    \put(0.06762316,0.13502864){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$1$}}}%
+    \put(0.02291785,0.04811931){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$0$}}}%
+    \put(0.06762272,0.04803023){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$1$}}}%
+    \put(-0.0014511,0.60543576){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Single Qubit}}}%
+    \put(-0.00161233,0.48044691){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2 Qubits}}}%
+    \put(-0.00167682,0.27019631){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{3 Qubits}}}%
+    \put(0.2041686,0.62216102){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.7880722\unitlength}\raggedright A single qubit can be in a superposition of two states. Compared to a classical bit, this is twice the amount of information.\end{minipage}}}%
+    \put(0.19733097,0.28692156){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.80266904\unitlength}\raggedright When two qubits are entangled, there are 8 different states, so all the numbers from 0 to 7 can be encoded:\\ 000,\qquad\qquad 100, \\ 001,\qquad\qquad 101, \\ 010,\qquad\qquad 110, \\ 011,\qquad\qquad 111. \\ It would take a classical system 3 bits to encode just one of these numbers.\\ \end{minipage}}}%
+    \put(0.20117997,0.49717219){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.79618155\unitlength}\raggedright When two qubits are entangled, there is a possibility of 4 different states:\\ 00, 01, 10, 11.\end{minipage}}}%
+  \end{picture}%
+\endgroup%

@@ -1,0 +1,262 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% PAGE DIMENSIONS
+\usepackage[top=0.6in, left=0.8in, right=0.8in, bottom=0.7in]{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margins=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{mathtools} % for math environments like align
+\usepackage{amssymb} % for symbols like \therefore
+
+%%% OPTIONAL PACKAGES
+%\usepackage{braket}
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+
+%%% ToC (table of contents) APPEARANCE
+%\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+%\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+%\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+%\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+\newif\iffinal % introduce a switch for draft vs. final document
+\finaltrue % use this to compile the final document
+\usepackage{tikz}
+
+\iffinal
+  \newcommand{\inputTikZ}[1]{%
+    \input{#1}%
+  }
+\else
+  \newcommand{\inputTikZ}[1]{%
+    \beginpgfgraphicnamed{#1-external}%
+    \input{#1}%
+    \endpgfgraphicnamed%
+  }
+\fi
+
+%%% END Article customizations
+\renewcommand{\d}{\,\mathrm{d}} % for integrals
+\newcommand{\dx}[2]{\frac{\textrm{d} #1}{\textrm{d} #2}} % for derivatives
+\newcommand{\dd}[2]{\frac{\textrm{d}^2 #1}{\textrm{d} #2^2}} % for double derivatives
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}} % for partial derivatives
+\newcommand{\pdd}[2]{\frac{\partial^2 #1}{\partial #2^2}} % for double partial derivatives
+\newcommand{\e}[1]{\text{e}^{#1}} % for exponentials
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\inter}[1]{\shortintertext{#1}}
+
+\author{Josh Wainwright \\ UID:1079596}
+
+\title{Worksheet 4 \\ Root Finding}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\vspace{1cm}\hrule \vspace{1cm}
+%\newpage
+\setcounter{section}{3}
+	\section{Root Finding}
+
+	There are several different methods for calculating the roots of functions numerically. We shall examine two different methods here, first the simple bisection method which shall be programmed directly, and the Newton-Raphson Method, for which there exists a GSL library function.
+
+	These two methods achieve the same result by iteratively calculating an upper and lower bound for the range containing a root and continuing the loop until the range is sufficiently small.
+
+	\subsection{Bisection Method}
+	The bisection method involves picking two points that lie either side of the root that is being calculated. These two points can be found either by inspection if the shape of the graph is known, or by brute force. The points must exist so that $x_b < x_t$ and so $f(x_b)f(x_t)<0$. Once these points are know, the midpoint of the range is tested in the same way,
+	\begin{align*}
+		x_m &= \frac{x_b + x_t}{2} \\
+		\intertext{This is then tested again such that ,}
+		f(x_t)f(x_m) &< 0.
+	\end{align*}
+	If this requirement is true, $x_m$ is a suitable lower bound and so replaces $x_b$ meaning that the range is now $[x_m,x_t]$. Otherwise, $x_m$ is a suitable upper bound and the range is $[x_b,x_m]$.
+
+	\subsubsection{Problem 1}
+
+	For the first example, we shall consider a mass, $m$, hanging by two springs of un-stretched length $\frac{L}{2}$, from a bench, as shown in figure \ref{fig:spring}. In order to find the value of $\theta$, the system can be expressed as an equation, the derivation is shown below.
+	\begin{figure}[ht]
+		\centering
+		\input{spring.pdf_tex}
+		\caption{\label{fig:spring}A two spring system with a weight hanging from a table.} 
+	\end{figure}
+	The springs have an stretchered length $\frac{L}{2}$, but they extend when the mass is hung from them. When the system is in equilibrium, the springs hang at an angle $\theta$ from the table.
+	\begin{align*}
+		\intertext{The springs follow Hooke's Law, and so the force exerted by each spring can be written as}
+		F &= k\Delta x_i \\
+		\intertext{When the force acts at an angle, this is}
+		F &= \sin(\theta)k\Delta x_i \\
+		\intertext{where $F$ is the force required to displace the spring with spring constant $k$ a distance $x$. The system is at rest and so there is no movement. Resolving the forces in the vertical direction gives,}
+		mg &= F_i + F_j \\
+		mg &= \sin(\theta)k(\Delta x_i + \Delta x_j) \\
+		\Delta x_i = \Delta x_j &= \frac{L}{2\cos(\theta)}-\frac{L}{2}\\
+		\Rightarrow mg &= k\sin(\theta)\left(\frac{L}{\cos(\theta)}-L\right)\\
+		&= Lk\left(\frac{\sin(\theta)}{\cos(\theta)} - \sin(\theta)\right)\\
+		mg &= Lk(\tan(\theta) - \sin(\theta))
+	\end{align*}
+
+	The bisection method is used to solve this equation. When plotted, it can be seen that there are multiple roots to the equation, but because the system is physical, there are limits on the value of $\theta$. This means that a range for the calculation can be given so that the iterations provide a result that is physically possible. When given the limit, the value found is 0.533\,radians. This data is shown in table \ref{tab:prob1data} and plotted in figure \ref{fig:bisection1}.
+
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{c|r@{.}l|r@{.}l}
+			Iteration &\multicolumn{2}{c}{Root} &\multicolumn{2}{|c}{Error} \\ \hline \hline
+			1	&0&5	&1&0\\
+			2	&0&75	&0&5\\
+			3	&0&625	&0&25\\
+			4	&0&5625	&0&125\\
+			5	&0&53125	&0&0625\\
+			6	&0&546875	&0&03125\\
+			7	&0&5390625	&0&01562\\
+			8	&0&535156	&0&00781\\
+			9	&0&533203	&0&00391\\
+			10	&0&5322265	&0&00195\\
+			11	&0&532715	&0&00098\\
+		\end{tabular}
+		\caption{Plotted data for the Bisection method to solve the equation $f(x) = Lk(\tan(\theta) - \sin(\theta)) - mg$ using an initial range for the root of $[-1,1]$. The data is calculated to a precision of $1\times10^{-3}$ since the calculation involves the gravitational acceleration constant for the earth. The value used for this is $9.807\,ms^{-2}$}
+		\label{tab:prob1data}
+	\end{table}
+
+	\begin{figure}[h!]
+		\centering
+			\inputTikZ{bisection1}
+		\caption{\label{fig:bisection1}Graph of the iterations of the Bisection method when solving for $\theta$ the equation $f(x) = Lk(\tan(\theta) - \sin(\theta)) - mg$. The physical limits on $\theta$ mean that an initial limit on the range can be given to narrow the search range and so speed up the time to reach the required accuracy. The graph oscillates with upward and downward movement due to the half of the range that the root was calculated to be in for that iteration.}
+	\end{figure}
+
+	\subsection{Newton-Raphson Method}
+	The second method for root finding that shall be examined is the Newton-Raphson method. This is a more efficient method than bisection and so returns the answer to a higher precision with fewer calculations. Again, starting with an initial guess for the root, $x_n$, either from inspection, or by brute force, the second guess is given by
+	\begin{align*}
+		x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}
+	\end{align*}
+	
+	\subsubsection{Problem 2}
+	There are different methods that are used to calculate the root of a function, but some are more appropriate for certain situations than others. We shall examine several situations here where the type of problem will govern the type of algorithm that is chosen.
+
+	To start with, we shall consider the bisection method. The uncertainty in the returned value can be estimated after 1 iteration if the error from the result of the previous iteration is know. Since the bisection method reduces the width of the interval within which the root is known to be, the error is simply the width of this interval. At step $n$, the width of the interval, $w_n$, is equal to the error, $\epsilon_n$. The width of the interval is determined by the start and end points of the interval, $x_b$ and $x_t$ respectively, such that,
+	\begin{align*}
+		w_n &= x_t - x_b \\
+		\intertext{This interval is then halved and the half that contains the root is kept, thus,}
+		w_{n+1} &= \frac{x_t - x_b}{2} \\
+		w_{n+1} &= \frac{w_n}{2} \\
+		\inter{and so,}
+		\epsilon_{n+1} &= \frac{\epsilon_n}{2} \\
+	\end{align*}
+
+	Similarly, the error when using the Newton-Raphson method can be expressed in terms of the error from the previous step. For this, we shall consider the Taylor expansion of the funstion $f(x)$ about the point $x_n$,
+	\begin{align*}
+		f(x) &= f(x_n) + f'(x_n)(x-x_n) + \frac{f''(x_n)}{2}(x-x_n)^2
+		\intertext{If $x$ is replaced with the root of the function, $x_{\text{root}}$, this becomes}
+		f(x_{\text{root}}) = 0 &= f(x_n) + f'(x_n)(x_{\text{root}}-x_n) + \frac{f''(x_n)}{2}(x_{\text{root}}-x_n)^2
+		\intertext{Rearranging and dividing by $f'(x_n)$ gives}
+		\frac{f(x_n)}{f'(x_n)} &= -(x_{\text{root}} - x_n) - \frac{f''(x_n)}{2f'(x_n)}(x_{\text{root}} - x_n)^2
+		\intertext{From the deffinition of the Newton-Raphson method,}
+		x_{n+1} &= x_n - \frac{f(x_n)}{f'(x_n)} \\
+		x_n - x_{n+1} &= \frac{f(x_n)}{f'(x_n)} \\
+		\intertext{And so}
+		\Rightarrow x_n - x_{n+1} &= -(x_{\text{root}} - x_n) - \frac{f''(x_n)}{2f'(x_n)}(x_{\text{root}} - x_n)^2 \\
+		x_n - x_{n+1} + x_{\text{root}} - x_n &= -\frac{f''(x_n)}{2f'(x_n)}(x_{\text{root}} - x_n)^2 \\
+		\intertext{The error $\epsilon_n$ is given by $x_n - x_{\text{root}}$ and similarly, $\epsilon_{n+1}$ is given by $x_{n+1} - x_{\text{root}}$, so that the error for step $n+1$ in terms of step $n$ is given by}
+		\epsilon_{n+1} &= \epsilon_n^2\,\frac{f''(x_n)}{2f'(x_n)} \\
+	\end{align*}
+	This relation puts limits on the type of function and the initial starting guess if the series is to converge on the root correctly. Obviously, simply because of the definition of the Newton-Raphson method, if the starting point is at a stationary point, the first derivative is zero and so the $n+1$ step will be meaningless. Similarly, if there is no second derivative, the function will not converge since the error will supposedly be zero.
+
+	The equation that we shall consider is, 
+	\begin{align*}
+		x^3 + 8x^2 - 5x +22 &= 0.
+	\end{align*}
+	This function is shown in figure \ref{fig:errorstrap} along with a demonstration of the Newton-Raphson method for two steps stating with an initial guess of $x_0$. The first step achieves the root at $x_1$ and is shown in red and the second $x_2$, shown in blue. As can be seen each iteration moves closer to the root.
+	\begin{figure}[ht]
+		\centering
+			\inputTikZ{Graph1}
+		\caption{\label{fig:errorstrap}Graph of the function $x^3 + 8x^2 - 5x + 22$ for which the root is to be found along with the first two steps of the Newton-Raphson method with an initial guess, $x_0$.}
+	\end{figure}
+
+	\begin{figure}[ht]
+		\centering
+			\inputTikZ{Graph2}
+		\caption{\label{fig:guesses}Each of these graphs shows the error of the root found using the Newton-Raphson method as the number of iterations increases.}
+	\end{figure}
+	 Some initial guesses converge quickly on the root. For example, when using $-100$ as a guess, the root is found most quickly because the function is simple for the range $[-100,x_{\text{root}}]$. The convergence is less simple for a guess of 100 because the iteration first encounters the stationary points which are more complex and so lead to the estimate diverging for a short time. If the initial guess is close to a stationary point, i.e.\ the first derivative is close to zero, the first estimate is very far from the actual root and so more iterations are required to bring the estimate back to the actual value. 
+
+	 The last graph in figure \ref{fig:guesses} shows the estimates when using the second stationary point. This graph shows that there are several times when the estimate diverges further away from the actual value and so the error increases. If the stating value was exactly equal to the stationary point, it is likely that the series would diverge and an estimate would not be returned. During the iterations, the estimate comes very close to the correct value, but the value is not accurate enough for the loop to finish and so the iterations continue. This however forces the value to diverge until a result is found that is within the error range. As can be seen, in figure \ref{fig:compare} the speed to get the within the error is very different. It can be seen that the Newton-Raphson method is faster by a factor of roughly 2. If, however, the initial guess for the Newton-Raphson method is changed, as shown in figure \ref{fig:guesses}, it can take far longer to reach the root.
+	\begin{table}[ht]
+		\centering
+		\begin{tabular}{c|r@{.}l|r@{.}l|r@{.}l}
+			Iteration &\multicolumn{2}{c}{Root} &\multicolumn{2}{|c}{Error} &\multicolumn{2}{|c}{Est. Error} \\ \hline \hline
+			1	&9&52686	&18&3727	&109&527 \\
+			2	&5&79783	&14&6437	&-3&72903 \\
+			3	&3&37578	&12&2216	&-2&42205 \\
+			4	&1&75609	&10&6019	&-1&61969 \\
+			5	&0&417383	&9&26321	&-1&33871 \\
+			6	&-9&29721	&-0&451383	&-9&7146 \\
+			7	&-8&88377	&-0&0379402	&0&413443 \\
+			8	&-8&84662	&-0&000790395	&0&0371498 \\
+			9	&-8&84633	&-0&000499269	&0&000291126 \\
+		\end{tabular}
+		\caption{Plotted data for the Newton-Raphson method when using an initial guess of $-10$.}
+		\label{tab:myfirsttable}
+	\end{table}
+
+	\begin{table}[ht]
+		\centering
+		\begin{tabular}{c|r@{.}l|r@{.}l|r@{.}l|r@{.}l|r@{.}l}
+			Iteration &\multicolumn{2}{c}{$f(x_t)$} &\multicolumn{2}{|c}{$f(x_b)$} &\multicolumn{2}{|c}{$x_b$} &\multicolumn{2}{|c}{$x_t$}&\multicolumn{2}{|c}{Error = $x_t-x_b$} \\ \hline \hline
+			1	&22&0	&-128&0	&-10&0	&0&0	&10&0\\
+			2	&122&0	&-128&0	&-10&0	&-5&0	&5&0\\
+			3	&87&625	&-128&0	&-10&0	&-7&5	&2&5\\
+			4	&8&32812	&-128&	&-10&0	&-8&75	&1&25\\
+			5	&8&32812	&-51&9746	&-9&375	&-8&75	&0&625\\
+			6	&8&32812	&-19&9495	&-9&0625	&-8&75	&0&3125\\
+			7	&8&32812	&-5&35367	&-8&90625	&-8&75	&0&15625\\
+			8	&1&60005	&-5&35367	&-8&90625	&-8&82812	&0&078125\\
+			9	&1&60005	&-1&84843	&-8&86719	&-8&82812	&0&0390625\\
+			10	&1&60005	&-0&117116	&-8&84766	&-8&82812	&0&0195312\\
+			11	&0&743232	&-0&117116	&-8&84766	&-8&83789	&0&00976562\\
+			12	&0&3135	&-0&117116	&-8&84766	&-8&84277	&0&00488281\\
+			13	&0&0983027	&-0&117116	&-8&84766	&-8&84521	&0&00244141\\
+			14	&0&0983027	&-0&00937883	&-8&84644	&-8&84521	&0&0012207\\
+			15	&0&0444688	&-0&00937883	&-8&84644	&-8&84583	&0&000610352\\
+		\end{tabular}
+		\caption{Plotted data for the Bisection method when using an initial range of $[-10,10]$.}
+		\label{tab:fs}
+	\end{table}
+
+	\begin{figure}[ht]
+		\centering
+			\inputTikZ{Graph3}
+		\caption{\label{fig:compare}A comparison of the speed to achieve an error of less than $1\times10^{-3}$. Each of the methods was initiated with a similar starting value, for the bisection method a range of $[-10,10]$ was used and a starting guess of -10 for the Newton-Raphson method.}
+	\end{figure}
+
+\end{document}
+
+
+
+
+
+

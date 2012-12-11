@@ -1,0 +1,303 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% PAGE DIMENSIONS
+\usepackage[top=0.6in, left=0.8in, right=0.8in, bottom=0.7in]{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margins=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{mathtools} % for math environments like align
+\usepackage{amssymb} % for symbols like \therefore
+\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{overpic}
+
+%%% OPTIONAL PACKAGES
+%\usepackage{braket}
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+
+\usepackage[svgnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{shapes.geometric}
+
+\newif\iffinal % introduce a switch for draft vs. final document
+\finaltrue % use this to compile the final document
+
+\iffinal
+  \newcommand{\inputTikZ}[1]{%
+    \input{#1}%
+  }
+\else
+  \newcommand{\inputTikZ}[1]{%
+    \beginpgfgraphicnamed{#1-external}%
+    \input{#1}%
+    \endpgfgraphicnamed%
+  }
+\fi
+
+%%% END Article customizations
+\renewcommand{\d}{\,\mathrm{d}} % for integrals
+\newcommand{\dx}[2]{\frac{\textrm{d} #1}{\textrm{d} #2}} % for derivatives
+\newcommand{\dd}[2]{\frac{\textrm{d}^2 #1}{\textrm{d} #2^2}} % for double derivatives
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}} % for partial derivatives
+\newcommand{\pdd}[2]{\frac{\partial^2 #1}{\partial #2^2}} % for double partial derivatives
+\newcommand{\e}[1]{\text{e}^{#1}} % for exponentials
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\inter}[1]{\shortintertext{#1}}
+
+\begin{document}
+
+  \begin{center}
+    \vspace*{\fill}
+
+    \centering
+    \includegraphics[scale=1.0]{Logo.pdf}
+    \vfill
+
+    \hrule
+    {\LARGE\bf Year 3 C++ Project\\ E-Publication Document Creator \\[0.6cm]}
+    \hrule 
+
+    \vfill
+    \large
+    School of Physics and Astronomy\\
+    University of Birmingham
+
+    \vfill
+    {\bf Josh Wainwright\\}
+    UID:1079596
+    \vfill
+
+    \vfill
+    Project Supervisor: Dr Steve Hillier\\
+    Date: December 2012
+    \vfill
+    
+    \vfill
+
+  \end{center}
+
+\newpage
+
+\tableofcontents
+\vspace{1cm}\hrule \vspace{1cm}
+%\newpage
+\section{Motivation}
+This project is to build an application that aids in the creation of a simple ebook. Following the defined file structure, the user will have a number of options to customise the book, including title, author and date etc\., and choose the html files that make up the book and any images that are associated with it.
+
+\section{Details}
+The e-publication document format, or epub for short, is a free and open e-book standard created by the International Digital Publishing Forum (IDPF). It is designed to contain reflowable content which is content that can adapt its presentation depending on the device used to view it. This means that it is ideally suited for use by publishers on devices like e-book readers that have different sizes and means that some customisation by the user, like screen rotation and text size, is possible.
+
+The epub document consists of the html, or similar, files that make up the text of the document and are referenced from a number of files required by the ebook-reader. These files are then wrapped in a ZIP archive along with the directory structure. The file structure is shown in figure \ref{fig:structure}.
+\begin{figure}[ht]
+  \centering
+  \begin{tikzpicture}
+    \node (0) at (0, 5) {e-Book};
+    \node (1) at (2, 4.5) {mimetype};
+    \node (3) at (2, 4) {META-INF};
+    \node (6) at (2, 3) {OEPBS};
+    \node (11) at (4, 3.5) {container.xml};
+    \node (13) at (4, 0.5) {image files};
+    \node (14) at (4, 1) {content html files};
+    \node (15) at (4, 1.5) {title.html};
+    \node (16) at (4, 2) {toc.ncx};
+    \node (17) at (4, 2.5) {content.opf};
+    \draw[dashed] (0) |- (1);
+    \draw (0) |- (3);
+    \draw (0) |- (6);
+    \draw[dashed] (3) |- (11);
+    \draw[dashed] (6) |- (13);
+    \draw[dashed] (6) |- (14);
+    \draw[dashed] (6) |- (15);
+    \draw[dashed] (6) |- (16);
+    \draw[dashed] (6) |- (17);
+  \end{tikzpicture}
+  \caption{\label{fig:structure}The required directory structure for an epub ebook. Files are shown with dotted lines.} 
+\end{figure}
+
+
+Each of the files included is required to exist by the reader, as long as that reader conforms to the standards of the format, but they contain information that will vary from book to book.
+
+\section{Project}
+\subsection{Graphical User Interface}
+My implementation of an epub creator uses a single main window that is opened when the user starts the program, shown in figure \ref{fig:main}. From here the main details of the book can be entered.
+% \begin{figure}[ht]
+%   \centering
+%   \includegraphics[width=0.9\columnwidth]{main.png}
+%   \caption{\label{fig:main}The main window of the application that is shown when the program is started.} 
+% \end{figure}
+
+\begin{figure}[ht]
+  \centering
+  %\begin{overpic}[width=0.6\columnwidth,grid]{main.png}
+  \begin{overpic}[width=0.6\columnwidth]{main.png}
+    \put(-25,50){Input boxes}
+    \put(-25,45){for book}
+    \put(-25,40){details}
+    \put(-5,45){\vector(3,4){7}}
+    \put(-5,45){\vector(3,-4){7}}
+    \put(-25,28){File selection}
+    \put(-25,23){options}
+    \put(-5,25){\vector(4,1){10}}
+    \put(-25,7){Main control}
+    \put(-25,2){buttons}
+    \put(-5,4){\vector(1,0){10}}
+    \put(105,30){Output windows}
+  \end{overpic}
+  \caption{\label{fig:main}The main window of the application that is shown when the program is started.}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.9\columnwidth]{example.png}
+  \caption{\label{fig:example}An example with the dialogue for choosing the html files to be included as well as an example of when data has been added to the relevant fields and the update button has been pressed to get a preview of the files.} 
+\end{figure}
+
+% \begin{figure}[ht]
+%   \centering
+%   \input{main.pdf_tex} 
+%   \caption{\label{fig:quantumerror}Even with just three qubits, the encoding power is much higher. The cumulative effect of increasing the number of qubits is huge.}
+% \end{figure}
+
+Also, from here, the html files can be chosen, as can the images used in the book. Tabs are used to keep the interface clean and less cluttered. The file chooser that is opened when the button to select the files is clicked is an FLTK built in file chooser.
+
+Below these entry boxes are the main controls for the program. ``Exit'' closes the window and ends the application, ``Refresh'' updates the in application information about the book to reflect and changes made by the user, and ``Create!'' takes the entered information and writes it to the relevant files. It also copies the selected files from the location chosen to the temporary folder used by the application. Once this has finished, it ZIPs the resulting folder as specified in the document specification and names it according the user's choice of name for the book.
+
+Next to the input boxes, on the right side of the window, are a number of tabs that inform the user what will be written when they click the create button to make their book. These tabs provide information for those interested in the structure of epub ebooks and provide a means of checking that the book will be created as expected. Each separate tab contains what will be included in each of several separate files (see figure \ref{fig:structure}).
+
+At the top of the window, there is a menu bar with a few options and operations. These include buttons that perform the same functions as the buttons previously mentioned, exit, update and create as well as the ``About'' dialogue, shown in figure \ref{fig:about}, and an option to set the current operating system (see below for details).
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.35\columnwidth]{about.png}
+  \caption{\label{fig:about}The ``About'' window provides information about the application and could be extended to include licensing information, bug reporting information and developer details etc.}
+\end{figure}
+
+\subsection{Internal Structure}
+The code for this project is shown at the end of this document in appendices \ref{app:code1} through \ref{app:code9}. The project started as a single long file with all of the various functions distributed throughout. I took the decision to split the code through several files that are interdependent, but which contain a smaller subset of the code, grouped according to the function that it achieves. Each of the files is used by one or more other files, the include tree is shown in figure \ref{fig:files}.
+\begin{figure}[ht]
+  \centering
+    \inputTikZ{files}
+  \caption{\label{fig:files}A diagram showing the structure of the epub project files and their interdependencies.}
+\end{figure}
+
+The most important aspect of the code is the class called ``Meta''. This contains all of the variables and the associated functions that make up and allow interaction with a book. Meta stands for meta-data which includes information like the title, author and language as well as more extensive information, like the contents of the static files for inclusion in the final book. The class contains these data, as well as the means to access and modify them.
+
+\section{Critique}
+The aim of this project was to build an application to aid in the building of ebook according to the specification written by the IDPF. This, the application achieves. You are able to select the pre-written files, include them in the document and specify the details about the document that you wish, or are required, to be specified. It also has some flexibility so that the number and type of included text files does not matter, and man or no images can be selected.
+
+However, there are several areas where this application would require more work and possibly redesign were it to be used on a larger scale. Some of these that I have identified are listed below.
+\begin{itemize}
+  \item There is no way to rearrange the files that are included so that they are added to the book in the right order (the only way currently is to name the files sequentially as the file chooser adds the files to the array in alphanumerical order).
+  \item Some of the elements of the GUI do not behave as expected, for example on resize some of the buttons change location and/or size instead of remaining static and the space around them changing.
+  \item To extend the functionality of the application, there are several features that could be added, such as:
+    \begin{itemize}
+      \item Front cover chooser,
+      \item Text editor for main text files.
+    \end{itemize}
+  \item The code could be further compartmentalised into functions to simplify and reduce the repetition of elements.
+\end{itemize}
+
+\section{Notes} % (fold)
+\label{sec:notes}
+\begin{itemize}
+  \item This application is written for the Linux operating system. Though it shall run under other operating systems, like Windows, the core functionality of the program require Linux. The program ``zip'', which is by default installed on almost all systems, is a requirement for this program to function properly. 
+  \item Included in the files for the program is a makefile that can be used to build the program under the same Linux environment. This requires all of the files for the program to be in the same directory along with the makefile. The program can then be built using the command \code{make} from the terminal (alternatively use \code{make \&\& ./epub} to build and then run the program). This will create several directories as well as the program executable, ``epub''. Running \code{make clean} will remove the auxillary files that are created during the build process.
+  \item Also included in the program files is a folder called ``Example'' which includes a set of html and image files that can be used to test the program. These are merely a web page that has been saved locally and been stripped of the JavaScript, CSS elements and some header information. To use this example, simply run the program  as usual and choose the relevant files from the 
+\end{itemize}
+
+% section notes (end)
+
+\newpage
+\appendix
+\addcontentsline{toc}{section}{Appendix}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{ %
+%  basicstyle=\scriptsize,         % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+  stepnumber=5,                   % the step between two line-numbers. If it's 1, each line will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  keywordstyle=\color{blue},      % keyword style
+  commentstyle=\color{dkgreen},   % comment style
+  stringstyle=\color{mauve},      % string literal style
+}
+
+\section*{Meta.h}
+\label{app:code1}
+\scriptsize\lstinputlisting[language=C++]{Meta.h}
+
+\section*{Meta.cxx}
+\label{app:code2}
+\scriptsize\lstinputlisting[language=C++]{Meta.cxx}
+
+\section*{about.h}
+\label{app:code3}
+\scriptsize\lstinputlisting[language=C++]{about.h}
+
+\section*{about.cxx}
+\label{app:code4}
+\scriptsize\lstinputlisting[language=C++]{about.cxx}
+
+\section*{epubfunctions.h}
+\label{app:code5}
+\scriptsize\lstinputlisting[language=C++]{epubfunctions.h}
+
+\section*{epubfunctions.cxx}
+\label{app:code6}
+\scriptsize\lstinputlisting[language=C++]{epubfunctions.cxx}
+
+\section*{epubmk.h}
+\label{app:code7}
+\scriptsize\lstinputlisting[language=C++]{epubmk.h}
+
+\section*{epubmk.cxx}
+\label{app:code8}
+\scriptsize\lstinputlisting[language=C++]{epubmk.cxx}
+
+\section*{epub2.cpp}
+\label{app:code9}
+\scriptsize\lstinputlisting[language=C++]{epub2.cpp}
+
+\end{document}
+
+
+
+
+

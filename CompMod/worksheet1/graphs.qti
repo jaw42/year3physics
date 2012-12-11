@@ -1,0 +1,261 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	4
+<table>
+output_FD	50	3	5 Oct 2012 16:20:37
+geometry	0	0	532	347	
+header	1[X]	2[Y]	3[Y]
+ColWidth	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0
+HiddenColumn	0	0	0
+Comments				
+WindowLabel	/home/josh/uni_folder/compmod2011/worksheet1/output_FD.txt	2
+<data>
+0	1	0.618034	0.618034
+1	2	0.381966	0.381966
+2	3	0.236068	0.236068
+3	4	0.145898	0.145898
+4	5	0.0901699	0.09017
+5	6	0.0557281	0.055728
+6	7	0.0344419	0.0344421
+7	8	0.0212862	0.0212859
+8	9	0.0131556	0.0131562
+9	10	0.00813062	0.00812972
+10	11	0.005025	0.00502646
+11	12	0.00310562	0.00310326
+12	13	0.00191938	0.0019232
+13	14	0.00118624	0.00118005
+14	15	0.000733137	0.000743151
+15	16	0.000453104	0.000436902
+16	17	0.000280034	0.000306249
+17	18	0.00017307	0.000130653
+18	19	0.000106963	0.000175595
+19	20	6.6107e-05	-4.49419e-05
+20	21	4.08563e-05	0.000220537
+21	22	2.52506e-05	-0.000265479
+22	23	1.56057e-05	0.000486016
+23	24	9.64487e-06	-0.000751495
+24	25	5.96087e-06	0.00123751
+25	26	3.68401e-06	-0.00198901
+26	27	2.27686e-06	0.00322652
+27	28	1.40715e-06	-0.00521553
+28	29	8.69706e-07	0.00844204
+29	30	5.37445e-07	-0.0136576
+30	31	3.32261e-07	0.0220996
+31	32	2.05185e-07	-0.0357572
+32	33	1.27076e-07	0.0578568
+33	34	7.8109e-08	-0.093614
+34	35	4.89667e-08	0.151471
+35	36	2.91423e-08	-0.245085
+36	37	1.98244e-08	0.396556
+37	38	9.31784e-09	-0.64164
+38	39	1.05066e-08	1.0382
+39	40	-1.18878e-09	-1.67984
+40	41	1.16954e-08	2.71803
+41	42	-1.28842e-08	-4.39787
+42	43	2.45796e-08	7.1159
+43	44	-3.74637e-08	-11.5138
+44	45	6.20433e-08	18.6297
+45	46	-9.9507e-08	-30.1434
+46	47	1.6155e-07	48.7731
+47	48	-2.61057e-07	-78.9165
+48	49	4.22608e-07	127.69
+49	50	-6.83665e-07	-206.606
+</data>
+</table>
+<multiLayer>
+Graph2	1	1	5 Oct 2012 16:20:57
+geometry	817	26	460	351	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	4	5	447	290
+<PageGeometry>0.00884956	0.0165017	0.988938	0.957096</PageGeometry>
+PlotTitle	Iteritive Calculations of $\phi^n$ using Float Precision	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	$n$	$\phi^n$		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	4	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	8	75	0	0	0
+ScaleFont0	Sans Serif	7	75	0	0	0
+ScaleFont1	Sans Serif	7	75	0	0	0
+ScaleFont2	Sans Serif	7	75	0	0	0
+ScaleFont3	Sans Serif	7	75	0	0	0
+AxisFont0	Sans Serif	7	50	0	0	0
+AxisFont1	Sans Serif	7	50	0	0	0
+AxisFont2	Sans Serif	7	50	0	0	0
+AxisFont3	Sans Serif	7	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	output_FD_1	output_FD_3	0	1	#000000	0	1	7	0	#000000	#000000	0	#000000	14	1	2	0	0	49	1
+scale	0	-250	150	0	9	5	0	0
+scale	1	-250	150	0	9	5	0	0
+scale	2	0	60	0	7	5	0	0
+scale	3	0	60	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph4	1	1	5 Oct 2012 23:39:58
+geometry	607	-14	208	208	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	4	5	196	150
+<PageGeometry>0.02	0.03125	0.98	0.9375</PageGeometry>
+PlotTitle	 	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	$n$	$\phi^n$		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	4	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	4	75	0	0	0
+ScaleFont0	Sans Serif	4	75	0	0	0
+ScaleFont1	DejaVu Sans	6	75	0	0	0
+ScaleFont2	Sans Serif	4	75	0	0	0
+ScaleFont3	DejaVu Sans	6	75	0	0	0
+AxisFont0	Sans Serif	4	50	0	0	0
+AxisFont1	DejaVu Sans	5	50	0	0	0
+AxisFont2	Sans Serif	4	50	0	0	0
+AxisFont3	DejaVu Sans	5	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	output_FD_1	output_FD_3	0	1	#000000	0	1	7	0	#000000	#000000	0	#000000	14	1	2	0	0	49	1
+scale	0	-0.7	0.7	0	4	5	0	0
+scale	1	-0.7	0.7	0	4	5	0	0
+scale	2	0	35	0	5	5	0	0
+scale	3	0	35	0	5	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph3	1	1	6 Oct 2012 00:07:25
+geometry	30	-24	462	370	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	4	5	449	309
+<PageGeometry>0.00881057	0.015528	0.988987	0.959627</PageGeometry>
+PlotTitle	Iteritive Calculations of $\phi^n$ using Double Precision	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	$n$	$\phi^n$		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	4	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	9	75	0	0	0
+ScaleFont0	Sans Serif	7	75	0	0	0
+ScaleFont1	DejaVu Sans	13	75	0	0	0
+ScaleFont2	Sans Serif	7	75	0	0	0
+ScaleFont3	DejaVu Sans	13	75	0	0	0
+AxisFont0	Sans Serif	7	50	0	0	0
+AxisFont1	DejaVu Sans	11	50	0	0	0
+AxisFont2	Sans Serif	7	50	0	0	0
+AxisFont3	DejaVu Sans	11	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	output_FD_1	output_FD_2	0	1	#000000	0	1	7	0	#000000	#000000	0	#000000	14	1	2	0	0	49	1
+scale	0	-0.1	0.7	0	9	5	0	0
+scale	1	-0.1	0.7	0	9	5	0	0
+scale	2	0	60	0	7	5	0	0
+scale	3	0	60	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>

@@ -1,0 +1,1094 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	14
+<table>
+Table1	31	4	27 Oct 2012 10:09:49
+geometry	737	38	445	220	
+header	1[X]	2[Y]	3[Y]	4[Y]
+ColWidth	100	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments					
+WindowLabel	/home/josh/Documents/Physics/Year 3/CompMod/worksheet4/oufile.txt	2
+<data>
+0	1	121.493	130.339	121.197
+1	2	80.1519	88.9978	-41.3409
+2	3	52.6129	61.4588	-27.539
+3	4	34.2845	43.1304	-18.3284
+4	5	22.1089	30.9547	-12.1757
+5	6	14.0496	22.8954	-8.05925
+6	7	8.74872	17.5945	-5.3009
+7	8	5.29231	14.1381	-3.45641
+8	9	3.04533	11.8912	-2.24698
+9	10	1.51896	10.3648	-1.52638
+10	11	0.132201	8.97803	-1.38675
+11	12	7.71639	16.5622	7.58419
+12	13	4.62233	13.4682	-3.09406
+13	14	2.6038	11.4496	-2.01854
+14	15	1.18499	10.0308	-1.41881
+15	16	-0.40933	8.4365	-1.59432
+16	17	1.88264	10.7285	2.29197
+17	18	0.550966	9.3968	-1.33167
+18	19	-4.07034	4.77549	-4.6213
+19	20	1.19137	10.0372	5.26171
+20	21	-0.39646	8.44937	-1.58783
+21	22	1.91938	10.7652	2.31584
+22	23	0.587951	9.43378	-1.33143
+23	24	-3.45832	5.38751	-4.04627
+24	25	0.369809	9.21564	3.82813
+25	26	-15.6754	-6.82954	-16.0452
+26	27	-11.9658	-3.11995	3.70959
+27	28	-9.88076	-1.03493	2.08502
+28	29	-9.01622	-0.170392	0.86454
+29	30	-8.85209	-0.00625836	0.164134
+30	31	-8.84634	-0.000506208	0.00575215
+</data>
+</table>
+<table>
+Table2	76	4	27 Oct 2012 10:11:08
+geometry	1243	3	445	220	
+header	1[X]	2[Y]	3[Y]	4[Y]
+ColWidth	100	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments					
+WindowLabel	/home/josh/Documents/Physics/Year 3/CompMod/worksheet4/oufile.txt	2
+<data>
+0	1	-3.65289	5.19294	1.97651
+1	2	0.543939	9.38977	4.19683
+2	3	-4.20664	4.63919	-4.75058
+3	4	1.52525	10.3711	5.73189
+4	5	0.140529	8.98636	-1.38472
+5	6	8.11073	16.9566	7.9702
+6	7	4.8782	13.724	-3.23253
+7	8	2.77307	11.6189	-2.10514
+8	9	1.31598	10.1618	-1.45708
+9	10	-0.168812	8.67702	-1.48479
+10	11	2.86017	11.706	3.02898
+11	12	1.38184	10.2277	-1.47833
+12	13	-0.0633556	8.78247	-1.4452
+13	14	3.66039	12.5062	3.72375
+14	15	1.95469	10.8005	-1.7057
+15	16	0.622818	9.46865	-1.33187
+16	17	-3.00443	5.8414	-3.62725
+17	18	0.15493	9.00076	3.15937
+18	19	8.90143	17.7473	8.7465
+19	20	5.39148	14.2373	-3.50995
+20	21	3.11029	11.9561	-2.28119
+21	22	1.56626	10.4121	-1.54403
+22	23	0.193656	9.03949	-1.3726
+23	24	12.1215	20.9674	11.9279
+24	25	7.48807	16.3339	-4.63348
+25	26	4.4742	13.32	-3.01387
+26	27	2.50532	11.3512	-1.96887
+27	28	1.10661	9.95244	-1.39871
+28	29	-0.579559	8.26627	-1.68617
+29	30	1.48525	10.3311	2.06481
+30	31	0.086695	8.93253	-1.39855
+31	32	6.11046	14.9563	6.02376
+32	33	3.57946	12.4253	-2.531
+33	34	1.89864	10.7445	-1.68081
+34	35	0.567167	9.413	-1.33148
+35	36	-3.7823	5.06353	-4.34946
+36	37	0.697856	9.54369	4.48015
+37	38	-2.28464	6.56119	-2.98249
+38	39	0.158062	9.00389	2.4427
+39	40	9.09503	17.9409	8.93696
+40	41	5.51722	14.3631	-3.5778
+41	42	3.19256	12.0384	-2.32467
+42	43	1.62565	10.4715	-1.56691
+43	44	0.267259	9.11309	-1.35839
+44	45	41.977	50.8228	41.7097
+45	46	27.2151	36.0609	-14.7619
+46	47	17.4247	26.2705	-9.79043
+47	48	10.9635	19.8093	-6.46121
+48	49	6.73274	15.5786	-4.23071
+49	50	3.98397	12.8298	-2.74877
+50	51	2.17605	11.0219	-1.80792
+51	52	0.828883	9.67471	-1.34716
+52	53	-1.48835	7.35748	-2.31724
+53	54	0.490455	9.33628	1.97881
+54	55	-5.55902	3.28681	-6.04947
+55	56	95.7369	104.583	101.296
+56	57	62.9927	71.8385	-32.7442
+57	58	41.1899	50.0357	-21.8028
+58	59	26.6923	35.5381	-14.4976
+59	60	17.0787	25.9246	-9.61358
+60	61	10.7361	19.5819	-6.34269
+61	62	6.5846	15.4304	-4.15145
+62	63	3.88775	12.7336	-2.69685
+63	64	2.11063	10.9565	-1.77712
+64	65	0.769981	9.61581	-1.34065
+65	66	-1.79638	7.04945	-2.56636
+66	67	0.323257	9.16909	2.11964
+67	68	-43.4451	-34.5993	-43.7684
+68	69	-30.0113	-21.1655	13.4338
+69	70	-21.146	-12.3002	8.86529
+70	71	-15.3847	-6.53883	5.76136
+71	72	-11.7915	-2.94566	3.59317
+72	73	-9.79462	-0.948791	1.99687
+73	74	-8.99207	-0.146243	0.802548
+74	75	-8.8506	-0.00476807	0.141475
+75	76	-8.84633	-0.000503075	0.004265
+</data>
+</table>
+<table>
+oufile	27	4	27 Oct 2012 10:14:13
+geometry	0	0	445	220	
+header	1[X]	2[Y]	3[Y]	4[Y]
+ColWidth	100	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments					
+WindowLabel	/home/josh/Documents/Physics/Year 3/CompMod/worksheet4/oufile.txt	2
+<data>
+0	1	6.89763	15.7435	-93.1024
+1	2	4.09103	12.9369	-2.8066
+2	3	2.24849	11.0943	-1.84254
+3	4	0.892465	9.7383	-1.35602
+4	5	-1.21745	7.62838	-2.10992
+5	6	0.686453	9.53228	1.9039
+6	7	-2.37712	6.46871	-3.06358
+7	8	0.140296	8.98613	2.51742
+8	9	8.09913	16.945	7.95883
+9	10	4.87067	13.7165	-3.22846
+10	11	2.7681	11.6139	-2.10258
+11	12	1.3122	10.158	-1.4559
+12	13	-0.175147	8.67068	-1.48735
+13	14	2.82288	11.6687	2.99803
+14	15	1.35376	10.1996	-1.46912
+15	16	-0.107256	8.73857	-1.46102
+16	17	3.27923	12.1251	3.38648
+17	18	1.68765	10.5335	-1.59158
+18	19	0.340413	9.18624	-1.34723
+19	20	-26.4327	-17.5868	-26.7731
+20	21	-18.8047	-9.95887	7.62797
+21	22	-13.8977	-5.05182	4.90705
+22	23	-10.9221	-2.07626	2.97557
+23	24	-9.39521	-0.549381	1.52688
+24	25	-8.90036	-0.0545332	0.494848
+25	26	-8.84693	-0.00110254	0.0534307
+26	27	-8.84633	-0.000499328	0.000603216
+</data>
+</table>
+<table>
+Table3	9	4	27 Oct 2012 10:14:36
+geometry	204	74	445	220	
+header	1[X]	2[Y]	3[Y]	4[Y]
+ColWidth	100	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments					
+WindowLabel	/home/josh/Documents/Physics/Year 3/CompMod/worksheet4/oufile.txt	2
+<data>
+0	1	9.52686	18.3727	109.527
+1	2	5.79783	14.6437	-3.72903
+2	3	3.37578	12.2216	-2.42205
+3	4	1.75609	10.6019	-1.61969
+4	5	0.417383	9.26321	-1.33871
+5	6	-9.29721	-0.451383	-9.7146
+6	7	-8.88377	-0.0379402	0.413443
+7	8	-8.84662	-0.000790395	0.0371498
+8	9	-8.84633	-0.000499269	0.000291126
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	27 Oct 2012 09:56:23
+geometry	0	842	1310	799	minimized	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	1289	736
+<PageGeometry>0.00384025	0.00665779	0.990015	0.980027</PageGeometry>
+PlotTitle		#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>0</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	$x$	$f(x) = x^3 + 8x^2 - 5x + 22$		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	20	75	0	0	0
+ScaleFont0	Sans Serif	16	75	0	0	0
+ScaleFont1	Sans Serif	16	75	0	0	0
+ScaleFont2	Sans Serif	16	75	0	0	0
+ScaleFont3	Sans Serif	16	75	0	0	0
+AxisFont0	Sans Serif	16	50	0	0	0
+AxisFont1	Sans Serif	16	50	0	0	0
+AxisFont2	Sans Serif	16	50	0	0	0
+AxisFont3	Sans Serif	16	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+<Function>
+<Type>0</Type>
+<Title>F1</Title>
+<Expression>x^3 + 8*x^2 - 5*x + 22</Expression>
+<Variable>x</Variable>
+<Range>-10	4</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	-50	200	0	6	5	0	0
+scale	1	-50	200	0	6	5	0	0
+scale	2	-12	5	2	10	5	0	0
+scale	3	-12	5	2	10	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	0	1	0	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	2	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<line>	5.19911504424779	0	-15.6333333333333	0	1	#000000	SolidLine	0	0	4	45	1	1</line>
+<line>	0	208.333333333333	0	-54.9242424242424	1	#000000	SolidLine	0	0	4	45	1	1</line>
+<line>	3.95	117.424242424242	0.0666666666666669	-14.0151515151515	1.5	#ff0000	SolidLine	0	0	4	45	1	1</line>
+<line>	1.98333333333333	26.1363636363636	-9.3	-7.95454545454549	1.5	#0000ff	SolidLine	0	0	4	45	1	1</line>
+<line>	0.466666666666667	36.7424242424242	0.466666666666667	-12.1212121212121	1	#000000	DashLine	0	0	4	45	1	1</line>
+<line>	-6.68333333333333	137.878787878788	-6.68333333333333	-13.2575757575757	1	#000000	DashLine	0	0	4	45	1	1</line>
+<line>	1.85869565217391	65.530303030303	1.85869565217391	-10.9848484848485	1	#000000	DashLine	0	0	4	45	1	1</line>
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>27.24795640327</x>
+<y>966.99669966997</y>
+<right>-10.4532554257095</right>
+<bottom>185.227272727273</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+</Text>
+<Font>Sans Serif	16	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>0.50836120401338</x>
+<y>-1.5151515151515</y>
+<right>-10.4532554257095</right>
+<bottom>185.227272727273</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+$x_1$
+</Text>
+<Font>Sans Serif	9	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>-6.5418060200669</x>
+<y>-1.8939393939394</y>
+<right>-10.4532554257095</right>
+<bottom>185.227272727273</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+$x_2$
+</Text>
+<Font>Sans Serif	9	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>1.8729096989967</x>
+<y>-2.6515151515152</y>
+<right>-10.4532554257095</right>
+<bottom>185.227272727273</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+$x_0$
+</Text>
+<Font>Sans Serif	9	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph4	1	1	27 Oct 2012 10:09:53
+geometry	441	134	529	458	hidden
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	511	395
+<PageGeometry>0.00980392	0.0121951	1.00196	0.963415</PageGeometry>
+PlotTitle	Title	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	%(?Y)		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	11	75	0	0	0
+ScaleFont0	Sans Serif	9	75	0	0	0
+ScaleFont1	Sans Serif	9	75	0	0	0
+ScaleFont2	Sans Serif	9	75	0	0	0
+ScaleFont3	Sans Serif	9	75	0	0	0
+AxisFont0	Sans Serif	9	50	0	0	0
+AxisFont1	Sans Serif	9	50	0	0	0
+AxisFont2	Sans Serif	9	50	0	0	0
+AxisFont3	Sans Serif	9	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table1_1	Table1_2	2	1	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	30	1
+scale	0	-20	140	0	9	5	0	0
+scale	1	-20	140	0	9	5	0	0
+scale	2	0	35	0	8	5	0	0
+scale	3	0	35	0	8	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph6	1	1	27 Oct 2012 10:11:56
+geometry	1299	122	529	458	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	511	395
+<PageGeometry>0.00959693	0.0121951	0.980806	0.963415</PageGeometry>
+PlotTitle	-5.629398139 - Stationary Point	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	%(?X)	%(?Y)		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	11	75	0	0	0
+ScaleFont0	Sans Serif	9	75	0	0	0
+ScaleFont1	Sans Serif	9	75	0	0	0
+ScaleFont2	Sans Serif	9	75	0	0	0
+ScaleFont3	Sans Serif	9	75	0	0	0
+AxisFont0	Sans Serif	9	50	0	0	0
+AxisFont1	Sans Serif	9	50	0	0	0
+AxisFont2	Sans Serif	9	50	0	0	0
+AxisFont3	Sans Serif	9	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table2_1	Table2_3	2	1	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	75	1
+scale	0	-40	120	0	9	5	0	0
+scale	1	-40	120	0	9	5	0	0
+scale	2	0	80	0	9	5	0	0
+scale	3	0	80	0	9	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph7	1	1	27 Oct 2012 10:12:15
+geometry	722	138	529	458	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	511	395
+<PageGeometry>0.00959693	0.0121951	0.980806	0.963415</PageGeometry>
+PlotTitle	0.2960648058 - Stationary Point	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	%(?X)	%(?Y)		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	11	75	0	0	0
+ScaleFont0	Sans Serif	9	75	0	0	0
+ScaleFont1	Sans Serif	9	75	0	0	0
+ScaleFont2	Sans Serif	9	75	0	0	0
+ScaleFont3	Sans Serif	9	75	0	0	0
+AxisFont0	Sans Serif	9	50	0	0	0
+AxisFont1	Sans Serif	9	50	0	0	0
+AxisFont2	Sans Serif	9	50	0	0	0
+AxisFont3	Sans Serif	9	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table1_1	Table1_3	2	1	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	30	1
+scale	0	-20	140	0	9	5	0	0
+scale	1	-20	140	0	9	5	0	0
+scale	2	0	35	0	8	5	0	0
+scale	3	0	35	0	8	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph5	1	1	27 Oct 2012 10:14:16
+geometry	30	172	529	458	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	511	395
+<PageGeometry>0.00959693	0.0121951	0.980806	0.963415</PageGeometry>
+PlotTitle	100	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	%(?X)	%(?Y)		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	11	75	0	0	0
+ScaleFont0	Sans Serif	9	75	0	0	0
+ScaleFont1	Sans Serif	9	75	0	0	0
+ScaleFont2	Sans Serif	9	75	0	0	0
+ScaleFont3	Sans Serif	9	75	0	0	0
+AxisFont0	Sans Serif	9	50	0	0	0
+AxisFont1	Sans Serif	9	50	0	0	0
+AxisFont2	Sans Serif	9	50	0	0	0
+AxisFont3	Sans Serif	9	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	oufile_1	oufile_3	2	1	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	26	1
+scale	0	-20	20	0	9	5	0	0
+scale	1	-20	20	0	9	5	0	0
+scale	2	0	30	0	7	5	0	0
+scale	3	0	30	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph8	1	1	27 Oct 2012 10:14:41
+geometry	212	138	513	458	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	495	395
+<PageGeometry>0.00990099	0.0121951	0.980198	0.963415</PageGeometry>
+PlotTitle	-100	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	%(?X)	%(?Y)		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	11	75	0	0	0
+ScaleFont0	Sans Serif	9	75	0	0	0
+ScaleFont1	Sans Serif	9	75	0	0	0
+ScaleFont2	Sans Serif	9	75	0	0	0
+ScaleFont3	Sans Serif	9	75	0	0	0
+AxisFont0	Sans Serif	9	50	0	0	0
+AxisFont1	Sans Serif	9	50	0	0	0
+AxisFont2	Sans Serif	9	50	0	0	0
+AxisFont3	Sans Serif	9	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table3_1	Table3_3	2	1	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	8	1
+scale	0	-5	20	0	6	5	0	0
+scale	1	-5	20	0	6	5	0	0
+scale	2	0	10	0	6	5	0	0
+scale	3	0	10	0	6	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph9	2	2	27 Oct 2012 13:29:53
+geometry	196	842	949	848	minimized	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	35	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	463	375
+<PageGeometry>0.0053135	0.00625	0.49203	0.46875</PageGeometry>
+PlotTitle	Initial Guess = 100	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Number of Iterations	Error		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	11	75	0	0	0
+ScaleFont0	Sans Serif	9	75	0	0	0
+ScaleFont1	DejaVu Sans	12	75	0	0	0
+ScaleFont2	Sans Serif	9	75	0	0	0
+ScaleFont3	DejaVu Sans	12	75	0	0	0
+AxisFont0	Sans Serif	9	50	0	0	0
+AxisFont1	DejaVu Sans	10	50	0	0	0
+AxisFont2	Sans Serif	9	50	0	0	0
+AxisFont3	DejaVu Sans	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	oufile_1	oufile_3	2	1	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	26	1
+scale	0	-20	20	0	9	5	0	0
+scale	1	-20	20	0	9	5	0	0
+scale	2	0	30	0	7	5	0	0
+scale	3	0	30	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<graph>
+ggeometry	473	5	455	375
+<PageGeometry>0.502657	0.00625	0.483528	0.46875</PageGeometry>
+PlotTitle	Initial Guess = -100	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Number of Iterations	Error		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	11	75	0	0	0
+ScaleFont0	Sans Serif	9	75	0	0	0
+ScaleFont1	DejaVu Sans	12	75	0	0	0
+ScaleFont2	Sans Serif	9	75	0	0	0
+ScaleFont3	DejaVu Sans	12	75	0	0	0
+AxisFont0	Sans Serif	9	50	0	0	0
+AxisFont1	DejaVu Sans	10	50	0	0	0
+AxisFont2	Sans Serif	9	50	0	0	0
+AxisFont3	DejaVu Sans	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table3_1	Table3_3	2	1	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	8	1
+scale	0	-5	20	0	6	5	0	0
+scale	1	-5	20	0	6	5	0	0
+scale	2	0	10	0	6	5	0	0
+scale	3	0	10	0	6	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<graph>
+ggeometry	5	415	463	375
+<PageGeometry>0.0053135	0.51875	0.49203	0.46875</PageGeometry>
+PlotTitle	Initial Guess = 0.2960648058 <br>Stationary Point	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Number of Iterations	Error		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	11	75	0	0	0
+ScaleFont0	Sans Serif	9	75	0	0	0
+ScaleFont1	DejaVu Sans	12	75	0	0	0
+ScaleFont2	Sans Serif	9	75	0	0	0
+ScaleFont3	DejaVu Sans	12	75	0	0	0
+AxisFont0	Sans Serif	9	50	0	0	0
+AxisFont1	DejaVu Sans	10	50	0	0	0
+AxisFont2	Sans Serif	9	50	0	0	0
+AxisFont3	DejaVu Sans	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table1_1	Table1_3	2	1	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	30	1
+scale	0	-20	140	0	9	5	0	0
+scale	1	-20	140	0	9	5	0	0
+scale	2	0	35	0	8	5	0	0
+scale	3	0	35	0	8	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<graph>
+ggeometry	473	415	463	375
+<PageGeometry>0.502657	0.51875	0.49203	0.46875</PageGeometry>
+PlotTitle	Initial Guess = -5.629398139 <br>Stationary Point	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Number of Iterations	Error		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	11	75	0	0	0
+ScaleFont0	Sans Serif	9	75	0	0	0
+ScaleFont1	DejaVu Sans	12	75	0	0	0
+ScaleFont2	Sans Serif	9	75	0	0	0
+ScaleFont3	DejaVu Sans	12	75	0	0	0
+AxisFont0	Sans Serif	9	50	0	0	0
+AxisFont1	DejaVu Sans	10	50	0	0	0
+AxisFont2	Sans Serif	9	50	0	0	0
+AxisFont3	DejaVu Sans	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table2_1	Table2_3	2	1	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	75	1
+scale	0	-40	120	0	9	5	0	0
+scale	1	-40	120	0	9	5	0	0
+scale	2	0	80	0	9	5	0	0
+scale	3	0	80	0	9	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<table>
+bisectiondata	15	7	27 Oct 2012 16:03:46
+geometry	251	70	928	239	
+header	1[X]	2[Y]	3[Y]	4[Y]	5[Y]	6[Y]	7[Y]
+ColWidth	100	100	100	100	100	100	100	
+<com>
+<col nr="6">
+(col("4")+col("5"))/2
+</col>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0	0	0	0
+HiddenColumn	0	0	0	0	0	0	0
+Comments								
+WindowLabel	/home/josh/Documents/Physics/Year 3/CompMod/worksheet4/bisectiondata.txt	2
+<data>
+0	1	22	-128	-10	0	10	-5
+1	2	122	-128	-10	-5	5	-7.5
+2	3	87.625	-128	-10	-7.5	2.5	-8.75
+3	4	8.32812	-128	-10	-8.75	1.25	-9.375
+4	5	8.32812	-51.9746	-9.375	-8.75	0.625	-9.0625
+5	6	8.32812	-19.9495	-9.0625	-8.75	0.3125	-8.90625
+6	7	8.32812	-5.35367	-8.90625	-8.75	0.15625	-8.828125
+7	8	1.60005	-5.35367	-8.90625	-8.82812	0.078125	-8.867185
+8	9	1.60005	-1.84843	-8.86719	-8.82812	0.0390625	-8.847655
+9	10	1.60005	-0.117116	-8.84766	-8.82812	0.0195312	-8.83789
+10	11	0.743232	-0.117116	-8.84766	-8.83789	0.00976562	-8.842775
+11	12	0.3135	-0.117116	-8.84766	-8.84277	0.00488281	-8.845215
+12	13	0.0983027	-0.117116	-8.84766	-8.84521	0.00244141	-8.846435
+13	14	0.0983027	-0.00937883	-8.84644	-8.84521	0.0012207	-8.845825
+14	15	0.0444688	-0.00937883	-8.84644	-8.84583	0.000610352	-8.846135
+</data>
+</table>
+<multiLayer>
+Graph10	1	1	27 Oct 2012 16:06:02
+geometry	872	139	481	438	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	463	375
+<PageGeometry>0.0105708	0.0128205	0.978858	0.961538</PageGeometry>
+PlotTitle		#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Number of Iterations	Root		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	11	75	0	0	0
+ScaleFont0	Sans Serif	9	75	0	0	0
+ScaleFont1	Sans Serif	9	75	0	0	0
+ScaleFont2	Sans Serif	9	75	0	0	0
+ScaleFont3	Sans Serif	9	75	0	0	0
+AxisFont0	Sans Serif	9	50	0	0	0
+AxisFont1	Sans Serif	9	50	0	0	0
+AxisFont2	Sans Serif	9	50	0	0	0
+AxisFont3	Sans Serif	9	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	bisectiondata_1	bisectiondata_7	2	1	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	14	1
+curve	GSLdata_1	GSLdata_2	2	1	#ff0000	0	1	7	2	#ff0000	#ff0000	0	#000000	14	1	2	0	0	8	1
+scale	0	-10	10	0	5	5	0	0
+scale	1	-10	10	0	5	5	0	0
+scale	2	0	16	0	9	5	0	0
+scale	3	0	16	0	9	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>5.2531328320802</x>
+<y>9.1331269349845</y>
+<right>16.5614035087719</right>
+<bottom>5.85139318885449</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)Bisection Methdod
+\l(2)Newton-Raphson Method
+</Text>
+<Font>Sans Serif	13	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>-1.9248120300752</x>
+<y>-7.8328173374613</y>
+<right>2.84711779448622</right>
+<bottom>-9.44272445820434</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+x_{\text{root}}
+</Text>
+<Font>Sans Serif	9	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<table>
+GSLdata	9	4	27 Oct 2012 16:08:53
+geometry	559	596	445	220	
+header	1[X]	2[Y]	3[Y]	4[Y]
+ColWidth	100	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments					
+WindowLabel	/home/josh/Documents/Physics/Year 3/CompMod/worksheet4/GSLdata.txt	2
+<data>
+0	1	9.52686	18.3727	109.527
+1	2	5.79783	14.6437	-3.72903
+2	3	3.37578	12.2216	-2.42205
+3	4	1.75609	10.6019	-1.61969
+4	5	0.417383	9.26321	-1.33871
+5	6	-9.29721	-0.451383	-9.7146
+6	7	-8.88377	-0.0379402	0.413443
+7	8	-8.84662	-0.000790395	0.0371498
+8	9	-8.84633	-0.000499269	0.000291126
+</data>
+</table>
+<open>1</open>

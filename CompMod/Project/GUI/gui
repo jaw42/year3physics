@@ -1,0 +1,137 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0301 
+header_name {.h} 
+code_name {.cxx}
+decl {\#include <iostream>} {private local
+} 
+
+decl {\#include <stdio.h>} {private local
+} 
+
+decl {\#include <iomanip>} {private local
+} 
+
+decl {using namespace std;} {private local
+} 
+
+Function {} {open
+} {
+  Fl_Window win {
+    label FDTD open
+    xywh {717 186 605 425} type Double hide
+  } {
+    Fl_Button animate {
+      label Animate
+      callback {cout << "Animate" << endl;}
+      xywh {80 304 100 30}
+    }
+    Fl_Button Calculate {
+      label Calculate
+      callback {cout << "calculate" << endl;}
+      xywh {249 304 100 30}
+    }
+    Fl_Button calcani {
+      label {Calc + Ani}
+      callback {cout << "calc ani" << endl;}
+      xywh {420 304 100 30}
+    }
+    Fl_Value_Slider startcord_in {
+      label {Seed Co-Ordinate} user_data_type {void*}
+      callback {cout << "Other" << endl;}
+      xywh {150 20 300 30} type Horizontal align 4 when 4 maximum 200 step 10 value 50 textsize 14
+    }
+    Fl_Value_Slider maxTime_in {
+      label {Number of Iterations}
+      callback {cout << "This" << endl;}
+      xywh {150 60 300 30} type Horizontal align 4 when 4 maximum 5000 step 100 value 500 slider_size 0.01 textsize 14
+    }
+    Fl_Choice seedfunction {
+      label {Seed Function}
+      callback {cout << "function" << endl;} open
+      xywh {150 100 215 30} down_box BORDER_BOX
+    } {
+      MenuItem {} {
+        label Guassian
+        xywh {0 0 34 20}
+      }
+      MenuItem {} {
+        label Sine
+        xywh {0 0 34 20}
+      }
+      MenuItem {} {
+        label Cosine
+        xywh {0 0 34 20}
+      }
+    }
+    Fl_Choice systemtype {
+      label {System Type}
+      callback {cout << "system" << endl;} open
+      xywh {150 140 215 30} down_box BORDER_BOX
+    } {
+      MenuItem {} {
+        label Bounded
+        xywh {10 10 34 20}
+      }
+      MenuItem {} {
+        label Infinite
+        xywh {10 10 34 20}
+      }
+      MenuItem {} {
+        label Absorbing
+        xywh {10 10 34 20}
+      }
+    }
+    Fl_Check_Button dielectric {
+      label Dielectric
+      callback {cout << "radio" << endl;}
+      xywh {150 180 20 30} down_box DOWN_BOX align 4
+    }
+    Fl_Progress progressbar {
+      label {Graphing...}
+      xywh {80 353 440 20}
+    }
+    Fl_Button killgnu {
+      label {Kill GNUPlot}
+      callback {cout << "Kill" << endl;}
+      xywh {500 223 85 20} box THIN_UP_BOX labelsize 10
+    }
+    Fl_Button deletefiles {
+      label {Delete Files}
+      callback {cout << "delete" << endl;}
+      xywh {500 248 85 20} box THIN_UP_BOX labelsize 10
+    }
+    Fl_Button close {
+      label Close
+      callback {cout << "close" << endl;} selected
+      xywh {495 380 100 30}
+    }
+    Fl_Check_Button d3 {
+      label {3D Plot}
+      xywh {234 180 20 30} down_box DOWN_BOX align 4
+    }
+    Fl_Value_Slider dielectricleft {
+      label {Dielectric Left}
+      callback {cout << "width" << endl;}
+      xywh {75 213 205 30} type Horizontal when 4 maximum 200 step 10 value 100 textsize 14
+    }
+    Fl_Value_Slider dielectricright {
+      label {Dielectric Right}
+      callback {cout << "width" << endl;}
+      xywh {285 213 205 30} type Horizontal when 4 maximum 200 step 10 value 100 textsize 14
+    }
+    Fl_Counter lossvalue {
+      label {Lossy Material}
+      callback {cout << "lossvalue" << endl;}
+      tooltip {Set to 0 for a lossless material} xywh {150 265 140 20} align 4 when 4 minimum 0 maximum 1 step 0.01 value 0.8
+    }
+    Fl_Counter permvalue {
+      label Permittivity
+      callback {cout << "permvalue" << endl;}
+      tooltip {Relative permittivity of the lossy dielectric} xywh {390 265 100 20} align 4 when 4 minimum 0 maximum 20 step 0.5 value 0.8
+    }
+    Fl_Check_Button TFSF {
+      label TFSF
+      tooltip {Use a Total Field/Scattered Feild boundary as the source} xywh {306 180 20 30} down_box DOWN_BOX align 4
+    }
+  }
+} 

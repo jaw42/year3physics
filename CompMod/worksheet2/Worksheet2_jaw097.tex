@@ -1,0 +1,167 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% PAGE DIMENSIONS
+\usepackage[top=0.6in, left=0.8in, right=0.8in, bottom=0.7in]{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margins=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{mathtools} % for math environments like align
+\usepackage{amssymb} % for symbols like \therefore
+
+%%% OPTIONAL PACKAGES
+%\usepackage{braket}
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+
+%%% ToC (table of contents) APPEARANCE
+%\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+%\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+%\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+%\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+\newif\iffinal % introduce a switch for draft vs. final document
+\finaltrue % use this to compile the final document
+\usepackage{tikz}
+
+\iffinal
+  \newcommand{\inputTikZ}[1]{%
+    \input{#1}%
+  }
+\else
+  \newcommand{\inputTikZ}[1]{%
+    \beginpgfgraphicnamed{#1-external}%
+    \input{#1}%
+    \endpgfgraphicnamed%
+  }
+\fi
+
+%%% END Article customizations
+\renewcommand{\d}{\,\mathrm{d}} % for integrals
+\newcommand{\dx}[2]{\frac{\textrm{d} #1}{\textrm{d} #2}} % for derivatives
+\newcommand{\dd}[2]{\frac{\textrm{d}^2 #1}{\textrm{d} #2^2}} % for double derivatives
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}} % for partial derivatives
+\newcommand{\pdd}[2]{\frac{\partial^2 #1}{\partial #2^2}} % for double partial derivatives
+\newcommand{\e}[1]{\text{e}^{#1}} % for exponentials
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\inter}[1]{\shortintertext{#1}}
+
+\author{Josh Wainwright \\ UID:1079596}
+
+\title{Worksheet 2 \\ Numerical Integration}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\vspace{1cm}\hrule \vspace{1cm}
+%\newpage
+	\setcounter{section}{1}
+	\section{Numerical Integration}
+	\subsection{Analytical Integration}
+	When integration is involved in calculations, it is often the case that analytical solving is not possible. When this is the case, the problem must be tackled numerically. 
+
+	As an example of this, the equation,
+	\begin{align}
+		\int_0^2 \e{-x}\sin x\,\d x,
+	\end{align}	
+	will be solved analytically by hand, and numerically by the computer, and the differences in solutions examined.
+
+	First analytically. The integral is solved below.
+	\begin{align*}
+		\inter{The problem will be integrated using integration by parts, such that,}
+		\int u \d v &= uv - \int v \d u \\
+	\end{align*}
+	\vspace{-1.5cm}
+	\begin{align*}
+		\inter{First, the integral will be performed without limits. Let}
+		u &= \e{-x} & \dx{v}{x} &= \sin x\\
+		\inter{so that}
+		\dx{u}{x} &= -\e{-x} & v &= -\cos x\\
+	\end{align*}
+	\vspace{-1cm}
+	\begin{align*}
+		\Rightarrow \underbrace{\int \e{-x} \sin x\d x }_\text{P} &= -\e{-x}\cos x - \underbrace{\int \e{-x} \cos x \d x}_{Q} \\
+		\inter{Now using integration by parts with the second half of the resulting equation, Q,}
+	\end{align*}
+	\vspace{-1.5cm}
+	\begin{align*}
+		u_Q &= \e{-x} & \dx{v_Q}{x} &= \cos x\\
+		\inter{so that}
+		\dx{u_Q}{x} &= -\e{-x} & v_Q &= \sin x\\
+	\end{align*}
+	\vspace{-1cm}
+	\begin{align*}
+		\Rightarrow \underbrace{\int \e{-x} \sin x \d x}_{P} &= -\e{-x} \cos x - \Bigg[ \e{-x} \sin x + \underbrace{\int \e{-x}\sin x \d x}_{P} \Bigg]\\
+		\inter{Note that the original equation, $P$, is repeated,}
+		2\int \e{-x} \sin x \d x &= -\e{-x} \cos x - \e{-x} \sin x \\
+		\int \e{-x} \sin x \d x &= \frac{-\e{-x}}{2}\left(\cos x + \sin x\right) \\
+		\inter{Now applying the limits from the original problem,}
+		\int_0^2 \e{-x}\sin x\,\d x &= \left[ \frac{-\e{-x}}{2}\left(\cos x + \sin x\right)\right]_0^2\\
+		 &= -0.03337 + 0.5\\
+		 &= 0.46662966259 \approx 0.466630
+	\end{align*}
+	This function, plotted between $0$ and $\pi$ is shown in figure \ref{fig:graph1}.
+	\begin{figure}[h]
+			\centering
+				\inputTikZ{Graph1}
+			\caption{\label{fig:graph1}Graph showing the function $y = \e{-x}\sin x$ with the area for integration shaded.}
+	\end{figure}
+
+	\subsection{Trapezium Rule}
+	In order to determine the integral shown above numerically, the first method used is the trapezium rule. This mathematical method involves splitting the area to be calculated into a number of uniformly spaced discrete panels, each of which is a trapezium of height equal to the curve at the edge of each side of the trapezium. The equation used for the trapezium rule is
+	\begin{align*}
+		\int_a^b f(x) \d x &\approx \frac{h}{2}\sum_{k=1}^N \Big[f(x_{k+1}) + f(x_k)\Big] \\
+		&= \frac{b-a}{2N} \Big( f(x_1) + 2f(x_2) + 2f(x_3) + \ldots + f(x_{N+1})\Big).
+	\end{align*}
+	This will give an estimate for the area under the curve $f(x)$ between the limits $a$ and $b$ split into $N$ panels, such that the panel size is $h=\frac{b-a}{N}$.
+
+	The trapezium rule gives a good estimate for the area under the curve, but has some limitations. Because the curve is simplified into straight lines, the accuracy will only be small if there are as many positive as negative gradients as this will allow the under and over estimates to cancel out. With the curve used here, however, the trapezium rule will produce an underestimate as some of the curve is lost.
+
+	The program that was written uses the trapezium rule to estimate the area under the curve shown in figure \ref{fig:graph1} by splitting the area into $N$ . 
+	
+	\subsection{Simpson's Rule}
+	Simpson's Rule is an alternative method for numerically calculating the area under the curve, similar to the trapezium method. However, instead of using straight topped trapezia, Simpson's Rule uses a second order polynomial as the top of the panel. This allows for a much more accurate estimate, indeed, if the curve being approximated is at most a third order polynomial, the estimate will be an exact value for the area under the curve.
+
+	The equations that governs Simpson's Rule are summarized below.
+	\begin{align*}
+		r_1 &= \frac{h}{3}\big(y(a) + y(a+2Nh)\big) + \frac{2h}{3}\sum_{n=1}^{N-1} y(a+2nh) \\
+		r_2 &= \frac{4h}{3} \sum_{n=1}^{N} y(a-h_2nh)
+	\end{align*}
+	where $N$ is the number of double intervals, $b=a+2Nh$ and the estimate is obtained from \mbox{$r=r_1 + r_2$}.
+
+	Though this method gives the possibility of greater accuracy, the computational power required increases due to the extra steps involved.
+
+\end{document}
+
+
+
+
+
+

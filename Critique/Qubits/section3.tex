@@ -1,0 +1,69 @@
+%!TEX root = mainfile.tex
+
+\section{Qubits - A Basic Understanding}
+\subsection{Mathematical Representation}
+The standard representation used in quantum information is using Dirac Braket notation and so we shall use this notation too. Using this notation, the superposition of a qubit in an arbitrary state is given by
+\begin{align}
+	|\Psi\rangle &= \alpha|0\rangle + \beta|1\rangle,\label{eq:arbitarystate}
+\end{align}
+where the coefficients $\alpha$ and $\beta$ are the amplitudes of the qubit in the 0 and 1 ``directions'' and $\Psi$ is the resulting state.
+
+As in all of quantum mechanics, this final state represents the full range of possible states, but gives no information as to what state the object would be in if it were measured, it provides only probabilities. The probability of any one state is given by the absolute amplitude of the coefficient for that state, so that from equation \ref{eq:arbitarystate}, the probability of measuring the qubit in the 0 state is $|\alpha|^2$ and the corresponding probability of it being in the 1 state is $|\beta|^2$. Since there are only two absolute states that exist and can be measured, there are constraints on the values that these coefficients can take. It follows that 
+\begin{align}
+	|\alpha|^2 + |\beta|^2 &= 1 \label{eq:constraint}
+\end{align}
+simply because there must be a definite chance of measuring one or the other.
+
+In order to represent the different states of the qubit, a Bloch Sphere is used, where the possible states are represented in 3-dimensional space on a unit sphere\cite{gentleintro}, figure \ref{fig:bloch}. A qubit can be in a superposition such that it can exit at any point on the surface of the sphere. 
+
+% \begin{figure}[ht]
+% 	\centering
+% 		\inputTikZ{blochsphere}
+% 	\caption{\label{fig:bloch}The Bloch Sphere is used to represent super-positioned states of a qubit. In this example, the probability amplitudes are given by $\alpha = \cos\left(\frac{\theta}{2}\right)$ and $\beta = \e{i\phi}\sin\left(\frac{\theta}{2}\right)$}
+% \end{figure}
+
+\begin{figure}
+	\centering
+	\def\svgwidth{0.5\columnwidth}
+	\includesvg{bloch}
+	\caption{\label{fig:bloch}The Bloch Sphere is used to represent super-positioned states of a qubit. In this example, the probability amplitudes are given by $\alpha = \cos\left(\frac{\theta}{2}\right)$ and $\beta = \e{i\phi}\sin\left(\frac{\theta}{2}\right)$\cite{blochwiki}}
+\end{figure}
+
+The possibilities for the location of a state of a qubit is limited to two degrees of freedom, located to the surface of the sphere. The freedom comes from the complex nature of the coefficients $\alpha$ and $\beta$ and is limited down from the expected four by the constraint in equation \ref{eq:constraint} and the fact that one of the coefficients can arbitrarily be set to be real since the overall state has no physical observable. 
+
+\subsection{Physical Representation} The concepts that exist around the qubit work well to describe the idealised implementation, but actually devising a way to manufacture a physical qubit is very difficult. Several methods, which produce the desired effects, have been used. A few of these are summarized below, though many others have been reported.
+
+\begin{table}
+	\begin{tabular}{l|p{3cm}|l|l}
+		Name & Method & $|0\rangle$ & $|1\rangle$ \\ \hline\hline
+		Photon\cite{PhysRevLett.108.190505} & Polarization & Vertical & Horizontal\\ \hline
+		Josephson Junction\cite{barone1982physics} & Super conducting charge qubit & Clockwise current & Anti-clockwise current \\ \hline
+		Electron\cite{RevModPhys.79.1217}  & Electron Spin & Up & Down\\ \hline
+		Quantum Dot\cite{PhysRevA.57.120} & Dot Spin & Down & Up\\ \hline
+	\end{tabular}
+\end{table}
+
+Theoretically, any system that exhibits the binary states mentioned above and that is governed by quantum mechanics can be used to form a qubit, but it is the stability of those systems that will differentiate it from the others.
+
+\subsection{Quantum Bit Example}
+We can demonstrate some of the strange qualities of the qubit easily using the mathematical representation introduced above. We shall consider a trine. This is simply the name given to a qubit that can be in one of the three states listed below and can be thought of as an extension of the classical bit, but with limitations on the qubit.
+\begin{align*}
+	|\Psi\rangle &= |0\rangle\\
+	|\Psi\rangle &= \tfrac{1}{2}|0\rangle + \tfrac{\sqrt{3}}{2}|1\rangle\\
+	|\Psi\rangle &= \tfrac{1}{2}|0\rangle - \tfrac{\sqrt{3}}{2}|1\rangle
+\end{align*}
+If this were to be implemented using, for example, the photonic qubit, these three states could be thought of as polarisation of the qubit in the vertical direction, $30^{\circ}$, or $-30^{\circ}$. Each of these states is equally likely.
+
+Since there are three possible states, in classical theory, a trine encodes 
+\[
+	\log_23 \approx 1.585
+\]
+bits worth of information. This is an improvement on a classical bit since this 1 qubit can hold more than 1.5 bit, however, quantum mechanics rules out the measurement of the qubit precisely. This reduces the possibility of knowing the state to just two of the three options, leaving one bit of uncertainty. Thus we can read
+\[
+	(\log_23)-1 \approx 0.585
+\] 
+of information. So this is in fact a reduction in the amount of available information. Suppose now, we have two identical trines. It has been shown that for this system, the available information increases to
+\[
+	\tfrac{\sqrt{2}}{3}\left(1+\log_2(17+12\sqrt{2})\right) \approx 1.369
+\]
+This is more than $2\times0.585$, the previous result for a single measurement. So we have a situation where it is possible to read more than twice as much information from two identical qubits than it is to read the information from either one alone. This is a phenomenon that has no counterpart in the classical world.

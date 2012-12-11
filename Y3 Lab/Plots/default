@@ -1,0 +1,18 @@
+[Plot]
+Title=Cobalt 60 Spectrum
+Axis=1
+Descriptors=0
+Energy=0
+Log=0
+XFull=1
+XChan=1
+YAuto=1
+ROIBox=1
+Mono=0
+GridX=1
+GridY=1
+LowX=0.000000
+HighX=512.000000
+HighY=100000
+Printer=\\phyprint1\LJ3600 - Poynting R11
+Colors=0, 9, 12, 0, 2
