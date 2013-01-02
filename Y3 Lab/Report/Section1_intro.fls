@@ -1,0 +1,7 @@
+PWD /home/josh/Documents/Physics/Year 3/Y3 Lab/Report
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT Section1_intro.tex
+OUTPUT Section1_intro.log
+INPUT /usr/share/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
