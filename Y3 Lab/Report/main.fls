@@ -315,6 +315,9 @@ INPUT Section2_experiment.tex
 INPUT calibration1NaI.pdf
 INPUT ./calibration1NaI.pdf
 INPUT ./calibration1NaI.pdf
+INPUT calib20121113-60Co.pdf
+INPUT ./calib20121113-60Co.pdf
+INPUT ./calib20121113-60Co.pdf
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out

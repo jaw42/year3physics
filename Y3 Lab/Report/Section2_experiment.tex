@@ -5,7 +5,7 @@
 
 \subsection{subsection name} % (fold)
 \label{sub:subsection_name}
-The first experiment that was attempted was measuring the binding energy of neutrons observing the $\gamma$-ray emitted when the neutrons are captured by protons in the water surrounding a neutron source via reaction \ref{eq:neutronbinding},
+The first experiment that was attempted was measuring the binding energy of neutrons by observing the $\gamma$-ray emitted when the neutrons are captured by protons in the water surrounding a neutron source via reaction \ref{eq:neutronbinding},
 \begin{align}
 	\cf{^{1}_{1}p} + \cf{^{0}_{1}n} &\rightarrow \cf{^{1}_{2}d} + \gamma \label{eq:neutronbinding}
 \end{align}
@@ -40,12 +40,19 @@ The elements that were used included cobalt, barium, caesium, europium and ameri
 	\end{tabular}
 	\caption{This table shows some data\label{tab:myfirsttable}}
 \end{table}
+From these, the graph in figure \ref{fig:naicalib} can be drawn which shows the relation that can be used as a calibration between energy and channel number. The exact value of this relation, intercept and gradient, are subject to change since the calibration is retaken at the start of each session to account for changes in the experimental set-up and the radioactivity of the source which will decrease with time.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[angle=270,width=0.8\textwidth]{calibration1NaI.pdf}
-	\caption{The $\text{BF}_4$ detector uses a high charge to create a flow of ions to measure the incoming neutron. It cannot measure the energy, but simply gives a count for the number of neutrons incident in the detector.\label{fig:bf3detector}}
+	\caption{The $\text{BF}_4$ detector uses a high charge to create a flow of ions to measure the incoming neutron. It cannot measure the energy, but simply gives a count for the number of neutrons incident in the detector.\label{fig:naicalib}}
 \end{figure}
+An example of the spectra from the sources is shown in figure \ref{fig:cobaltcalib}. This shows the spectrum of $\ce{^{60}Co}$ which has been fitted with the Gaussian peaks to find the position and FWHM using the ``root'' package.
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[angle=270,width=0.8\textwidth]{calib20121113-60Co.pdf}
+	\caption{The $\text{BF}_4$ detector uses a high charge to create a flow of ions to measure the incoming neutron. It cannot measure the energy, but simply gives a count for the number of neutrons incident in the detector.\label{fig:naicalib}}
+\end{figure}
 % subsection calibration (end)
 % section experimentation (end)
