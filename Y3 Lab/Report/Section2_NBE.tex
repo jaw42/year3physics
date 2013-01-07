@@ -89,6 +89,12 @@ An example of the spectra from the sources is shown in figure \ref{fig:cobaltcal
 	\includegraphics[width=0.7\textwidth]{calib20121113-60Co.pdf}
 	\caption{An example of the peak for the radioactive element cobalt-60. These two peaks are well defined and have well known values. This means that they are good for using as calibration points for the detector.\label{fig:cobaltcalib}}
 \end{figure}
+
+This line has the equation,
+\begin{align}
+	E &= 3.63\times x - 18.31 \label{eq:calibNaI}
+\end{align}
+This equation, equation \ref{eq:calibNaI}, shall be used as the calibration equation for the sodium iodide experiment. The calibration was re-taken at the start of each session using the NaI detector, so this value represents the session where the actual experimental results were taken for the main section of finding the deuteron binding energy.
 % subsection calibration (end)
 
 \subsection{Energy Resolution} % (fold)
@@ -139,12 +145,12 @@ In order to observe the spectrum as clearly as possible, the experiment was run 
     \put(68,35){9}
     \put(61,32){10}
   \end{overpic}
-  \caption{This is The spectrum from the neutron tank observing a radioactive neutron emitter for a prolonged period.
-	\label{fig:tank-full_spectrum}}
+  \caption{The spectrum from the neutron tank observing a radioactive neutron emitter for a prolonged period of time.
+  \label{fig:tank-full_spectrum}}
 \end{figure}
 
 The major peaks, from figure \ref{fig:tank-full_spectrum} are as follows:
-	\begin{enumerate}
+	\begin{enumerate}\itemsep1pt \parskip0pt \parsep0pt
 		\item 511\,keV peak from the electron rest mass.
 		\item Unknown.
 		\item Unknown.
@@ -157,6 +163,55 @@ The major peaks, from figure \ref{fig:tank-full_spectrum} are as follows:
 		\item Escape peak from the carbon/oxygen peak
 		\item Double escape peak from the carbon/oxygen peak
 	\end{enumerate}
+
+\subsubsection{Escape Peaks} % (fold)
+\label{ssub:escape_peaks}
+The peaks that are labelled as ``escape peaks'' from the previous graph, figure \ref{fig:tank-full_spectrum}, are due to the phenomena called pair production. Pair production occurs if the incident energy is above 1022\,keV, i.e.\ twice the rest mass of the electron, and results in the production of two 511\,keV annihilation gamma rays. If one of these gamma rays escapes the detector while the other is completely absorbed, 511\,keV will be lost from the detector. This results in a separate peak in the spectrum representing the original energy minus 511\,keV. This is called a single escape peak. If both annihilation gamma-rays escape the detector a double escape peak is formed with an energy of the expected energy minus $2\times$ 511\,keV, or 1022\,keV.
+
+Escape peaks can seen whenever there are events with energies greater than the 1022\,keV limit. They are generally slightly lower in height than the main peak and are always at the same distance from the main peak.
+% subsubsection escape_peaks (end)
+
+\subsubsection{Background Radiation} % (fold)
+\label{ssub:background_radiation}
+This experiment was carried out using a sample of americium-beryllium (AmBe) and as such, the peaks seen in the resulting spectrum should be well known and well defined. Instead, there are a number of peaks that cannot, at the present time, be accounted for. There are several explanations to explain these peaks. 
+\begin{enumerate}
+	\item The first is the method of creating the samples in use. The samples were made by bombarding the metals using a synchrotron particle accelerator. This has the effect of possibly creating an impure sample so that there are other elements that are decaying producing their own spectrum that is adding the the expected one.
+	\item Another possibility is that the other radiation sources that are stored nearby introduced extra peaks from their own radioactive decays.
+\end{enumerate}
+% subsubsection background_radiation (end)
+
+\subsection{Experimental Results} % (fold)
+\label{sub:experimental_results}
+The calibration data that was taken gave a channel number-energy relation of
+\begin{align}
+	E &= 3.63\times C - 18.31
+\end{align}
+where $E$ is the actual energy and $C$ is the observed channel number. Using this equation, peak number 5 from the above spectrum, figure \ref{fig:tank-full_spectrum}, is found to lie at an energy of $2.244\pm0.048$\,MeV. The data taken from the spectrum is shown in table \ref{tab:tankdata}. This table shows the channel number of each of the peaks labelled above, the error on this position, the energy and corresponding error for the peak and the differences between some of the adjacent peaks. This last column is used to verify escape peaks which are always at 511\,keV below the main peak.
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{c|c|c|c|c}
+		Channel \textnumero & Error on Channel \textnumero & Energy & Error on Energy & Difference \\
+		\hline\hline
+		181.20 & 0.07 & 496 & 31 & \\
+		232.45 & 0.02 & 651 & 32 &  \\
+		403.33 & 0.15 & 1170 & 36 &  \\
+		458.6 & 0.18 & 1338 & 38 &  \\
+		617.3 & 0.56 & 1820 & 43 & 482 \\
+		757.2 & 0.08 & 2244 & 48 & 425 \\
+		1168.5 & 13.0 & 3492 & 66 & 1248 \\
+		1335.4 & 0.50 & 3999 & 73 & 507 \\
+		1496.6 & 0.28 & 4488 & 81 & 489
+	\end{tabular}
+	\caption{Values for the channel numbers and corresponding energies of the peaks from the spectrum of the BeAm sample in the water tank.\label{tab:tankdata}}
+\end{table}
+
+The values for the channel numbers, along with the corresponding errors, in table \ref{tab:tankdata}, were taken from the results of the peak fitting algorithm, ``Buffit'', provided as an extension to be used with the ``root'' interpreter framework. An example of this peak fitting is shown below in figure \ref{fig:tankspecbuffit}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.7\textwidth]{calib20121113-60Co.pdf}
+	\caption{An example of the peak for the radioactive element cobalt-60. These two peaks are well defined and have well known values. This means that they are good for using as calibration points for the detector.\label{fig:tankspecbuffit}}
+\end{figure}
+% subsection experimental_results (end)
 % subsection neutron_binding_energy (end)
 
 % section neutron_binding_energy (end)
