@@ -119,8 +119,9 @@
     #2 \left| #3 \vphantom{#1#2} \right>}                                       % for Dirac matrix elements
 \newcommand{\grad}[1]{\nabla #1}                                                % for gradient
 \let\divsymb=\div                                                               % rename builtin command \div to \divsymb
-\renewcommand{\div}[1]{\nabla \cdot #1}                                         % for divergence
-\newcommand{\curl}[1]{\nabla \times #1}                                         % for curl
+\newcommand{\laplacian}[0]{\nabla^2}
+\renewcommand{\div}[1]{\nabla \cdot \textbf{#1}}                                % for divergence
+\newcommand{\curl}[1]{\nabla \times \textbf{#1}}                                % for curl
 \let\baraccent=\=                                                               % rename builtin command \= to \baraccent
 \renewcommand{\=}[1]{\stackrel{#1}{=}}                                          % for putting numbers above =
 

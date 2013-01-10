@@ -5,7 +5,7 @@
 
 \subsection{Sodium Iodide Detector} % (fold)
 \label{ssub:sodium_iodide_detector}
-The sodium iodide detector is a scintillation detector that uses a NaI crystal doped with thallium to create scintillation photons when a neutron hits the crystal. The thallium is added as an activator to provide extra available energy levels for the photons in the crystal to occupy. In the pure state, the NaI has a large forbidden band gap between the conduction and valence bands, shown in figure \ref{fig:thaliumactivator}. The activator reduces this gap so that an emitted photon is in the range that the photomultiplier tube is sensitive to, typically visible.
+The sodium iodide detector is a scintillation detector that uses a NaI crystal doped with thallium to create scintillation photons when a gamma ray photon hits the crystal. The thallium is added as an activator to provide extra available energy levels for the photons in the crystal to occupy. In the pure state, the NaI has a large forbidden band gap between the conduction and valence bands, shown in figure \ref{fig:thaliumactivator}. The activator reduces this gap so that an emitted photon is in the range that the photomultiplier tube is sensitive to, typically visible.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{NaIbands.pdf}
@@ -131,19 +131,37 @@ In order to observe the spectrum as clearly as possible, the experiment was run 
 % 	\caption{The spectrum from the neutron tank observing a radioactive neutron emitter for a prolonged period.
 % 	\label{fig:tank-full_spectrum}}
 % \end{figure}
+% \begin{figure}[ht]
+%   \centering
+%   \begin{overpic}[width=0.9\textwidth]{tank-full_spectrum.pdf}
+%     \put(22,54){1}
+%     \put(19,52.5){2}
+%     \put(28,43){3}
+%     \put(32,42){4}
+%     \put(45,41){5}
+%     \put(40,38){6}
+%     \put(36,39){7}
+%     \put(76,33){8}
+%     \put(68,35){9}
+%     \put(61,32){10}
+%   \end{overpic}
+%   \caption{The spectrum from the neutron tank observing a radioactive neutron emitter for a prolonged period of time.
+%   \label{fig:tank-full_spectrum}}
+% \end{figure}
+
 \begin{figure}[ht]
   \centering
-  \begin{overpic}[width=0.9\textwidth]{tank-full_spectrum.pdf}
-    \put(22,54){1}
-    \put(19,52.5){2}
-    \put(28,43){3}
-    \put(32,42){4}
-    \put(45,41){5}
-    \put(40,38){6}
-    \put(36,39){7}
-    \put(76,33){8}
-    \put(68,35){9}
-    \put(61,32){10}
+  \begin{overpic}[width=0.9\textwidth]{tank-full_spectrum_overnight.pdf}
+    \put(20,57){1}
+    % \put(19,52.5){2}
+    \put(32,46){2}
+    \put(36,44){3}
+    \put(49,49){4}
+    \put(44,43){5}
+    \put(40,45){6}
+    \put(85,36){7}
+    \put(76,38){8}
+    \put(66,36){9}
   \end{overpic}
   \caption{The spectrum from the neutron tank observing a radioactive neutron emitter for a prolonged period of time.
   \label{fig:tank-full_spectrum}}
@@ -152,7 +170,7 @@ In order to observe the spectrum as clearly as possible, the experiment was run 
 The major peaks, from figure \ref{fig:tank-full_spectrum} are as follows:
 	\begin{enumerate}\itemsep1pt \parskip0pt \parsep0pt
 		\item 511\,keV peak from the electron rest mass.
-		\item Unknown.
+		% \item Unknown.
 		\item Unknown.
 		\item Double escape peak?.
 		\item \textbf{Neutron binding energy}.
@@ -205,13 +223,57 @@ where $E$ is the actual energy and $C$ is the observed channel number. Using thi
 	\caption{Values for the channel numbers and corresponding energies of the peaks from the spectrum of the BeAm sample in the water tank.\label{tab:tankdata}}
 \end{table}
 
-The values for the channel numbers, along with the corresponding errors, in table \ref{tab:tankdata}, were taken from the results of the peak fitting algorithm, ``Buffit'', provided as an extension to be used with the ``root'' interpreter framework. An example of this peak fitting is shown below in figure \ref{fig:tankspecbuffit}
+The values for the channel numbers, along with the corresponding errors, in table \ref{tab:tankdata}, were taken from the results of the peak fitting algorithm, ``Buffit'', provided as an extension to be used with the ``root'' interpreter framework. An example of this peak fitting is shown below in figure \ref{fig:tankspecbuffit}.
+
+The value for the errors on the energies calculated here are given equation \ref{eq:caliberrors}.
+\begin{align}
+	\left(\sigma E\right)^2 &= \left(\sigma Ch\times m\right)^2 + \left(\sigma m\times Ch\right)^2 + \left(\sigma c\right)^2 \label{eq:caliberrors}	
+\end{align}
+where
+\begin{description}
+	\item[$\sigma E$] is the error on the energy
+	\item[$Ch$] is the channel number from the detector
+	\item[$m$] is the gradient of the line fit of the data
+	\item[$c$] is the intercept of the line fit.
+\end{description}
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.7\textwidth]{calib20121113-60Co.pdf}
 	\caption{An example of the peak for the radioactive element cobalt-60. These two peaks are well defined and have well known values. This means that they are good for using as calibration points for the detector.\label{fig:tankspecbuffit}}
 \end{figure}
+
 % subsection experimental_results (end)
+
+\subsection{Analysis of Experimental Results} % (fold)
+\label{sub:analysis_of_experimental_results}
+The binding energy of the deuteron can be found theoretically from the mass difference between the deuteron and its individual components, as follows.
+\begin{align}
+	\ce{^1_0 n} + \ce{^1_1 p} &\rightarrow \ce{^2_1 d} + \gamma
+\end{align}
+The mass excess of each of these is as follows
+\begin{align*}
+	\Delta \ce{^1 p} &= 7.2889 \text{MeV} \\
+	\Delta \ce{^1 n} &= 8.0713 \text{MeV} \\
+	\Delta \ce{^2 d} &= 13.1357 \text{MeV}
+\end{align*}
+The binding energy is thus
+\begin{align}
+	7.2889 + 8.0713 + 13.1357 &= 2.2245 \text{MeV}
+\end{align}
+We can also find the difference between the binding energy of $\ce{^{16}O}$ and $\ce{^{17}O}$ from
+\begin{align}
+	\ce{^{16}_8 O} + \ce{^1_0 n} \rightarrow \ce{^{17}_8 O} + \gamma
+\end{align}
+For this reaction, the mass excesses are
+\begin{align*}
+	\Delta \ce{^{16} O} &= -4.7370 \text{MeV} \\
+	\Delta \ce{^{17} O} &= -0.8087 \text{MeV} \\
+	\Delta \ce{^1 n} &= 8.0713 \text{MeV} \\
+\end{align*}
+
+This confirms that the peak labelled number 4 is indeed in the correct energy location to be the binding energy of the neutron, and provides good evidence that the final unknown peak, peak number 7, could be from the oxygen in the water in the tank.
+% subsection analysis_of_experimental_results (end)
 % subsection neutron_binding_energy (end)
 
 % section neutron_binding_energy (end)
