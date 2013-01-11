@@ -21,10 +21,6 @@ When the reaction happens, the products, $\cf{^7_3 Li}$ and $\cf{^4_2\alpha}$, a
 
 \subsubsection{Wall Effect} % (fold)
 \label{ssub:wall_effect}
-The BF$_3$ detector shall be used for several purposes later, so it is worth discussing some of the features of the data that is produced by this detector. Figure \ref{fig:walleffect2} shows a typical spectrum from the BF$_3$ detector. This shows a main peak, a smaller, higher energy secondary peak and an example of the wall effect.
-
-When a neutron is incident with one of the atoms in the gas in the reactor, one of the reactions equation \ref{eq:bf31} or \ref{eq:bf32} takes place. If the reactor was extremely large compared to the travel distance of the Li and $\alpha$ products, then a single peak from each of the reactions would be observed, along with some amount of background noise, giving a spectrum similar to the top graph in figure \ref{fig:walleffect2}. The two peaks are from the reaction producing a ground state lithium atom or an excited lithium atom respectively. 
-\begin{figure}[ht]
   \centering
   \begin{overpic}[width=0.8\columnwidth]{walleffect2.pdf}
     \put(57,48){2.31}
@@ -41,10 +37,23 @@ When a neutron is incident with one of the atoms in the gas in the reactor, one 
   \caption{An exemplar spectrum from the BF$_3$ detector showing the two peaks from each of the two reaction products, and the wall effect when one of the products from equation \ref{eq:bf31} escapes the detector.\label{fig:walleffect2}}
 \end{figure}
 
+The BF$_3$ detector shall be used for several purposes later, so it is worth discussing some of the features of the data that is produced by this detector. Figure \ref{fig:walleffect2} shows a typical spectrum from the BF$_3$ detector. This shows a main peak, a smaller, higher energy secondary peak and an example of the wall effect.
+
+When a neutron is incident with one of the atoms in the gas in the reactor, one of the reactions equation \ref{eq:bf31} or \ref{eq:bf32} takes place. If the reactor was extremely large compared to the travel distance of the Li and $\alpha$ products, then a single peak from each of the reactions would be observed, along with some amount of background noise, giving a spectrum similar to the top graph in figure \ref{fig:walleffect2}. The two peaks are from the reaction producing a ground state lithium atom or an excited lithium atom respectively. 
+\begin{figure}[ht]
 The two steps in the count number at lower channel numbers is known as the wall effect. These are due to the detector being finite, or small compared to the travel distance of the reaction products, and so there is a chance that one of the products from the reaction escapes from the detector. Due to the relative masses of the particles created, $\alpha$ and Li, the $\alpha$ particle takes most of the energy from the original neutron and so when it is lost from the detector, the recoded energy is lower.
 
 Other features of the spectrum are the abrupt cut-off at the low channel numbers. This is to reduce the background counts that are present in this region from obscuring the rest of the data. 
 % subsubsection wall_effect (end)
+
+\subsection{Using Water as a Neutron Moderator} % (fold)
+\label{sub:using_water_as_a_neutron_moderator}
+The typical neutrons that are created by the BeAm source have energies of several MeV. Since the energy and the temperature are related by the equation
+\begin{align}
+  E = \frac{1}{2}mv^2 &= \frac{3}{2}kT
+\end{align}
+This means that the neutrons have a temperature in the order of tens of millions of degrees kelvin. In any application where neutrons are a by-product, or not used directly, these speed can be dangerous to anything around the source. To alleviate this safety issue, a moderator is used, placed 360 degrees around the source to reduce the energy of the neutrons to a level that is safe to be near. Moderation is the action of reducing the kinetic energy of a neutron or other particle through collisions with other particles. 
+% subsection using_water_as_a_neutron_moderator (end)
 
 \subsubsection{Boron Triflouride Detector Set-up} % (fold)
 \label{ssub:boron_triflouride_detector_set_up}
@@ -64,7 +73,7 @@ An estimate for the background radiation involved in the main section of the rea
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.8\textwidth]{BF3background.pdf}
-  \caption{An estimate of the background is made by assuming it falls linearly from the beggining of the channel numbers, which has to be error, to a point where it is known to be zero, after the second peak. The green shaded region is known to background since the second step represents the loss of both the lithium and the $\alpha$ particles. \label{fig:bf3errorest}}
+  \caption{An estimate of the background is made by assuming it falls linearly from the beginning of the channel numbers, which has to be error, to a point where it is known to be zero, after the second peak. The green shaded region is known to background since the second step represents the loss of both the lithium and the $\alpha$ particles. \label{fig:bf3errorest}}
 \end{figure}
 
 The total number of counts is a function provided by the software that is used, called Maestro. This allows us to easily record the number of counts for specific regions of the graph. Using this method, and initial trial recording was taken to work out an estimate for the percentage of the total counts were contributed by this background radiation. Equation \ref{eq:backgroundcalc} shows the calculation used to calculate the background,
@@ -73,13 +82,10 @@ The total number of counts is a function provided by the software that is used, 
 \end{align}
 The total counts, including this noise, was $3.82\times10^6$, hence, the background represents roughly 6.9\% of the total counts.
 % subsection neutron_attenuation (end)
-\subsection{Experimental Results} % (fold)
-\label{sub:bf3experimental_results}
 
-% subsection experimental_results (end)
 \subsection{Neutron Attenuation Theory} % (fold)
 \label{sub:neutron_attenuation_theory}
-In order to model the situation, in a simplified way, the statistical one-group approach is used. It shall be assumed that all of the neutrons are thermalised, reduced in speed to similar to the surrounding particles, and an estimate for the diffusion length can be found. The diffusion length is the distance a thermal, or fast travelling neutron, takes to slow down. Once it has been thermalised, the neutron can be absorbed by matter, for example, an oxygen atom in the water surrounding the source. Thermalisation is the best method for reducing the speed of neutrons for many applications, since neutrons are not charged particles and so do not interact with electric or magnetic fields.
+In order to model the situation, in a simplified way, the statistical one-group approach is used. It shall be assumed that all of the neutrons are thermalized, reduced in speed to similar to the surrounding particles, and an estimate for the diffusion length can be found. The diffusion length is the distance a thermal, or fast travelling neutron, takes to slow down. Once it has been thermalised, the neutron can be absorbed by matter, for example, an oxygen atom in the water surrounding the source. Thermalization is the best method for reducing the speed of neutrons for many applications, since neutrons are not charged particles and so do not interact with electric or magnetic fields.
 
 The Americium-Beryllium source that was used was assumed to be a point source, which is a good approximation compared with the distances that we are measuring, and so the emitting of neutrons from such a source is given by
 \begin{align}
@@ -116,3 +122,39 @@ Thus, when $\ln(r\phi)$ is plotted against $r$, the graph should have a gradient
 % subsection neutron_attenuation_theory (end)
 % section neutron_attenuation_in_water (end)
 
+\subsection{Experimental Results} % (fold)
+\label{sub:bf3experimental_results}
+The data in table \ref{tab:bf3results} is from the experiment to measure how the attenuation of neutrons is affected by a moderator, in this case water, as a function of distance. The data was taken using the Boron-triflouride detector suspended in the water at a position $r$ from the source. The detector was used to take a count of the number of neutrons from the source in a 10 minute interval, and then moved to the next position where the count was retaken.
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{c|c}
+  Radius (m)  &   Counts   \\
+  0.08        &   3.82E+06 \\
+  0.10        &   3.10E+06 \\
+  0.12        &   2.29E+06 \\
+  0.14        &   1.64E+06 \\
+  0.16        &   1.16E+06 \\
+  0.18        &   8.18E+05 \\
+  0.20        &   5.76E+05 \\
+  0.22        &   3.98E+05 \\
+  0.24        &   2.80E+05 \\
+  0.26        &   1.97E+05 \\
+  0.28        &   1.40E+05 \\  
+  \end{tabular}
+  \caption{The experimental data for the BF$_3$ was taken by moving the detector a given distance after measuring the neutron tank for 10 minutes.\label{tab:bf3results}}
+\end{table}
+
+These data are plotted in the graph in figure \ref{fig:bf3data1} which shows the channel number plotted against the logarithm of the count number. This roughly fits the straight line fit showing that there is an exponential decrease in the number of neutrons reaching the detector as the detector is moved away from the source. The fit is not good, however, for the first two data points. These show a number of counts considerably below the expected result if it were to follow the straight line fit. If these two points are removed, and the data fit again to the straight line, the fit becomes much better. 
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.8\textwidth]{BF3data1.pdf}
+  \caption{The data from the BF$_3$ when plotted as distance from the source against the logarithm of the number of counts gives a straight line, but two points do not seem to follow the general trend. \label{fig:bf3errorest}}
+\end{figure}
+
+This discrepancy from the expected trend close to the source can be explained by considering the distance from the source that the detector is for these two readings. These readings are for the distances 8\,cm and 10\,cm. At these distances, the thermal neutrons that are produced by the source have not had enough distance in the moderator to be thermalized. The BF$_3$ detector has a much smaller cross section for thermal neutrons than it does for slower neutrons, and so fewer of the neutrons that approach the detector at these distances are measured, even though there are more of them.
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.8\textwidth]{BF3data2.pdf}
+  \caption{If the two points are removed, the straight line fit is much more accurate. These seemingly erroneous data points can be explain by considering the distance over which a thermal neutron is slowed down sufficiently for the detector to be able to observe it. \label{fig:bf3errorest}}
+\end{figure}
+% subsection experimental_results (end)
