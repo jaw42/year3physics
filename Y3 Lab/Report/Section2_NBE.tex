@@ -5,23 +5,23 @@
 
 \subsection{Sodium Iodide Detector} % (fold)
 \label{ssub:sodium_iodide_detector}
-The sodium iodide detector is a scintillation detector that uses a NaI crystal doped with thallium to create scintillation photons when a gamma ray photon hits the crystal. The thallium is added as an activator to provide extra available energy levels for the photons in the crystal to occupy. In the pure state, the NaI has a large forbidden band gap between the conduction and valence bands, shown in figure \ref{fig:thaliumactivator}. The activator reduces this gap so that an emitted photon is in the range that the photomultiplier tube is sensitive to, typically visible.
+The first experiment that was performed involved using an NaI(Tl) detector. The sodium iodide detector is a scintillation detector that uses a NaI crystal doped with thallium to create scintillation photons when a gamma ray photon hits the crystal. The thallium is added as an activator to provide extra available energy levels that can be occupied by the photons in the crystal. In the pure state, the NaI has a large forbidden band gap between the conduction and valence bands, shown in figure \ref{fig:thaliumactivator}. The activator reduces this gap so that an emitted photon is in the range that the photomultiplier tube is sensitive to, typically visible.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{NaIbands.pdf}
 	\caption{The element thallium is added to the pure crystal of sodium iodide to provide extra energy levels for the electrons, which sit inside the forbidden gap of the crystal latice structure. These allow a photon of a useful wavelength to be emitted when electron decays to a lower energy.\label{fig:thaliumactivator}}
 \end{figure}
 
-When a gamma photon enters the detector it ionises a molecule of NaI creating excited states in the crystal that then decay via visible photons. The number of photons that are produced is proportional to the energy of the incident photon, as the energy of the gamma ray increases, more scintillation photons are produced. Thus, the energy of the original can be found be counting the number of photons produced. 
+When a gamma photon enters the detector it ionises a molecule of NaI creating excited states in the crystal that then decay via visible photons. The number of photons that are produced is proportional to the energy of the incident photon; as the energy of the gamma ray increases, more scintillation photons are produced. Thus, the energy of the original can be found be counting the number of photons produced. 
 
-These scintillation photons are used to create electrons which are more easily counted. At the photo-cathode, the photons release electrons via the photoelectric effect. The electrons are then passed through the photomultiplier tube which increases the number of photons linearly by accelerating them through a high potential difference so they can knock more electrons out from the dynodes (see figure \ref{fig:naidetctor}). This results in a stream of electrons that can be measured, and which is proportional to the original energy of the photon via the number of scintillation photons, the number of electrons and the multiplication factor of the increase of electrons from the PM tube. Since each of these steps is a linear relationship, a calibration setting can be taken using known results, and a simple linear equation relating the reading taken to the energy of the photon found.
+These scintillation photons are used to create electrons which are more easily counted. At the photo-cathode, the photons release electrons via the photoelectric effect. The electrons are then passed through the photomultiplier tube which increases the number of photons exponentially by accelerating them through a high potential difference so they can knock more electrons out from the dynodes (see figure \ref{fig:naidetctor})\cite{krane}. This results in a stream of electrons that can be measured, and which is proportional to the original energy of the photon via the number of scintillation photons, the number of electrons and the multiplication factor of the increase of electrons from the PM tube. Since each of these steps is a simple relationship, a calibration setting can be taken using known results, and a simple equation relating the reading from the detector to the energy of the photon found.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{NaIdetector.pdf}
 	\caption{The sodium iodide detector is a commonly used gamma ray detector that uses the relationship between the energy of a photon and the ionisation power that it has to measure its energy via a calibration equation.\label{fig:naidetctor}}
 \end{figure}
 
-The detector requires a high voltage which is placed across the dynodes and the anode to accelerate the electrons once they have entered the PM tube. Using this method of acceleration and re-acceleration, the photomultiplier tube is able to increase the number of electrons by a factor of roughly $10^5$ depending on the voltage bias.
+The detector requires a high voltage which is placed across the dynodes and the anode to accelerate the electrons once they have entered the PM tube. Using this method of acceleration and re-acceleration, the photomultiplier tube is able to increase the number of electrons by a factor of roughly $10^5$ depending on the voltage bias\cite{baratta}. For our experiment, a potential difference of 800 Volts was used. A schematic view of the experimental set-up is shown in figure \ref{fig:experimentalsetp}.
 \begin{figure}[ht]
 	\centering
 	\begin{tikzpicture}
@@ -44,6 +44,7 @@ The detector requires a high voltage which is placed across the dynodes and the 
 	\draw (6) -- (7);
 	\draw[->] (7) |- (5);
 \end{tikzpicture}
+\caption{This diagram shows a schematic view of the set-up used with the sodium iodide detector. The amplifier is used on the side where the detector is connected to the computer simply to increase the level of the signal input to the computer so that it is at a readable level.\label{fig:experimentalsetp}}
 \end{figure}
 
 % subsubsection sodium_iodide_detector (end)
@@ -52,7 +53,7 @@ The detector requires a high voltage which is placed across the dynodes and the 
 \label{sub:calibration}
 Before any data can be read from the spectra taken from the detector, the data has to be calibrated. To do this, a set of known samples with well defined peaks is used to get a relation between the channel number of an observed peak and its energy. Once this is done, a relation can be found that relates the channel number to energy for use on later measurements.
 
-The elements that were used included cobalt, barium, caesium, europium and americium. Each of these elements were available to measure, and each has recorded and accepted peaks that are at well defined positions. The data was taken from the National Nuclear Data Centre (NNDC). The table below, table \ref{tab:calibdata}, shows the data that we collected from these sources. The channel number refers to the position in the spectrum that the peak was observed and the expected peak is the energy of the peak that the respective peak is estimated to correspond to.
+The elements that were used included cobalt, barium, caesium, europium and americium. Each of these elements were available to measure, and each has recorded and accepted peaks that are at well defined positions. The data was taken from the National Nuclear Data Centre (NNDC)\cite{nndc}. The table below, table \ref{tab:calibdata}, shows the data that we collected from these sources. The channel number refers to the position in the spectrum that the peak was observed and the expected peak is the energy of the peak that the respective peak is estimated to correspond to.
 
 \begin{table}[ht]
 	\centering
@@ -82,7 +83,7 @@ From these, the graph in figure \ref{fig:naicalib} can be drawn which shows the 
 	\includegraphics[angle=270,width=0.6\textwidth]{calibration1NaI.pdf}
 	\caption{The sodium iodide detector provides a channel number readout that is directly proportional to the energy of the corresponding reaction event. Thus, using known data points, a relation between channel number and energy can be found.\label{fig:naicalib}}
 \end{figure}
-An example of the spectra from the sources is shown in figure \ref{fig:cobaltcalib}. This shows the spectrum of $\ce{^{60}Co}$ which has been fitted with the Gaussian peaks to find the position and FWHM using the ``root'' package.
+An example of the spectra from the sources is shown in figure \ref{fig:cobaltcalib}. This shows the spectrum of $\ce{^{60}Co}$ which has been fitted with the Gaussian peaks to find the position and FWHM using the ``root'' package\cite{root}.
 
 \begin{figure}[ht]
 	\centering
@@ -101,9 +102,9 @@ This equation, equation \ref{eq:calibNaI}, shall be used as the calibration equa
 \label{sub:energy_resolution}
 Scintillation detectors, such as the NaI detector in use here, have a relatively poor energy resolution. Statistical broadening of the peaks is usually the dominant form of broadening. When a reaction takes place, and so energy is deposited, in the scintillator crystal, the efficiency can be as low as around 10\%. This means that a far smaller amount of energy is actually transferred to the crystal than the energy of the incoming particle.
 
-When the reaction takes place in the crystal, a number of photons, proportional to the energy deposited, are produced. But some of them are lost before they can reach the photomultiplier tube further reducing the measured number of photons. This also means that there is a minimum in the number of photons just before the photomultiplier tube. Since the number of arriving photons will be subject to statistical fluctuations, the standard deviation in the photons reaching the PM tube is given by equation \ref{eq:standarddevgamma},
+When the reaction takes place in the crystal, a number of photons, proportional to the energy deposited, are produced. But some of them are lost before they can reach the photomultiplier tube further reducing the measured number of photons. This also means that there is a minimum in the number of photons just before the photomultiplier tube. Since the number of arriving photons will be subject to statistical fluctuations, the standard deviation in the photons reaching the PM tube is given by equation \ref{eq:standarddevgamma}\cite{krane},
 \begin{align}
-	\text{Standard Deviation, }\sigma &= \sqrt{\text{Number of photons reaching the PM tube}}\label{eq:standarddevgamma}
+	\text{Standard Deviation, }\sigma &= \sqrt{\text{Number of photons reaching the PM tube}}\label{eq:standarddevgamma}.
 \end{align}
 Since this is proportional to the energy of the original photon that caused the reaction, it can be shown that
 \begin{align}
@@ -112,7 +113,7 @@ Since this is proportional to the energy of the original photon that caused the 
 \end{align}
 Where FWHM is the full width at half maximum of any given peak, $H_0$ is the height of the peak and $k$ is a constant of proportionality. This means that the resolution can be easily observed by plotting a graph of $\log k$ against $\log E$, which should give a slope of $-\frac{1}{2}$ in an ideal case.
 
-The resolution of the NaI detector is use was measured using the method described above.
+The resolution of the NaI detector was measured using the method described above.
 % subsection energy_resolution (end)
 
 \subsection{Neutron Binding Energy} % (fold)
@@ -172,7 +173,7 @@ The major peaks, from figure \ref{fig:tank-full_spectrum} are as follows:
 		\item 511\,keV peak from the electron rest mass.
 		% \item Unknown.
 		\item Unknown.
-		\item Double escape peak?.
+		\item Double escape peak?
 		\item \textbf{Neutron binding energy}.
 		\item Unknown
 		\item Single escape peak from the neutron binding energy.\\
@@ -184,7 +185,7 @@ The major peaks, from figure \ref{fig:tank-full_spectrum} are as follows:
 
 \subsubsection{Escape Peaks} % (fold)
 \label{ssub:escape_peaks}
-The peaks that are labelled as ``escape peaks'' from the previous graph, figure \ref{fig:tank-full_spectrum}, are due to the phenomena called pair production. Pair production occurs if the incident energy is above 1022\,keV, i.e.\ twice the rest mass of the electron, and results in the production of two 511\,keV annihilation gamma rays. If one of these gamma rays escapes the detector while the other is completely absorbed, 511\,keV will be lost from the detector. This results in a separate peak in the spectrum representing the original energy minus 511\,keV. This is called a single escape peak. If both annihilation gamma-rays escape the detector a double escape peak is formed with an energy of the expected energy minus $2\times$ 511\,keV, or 1022\,keV.
+The peaks that are labelled as ``escape peaks'' from the previous graph, figure \ref{fig:tank-full_spectrum}, are due to the phenomena called pair production. Pair production occurs if the incident energy is above 1022\,keV, i.e.\ twice the rest mass of the electron, and results in the production of two 511\,keV annihilation gamma rays. If one of these gamma rays escapes the detector while the other is completely absorbed, 511\,keV will be lost from the detector. This results in a separate peak in the spectrum representing the original energy minus 511\,keV. This is called a single escape peak. If both annihilation gamma-rays escape the detector a double escape peak is formed with an energy of the expected energy minus $2\times$ 511\,keV, or 1022\,keV\cite{baratta}.
 
 Escape peaks can seen whenever there are events with energies greater than the 1022\,keV limit. They are generally slightly lower in height than the main peak and are always at the same distance from the main peak.
 % subsubsection escape_peaks (end)
@@ -255,23 +256,22 @@ The mass excess of each of these is as follows
 \begin{align*}
 	\Delta \ce{^1 p} &= 7.2889 \text{MeV} \\
 	\Delta \ce{^1 n} &= 8.0713 \text{MeV} \\
-	\Delta \ce{^2 d} &= 13.1357 \text{MeV}
+	\Delta \ce{^2 d} &= 13.1357 \text{MeV}.
 \end{align*}
 The binding energy is thus
 \begin{align}
-	7.2889 + 8.0713 + 13.1357 &= 2.2245 \text{MeV}
+	7.2889 + 8.0713 + 13.1357 &= 2.2245 \text{MeV}.
 \end{align}
 We can also find the difference between the binding energy of $\ce{^{16}O}$ and $\ce{^{17}O}$ from
 \begin{align}
-	\ce{^{16}_8 O} + \ce{^1_0 n} \rightarrow \ce{^{17}_8 O} + \gamma
+	\ce{^{16}_8 O} + \ce{^1_0 n} \rightarrow \ce{^{17}_8 O} + \gamma.
 \end{align}
 For this reaction, the mass excesses are
 \begin{align*}
 	\Delta \ce{^{16} O} &= -4.7370 \text{MeV} \\
 	\Delta \ce{^{17} O} &= -0.8087 \text{MeV} \\
-	\Delta \ce{^1 n} &= 8.0713 \text{MeV} \\
+	\Delta \ce{^1 n} &= 8.0713 \text{MeV}.
 \end{align*}
-
 This confirms that the peak labelled number 4 is indeed in the correct energy location to be the binding energy of the neutron, and provides good evidence that the final unknown peak, peak number 7, could be from the oxygen in the water in the tank.
 % subsection analysis_of_experimental_results (end)
 % subsection neutron_binding_energy (end)

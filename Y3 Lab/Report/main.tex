@@ -27,7 +27,7 @@
 \usepackage{array}                                                              % for better arrays (eg matrices) in maths
 \usepackage{paralist}                                                           % very flexible & customisable lists (eg. enumerate/itemize, etc.)
 \usepackage{verbatim}                                                           % adds environment for commenting out blocks of text & for better verbatim
-\usepackage{subfig}                                                             % make it possible to include more than one captioned figure/table in a single float
+% \usepackage{subfig}                                                             % make it possible to include more than one captioned figure/table in a single float
 \usepackage{mathtools}                                                          % for math environments like align
 \usepackage{amssymb}                                                            % for symbols like \therefore
 \usepackage{verbatim}                                                           % for including text as appears, verbatim
@@ -36,6 +36,9 @@
 \usepackage{overpic}                                                            % for adding annotations to pictures
 \usepackage[version=3]{mhchem}
 \usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 
 %%% EQUATIONS ------------------------------------------------------------------
 \numberwithin{equation}{section}                                                % Number equations by section (change for different levels)
@@ -59,6 +62,11 @@
     pdfauthor={Josh Wainwright}}                                                % set name of document and author here
 
 %%% END Article customizations
+
+\newcolumntype{L}{>{\centering\arraybackslash}m{3em}}
+\newcolumntype{M}{>{\centering\arraybackslash}m{2em}}
+\newcolumntype{N}{>{\centering\arraybackslash}m{5em}}
+\newcolumntype{O}{>{\centering\arraybackslash}m{4em}}
 
 %%% Include TIKZ images directly into document ---------------------------------
 \usepackage[svgnames]{xcolor}
@@ -138,6 +146,9 @@
 \input{Section1_intro.tex}
 \input{Section2_NBE.tex}
 \input{Section3_attenuation.tex}
+\input{Section4_conclusion.tex}
+
+\include{bib}
 
 \end{document}
     
