@@ -2,21 +2,21 @@
 
 \section{Introduction} % (fold)
 \label{sec:introduction}
-This exercise is designed as an introduction to the algorithm used in JPEG compression. Though the actual algorithm that is used is slightly more subtle, this method provides a demonstration of the steps that are used and the effects that they have on the image in question. We shall examine the effect of each step on the file size of the resulting JPEG image as well as the image quality of this image.
+This exercise is designed as an introduction to the algorithm used in JPEG compression. Though the actual algorithm that is used is slightly more subtle, this method provides a demonstration of the steps that are used and the effects that they have on the image in question. I shall examine the effect of each step on the file size of the resulting JPEG image as well as the image quality of this image.
 % section introduction (end) 
 
 \section{JPEG Image Compression} % (fold)
 \label{sec:jpeg_image_compression}
-The JPEG image format, which stands for the Joint Photographic Experts Group, is a commonly used method of lossy compression used to store images in smaller file sizes whilst sacrificing as little important image information as possible. The information to be removed is chosen based on a consideration of the limitations of the human visual system thereby improving space efficiency with little or no noticeable change.
+The JPEG image format, which stands for the Joint Photographic Experts Group, is a commonly used method of lossy compression used to store images in smaller file sizes whilst sacrificing as little important image information as possible. The information to be removed is chosen based on a consideration of the limitations of the human visual system thereby reducing file size while making little or no noticeable change to perceivable image quality.
 
-The specification for the format has origins that are somewhat contested. Though it is claimed that the original patent outlining the image format was submitted in 1986, the JPEG committee is of the opinion that these claims are not valid, as of 2002, and there have been numerous other claims to the ownership and subsequent royalties from the distribution of images stored and distributed in this format. Though the JPEG format is due to remain proprietary, the JPEG committee is aiming to provide it without licence fee after the release of the updated specification JPEG 2000.
+There is some uncertainty regarding the origins of the specification for the JPEG format. It is claimed that the original patent outlining the image format was submitted in 1986. The JPEG committee is of the opinion that these claims are not valid and there have been numerous other claims to the ownership and subsequent royalties from the distribution of images stored and distributed in this format. Though the JPEG format is due to remain proprietary, the JPEG committee is aiming to provide it without licence fee after the release of the updated specification JPEG 2000.
 
 We shall examine only the first JPEG specification since the methods and algorithms are simpler, though not as efficient as later versions.
 % section jpeg_image_compression (end)
 
 \section{Discrete Cosine Transformation (DCT)} % (fold)
 \label{sec:discrete_cosine_transformation_}
-The method used to compress images in the JPEG format involves taking the Discrete Cosine Transformation (DCT) of the image. The exact details of this transform will not be examined, but it has the effect of splitting a wave-function down into the component frequencies, much as the Fourier Transform does, though providing only real, as opposed to imaginary or complex, results. The results of a discrete cosine transform on a set of data is a number of coefficients that describe the relative intensities of each of the available frequencies. This analysis is carried out on the image in both the horizontal and vertical directions which means that an array of values describing how the frequencies are concentrated about the image can be generated. To easily visualise this, the intensity value can be interpreted as pixel brightness value and so an image, of the same dimensions, can be drawn which is the DCT of the original.
+The method used to compress images in the JPEG format involves taking the Discrete Cosine Transformation (DCT) of the image. The exact details of this transform will not be examined here, but it has the effect of splitting a wave-function down into the component frequencies, much as the Fourier Transform does, though providing only real, as opposed to imaginary or complex, results. The results of a discrete cosine transform on a set of data is a number of coefficients that describe the relative intensities of each of the available frequencies. This analysis is carried out on the image in both the horizontal and vertical directions which means that an array of values describing how the frequencies are concentrated about the image can be generated. To easily visualise this, the intensity value can be interpreted as pixel brightness value and so an image, of the same dimensions, can be drawn which is the DCT of the original.
 
 \subsection{Compression Ratio} % (fold)
 \label{sub:compression_ratio}
@@ -41,7 +41,7 @@ In order to examine the effects of increasing the compression ratio, an original
  	\includegraphics[width=0.3\textwidth]{lena.jpg}
 	\caption{The reference image that will be used as a comparator. It is saved using JPEG compression with a quality value of 100\%.\label{fig:orig}}
 \end{figure}
-This image is then saved as a JPEG file using a quality value of 100\%, i.e.\ as high a quality as possible, in theory loosing no information. This resulting file has a size of 37\,386\,bytes (37\,Kb). 
+This image is then saved as a JPEG file using a quality value of 100\%, i.e.\ as high a quality as possible, in theory losing no information. This resulting file has a size of 37\,386\,bytes (37\,Kb). 
 % subsection comparason_image (end)
 
 \subsection{Effect of JPEG Quality Values on Image File Size and Quality} % (fold)
@@ -127,11 +127,11 @@ As can be seen, the relation is approximately linear for quality values up to ro
 \label{sec:disregarding_sections_of_the_dct}
 The algorithm that is used for JPEG compression involves removing some of the high frequency components of the image. The DCT of an image orders the frequency components, increasing from the lowest to the highest in both the horizontal and vertical directions. Thus, if the bottom right section of the DCT, i.e.\ the high frequency region, is removed, then the total information required to describe the resulting inverse DCT image is reduced and so the file size is decreased. 
 
-The level to which this can be performed is dependant only on what the human eye can perceive and the ``importance'' of the resulting image. This means that if the final image is going to be used only as a small picture on a website for example, that a lot of information can be lost without noticeable difference, but if the image is a photograph to be printed, then the difference will be much more noticeable. It is this compromise that must be decided when changing the JPEG quality value.
+The level to which this can be performed is dependant only on what the human eye can perceive and the ``importance'' of the resulting image. This means that, if the final image is going to be used only as a small picture on a website for example, a lot of information can be lost without noticeable difference, but if the image is a photograph to be printed, then the difference will be much more noticeable. It is this compromise that must be decided when changing the JPEG quality value.
 
 \subsection{Performing the DCT Using Block Sizes} % (fold)
 \label{sub:performing_the_dct_using_block_sizes}
-Since the discrete cosine transform involves mathematically comparing every pixel with all those nearby, performing it on a large image very quickly becomes time consuming and computationally intensive. To reduce this, with little difference in the image quality or file compression ratio, the DCT is performed on 8 by 8 pixel sections of the image separately and then this array of DCT results is combined to get a tiled $N$ by $N$ composite, where $N$ is the number of 8 by 8 blocks are required to make up the full image.
+Since the discrete cosine transform involves mathematically comparing every pixel with all those nearby, performing it on a large image very quickly becomes time consuming and computationally intensive. To reduce this, with little difference in the image quality or file compression ratio, the DCT is performed on 8 by 8 pixel sections of the image separately and then this array of DCT results is combined to get a tiled $N$ by $N$ composite, where $N$ is the number of 8 by 8 blocks that are required to make up the full image.
 
 The image below, figure \ref{fig:lena_DCT} shows the results of the DCT on the original image. The shapes of the original image are just perceivable since each 8 by 8 block has areas of high complexity, represented by whiter colours, that correspond to areas of interest in the original, figure \ref{fig:orig}, such as transition from foreground to background etc.
 \begin{figure}[ht]
@@ -175,7 +175,7 @@ As can be seen, the image quality has decreased, suggesting that some informatio
 \label{sub:addition_to_the_dct}
 We have examined the effects of removing part of the DCT where the higher frequencies lie. This has the effect of softening the transitions from high to low pixel value, and so reducing complexity of the image. If instead, the lower frequencies are removed, i.e.\ the top left section of the DCT is set to zero and this time the higher frequencies are retained, the opposite effect is observed. Now, the lower frequencies are left out so that regions where the pixels vary slowly from high to low pixel value will instead vary more quickly. This has the reversed effect of ``sharpening'' the image.
 
-Since no information can be added to the image, indeed the total information needed to describe the image has still decreased, no additional detail can be revealed. Instead, details in the image will appear to be more defined though speckling, artefacts and a decrease in accuracy with the original will soon appear. The figures in \ref{fig:sharp} show this effect when the high frequencies are decreased by different amounts.
+Since no information can be added to the image, in fact the total information needed to describe the image has still decreased, no additional detail can be revealed. Instead, details in the image will appear to be more defined though speckling, artefacts and a decrease in accuracy with the original will soon appear. The figures in \ref{fig:sharp} show this effect when the high frequencies are decreased by different amounts.
 \begin{figure}[ht]
 	\centering
 	\begin{minipage}[c]{0.3\linewidth}
@@ -190,7 +190,7 @@ Since no information can be added to the image, indeed the total information nee
 		\centering
 	 	\includegraphics[width=0.9\textwidth]{lena_edge.jpg}
 	\end{minipage}
- 	\caption{When the low frequencies are reduced in the DCT, the resulting compressed image is said to have been sharpened. Increasing the amount of removal very quickly leads to very poor image quality where only the edges are left since these vary in pixel value most quickly. This has some uses in image processing such as motion detection or OCR (optical character recognition), though there are more in rigorous methods which produce better results.\label{fig:sharp}}
+ 	\caption{When the low frequencies are reduced in the DCT, the resulting compressed image is said to have been sharpened. Increasing the amount of removal very quickly leads to very poor image quality where only the edges are left since these vary in pixel value most quickly. This has some uses in image processing such as motion detection or OCR (optical character recognition), though there exist more rigorous methods which produce better results.\label{fig:sharp}}
 \end{figure}
 
 Since the sample image is a relatively complex image, much of the information is in these higher frequencies. For this reason, a much reduced version of the previous mask is used so that only the highest frequency element in the 8 by 8 DCT image is reduced, not removed, by a multiplying factor greater than 1.
