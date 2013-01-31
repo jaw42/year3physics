@@ -1,0 +1,32 @@
+w=getWidth();
+h=getHeight(); 
+
+filtered_image=newArray(w*h);
+
+for(y=0;y<h;y++){
+	for(x=0;x<w;x++){
+		p11=getPixel(x-1,y-1);
+		p12 = getPixel(x-1,y);  
+		p13 = getPixel(x-1,y+1);  
+		p21 = getPixel(x,y-1);  
+		p22 = getPixel(x,y);  
+		p23 = getPixel(x,y+1);  
+		p31 = getPixel(x+1,y-1);  
+		p32 = getPixel(x+1,y);  
+		p33 = getPixel(x+1,y+1);
+		
+		p_new=( -1*p11	+0*p12	+1*p13
+			-2*p21	+0*p22	+2*p23
+			-1*p31	+0*p32	+1*p33
+		      );
+		filtered_image[y*w+x]=p_new;
+	}
+	showProgress(y/h);
+}
+
+for(y=0;y<h;y++){
+	for(x=0;x<w;x++){
+		p_new=filtered_image[y*w+x];
+		setPixel(x,y,p_new);
+	}
+}

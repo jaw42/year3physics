@@ -1,0 +1,83 @@
+w=getWidth();
+h=getHeight(); 
+
+Dialog.create("Median Filter");
+Dialog.addChoice("Size of Filter:", newArray(9, 25, 49, 81));
+Dialog.show();
+filter_size = Dialog.getChoice();
+
+p=newArray(filter_size);	//Use only square numbers with odd roots 1, 9, 25, 49, 81
+filtered_image=newArray(w*h);
+
+begin=getTime();
+
+for(y=0;y<h;y++){
+	for(x=0;x<w;x++){
+		count=0;
+		for(X = -(sqrt(p.length)-1)/2; X <= (sqrt(p.length)-1)/2; X++){
+			for(Y = -(sqrt(p.length)-1)/2; Y <= (sqrt(p.length)-1)/2; Y++){
+				p[count] = getPixel(x+X,y+Y);
+				count++;
+			}
+		}
+		cout=0;
+
+		Array.sort(p);
+		while(count<5){
+			for (start = 0; start < filter_size-1; start++){
+				smallest = start;
+				for (current = start + 1; current < filter_size; current++){
+					if (p[current] < p[smallest]){
+						smallest = current;
+						count++;
+					}
+				}
+				temp = p[start];
+				p[start] = p[current];
+				p[current] = temp;
+			}
+		}
+
+		// for (start = 0; start <  filter_size -1 ; start++){
+		// 	for(current = start+1; current < filter_size; current++){
+		// 		if (p[start] > p[current]){
+		// 			temp= p[start]; 
+		// 			p[start] = p[current];
+		// 			p[current] = temp;
+		// 		}
+		// 	}
+		// }
+
+		// swapped = false;
+	 	// gap = 15;
+		// while ((gap > 1) || swapped) {
+		// 	if (gap > 1) {
+		// 		gap = gap / 1.247330950103979;
+		// 	}
+		// 	swapped = false;
+		// 	for (i = 0; gap + i < filter_size; i++) {
+		// 		if (p[i] - p[i + gap] > 0) {
+		// 			swap = p[i];
+		// 			p[i] = p[i + gap];
+		// 			p[i + gap] = swap;
+		// 			swapped = true;
+		// 		}
+		// 	}
+		// }
+
+		p_new=p[(p.length+1)/2];
+		filtered_image[y*w+x]=p_new;
+	}
+	showProgress(y/h);
+}
+
+end=getTime();
+total = end - begin;
+print(total);
+
+for(y=0;y<h;y++){
+	for(x=0;x<w;x++){
+		p_new=filtered_image[y*w+x];
+		setPixel(x,y,p_new);
+	}
+}

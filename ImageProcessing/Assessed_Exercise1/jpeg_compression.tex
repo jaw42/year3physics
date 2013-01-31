@@ -26,7 +26,7 @@ As a way of applying quantitative scientific methods to the algorithms used to c
 \end{align}
 This produces a fraction, the smaller this fraction is, i.e.\ the closer it is to zero, the more space is saved by using that compression on the file.
 
-Another useful value is the space savings provided by a particular compression of a file. This is defined as the reduction in size relative to the uncompressed size and is shown in equation \ref{eq:spacesaving}
+Another useful value is the space savings provided by a particular compression of a file. This is defined as the reduction in size relative to the uncompressed size and is shown in equation \ref{eq:spacesaving},
 \begin{align}
 	\text{Space Saving} &= \frac{\text{Uncompressed Size} - \text{Compressed Size}}{\text{Uncompressed Size}} \\
 	 &= 1- \frac{\text{Compressed Size}}{\text{Uncompressed Size}} \label{eq:spacesaving}
@@ -56,13 +56,6 @@ The table below, table \ref{fig:percent_vs_size}, shows how the file size of the
 	 	\begin{tabular}{C{4.4em}|C{3.7em}}
 			Quality Value (\%) 	& File Size (bytes) \\
 			\hline \hline
-			% 100	& 37\,386 \\
-			% 80	& 10\,289 \\
-			% 60	& 7142 \\
-			% 40	& 5589 \\
-			% 20 	& 3823 \\
-			% 10 	& 2367 \\
-			% 0 	& 1407
 			100 & 37\,386 \\
 			% 98 & 29\,035 \\
 			% 95 & 20\,972 \\
@@ -190,7 +183,7 @@ Since no information can be added to the image, in fact the total information ne
 		\centering
 	 	\includegraphics[width=0.9\textwidth]{lena_edge.jpg}
 	\end{minipage}
- 	\caption{When the low frequencies are reduced in the DCT, the resulting compressed image is said to have been sharpened. Increasing the amount of removal very quickly leads to very poor image quality where only the edges are left since these vary in pixel value most quickly. This has some uses in image processing such as motion detection or OCR (optical character recognition), though more rigorous methods exist which produce better results.\label{fig:sharp}}
+ 	\caption{When the low frequencies are reduced in the DCT, the resulting compressed image is said to have been sharpened. Increasing the amount of removal very quickly leads to very poor image quality where only the edges are left since these vary in pixel value most quickly. This has some uses in image processing such as motion detection or OCR (optical character recognition), though more rigorous methods exist, such as the sharpening filter ($1-\nabla^2$), which produce much better results.\label{fig:sharp}}
 \end{figure}
 
 Since the sample image is a relatively complex image, much of the information is in these higher frequencies. For this reason, a much reduced version of the previous mask is used so that only the highest frequency element in the 8 by 8 DCT image is reduced, not removed, by a multiplying factor greater than 1.

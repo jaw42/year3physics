@@ -1,0 +1,34 @@
+w=getWidth();
+h=getHeight(); 
+
+Dialog.create("Median Filter");
+Dialog.addChoice("Size of Filter:", newArray(9, 25, 49, 81));
+Dialog.show();
+filter_size = Dialog.getChoice();
+
+p=newArray(filter_size);	//Use only square numbers with odd roots 1, 9, 25, 49, 81
+filtered_image=newArray(w*h);
+
+for(y=0;y<h;y++){
+	for(x=0;x<w;x++){
+		count=0;
+		for(X = -(sqrt(p.length)-1)/2; X <= (sqrt(p.length)-1)/2; X++){
+			for(Y = -(sqrt(p.length)-1)/2; Y <= (sqrt(p.length)-1)/2; Y++){
+				p[count] = getPixel(x+X,y+Y);
+				count++;
+			}
+		}
+
+		Array.sort(p);
+		p_new=p[(p.length+1)/2];
+		filtered_image[y*w+x]=p_new;
+	}
+	showProgress(y/h);
+}
+
+for(y=0;y<h;y++){
+	for(x=0;x<w;x++){
+		p_new=filtered_image[y*w+x];
+		setPixel(x,y,p_new);
+	}
+}
