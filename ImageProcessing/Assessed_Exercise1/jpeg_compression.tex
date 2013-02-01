@@ -38,7 +38,7 @@ Another useful value is the space savings provided by a particular compression o
 In order to examine the effects of increasing the compression ratio, an original image shall be used that will not be changed. This image is shown below. It is a 256\,pixel by 256\,pixel 8-bit image saved in the TIFF lossless image format.
 \begin{figure}[ht]
  	\centering
- 	\includegraphics[width=0.3\textwidth]{lena.jpg}
+ 	\includegraphics[width=0.5\textwidth]{lena.jpg}
 	\caption{The reference image that will be used as a comparator. It is saved using JPEG compression with a quality value of 100\%.\label{fig:orig}}
 \end{figure}
 This image is then saved as a JPEG file using a quality value of 100\%, i.e.\ as high a quality as possible, in theory losing no information. This resulting file has a size of 37\,386\,bytes (37\,Kb). 
@@ -127,11 +127,11 @@ The level to which this can be performed is dependant only on what the human eye
 Since the discrete cosine transform involves mathematically comparing every pixel with all those nearby, performing it on a large image very quickly becomes time consuming and computationally intensive. To reduce this, with little difference in the image quality or file compression ratio, the DCT is performed on 8 by 8 pixel sections of the image separately and then this array of DCT results is combined to get a tiled $N$ by $N$ composite, where $N$ is the number of 8 by 8 blocks that are required to make up the full image.
 
 The image below, figure \ref{fig:lena_DCT} shows the results of the DCT on the original image. The shapes of the original image are just perceivable since each 8 by 8 block has areas of high complexity, represented by whiter colours, that correspond to areas of interest in the original, figure \ref{fig:orig}, such as transition from foreground to background etc.
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.3\textwidth]{DCT_lena.jpg}
-	\caption{A representation of the 256 by 256\,pixels tiled DCT image composed of 32 by 32 times 8 by 8 blocks each of which represent the DCT of a small section of the original image.\label{fig:lena_DCT}}
-\end{figure}
+% \begin{figure}[ht]
+% 	\centering
+% 	\includegraphics[width=0.5\textwidth]{DCT_lena.jpg}
+% 	\caption{A representation of the 256 by 256\,pixels tiled DCT image composed of 32 by 32 times 8 by 8 blocks each of which represent the DCT of a small section of the original image.\label{fig:lena_DCT}}
+% \end{figure}
 \begin{figure}[ht]
 	\centering
 	\begin{minipage}[c]{0.45\linewidth}
@@ -142,7 +142,7 @@ The image below, figure \ref{fig:lena_DCT} shows the results of the DCT on the o
 		\centering
 	 	\includegraphics[width=\textwidth]{lena.jpg}
 	\end{minipage}
-	\caption{Since the JPEG compression algorithm involves removing information from the image in order to reduce its file size, the quality of the image degrades as the compression ratio is increased. The first image shows a zoomed section of the picture after minimal compression has been applied. This image has the largest file size. Each of the next three images represent the same image with a compression of 30\% less than the previous, i.e.\ 70\%, 40\%, and 10\%. The final image shows the effect of the maximum compression, minimum file size, with a quality of 0\% where serious image degradation is observed and the image is almost unrecognisable.\label{fig:various_lena}}
+	\caption{A representation of the 256 by 256\,pixels tiled DCT image composed of 32 by 32 times 8 by 8 blocks each of which represent the DCT of a small section of the original image.\label{fig:lena_DCT}}
 \end{figure}
 % subsection performing_the_dct_using_block_sizes (end)
 
@@ -168,7 +168,7 @@ Since it is high frequencies that are required to be removed, and in the DCT the
 This DCT mask image and the original DCT are multiplied together and then an inverse DCT is taken of this new reduced DCT array. The resulting compressed image is shown below, figure \ref{fig:mancompresslena}.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.3\textwidth]{lena_manual_compression.jpg}
+	\includegraphics[width=0.5\textwidth]{lena_manual_compression.jpg}
 	\caption{A manually compressed image using the same compression method as that used in JPEG encoding.\label{fig:mancompresslena}}
 \end{figure}
 
