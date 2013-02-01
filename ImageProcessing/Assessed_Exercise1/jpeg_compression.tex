@@ -16,7 +16,31 @@ Only the first JPEG specification shall be examined, since the methods and algor
 
 \section{Discrete Cosine Transformation (DCT)} % (fold)
 \label{sec:discrete_cosine_transformation_}
-The method used to compress images in the JPEG format involves taking the Discrete Cosine Transformation (DCT) of the image. The exact details of this transform will not be examined here, but it has the effect of splitting a wave-function down into the component frequencies, much as the Fourier Transform does, though providing only real, as opposed to imaginary or complex, results. The results of a discrete cosine transform on a set of data is a number of coefficients that describe the relative intensities of each of the available frequencies. This analysis is carried out on the image in both the horizontal and vertical directions which means that an array of values describing how the frequencies are concentrated about the image can be generated. To easily visualise this, the intensity value can be interpreted as pixel brightness value and so an image, of the same dimensions, can be drawn which is the DCT of the original.
+The method used to compress images in the JPEG format involves taking the Discrete Cosine Transformation (DCT) of the image. 
+
+\subsection{Mathematical Basis} % (fold)
+\label{sub:mathematical_basis}
+The Discrete Cosine transform converts an input signal, $g(u)$, into a series of coefficients, each representing a different frequency. Given a signal, sampled at $M$ regular intervals, $u=0,1,2\ldots M-1$, the DCT basis function is defined as
+\begin{align}
+	D_m^M(u) &= c_m \sqrt{\frac{2}{M}}\cos\left(\frac{\pi m(2u+1)}{2M}\right), \qquad m=0\ldots M-1.
+\end{align}
+where $c_m=\frac{1}{\sqrt 2}$ for $m=0$ and 1 otherwise. These basis functions are orthonormal, and so the scalar product can be taken of them with the original signal, such that the $M$ values of $g(u)$ are transformed into $M$ coefficients, $G(m)$, and the final DCT of $g(u)$ is given by,
+\begin{align}
+	G(m) &= \sum_{u=0}^{M-1} g(u) D_m^M(u).
+\end{align}
+By inverting this process, the original signal can be retrieved from the coefficients of the DCT, i.e.\ the signal is given by,
+\begin{align}
+	g(u) &= \sum_{m=0}^{M-1} G(u) D_m^M(u).
+\end{align}
+Since this method shall be applied to an image, which is effectively a two dimensional signal, the two dimensional DCT is used,
+\begin{align}
+	G(m,n) &= \sum_{u=0}^{M-1}\sum_{v=0}^{N-1} g(u,v) D_m^M(u)D_n^N(u).
+\end{align}
+This two dimensional version is the equivalent of simply taking two successive DCT's, one in the vertical and a second in the horizontal directions. In the context of image processing, this means using a signal comprising a column of pixels and performing the DCT for each column across the image and then taking a row and performing it for each row down the image.
+% subsection mathematical_basis (end)
+
+% The exact details of this transform will not be examined here, but it has the effect of splitting a wave-function down into the component frequencies, much as the Fourier Transform does, though providing only real, as opposed to imaginary or complex, results. The results of a discrete cosine transform on a set of data is a number of coefficients that describe the relative intensities of each of the available frequencies. This analysis is carried out on the image in both the horizontal and vertical directions which means that an array of values describing how the frequencies are concentrated about the image can be generated. To easily visualise this, the intensity value can be interpreted as pixel brightness value and so an image, of the same dimensions, can be drawn which is the DCT of the original.
+Overall, this has the effect of splitting a wave-function down into the component frequencies, much as the Fourier Transform does, though providing only real, as opposed to imaginary or complex, results. The results of a discrete cosine transform on a set of data is a number of coefficients that describe the relative intensities of each of the available frequencies. To easily visualise this, the intensity value can be interpreted as pixel brightness value and so an image, of the same dimensions, can be drawn which is the DCT of the original.
 
 \subsection{Compression Ratio} % (fold)
 \label{sub:compression_ratio}
