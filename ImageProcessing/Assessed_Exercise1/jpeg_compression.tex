@@ -132,6 +132,18 @@ The image below, figure \ref{fig:lena_DCT} shows the results of the DCT on the o
 	\includegraphics[width=0.3\textwidth]{DCT_lena.jpg}
 	\caption{A representation of the 256 by 256\,pixels tiled DCT image composed of 32 by 32 times 8 by 8 blocks each of which represent the DCT of a small section of the original image.\label{fig:lena_DCT}}
 \end{figure}
+\begin{figure}[ht]
+	\centering
+	\begin{minipage}[c]{0.45\linewidth}
+		\centering
+	 	\includegraphics[width=\textwidth]{DCT_lena.jpg}
+	\end{minipage}
+	\begin{minipage}[c]{0.45\linewidth}
+		\centering
+	 	\includegraphics[width=\textwidth]{lena.jpg}
+	\end{minipage}
+	\caption{Since the JPEG compression algorithm involves removing information from the image in order to reduce its file size, the quality of the image degrades as the compression ratio is increased. The first image shows a zoomed section of the picture after minimal compression has been applied. This image has the largest file size. Each of the next three images represent the same image with a compression of 30\% less than the previous, i.e.\ 70\%, 40\%, and 10\%. The final image shows the effect of the maximum compression, minimum file size, with a quality of 0\% where serious image degradation is observed and the image is almost unrecognisable.\label{fig:various_lena}}
+\end{figure}
 % subsection performing_the_dct_using_block_sizes (end)
 
 \subsubsection{Manual JPEG Compression - Frequency Removal} % (fold)
