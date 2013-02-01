@@ -8,7 +8,7 @@ filter_size = Dialog.getChoice();
 
 p=newArray(filter_size);	//Use only square numbers with odd roots 1, 9, 25, 49, 81
 filtered_image=newArray(w*h);
-
+ 
 begin=getTime();
 
 for(y=0;y<h;y++){
