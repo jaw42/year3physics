@@ -1,0 +1,36 @@
+%!TEX root = main.tex
+
+\section{Introduction} % (fold)
+\label{sec:introduction}
+Finite Difference Time Domain is the name given to a technique for modelling the solutions to coupled differential equations, in particular Maxwell's equations for electromagnetism. The technique relies on an algorithm called Yee's algorithm and allows a system to be modelled by calculating the fields for each successive step in time based on the previous value of the fields. The equations are manipulated so that they can be applied with discrete steps in time using central difference approximations.
+% section introduction (end)
+
+\section{Maxwell's Equations} % (fold)
+\label{sec:maxwell_s_equations}
+We shall start with Maxwell's equations for the electromagnetic field, $E$, and the magnetic field, $H$, in free space.
+\begin{align}
+	\curl{\vec{E}} &= -\mu\cdot\pd{\vec{H}}{t} \\
+	\curl{\vec{H}} &= \epsilon\cdot\pd{\vec{E}}{t} \\
+	\intertext{Since we are only concerned with the single $x$ dimension, these can be reduced to}
+	\curl{\vec{E}} &= -\mu\cdot\dx{\vec{H}}{t} \label{eq:max1}\\
+	\curl{\vec{H}} &= \epsilon\cdot\dx{\vec{E}}{t} \label{eq:max2}
+\end{align}
+These can be written in Cartesian coordinates as follows. Equation \ref{eq:max1} becomes
+\begin{align}
+	\left( \pd{E_z}{y}-\pd{E_y}{z} \right)\under{i} + \left( \pd{E_x}{z}-\pd{E_z}{x} \right)\under{j} + \left( \pd{E_y}{x}-\pd{E_x}{y} \right)\under{k} &= -\mu\cdot\dx{\vec{H}}{t} \label{eq:max1cart}\\
+	\intertext{And equation \ref{eq:max2} is written as}
+	\left( \pd{H_z}{y}-\pd{H_y}{z} \right)\under{i} + \left( \pd{H_x}{z}-\pd{H_z}{x} \right)\under{j} + \left( \pd{H_y}{x}-\pd{H_x}{y} \right)\under{k} &= \epsilon\cdot\dx{\vec{E}}{t} \label{eq:max2cart}
+\end{align}
+For simplicity, we shall consider the Maxwell equations in just 1 dimension. This will mean that the $E$ and $H$ fields vary only in $\hat{z}$ direction and both $\hat{x}$ and $\hat{y}$ are constant. This will simplify the equations greatly, though the theory and application of Yee's algorithm remains very similar. Using this simplification, equation \ref{eq:max1cart} will be written as
+\begin{align}
+	\pd{E_y}{z}\under{i} - \pd{E_x}{z}\under{j} &= -\mu\cdot\dx{\vec{H}}{t} \label{eq:max1z}\\
+	\intertext{and equation \ref{eq:max2cart} as}
+	\pd{H_y}{z}\under{i} + \pd{H_x}{z}\under{j} &= \epsilon\cdot\dx{\vec{E}}{t} \label{eq:max2z}
+\end{align}
+
+We are now left with two equations, equations \ref{eq:max1z} and \ref{eq:max2z}, that control how $\vec{E}$ and $\vec{H}$ relate to each other both spatially and temporally. This means that, if we have a defined 1 dimensional system that we can specify these fields at a given point, we can calculate the both the fields and see how they vary over time. 
+
+The first equation relates the derivative of the magnetic field, $H$, with respect to time to the derivative of the electric field, $E$, with respect to space. Conversely the second equation relates the derivative of the electric field, $E$, with respect to time to the derivative of the magnetic field, $H$, with respect to space.
+
+These shall be used sequentially, the first to advance the magnetic field, and the second to advance the electric field. Because this deals with a system of differential equations, the calculations can get very complex very quickly. For this reason we shall use an approximation called Yee's algorithm to improve the performance of the model.
+% section maxwell_s_equations (end)
