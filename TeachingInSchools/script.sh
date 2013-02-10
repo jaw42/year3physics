@@ -12,5 +12,5 @@ gs	-q -dNOPAUSE -dBATCH -dSAFER \
 	-dGrayImageResolution=72 \
 	-dMonoImageDownsampleType=/Bicubic \
 	-dMonoImageResolution=72 \
-	-sOutputFile=$1 \
+	-sOutputFile=$1.comp \
 	 $1
