@@ -199,6 +199,39 @@ This DCT mask image and the original DCT are multiplied together and then an inv
 As can be seen, the image quality has decreased, suggesting that some information has indeed been removed from the file. To confirm this, the new file size is 19\,180\,bytes (19\,Kb), which is a reduction in size by a factor of almost 2, a compression ratio of 0.51. This image represents a removal of 54\,pixels out of a possible 64\,pixels, thus a quality value of 15.625\%. This method could be edited to take account of different quality values by simply removing more or less of the DCT frequencies as desired. Removing more of the higher frequencies would result in still smaller files but worse image quality, whereas removing less would improve the quality but also increase the size needed to store it.
 
 % subsection manual_jpeg_compression_frequency_removal (end)
+\subsection{Numerical Analysis} % (fold)
+\label{sub:numerical_analysis}
+In order to investigate the effects of removing a greater or lesser percentage of the mask, a macro was used to redraw the mask, and perform the steps detailed above for multiple levels of removal of information from the DCT. A scale from very low compression, only around 5\% removed, to very high compression, around 90\% removal, was used. The macro that was written to perform the analysis is detailed in appendix \ref{app:macro}. This technique was applied to both the reference image used above, as well as another for comparison. This second image, shown in figure \ref{fig:bridge_original}, was chosen since it has a higher degree of overall complexity and so should respond differently to compression.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.3\textwidth]{bridge.png}
+	\caption{A second image used for comparison. This is a more visually complex image so the effect of compression on different sorts of image can be seen.\label{fig:bridge_original}}
+\end{figure}
+
+Once the JPEG compression is applied to both this and the original comparison image, the graph in figure \ref{fig:comparason_graph} is drawn. This shows the percentage of the DCT mask that was removed plotted against the resulting file size. In order to meaningfully compare the two images, which were of different sizes to begin with, the file sizes have been normalised so that the initial size is 1.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[angle=270,width=0.8\textwidth]{comparason_graph.pdf}
+	\caption{A second image used for comparison. This is a more visually complex image so the effect of compression on different sorts of image can be seen.\label{fig:comparason_graph}}
+\end{figure}
+
+There are several points of interest from this graph. First, although 
+
+
+
+
+% list....
+% 	first point aint at start, arbitary units.
+% 	trending towards zero filesize at 100% removed
+%	curves on top of each other not equal
+%	curves due to image complexity
+
+
+
+
+
+
+% subsection numerical_analysis (end)
 % section disregarding_sections_of_the_dct (end)
 \subsection{Addition to the DCT} % (fold)
 \label{sub:addition_to_the_dct}
@@ -231,5 +264,37 @@ Since the human eye is less sensitive to rapid changes in brightness in an image
 % section conclusion (end)
 
 
+\appendix
+\newpage
+\addcontentsline{toc}{section}{Appendix}
 
-%%%%%%%What is file compression ratio?? have you included it?
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{ %
+%  basicstyle=\scriptsize,         % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+  stepnumber=5,                   % the step between two line-numbers. If it's 1, each line will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  keywordstyle=\color{blue},      % keyword style
+  commentstyle=\color{dkgreen},   % comment style
+  stringstyle=\color{mauve},      % string literal style
+}
+
+\section{Multiple Compression Ratio Macro}
+The code below shows the ImageJ macro that was used to analyse the effect of different masks.
+\label{app:macro}
+\scriptsize\lstinputlisting[language=C++]{Macro.ijm}
+
+\section{Mask Copy Macro}
+This short macro is used to generate the correct number of copies of the mask which is then manipulated by the code in appendix \ref{app:macro} to make the full mask.
+\label{app:macro2}
+\scriptsize\lstinputlisting[language=C++]{mask_copy_macro.txt}
