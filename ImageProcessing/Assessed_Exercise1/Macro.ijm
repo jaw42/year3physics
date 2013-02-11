@@ -1,11 +1,12 @@
-for(i=1; i<=11; i++){
+for(i=1; i<=15; i++){
 	//Starting with an initial hand made mask section, and subsequently the 
 	// previously the created one, a new mask section is made by drawing out the 
-	// next  diagonal line of pixels. This is then saved
-	open("/JPEG_compression/mask"+i-1+".tif");
-	makeLine(i+1, 0, 0, i+1);
+	// next  diagonal line of pixels. This is then saved for use on the next 
+	// iteration.
+	open("/JPEG_compression/mask"+i+".tif");
+	makeLine(i, 0, 0, i);
 	run("Draw");
-	saveAs("Tiff", "/JPEG_compression/mask"+i+".tif");
+	saveAs("Tiff", "/JPEG_compression/mask"+i+1+".tif");
 
 	//Using a predefined macro, the mask section is copied the relavent number
 	// of times to cover the whole image,this is then arranged into a full mask,
@@ -25,7 +26,7 @@ for(i=1; i<=11; i++){
 	imageCalculator("Multiply create", "DCT","Montage"+i+".tif");
 	selectWindow("Result of DCT");
 
-	//The inverse of this new ``image'' is then taken to return to the image 
+	//The inverse of this new "image" is then taken to return to the image
 	// proper, with the removal of some information resulting in a smaller image
 	// file size and reduced quality
 	run("DCT ", "block=8 multiply=1.00000 inverse resize=[split image into tiles of size N x N]");
@@ -41,7 +42,7 @@ for(i=1; i<=11; i++){
 	close();
 	selectWindow("bridge.tif");
 	close();
-	selectWindow("mask"+i+".tif");
+	selectWindow("mask"+i+1+".tif");
 	close();
 }
 

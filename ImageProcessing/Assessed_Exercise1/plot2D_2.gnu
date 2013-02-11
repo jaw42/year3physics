@@ -10,7 +10,7 @@ set xtics mirror
 set mxtics 10
 set grid
 set mytics 10
-unset key
+set key at 40,0.2
 set term x11
 #set term dumb
 
@@ -20,7 +20,7 @@ set term x11
 #m=10
 #fit f(x) "filesizes2.txt" via m,c
 
-plot "filesizes2.txt" using (100-$2):3 w l lw 5 lc rgb "red", "filesizes2.txt" using (100-$2):3 ps 1.5 lw 5 lc rgb "black", "filesizes2.txt" using (100-$2):4 w l lw 5 lc rgb "blue", "filesizes2.txt" using (100-$2):4 ps 1.5 lw 5 lc rgb "black"
+plot "filesizes2.txt" using (100-$2):3 w l lw 5 lc rgb "red" title "Lena (Image 1)", "filesizes2.txt" using (100-$2):3 ps 1.5 lw 5 lc rgb "black" notitle, "filesizes2.txt" using (100-$2):4 w l lw 5 lc rgb "blue" title "Bridge (Image 2)", "filesizes2.txt" using (100-$2):4 ps 1.5 lw 5 lc rgb "black" notitle
 
 #plot "filesizes.txt" w l lw 5, "filesizes.txt" ps 1.5 lw 5 lc 000000
 

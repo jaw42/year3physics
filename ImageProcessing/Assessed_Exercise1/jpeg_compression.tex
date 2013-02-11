@@ -11,7 +11,7 @@ The JPEG image format, which stands for the Joint Photographic Experts Group, is
 
 There is some uncertainty regarding the origins of the specification for the JPEG format. It is claimed that the original patent outlining the image format was submitted in 1986. The JPEG committee is of the opinion that these claims are not valid and there have been numerous other claims to the ownership and subsequent royalties from the distribution of images stored and distributed in this format. Though the JPEG format is due to remain proprietary, the JPEG committee is aiming to provide it without licence fee after the release of the updated specification JPEG 2000.
 
-Only the first JPEG specification shall be examined, since the methods and algorithms are simpler, though not as efficient as later versions.
+Only the first JPEG specification shall be examined here, since the methods and algorithms are simpler, though not as efficient as later versions.
 % section jpeg_image_compression (end)
 
 \section{Discrete Cosine Transformation (DCT)} % (fold)
@@ -22,7 +22,7 @@ The method used to compress images in the JPEG format involves taking the Discre
 \label{sub:mathematical_basis}
 The Discrete Cosine transform converts an input signal, $g(u)$, into a series of coefficients, each representing a different frequency. Given a signal, sampled at $M$ regular intervals, $u=0,1,2\ldots M-1$, the DCT basis function is defined as
 \begin{align}
-	D_m^M(u) &= c_m \sqrt{\frac{2}{M}}\cos\left(\frac{\pi m(2u+1)}{2M}\right), \qquad m=0\ldots M-1.
+	D_m^M(u) &= c_m \sqrt{\frac{2}{M}}\cos\left(\frac{\pi m(2u+1)}{2M}\right) \qquad m=0\ldots M-1,
 \end{align}
 where $c_m=\frac{1}{\sqrt 2}$ for $m=0$ and 1 otherwise. These basis functions are orthonormal, and so the scalar product can be taken of them with the original signal, such that the $M$ values of $g(u)$ are transformed into $M$ coefficients, $G(m)$, and the final DCT of $g(u)$ is given by,
 \begin{align}
@@ -44,7 +44,7 @@ Overall, this has the effect of splitting a wave-function down into the componen
 
 \subsection{Compression Ratio} % (fold)
 \label{sub:compression_ratio}
-As a way of applying quantitative scientific methods to the algorithms used to compress images, a value known as the compression ratio is used to compare the results of different methods or aggressiveness of compression. This is simply given by equation \ref{eq:compressratio}.
+As a way of applying quantitative scientific methods to the algorithms used to compress images, a value known as the compression ratio is used to compare the results of different methods or aggressiveness of compression. This is given by the simple equation in \ref{eq:compressratio}.
 \begin{align}
 	\text{Compression Ratio} &= \frac{\text{Compressed Size}}{\text{Uncompressed Size}} \label{eq:compressratio}
 \end{align}
@@ -65,14 +65,14 @@ In order to examine the effects of increasing the compression ratio, an original
  	\includegraphics[width=0.5\textwidth]{lena.jpg}
 	\caption{The reference image that will be used as a comparator. It is saved using JPEG compression with a quality value of 100\%.\label{fig:orig}}
 \end{figure}
-This image is then saved as a JPEG file using a quality value of 100\%, i.e.\ as high a quality as possible, in theory losing no information. This resulting file has a size of 37\,386\,bytes (37\,Kb). 
+This image is then saved as a JPEG file using a quality value of 100\%, i.e.\ as high a quality as possible, in theory losing no information. This resulting file has a size of 37\,386\,bytes (36.5\,Kb). 
 % subsection comparason_image (end)
 
 \subsection{Effect of JPEG Quality Values on Image File Size and Quality} % (fold)
 \label{sub:effect_of_jpeg_quality_values_on_image_file_size_and_quality}
 A simple examination of the effect of changing the JPEG quality value will demonstrate the range of qualities of the saved file, as well as the size of that file.
 
-The table below, table \ref{fig:percent_vs_size}, shows how the file size of the generated JPEG file changes as the quality value is changed. The quality value is represented as a percentage, and so the range is displayed over the full range from 100\%, being the highest quality possible by the format, to 0\%, being the highest compression ratio and thus the lowest quality.
+The table \ref{fig:percent_vs_size} below shows how the file size of the generated JPEG file changes as the quality value is changed. The quality value is represented as a percentage, and so the range is displayed over the full range from 100\%, being the highest quality possible by the format, to 0\%, being the highest compression ratio and thus the lowest quality.
 \begin{figure}[ht]
 	\centering
 	\begin{minipage}[c]{0.3\linewidth}
@@ -196,39 +196,30 @@ This DCT mask image and the original DCT are multiplied together and then an inv
 	\caption{A manually compressed image using the same compression method as that used in JPEG encoding.\label{fig:mancompresslena}}
 \end{figure}
 
-As can be seen, the image quality has decreased, suggesting that some information has indeed been removed from the file. To confirm this, the new file size is 19\,180\,bytes (19\,Kb), which is a reduction in size by a factor of almost 2, a compression ratio of 0.51. This image represents a removal of 54\,pixels out of a possible 64\,pixels, thus a quality value of 15.625\%. This method could be edited to take account of different quality values by simply removing more or less of the DCT frequencies as desired. Removing more of the higher frequencies would result in still smaller files but worse image quality, whereas removing less would improve the quality but also increase the size needed to store it.
+As can be seen, the image quality has decreased, suggesting that some information has indeed been removed from the file. To confirm this, the new file size is 19\,180\,bytes (18.73\,Kb), which is a reduction in size by a factor of almost 2, a compression ratio of 0.51. This image represents a removal of 54\,pixels out of a possible 64\,pixels, thus a quality value of 15.625\%. This method could be edited to take account of different quality values by simply removing more or less of the DCT frequencies as desired. Removing more of the higher frequencies would result in still smaller files but worse image quality, whereas removing less would improve the quality but also increase the size needed to store it.
 
 % subsection manual_jpeg_compression_frequency_removal (end)
 \subsection{Numerical Analysis} % (fold)
 \label{sub:numerical_analysis}
-In order to investigate the effects of removing a greater or lesser percentage of the mask, a macro was used to redraw the mask, and perform the steps detailed above for multiple levels of removal of information from the DCT. A scale from very low compression, only around 5\% removed, to very high compression, around 90\% removal, was used. The macro that was written to perform the analysis is detailed in appendix \ref{app:macro}. This technique was applied to both the reference image used above, as well as another for comparison. This second image, shown in figure \ref{fig:bridge_original}, was chosen since it has a higher degree of overall complexity and so should respond differently to compression.
+In order to investigate the effects of removing a greater or lesser percentage of the mask, a macro was used to redraw the mask, and perform the steps detailed above, for multiple levels of removal of information from the DCT. A scale from very low compression, only around 2\% removed, to very high compression, around 98\% removal, was used. The macro that was written to perform the analysis is detailed in appendix \ref{app:macro}. This technique was applied to both the reference image used above, as well as another for comparison. This second image, shown in figure \ref{fig:bridge_original}, was chosen since it has a higher degree of overall complexity and so should respond differently to compression.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.3\textwidth]{bridge.png}
 	\caption{A second image used for comparison. This is a more visually complex image so the effect of compression on different sorts of image can be seen.\label{fig:bridge_original}}
 \end{figure}
 
-Once the JPEG compression is applied to both this and the original comparison image, the graph in figure \ref{fig:comparason_graph} is drawn. This shows the percentage of the DCT mask that was removed plotted against the resulting file size. In order to meaningfully compare the two images, which were of different sizes to begin with, the file sizes have been normalised so that the initial size is 1.
+Once the JPEG compression is applied to both this and the original comparison image, the graph in figure \ref{fig:comparason_graph} is drawn. This shows the percentage of the DCT mask that was removed plotted against the resulting file size. In order to meaningfully compare the two images, which were of different sizes to begin with, the file sizes have been normalised so that the initial size is 1. The data collected, including the actual file sizes is shown in appendix \ref{app:filesizes}.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[angle=270,width=0.8\textwidth]{comparason_graph.pdf}
+	\includegraphics[angle=270,width=0.8\textwidth]{comparason_graph2.pdf}
 	\caption{A second image used for comparison. This is a more visually complex image so the effect of compression on different sorts of image can be seen.\label{fig:comparason_graph}}
 \end{figure}
 
-There are several points of interest from this graph. First, although 
+There are several points of interest from this graph. First, although the first data points have a non zero compression, $\sim2$ , they are represented as having a file size of 1. This is simply due to the normalisation which set the range as 0 to 1, so these are given the maximum value. The units are arbitrary. Second, despite the final value representing a 100\% removal of the DCT information, i.e.\ a mask that is all 0's, the file sizes are measured to be non-zero. This is due to the extra information that is included in a JPEG file, such as meta information, the JPEG header etc. However, as would be expected, the file size decreases tending towards zero with higher percentage removal from the DCT, in other words, higher compression.
 
+The feature of interest is how the file sizes change with respect to each other. Both follow the same trend, but the rate at which they decrease is different. This is because of the relative ``complexity'' of the images. The first image has some area of complexity, where the pixel values change quickly in space, but also some large areas of smooth colour, or gradually changing brightness. These areas are not affected as much by the removal of high frequencies from the DCT and, as such, are not reduced in size during compression. The second image, on the other hand, has very few areas of smooth brightness, it is a highly complex image. This means that more information is removed from the DCT as a greater proportion lies in the high frequency regions, and so there is a higher compression ratio.
 
-
-
-% list....
-% 	first point aint at start, arbitary units.
-% 	trending towards zero filesize at 100% removed
-%	curves on top of each other not equal
-%	curves due to image complexity
-
-
-
-
+Since, as was mentioned earlier, the level of compression is generally restricted so that the human eye will notice little or no change in quality, meaning that, for the same compression, a more complex image will respond better to JPEG compression.
 
 
 % subsection numerical_analysis (end)
@@ -261,11 +252,13 @@ Since the sample image is a relatively complex image, much of the information is
 \section{Conclusion} % (fold)
 \label{sec:conclusion}
 Since the human eye is less sensitive to rapid changes in brightness in an image, i.e.\ the high frequencies are ``neurologically less important'', these are chosen to be removed when simply compressing an image using JPEG encoding. The actual JPEG algorithm is very similar to the method explained here, though slightly more subtle. Rather than always selecting the same triangular portion of the DCT, it weighs the DCT components from top left to bottom right and then discards the least important ones based on the results.
+
+JPEG compression is an efficient method of compression that can reduce the storage space needed for an image. It has been demonstrated that the compression has a greater effect for high complexity images, but that as the compression ratio is increased, the quality of the images soon decreases.
 % section conclusion (end)
 
-
+\section*{Appendix}
 \appendix
-\newpage
+% \newpage
 \addcontentsline{toc}{section}{Appendix}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
@@ -298,3 +291,34 @@ The code below shows the ImageJ macro that was used to analyse the effect of dif
 This short macro is used to generate the correct number of copies of the mask which is then manipulated by the code in appendix \ref{app:macro} to make the full mask.
 \label{app:macro2}
 \scriptsize\lstinputlisting[language=C++]{mask_copy_macro.txt}
+
+\section{Image Compression Comparison Results} % (fold)
+\label{app:filesizes}
+The following table shows the data from the compression at different levels of two images, one standard image which was used throughout this analysis of JPEG compression, the other chosen since it is aa complex image with few areas of consistent brightness. The file sizes are shown in raw bytes, and normalised between 0 and 1 for comparison.
+\begin{figure}[ht]
+		\centering
+	 	% \begin{tabular}{ccccc}
+	 	\begin{tabular}{C{5em}|C{6em}|C{6.3em}|C{6em}|C{6em}}
+			Percentage Removed	&Size of Image 1 - Lena (bytes)	&Size of Image 2 - Bridge (bytes)	&Size of Image 1 - Lena Normalised	&Size of Image 2 - Bridge Normalised\\
+			\hline \hline
+			100		&2590	&2428	&0.06	&0.05\\
+			98.44	&12987	&13328	&0.31	&0.25\\
+			95.31	&16219	&17215	&0.39	&0.32\\
+			90.62	&19180	&21355	&0.46	&0.40\\
+			84.37	&22454	&25611	&0.53	&0.48\\
+			76.56	&26006	&30256	&0.62	&0.57\\
+			67.19	&29417	&35291	&0.70	&0.66\\
+			56.25	&32671	&40209	&0.78	&0.75\\
+			43.75	&35466	&40101	&0.84	&0.82\\
+			32.81	&37774	&47192	&0.90	&0.88\\
+			23.44	&39366	&49480	&0.94	&0.92\\
+			15.62	&40514	&51304	&0.96	&0.96\\
+			9.37	&41403	&52690	&0.98	&0.98\\
+			4.69	&41973	&53358	&1.00	&1.00\\
+			1.56	&42040	&53497	&1.00	&1.00\\
+		\end{tabular}
+	\end{figure}
+
+
+
+% section table (end)
