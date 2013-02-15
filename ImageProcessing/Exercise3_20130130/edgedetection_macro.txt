@@ -17,34 +17,41 @@ for(y=0;y<h;y++){
 		p32 = getPixel(x+1,y);  
 		p33 = getPixel(x+1,y+1);
 		
-		p_new=( -1*p11	+0*p12	+1*p13
-			-2*p21	+0*p22	+2*p23
-			-1*p31	+0*p32	+1*p33
+		p_new_x=( -1*p11	+0*p12	+1*p13
+				-2*p21	+0*p22	+2*p23
+				-1*p31	+0*p32	+1*p33
 		      );
-		Sx[y*w+x]=p_new;
+		Sx[y*w+x]=p_new_x;
+
+		p_new_y=( -1*p11	-2*p12	-1*p13
+				+0*p21	+0*p22	+0*p23
+				+1*p31	+2*p32	+1*p33
+		      );
+		Sy[y*w+x]=p_new_y;
 	}
-	showProgress(0.5*y/h);
+	// showProgress(0.5*y/h);
+	showProgress(y/h);
 }
-for(y=0;y<h;y++){
-	for(x=0;x<w;x++){
-		p11=getPixel(x-1,y-1);
-		p12 = getPixel(x-1,y);  
-		p13 = getPixel(x-1,y+1);  
-		p21 = getPixel(x,y-1);  
-		p22 = getPixel(x,y);  
-		p23 = getPixel(x,y+1);  
-		p31 = getPixel(x+1,y-1);  
-		p32 = getPixel(x+1,y);  
-		p33 = getPixel(x+1,y+1);
+// for(y=0;y<h;y++){
+// 	for(x=0;x<w;x++){
+// 		p11=getPixel(x-1,y-1);
+// 		p12 = getPixel(x-1,y);  
+// 		p13 = getPixel(x-1,y+1);  
+// 		p21 = getPixel(x,y-1);  
+// 		p22 = getPixel(x,y);  
+// 		p23 = getPixel(x,y+1);  
+// 		p31 = getPixel(x+1,y-1);  
+// 		p32 = getPixel(x+1,y);  
+// 		p33 = getPixel(x+1,y+1);
 		
-		p_new=( -1*p11	-2*p12	-1*p13
-			+0*p21	+0*p22	+0*p23
-			+1*p31	+2*p32	+1*p33
-		      );
-		Sy[y*w+x]=p_new;
-	}
-	showProgress(0.5+0.5*y/h);
-}
+// 		p_new=( -1*p11	-2*p12	-1*p13
+// 			+0*p21	+0*p22	+0*p23
+// 			+1*p31	+2*p32	+1*p33
+// 		      );
+// 		Sy[y*w+x]=p_new;
+// 	}
+// 	showProgress(0.5+0.5*y/h);
+// }
 
 for(y=0;y<h;y++){
 	for(x=0;x<w;x++){
