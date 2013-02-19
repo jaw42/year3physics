@@ -1,0 +1,13 @@
+newImage("RampFilter", 32-bit Black", 256, 256, 1);
+
+X=128;
+Y=128;
+
+for(x=0;x<256;x++){
+	for(y=0;y<256;y++){
+		ramp=sqrt((x-X)*(x-X)+(y-Y)*(y-Y))/100;
+		if(ramp<1.28){
+			setPixel(x,y,ramp);
+		}
+	}
+}
