@@ -1,4 +1,4 @@
-newImage("RampFilter", 32-bit Black", 256, 256, 1);
+newImage("RampFilter", "32-bit Black", 256, 256, 1);
 
 X=128;
 Y=128;
