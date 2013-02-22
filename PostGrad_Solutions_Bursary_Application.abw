@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" version="2.8.6" xmlns:svg="http://www.w3.org/2000/svg" xid-max="109" xmlns:dc="http://purl.org/dc/elements/1.1/" fileformat="1.1" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:en-US; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="dc.format">application/x-abiword</m>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.date">2013-02-17T21:29:00Z</m>
+<m key="abiword.date_last_changed">2013-02-17T21:29:00Z</m>
+<m key="dc.creator">Char</m>
+</metadata>
+<history version="2" edit-time="2696" last-saved="1361439663" uid="875eb0c8-7c04-11e2-836c-dbfe08e1f41e">
+<version id="2" started="1361439201" uid="ce7d8c4e-7c0a-11e2-836c-dbfe08e1f41e" auto="0" top-xid="109"/>
+</history>
+<styles>
+<s type="P" name="Normal" followedby="Normal" props="text-decoration:none; text-indent:0in; margin-top:0pt; margin-left:0pt; font-stretch:normal; line-height:1.0; text-align:left; bgcolor:transparent; lang:en-GB; dom-dir:ltr; margin-bottom:0pt; font-weight:normal; font-variant:normal; color:000000; text-position:normal; font-size:12pt; margin-right:0pt; font-style:normal; widows:2; font-family:Times"/>
+<s type="P" name="Table Normal" followedby="Table Normal" props="font-family:Times; font-size:12pt; dom-dir:ltr; lang:en-GB; orphans:0; text-align:left; widows:0"/>
+</styles>
+<pagesize pagetype="A4" orientation="portrait" width="8.267717" height="11.692913" units="in" page-scale="1.000000"/>
+<section xid="3" props="page-margin-right:1.0000in; section-restart-value:1; dom-dir:ltr; section-space-after:0.0000in; page-margin-footer:0.5083in; page-margin-header:0.4917in; page-margin-left:1.0000in; page-margin-top:1.0000in; page-margin-bottom:1.0000in">
+<p style="Normal" xid="4" props="text-align:left; tabstops:0.1375in/L; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="5" props="text-align:left; tabstops:0.3937in/L; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-weight:bold; font-size:17pt; font-family:Arial; color:800080">Postgrad Solutions Study Bursaries</c></p>
+<p style="Normal" xid="6" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="7" props="text-align:left; tabstops:0.3937in/L; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-weight:bold; font-size:14pt; font-family:Arial; color:800080">Application form (page 1 of 2)</c></p>
+<p style="Normal" xid="8" props="text-align:left; tabstops:0.1375in/L; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="9" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-size:10pt; font-family:Arial; font-style:italic">Please provide the information about you and your planned postgraduate study requested below, write up to 200 words on ‘Why I should be awarded a Postgrad Solutions Study Bursary’ <br/>(see page two of this form), and email your completed form to Postgrad Solutions at </c><a xlink:href="mailto:enquiries%40postgradsolutions.com" xid="10"><c style="Hyperlink" props="lang:-none-; text-decoration:underline; font-size:10pt; font-family:Arial; color:0000ff; font-style:italic">enquiries@postgradsolutions.com</c></a><c props="lang:en-GB; font-size:10pt; font-family:Arial; font-style:italic">. </c></p>
+<p style="Normal" xid="12" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="13" props="text-align:left; tabstops:0.3937in/L; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-weight:bold; font-size:12pt; font-family:Arial; color:800080">Your details</c></p>
+<p style="Normal" xid="14" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<frame xid="15" props="frame-col-xpos:1.431250in; wrap-mode:above-text; frame-height:0.375000in; frame-type:textbox; ypos:0.213194in; frame-col-ypos:0.213194in; frame-width:3.750000in; xpos:1.431250in; position-to:block-above-text">
+<p style="Normal" xid="16" props="text-align:left; line-height:1.0; dom-dir:ltr"><c>Josh Wainwright</c></p>
+</frame><p style="Normal" xid="17" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-size:10pt; font-family:Arial">Name</c><c props="lang:en-GB; font-size:11pt; font-family:Arial"> <br/></c><c props="lang:en-GB; font-size:6pt; font-family:Arial">(First name followed by<br/>surname/family name)</c></p>
+<p style="Normal" xid="18" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="19" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<frame xid="20" props="frame-col-xpos:1.431250in; wrap-mode:above-text; frame-height:0.375000in; frame-type:textbox; ypos:0.018056in; frame-col-ypos:0.018056in; frame-width:3.750000in; xpos:1.431250in; position-to:block-above-text">
+<p style="Normal" xid="21" props="text-align:left; line-height:1.0; dom-dir:ltr"><c>wainwright.ja@gmail.com</c></p>
+<p style="Normal" xid="22" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+</frame><p xid="23"><c props="lang:en-GB; font-size:10pt; font-family:Arial">Email address*	</c><c props="lang:en-GB; font-size:11pt; font-family:Arial">	</c></p>
+<p style="Normal" xid="24" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-size:14pt; font-family:Arial"><br/></c></p>
+<p style="Normal" xid="25" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<frame xid="26" props="frame-col-xpos:1.431250in; wrap-mode:above-text; frame-height:0.375000in; frame-type:textbox; ypos:0.020833in; frame-col-ypos:0.020833in; frame-width:3.750000in; xpos:1.431250in; position-to:block-above-text">
+<p style="Normal" xid="27" props="text-align:left; line-height:1.0; dom-dir:ltr"><c>29-09-1991</c></p>
+<p style="Normal" xid="28" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+</frame><p xid="29"><c props="lang:en-GB; font-size:10pt; font-family:Arial">Date of birth</c><c props="lang:en-GB; font-size:11pt; font-family:Arial">		</c></p>
+<p style="Normal" xid="30" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="31" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="32" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<frame xid="33" props="frame-col-xpos:1.431250in; wrap-mode:above-text; frame-height:0.375000in; frame-type:textbox; ypos:0.022917in; frame-col-ypos:0.022917in; frame-width:3.750000in; xpos:1.431250in; position-to:block-above-text">
+<p style="Normal" xid="34" props="text-align:left; line-height:1.0; dom-dir:ltr"><c>British</c></p>
+<p style="Normal" xid="35" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+</frame><p xid="36"><c props="lang:en-GB; font-size:10pt; font-family:Arial">Nationality</c><c props="lang:en-GB; font-size:11pt; font-family:Arial">	</c></p>
+<p style="Normal" xid="37" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="38" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-size:11pt; font-family:Arial">		</c></p>
+<p style="Normal" xid="39" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<frame xid="40" props="frame-col-xpos:1.431250in; wrap-mode:above-text; frame-height:0.375000in; frame-type:textbox; ypos:0.059722in; frame-col-ypos:0.059722in; frame-width:3.750000in; xpos:1.431250in; position-to:block-above-text">
+<p style="Normal" xid="41" props="text-align:left; line-height:1.0; dom-dir:ltr"><c>University of Birmingham</c></p>
+<p style="Normal" xid="42" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+</frame><p xid="43"><c props="lang:en-GB; font-size:10pt; font-family:Arial">UK institution <br/>you will be studying at</c><c props="lang:en-GB; font-size:11pt; font-family:Arial">		</c></p>
+<p style="Normal" xid="44" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="45" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="46" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<frame xid="47" props="frame-col-xpos:1.431250in; wrap-mode:above-text; frame-height:0.375000in; frame-type:textbox; ypos:0.026389in; frame-col-ypos:0.026389in; frame-width:3.750000in; xpos:1.431250in; position-to:block-above-text">
+<p style="Normal" xid="48" props="text-align:left; line-height:1.0; dom-dir:ltr"><c>September 2013 (01-09-2013)</c></p>
+<p style="Normal" xid="49" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+</frame><p xid="50"><c props="lang:en-GB; font-size:10pt; font-family:Arial">Start date of your <br/>UK course</c><c props="lang:en-GB; font-size:11pt; font-family:Arial">	</c></p>
+<p style="Normal" xid="51" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-size:11pt; font-family:Arial">		</c></p>
+<p style="Normal" xid="52" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<frame xid="53" props="frame-col-xpos:1.431250in; wrap-mode:above-text; frame-height:0.375000in; frame-type:textbox; ypos:0.165278in; frame-col-ypos:0.165278in; frame-width:3.750000in; xpos:1.431250in; position-to:block-above-text">
+<p style="Normal" xid="54" props="text-align:left; line-height:1.0; dom-dir:ltr"><c>Computer Science</c></p>
+<p style="Normal" xid="55" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+</frame><p style="Normal" xid="56" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-size:10pt; font-family:Arial">Title of your <br/>UK course</c></p>
+<p style="Normal" xid="57" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="58" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<frame xid="59" props="frame-col-xpos:1.431250in; wrap-mode:above-text; frame-height:0.375000in; frame-type:textbox; ypos:0.055556in; frame-col-ypos:0.055556in; frame-width:3.750000in; xpos:1.431250in; position-to:block-above-text">
+<p style="Normal" xid="60" props="text-align:left; line-height:1.0; dom-dir:ltr"><c>Jim Yandle</c></p>
+<p style="Normal" xid="61" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+</frame><p xid="62"><c props="lang:en-GB; font-size:10pt; font-family:Arial">Name of your contact <br/>at the institution where<br/>you will be studying</c></p>
+<p style="Normal" xid="63" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="64" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<frame xid="65" props="frame-col-xpos:1.431250in; wrap-mode:above-text; frame-height:0.375000in; frame-type:textbox; ypos:0.000694in; frame-col-ypos:0.000694in; frame-width:3.750000in; xpos:1.431250in; position-to:block-above-text">
+<p style="Normal" xid="66" props="text-align:left; line-height:1.0; dom-dir:ltr"><c>j.r.yandle@cs.bham.ac.uk</c></p>
+<p style="Normal" xid="67" props="text-align:left; tabstops:0.1375in/L; line-height:1.0; dom-dir:ltr"></p>
+</frame><p xid="68"><c props="lang:en-GB; font-size:10pt; font-family:Arial">Email address of your <br/>contact at the <br/>institution <br/></c><c props="lang:en-GB; font-size:10pt; font-family:Arial; font-style:italic"><br/></c><c props="lang:en-GB; font-size:10pt; font-family:Arial">If you are from overseas and have an English language qualification please specify:</c></p>
+<p style="Normal" xid="69" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="70" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-size:10pt; font-family:Arial"> __________________________________________________________________</c></p>
+<p style="Normal" xid="71" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="72" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="73" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-size:8pt; font-family:Arial; font-style:italic">* Please use the same email address that you used to register for the Postgrad Solutions Student Service (the email address to which we send the monthly Postgrad Solutions ezine).</c></p>
+<p style="Normal" xid="74" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="75" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-weight:bold; font-size:7pt; font-family:Arial; color:800080">Terms and conditions</c></p>
+<p style="Normal" xid="76" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-size:7pt; font-family:Arial; font-weight:bold">1</c><c props="lang:en-GB; font-size:7pt; font-family:Arial"> Entries will not be read beyond the 200-word limit, so please do not exceed the word limit.</c></p>
+<p style="Normal" xid="77" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-size:7pt; font-family:Arial; font-weight:bold">2 </c><c props="lang:en-GB; font-size:7pt; font-family:Arial">The winners will be solely judged as the students articulating the best reason for deserving an award in their 200-word entry. The decision will not be linked to institution choice.</c></p>
+<p style="Normal" xid="78" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-size:7pt; font-family:Arial; font-weight:bold">3</c><c props="lang:en-GB; font-size:7pt; font-family:Arial"> All winners will be notified by 18 October 2013. If you have not heard from Postgrad Solutions by this date, your application will have been unsuccessful.</c></p>
+<p style="Normal" xid="79" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-size:7pt; font-family:Arial; font-weight:bold">4 </c><c props="lang:en-GB; font-size:7pt; font-family:Arial">Postgrad Solutions will contact the institutions where the winners will be studying directly to confirm that they have started their studies, and payment of the bursaries will be made on 1 December 2013.</c></p>
+<p style="Normal" xid="80" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-size:7pt; font-family:Arial; font-weight:bold">5</c><c props="lang:en-GB; font-size:7pt; font-family:Arial"> You can only apply for a bursary once you have accepted an offer of a place at your chosen institution.</c></p>
+<p style="Normal" xid="81" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-size:7pt; font-family:Arial; font-weight:bold">6</c><c props="lang:en-GB; font-size:7pt; font-family:Arial"> Closing date for all entries is 5.30pm on 18 August 2013.</c></p>
+<p style="Normal" xid="82" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-size:7pt; font-family:Arial; font-weight:bold">7</c><c props="lang:en-GB; font-size:7pt; font-family:Arial"> Applications will be treated in the strictest confidence and Postgrad Solutions will not share any of the information supplied in a bursary application with any other companies or organisations.</c></p>
+<p style="Normal" xid="1" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-weight:bold; font-size:17pt; font-family:Arial; color:800080"></c><c props="lang:en-GB; font-weight:bold; font-size:17pt; font-family:Arial; color:800080"><pbr/>Postgrad Solutions Study Bursaries</c></p>
+<p style="Normal" xid="83" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="84" props="text-align:left; tabstops:0.3937in/L; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-weight:bold; font-size:14pt; font-family:Arial; color:800080">Application form (page 2 of 2)</c></p>
+<p style="Normal" xid="85" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="86" props="text-align:left; tabstops:0.3937in/L; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-weight:bold; font-size:12pt; font-family:Arial; color:800080">Your bursary application</c></p>
+<p style="Normal" xid="87" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="88" props="text-align:left; line-height:1.0; dom-dir:ltr"><c props="lang:en-GB; font-size:11pt; font-family:Arial; font-style:italic">Please write up to 200 words on ‘Why I should be awarded a Postgrad Solutions Study Bursary’ in the area below:</c></p>
+<p style="Normal" xid="89" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="90" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<frame xid="91" props="frame-col-xpos:-0.068750in; wrap-mode:above-text; frame-height:5.900694in; frame-type:textbox; ypos:0.034028in; frame-col-ypos:0.034028in; frame-width:6.250000in; xpos:-0.068750in; position-to:block-above-text">
+<p style="Normal" xid="92" props="text-align:left; line-height:1.0; dom-dir:ltr"><c>I am due to start studying a masters degree in Computer Science in September this year. This is a subject that I already have a love for, and a deep interest in. Though I have thoroughly enjoyed my degree so far, I have decided that Physics and Astronomy is not a subject that I have the enthusiasm for to pursue into further education, or a full time career. Computer Science, on the other hand, fascinates me. I am known to my friends as a nerd, your common-or-garden geek, and proudly so. I love the challenges and puzzles offered by computers and wonder at the power, complexity and infinite possibility that lies ahead when you sit down with one. For these reasons, I feel that I will be able to make the absolute most of a masters degree. </c></p>
+<p style="Normal" xid="106" props="text-align:left; line-height:1.0; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="107" props="text-align:left; line-height:1.0; dom-dir:ltr"><c></c><c>I was accepted for a very competitive internship last summer, showing I have the drive and the interest to complete this degree to a very high standard. Currently, that internship has provided the only funding I have and so I feel that I am ideally placed to make great use of a Postgrad Solutions Study Bursary. </c></p>
+<p style="Normal" xid="108" props="text-align:left; line-height:1.0; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="109" props="text-align:left; line-height:1.0; dom-dir:ltr"><c></c><c>Thank you very much for your consideration.</c></p>
+<p style="Normal" xid="97" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="98" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="99" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+</frame><p style="Normal" xid="100" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="101" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="102" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="103" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="104" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+<p style="Normal" xid="105" props="text-align:left; line-height:1.0; dom-dir:ltr"></p>
+</section>
+</abiword>
