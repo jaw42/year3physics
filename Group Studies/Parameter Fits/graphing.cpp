@@ -174,6 +174,14 @@ int main(){
 		tmp = cfg.getValueOfKey<string>("yrange");
 		const char * yrange = tmp.c_str();
 
+	tmp = cfg.getValueOfKey<string>("data_columns");
+	const char * data_columns = tmp.c_str();
+	tmp = cfg.getValueOfKey<string>("error_columns");
+	const char * error_columns = tmp.c_str();
+
+	tmp = cfg.getValueOfKey<string>("with_error_bars");
+	const char * with_error_bars = tmp.c_str();
+
 	tmp = cfg.getValueOfKey<string>("join_points_with_lines");
 	bool join_points_with_lines = bool_convert(tmp);
 	
@@ -261,23 +269,14 @@ int main(){
 			if(provide_guesses){
 				fprintf(gnuplotPipe, "%s%s%s%s", initial_m,"\n", initial_c,"\n");
 			}
-			fprintf(gnuplotPipe, "%s%s%s%s%s", "fit f(x) \"",input_filename_char,"\" via ",variables,"\n");
+			fprintf(gnuplotPipe, "%s%s%s%s%s%s%s", "fit f(x) \"",input_filename_char,"\" using ",data_columns," via ",variables,"\n");
+			fprintf(gnuplotPipe, "%s%s%s", "fit_title = sprintf(\"%.2fx+%.2f\", ",variables,")\n");
  		}
 
-		fprintf(gnuplotPipe, "%s%s%s%s%s","plot \"",input_filename_char,"\"", with_lines, lines_and_points_char);
-
-		// fprintf(gnuplotPipe, "%s%d%s\n","plot \"data",x,".txt\"");
-
-		// if(join_points_with_lines){
-		// 	if(draw_lines_and_points){
-		// 		fprintf(gnuplotPipe, "%s%s%s",", \"",filename,"\" w l");
-		// 	}
-		// }else{
-		// 	fprintf(gnuplotPipe, "%s\n"," ");
-		// }
+		fprintf(gnuplotPipe, "%s%s%s%s%s%s%s%s%s","plot \"",input_filename_char,"\" using ", data_columns,":",error_columns,with_error_bars, with_lines, lines_and_points_char);
 
 		if(apply_fit){
-			fprintf(gnuplotPipe, "%s",", f(x)");
+			fprintf(gnuplotPipe, "%s",", f(x) title fit_title");
 		}
 		fprintf(gnuplotPipe, "%s","\n");
 
