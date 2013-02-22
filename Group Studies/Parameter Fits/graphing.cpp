@@ -190,6 +190,10 @@ int main(){
 	
 	tmp = cfg.getValueOfKey<string>("draw_legend");
 	bool draw_legend = bool_convert(tmp);
+		tmp = cfg.getValueOfKey<string>("legend_title");
+		const char * legend_title = tmp.c_str();
+		tmp = cfg.getValueOfKey<string>("legend_position");
+		const char * legend_position = tmp.c_str();
 	
 	tmp = cfg.getValueOfKey<string>("title");
 	const char * title = tmp.c_str();
@@ -202,6 +206,8 @@ int main(){
 	bool apply_fit = bool_convert(tmp);
 		tmp = cfg.getValueOfKey<string>("fit_equation");
 		const char * fit_equation = tmp.c_str();
+		tmp = cfg.getValueOfKey<string>("formatted_equation");
+		const char * formatted_equation = tmp.c_str();
 		tmp = cfg.getValueOfKey<string>("provide_guesses");
 		bool provide_guesses = bool_convert(tmp);
 			tmp = cfg.getValueOfKey<string>("variables");
@@ -245,9 +251,9 @@ int main(){
 	// If gnuplot is found
 	if (gnuplotPipe) {
 
-		fprintf(gnuplotPipe, "%s%s%s","set title \"",title,"\"\n");
-		fprintf(gnuplotPipe, "%s%s%s","set xlabel \"",xlabel,"\"\n");
-		fprintf(gnuplotPipe, "%s%s%s","set ylabel \"",ylabel,"\"\n");
+		fprintf(gnuplotPipe, "%s%s%s","set title '",title,"'\n");
+		fprintf(gnuplotPipe, "%s%s%s","set xlabel '",xlabel,"'\n");
+		fprintf(gnuplotPipe, "%s%s%s","set ylabel '",ylabel,"'\n");
 		
 		if(output_to_latex){
 			fprintf(gnuplotPipe, "%s","set terminal latex\n");
@@ -255,7 +261,7 @@ int main(){
 		}
 		
 		if(draw_legend){
-			fprintf(gnuplotPipe,"set key default \n");
+			fprintf(gnuplotPipe, "%s%s%s", "set key ",legend_position," \n");
 		}else{
 			fprintf(gnuplotPipe,"unset key  \n");
 		}
@@ -270,10 +276,10 @@ int main(){
 				fprintf(gnuplotPipe, "%s%s%s%s", initial_m,"\n", initial_c,"\n");
 			}
 			fprintf(gnuplotPipe, "%s%s%s%s%s%s%s", "fit f(x) \"",input_filename_char,"\" using ",data_columns," via ",variables,"\n");
-			fprintf(gnuplotPipe, "%s%s%s", "fit_title = sprintf(\"%.2fx+%.2f\", ",variables,")\n");
+			fprintf(gnuplotPipe, "%s%s%s%s%s", "fit_title = sprintf(\"",formatted_equation,"\", ",variables,")\n");
  		}
 
-		fprintf(gnuplotPipe, "%s%s%s%s%s%s%s%s%s","plot \"",input_filename_char,"\" using ", data_columns,":",error_columns,with_error_bars, with_lines, lines_and_points_char);
+		fprintf(gnuplotPipe, "%s%s%s%s%s%s%s%s%s%s%s%s%s","plot \"",input_filename_char,"\" using ", data_columns,":",error_columns," ",with_error_bars," ",legend_title," ",with_lines, lines_and_points_char);
 
 		if(apply_fit){
 			fprintf(gnuplotPipe, "%s",", f(x) title fit_title");
