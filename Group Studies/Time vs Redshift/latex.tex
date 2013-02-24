@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{mathtools}
+\usepackage[top=0.8in, left=1in, right=1in, bottom=0.8in]{geometry}
+
+\begin{document}
+
+\section{Time Vs Redshift For All Redshift}
+http://arxiv.org/pdf/gr-qc/0506079v2.pdf
+
+\begin{align}
+	t &= \frac{28}{1+(1+z)^2} \\
+	z &= \sqrt{\frac{28}{t}-1} -1
+\end{align}
+\begin{figure}[ht]
+	\begin{center}
+		\input{time_vs_redshift.tex}
+	\end{center}
+\end{figure}
+\begin{figure}[ht]
+	\begin{center}
+		\input{time_vs_redshift_log.tex}
+	\end{center}
+\end{figure}
+
+\end{document}
