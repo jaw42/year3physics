@@ -1,7 +1,7 @@
 % !TEX TS-program = pdflatex
 % !TEX encoding = UTF-8 Unicode
 
-\documentclass[11pt]{article}                                                   % use larger type; default would be 10pt
+\documentclass[11pt]{report}                                                    % use larger type; default would be 10pt
 \usepackage[utf8]{inputenc}                                                     % set input encoding (not needed with XeLaTeX)
 
 %%% PAGE DIMENSIONS ------------------------------------------------------------
@@ -34,15 +34,12 @@
 \usepackage{listings}                                                           % for including external files as text, eg code
 \usepackage{color}                                                              % for coloring of files and images
 \usepackage{overpic}                                                            % for adding annotations to pictures
-\usepackage{enumitem}
-\usepackage{wrapfig}
 
 %%% EQUATIONS ------------------------------------------------------------------
 \numberwithin{equation}{section}                                                % Number equations by section (change for different levels)
 
 %% BIBIOGRAPHY ------------------------------------------------------------------
 \usepackage{cite}
-\bibliographystyle{unsrt}
 
 %%% ToC (table of contents) APPEARANCE -----------------------------------------
 %\usepackage[nottoc,notlof,notlot]{tocbibind}                                   % Put the bibliography in the ToC
@@ -55,8 +52,8 @@
     bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,
     bookmarksopenlevel=2, breaklinks=false,pdfborder={0 0 0},backref=false,
     colorlinks=false] {hyperref}                                                % for links in pdf file, no colors
-\hypersetup{pdftitle={DOCUMENT NAME},
-    pdfauthor={Josh Wainwright}}                                                % set name of document and author here
+\hypersetup{pdftitle={Cosmic Re-ionisation},
+    pdfauthor={Extragalactic Astrophysics and Cosmology Group Studies}}			% set name of document and author here
 
 %%% END Article customizations
 
@@ -130,9 +127,15 @@
 %*******************************************************************************
 
 \begin{document}
-\input{Problems2.tex}
-\clearpage
-\input{Answers2.tex}
+\input{titlepage.tex}
+\newpage
+\tableofcontents
+\newpage
+\input{Parameters_and_Assumptions}
+
+\renewcommand\bibname{Refferences}
+\bibliographystyle{plain}
+\bibliography{references.bib}
 
 \end{document}
     

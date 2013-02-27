@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage[top=0.8in, left=1in, right=1in, bottom=0.8in]{geometry}
+
+\begin{document}
+\small{23rd Feb 2013}
+\section{Parameter Fits}
+	Ignore the log lables on the y-axes. These are referring to the fit, not the axis and shouldn't be there.
+	\subsection{Alpha}
+		\subsubsection{Linear Fit}
+		\begin{figure}[ht]
+			\begin{center}
+				\input{alpha_fit_to_linear.tex}
+			\end{center}
+		\end{figure}
+
+		\subsubsection{Logarithmic Fit}
+		\begin{figure}[ht]
+			\begin{center}
+				\input{alpha_fit_to_log.tex}
+			\end{center}
+		\end{figure}
+		\newpage
+
+	\subsection{$M^{*}$}
+		\subsubsection{Linear Fit}
+		\begin{figure}[ht]
+			\begin{center}
+				\input{m-star_fit_to_linear.tex}
+			\end{center}
+		\end{figure}
+
+		\subsubsection{Logarithmic Fit}
+		\begin{figure}[ht]
+			\begin{center}
+				\input{m-star_fit_to_log.tex}
+			\end{center}
+		\end{figure}
+		\newpage
+
+	\subsection{$\phi^{*}$}
+		\subsubsection{Linear Fit}
+		\begin{figure}[ht]
+			\begin{center}
+				\input{phi-star_fit_to_linear.tex}
+			\end{center}
+		\end{figure}
+
+		\subsubsection{Logarithmic Fit}
+		\begin{figure}[ht]
+			\begin{center}
+				\input{phi-star_fit_to_log.tex}
+			\end{center}
+		\end{figure}
+		
+\end{document}
