@@ -1,7 +1,7 @@
 % !TEX TS-program = pdflatex
 % !TEX encoding = UTF-8 Unicode
 
-\documentclass[11pt]{report}                                                    % use larger type; default would be 10pt
+	\documentclass[11pt]{article}                                                    % use larger type; default would be 10pt
 \usepackage[utf8]{inputenc}                                                     % set input encoding (not needed with XeLaTeX)
 
 %%% PAGE DIMENSIONS ------------------------------------------------------------
@@ -34,9 +34,14 @@
 \usepackage{listings}                                                           % for including external files as text, eg code
 \usepackage{color}                                                              % for coloring of files and images
 \usepackage{overpic}                                                            % for adding annotations to pictures
+	\usepackage{siunitx}
+	\usepackage{multirow}
 
 %%% EQUATIONS ------------------------------------------------------------------
 \numberwithin{equation}{section}                                                % Number equations by section (change for different levels)
+	\DeclareSIUnit[number-unit-product = {}]\pixel{\text{pix}}
+	\DeclareSIUnit[number-unit-product = {}]\ADU{\text{ADU}}
+	\DeclareSIUnit[number-unit-product = {}]\electron{\text{e}^{-{}}}
 
 %% BIBIOGRAPHY ------------------------------------------------------------------
 \usepackage{cite}
@@ -131,11 +136,27 @@
 \newpage
 \tableofcontents
 \newpage
-\input{Parameters_and_Assumptions}
+\part{General Theory} % (fold)
+	\label{prt:general_theory}
 
-\renewcommand\bibname{Refferences}
-\bibliographystyle{plain}
-\bibliography{references.bib}
+% part general_theory (end)
+\newpage
+\part{Predictions} % (fold)
+	\label{prt:predictions}
+	\input{Predictions_Intro_B-Johnson}
+	\input{Parameters_and_Assumptions_J-Wainwright}
+% part predictions (end)
+\newpage
+\part{Observations} % (fold)
+	\label{prt:observations_}
+	\input{Hubble_M-ONeil}
+% part observations (end)
+
+\newpage
+\input{appendix}
+\newpage
+\bibliographystyle{unsrt}
+\bibliography{references}
 
 \end{document}
     
