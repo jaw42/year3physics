@@ -1,40 +1,60 @@
-\subsection{Determining redshift}
+%!TEX root = mainfile.tex
 
-Need a section on candidates and how the contaminants are eliminated.
-(COMBINE WITH JOE’S COLOUR STUFF?)
+\subsection{Determingin Redshift} % (fold)
+	\label{sub:determingin_redshift}
+	Need a section on candidates and how the contaminants are eliminated.
+	(COMBINE WITH JOE’S COLOUR STUFF?)
 
-Section ? described how contaminants could be eliminated from the large number of potential high redshift galaxies. Taking the remaining objects, the following methods are used to check whether they are in fact LBGs.
+	Section ? described how contaminants could be eliminated from the large number of potential high redshift galaxies. Taking the remaining objects, the following methods are used to check whether they are in fact LBGs.
 
-\subsection{Filters and the Dropout Technique}
+	\subsubsection{Filters and the Dropout Technique} % (fold)
+		\label{ssub:filters_and_the_dropout_technique}
+		Using photometry, the redshift of a LBG can be estimated using the dropout technique: The flux from the galaxy can be measured in three different bands, ideally two above and one below the Lyman break. If the galaxy is a high redshift Lyman break galaxy, it would be expected that, so long as the filters were correct for the redshift expected, one image would not see the galaxy whereas the other two would observe flux. Below in figure \ref{fig:drop_out_at_z7}, the dropout technique is shown for a model galaxy of redshift seven.
+		\begin{figure}[ht]
+			\centering
+			\includegraphics[width=0.5\textwidth]{../Images/drop_out_at_z7.gif}
+			\caption{Photograph of HST orbiting the Earth.\cite{first_galaxies_dropout_at_z7}\label{fig:drop_out_at_z7}}
+		\end{figure}
 
-Using photometry, the redshift of a LBG can be estimated using the dropout technique: The flux from the galaxy can be measured in three different bands, ideally two above and one below the Lyman break. If the galaxy is a high redshift Lyman break galaxy, it would be expected that, so long as the filters were correct for the redshift expected, one image would not see the galaxy whereas the other two would observe flux. Below in figure ?, the dropout technique is shown for a model galaxy of redshift seven.
+		The neutral hydrogen has attenuated almost all flux at wavelengths shorter than approximately 1 micrometre. The galaxy has been imaged in several different bands, and the longer wavelength filters show flux, whereas those at wavelengths corresponding to blue-ward of Lyman alpha do not. The galaxies that the group look to study have been shifted such that the drop happens in the infra-red. The wavelength of the drop can be worked out using the known rest wavelength of Lyman alpha, as well as the factor by which the wavelength shifts due to the expansion of the universe, as shown in equation \ref{eq:dropout_wavelength}.
+		\begin{align}
+			\text{Rest wavelength of Lyman alpha} \times (1+z) &= \text{observed wavelength of drop}\label{eq:dropout_wavelength}
+		\end{align}
 
-http://www.firstgalaxies.org/the-first-galaxies
+		Since the rest wavelength of Lyman alpha is known and the observed wavelength of the drop can be measured, the redshift of the galaxy can be determined. This
+		is only a rough estimate when doing photometry since the flux is simply a number in each of the bands. For example, if the bands do not overlap, and the drop happens between two bands, it will not be known at what point the drop occurred, only the range in which it occurred. This motivates the use of bands which are close together or potentially even overlapping. Figure \ref{fig:filter-systems} shows some different bands and their bandwidth, for different filter systems. Johnson-Cousins- Glass is one of the oldest and still the most commonly used system\cite{BasicObservationalKnowledge}.
+		\begin{figure}[ht]
+			\centering
+			\includegraphics[width=0.5\textwidth]{../Images/filter-systems.png}
+			\caption{Photograph of HST orbiting the Earth.\cite{refId0}\label{fig:filter-systems}}
+		\end{figure}
 
-The neutral hydrogen has attenuated almost all flux at wavelengths shorter than approximately 1 micrometre. The galaxy has been imaged in several different bands, and the longer wavelength filters show flux, whereas those at wavelengths corresponding to blueward of lyman alpha do not. The galaxies that the group look to study have been shifted such that the drop happens in the infrared. The wavelength of the drop can be worked out using the known rest wavelength of Lyman alpha, as well as the factor by which the wavelength shifts due to the expansion of the universe:
+		The bandwidth (or passband) is the wavelength range that can pass through the filter. Filters in different parts of the spectrum are given a common name, for example I band at 806 nanometres. When observing LBGs, it is beneficial to have three filters in a row so that the position of the drop can be more accurately measured. As can be seen, there are gaps between the J H and K filters, meaning if the drop occurs between J and H, full flux should be observed in H and K and virtually no flux should be seen in J. (the panels beneath figure \ref{fig:filter-systems} show an image (or lack thereof) of the z=7 galaxy in each of the V, I, z , J and H bands)
 
-Rest wavelength of Lyman alpha *(1+z)=observed wavelength of drop
+		Table \ref{tab:filter_characteristics} below shows a list of filter names, the central wavelength of that filter, the bandwidth the filter covers, and range of redshifts for which the Lyman alpha drop would be covered. (This  range assumes the bandwidth covers 50\% either side of the central wavelength)
+		\begin{table}[ht]
+			\begin{center}
+				\begin{tabular}{c|c|c|c}
+					filter 	& Central wavelength & bandwidth & Redshift coverage
+					V 	& \SI{551}{\nano\meter}	 & \SI{88}{\nano\meter} & 3.17 - 3.90	
+					i 	& \SI{806}{\nano\meter}	 & \SI{149}{\nano\meter} & 5.01 - 7.25
+					Y 	& \SI{1020}{\nano\meter} & \SI{120}{\nano\meter} & 6.90 - 7.88
+					J 	& \SI{1220}{\nano\meter} & \SI{213}{\nano\meter} & 9.16 - 9.91
+					H 	& \SI{1630}{\nano\meter} & \SI{307}{\nano\meter} & 11.14 - 13.67
+					K 	& \SI{2190}{\nano\meter} & \SI{390}{\nano\meter} & 15.41 - 18.61
+				\end{tabular}
+			\end{center}
+			\caption{Data highlighting which filters would be useful for observing particular redshift galaxies\cite{Galactic_Astronomy_Binney_Merrifield}}
+			\label{tab:filter_characteristics}
+		\end{table}
 
-Since the rest wavelength of Lyman alpha is known and the observed wavelength of the drop can be measured, the redshift of the galaxy can be determined. This
-is only a rough estimate when doing photometry since the flux is simply a number in each of the bands. For example, if the bands do not overlap, and the drop happens between two bands, it will not be known at what point the drop occurred, only the range in which it occurred. This motivates the use of bands which are close together or potentially even overlapping. Fig ? shows some different bands and their bandwidth, for different filter systems. Johnson-Cousins- Glass is one of the oldest and still the most commonly used system.
+		Table \ref{tab:filter_characteristics} must be taken into consideration that two filters should be red-ward of the drop and one blue-ward. One the fluxes have been measured in all three bands, if the object is indeed a LBG, there should be a sharp drop in flux in  one of the bands. However this does not totally rule out other possibilities: Some other objects could also exhibit a drop in flux, posing as LBGs, so usually a follow up method is used, and this is spectroscopy. Spectroscopy The drop out technique provides a good indication that a galaxy is a high redshift Lyman break galaxy, however the best way to confirm this is with spectroscopy. Spectroscopy involves...
 
-http://coursewiki.astro.cornell.edu/Astro4410/BasicObservationalKnowledge
-Girardi, Bertelli, Bressan et al, 2002, A&A, 391, 195
+		At loads of different wavelengths, measure the spectra. Look for the drop
+		 
+		Use ground based such as KECK or space based, JWST will have one.
 
-The bandwidth (or passband) is the wavelength range that can pass through the filter. Filters in different parts of the spectrum are given a common name, for example I band at 806 nanometres. When observing LBGs, it is beneficial to have three filters in a row so that the position of the drop can be more accurately measured. As can be seen, there are gaps between the J H and K filters, meaning if the drop occurs between J and H, full flux should be observed in H and K and virtually no flux should be seen in J. (figure ? shows an image (or lack thereof) of the z=7 galaxy in each of the V, I, z , J and H bands) Below, table ? shows a list of filter names, the central wavelength of that filter, the bandwidth the filter covers, and range of redshifts for which the Lyman alpha drop would be covered. (This  range assumes the bandwidth covers 50% either side of the central wavelength)
-filter	Central wavelength 	bandwidth	Redshift coverage
-V	551nm			88nm 		3.17 – 3.90	
-i 	806nm			149nm		5.01 – 7.25
-Y	1020nm		120nm		6.90 – 7.88
-J	1220nm		213 nm		9.16 – 9.91
-H 	1630 nm		307 nm	 	11.14 – 13.67
-K 	2190nm		390nm		15.41 – 18.61
-Binney, J. ; Merrifield M. Galactic Astronomy , Princeton University Press, 1998, ch. 2.3.2, pp. 53 
+		JOHN IS DOING SPECTROSCOPY. I AM NOT NEEDED HERE.
+		% subsubsection filters_and_the_dropout_technique (end)
 
-The above table highlights which filters would be useful for observing particular redshift galaxies. It must be taken into consideration that two filters should be redward of the drop and one blueward. One the fluxes have been measured in all three bands, if the object is indeed a LBG, there should be a sharp drop in flux in  one of the bands. However this does not totally rule out other possibilities: Some other objects could also exhibit a drop in flux, posing as LBGs, so usually a follow up method is used, and this is spectroscopy. Spectroscopy The drop out technique provides a good indication that a galaxy is a high redshift Lyman break galaxy, however the best way to confirm this is with spectroscopy. Spectroscopy involves...
-
-At loads of different wavelengths, measure the spectra. Look for the drop
- 
-Use ground based such as KECK or space based, JWST will have one.
-
-JOHN IS DOING SPECTROSCOPY. I AM NOT NEEDED HERE.
+% subsection determingin_redshift (end)
