@@ -8,13 +8,13 @@ The standard representation used in quantum information is using Dirac Braket no
 \end{align}
 where the coefficients $\alpha$ and $\beta$ are the amplitudes of the qubit in the 0 and 1 ``directions'' and $\Psi$ is the resulting state.
 
-As in all of quantum mechanics, this final state represents the full range of possible states, but gives no information as to what state the object would be in if it were measured, it provides only probabilities. The probability of any one state is given by the absolute amplitude of the coefficient for that state, so that from equation \ref{eq:arbitarystate}, the probability of measuring the qubit in the 0 state is $|\alpha|^2$ and the corresponding probability of it being in the 1 state is $|\beta|^2$. Since there are only two absolute states that exist and can be measured, there are constraints on the values that these coefficients can take. It follows that 
+As in all of quantum mechanics, this final state represents the full range of possible states, but gives no information as to what state the object would be in if it were measured, it provides only probabilities. The probability of any one state is given by the absolute amplitude of the coefficient for that state, so that from equation~\ref{eq:arbitarystate}, the probability of measuring the qubit in the 0 state is $|\alpha|^2$ and the corresponding probability of it being in the 1 state is $|\beta|^2$. Since there are only two absolute states that exist and can be measured, there are constraints on the values that these coefficients can take. It follows that 
 \begin{align}
 	|\alpha|^2 + |\beta|^2 &= 1 \label{eq:constraint}
 \end{align}
 simply because there must be a definite chance of measuring one or the other.
 
-In order to represent the different states of the qubit, a Bloch Sphere is used, where the possible states are represented in 3-dimensional space on a unit sphere\cite{gentleintro}, figure \ref{fig:bloch}. A qubit can be in a superposition such that it can exit at any point on the surface of the sphere. 
+In order to represent the different states of the qubit, a Bloch Sphere is used, where the possible states are represented in 3-dimensional space on a unit sphere\cite{gentleintro}, figure~\ref{fig:bloch}. A qubit can be in a superposition such that it can exit at any point on the surface of the sphere. 
 
 % \begin{figure}[ht]
 % 	\centering
@@ -29,7 +29,7 @@ In order to represent the different states of the qubit, a Bloch Sphere is used,
 	\caption{\label{fig:bloch}The Bloch Sphere is used to represent super-positioned states of a qubit. In this example, the probability amplitudes are given by $\alpha = \cos\left(\frac{\theta}{2}\right)$ and $\beta = \e{i\phi}\sin\left(\frac{\theta}{2}\right)$\cite{blochwiki}}
 \end{figure}
 
-The possibilities for the location of a state of a qubit is limited to two degrees of freedom, located to the surface of the sphere. The freedom comes from the complex nature of the coefficients $\alpha$ and $\beta$ and is limited down from the expected four by the constraint in equation \ref{eq:constraint} and the fact that one of the coefficients can arbitrarily be set to be real since the overall state has no physical observable. 
+The possibilities for the location of a state of a qubit is limited to two degrees of freedom, located to the surface of the sphere. The freedom comes from the complex nature of the coefficients $\alpha$ and $\beta$ and is limited down from the expected four by the constraint in equation~\ref{eq:constraint} and the fact that one of the coefficients can arbitrarily be set to be real since the overall state has no physical observable. 
 
 \subsection{Physical Representation} The concepts that exist around the qubit work well to describe the idealised implementation, but actually devising a way to manufacture a physical qubit is very difficult. Several methods, which produce the desired effects, have been used. A few of these are summarized below, though many others have been reported.
 

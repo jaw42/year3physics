@@ -124,7 +124,7 @@ This time, only the $\beta$ contribution was changed since the control bit was 0
 	|\Psi\rangle = \big(\alpha|0\rangle + \beta|1\rangle\big)\times|10\rangle
 \end{align}
 
-We can summarise this process as shown in figure \ref{fig:quantumerror}. This diagram shows each step of the error detection and correction with each CNOT gate and the addition of a final gate called a Toffoli gate. This is used for more general error correction and has no effect on this case.
+We can summarise this process as shown in figure~\ref{fig:quantumerror}. This diagram shows each step of the error detection and correction with each CNOT gate and the addition of a final gate called a Toffoli gate. This is used for more general error correction and has no effect on this case.
 
 \begin{figure}[ht]
 	\centering
@@ -133,7 +133,7 @@ We can summarise this process as shown in figure \ref{fig:quantumerror}. This di
 \end{figure}
 
 \subsubsection{Integer Factorisation}
-Another keenly investigated benefit of quantum computing would be the possibility for efficient, large digit, integer factorisation. Integer factorisation involves the splitting of numbers down into their prime factors. For example, figure \ref{fig:factors} shows how the number 864 is factorised.
+Another keenly investigated benefit of quantum computing would be the possibility for efficient, large digit, integer factorisation. Integer factorisation involves the splitting of numbers down into their prime factors. For example, figure~\ref{fig:factors} shows how the number 864 is factorised.
 \begin{figure}[ht]
 	\centering
 		\inputTikZ{factors}
@@ -160,7 +160,7 @@ We have seen some of the ways that the qubit can be used to perform applications
 
 The major example of this, and a huge driving force behind much of the research into quantum computing, is the possibility of completely safe, 100\% secure information transfer through quantum cryptography. This application uses qubits in the form of polarised photons, the polarisation of which controls the state that the qubit occupies.
 
-Cryptography involves the transfer of information using a secret code that allows the sender to encode, and then the receiver to decode, a message or set of information. Currently, the most widely used and most secure method of cryptography is called asymmetric public key cryptography, figure \ref{fig:asymmetric-key}. This involves a pair of keys that are used, one to lock and the other to unlock the information. The locking key is sent publicly since all it can do is encode the data. The unlocking key is kept secret by the receiver. This means that the key to unlock the information is never in the open.
+Cryptography involves the transfer of information using a secret code that allows the sender to encode, and then the receiver to decode, a message or set of information. Currently, the most widely used and most secure method of cryptography is called asymmetric public key cryptography, figure~\ref{fig:asymmetric-key}. This involves a pair of keys that are used, one to lock and the other to unlock the information. The locking key is sent publicly since all it can do is encode the data. The unlocking key is kept secret by the receiver. This means that the key to unlock the information is never in the open.
 \begin{figure}[ht]
 	\centering
 	\includegraphics{asymmetrickey.pdf}
@@ -185,7 +185,7 @@ We will examine the most commonly investigated method of quantum cryptography ca
 
 The principle of sending quantum encoded information is fairly simple. The key that locks the information to be sent is encoded as qubits of light using the polarisation in the vertical and horizontal directions and the left and right diagonal directions to be either a ``0'' or ``1''. These are called baseis, the first is the rectilinear basis, the second is the diagonal basis. A third possibility is the circular basis where the polarisation is either right- or left-handed.
 
-The key is sent to the receiver using one of the two settings randomly. For each value of the qubit, a different direction is defined, for example the arrangement shown in table \ref{tab:basis}.
+The key is sent to the receiver using one of the two settings randomly. For each value of the qubit, a different direction is defined, for example the arrangement shown in table~\ref{tab:basis}.
 \begin{table}[h!t]
 	\centering
 	\begin{tabular}{c|c|c}
@@ -221,7 +221,7 @@ The receiver does not know how the data was encoded so can at most only select a
 	\caption{Using two different polarisation baseis to send a set of qubits securely\cite{quantumcrypto}.\label{fig:quantumcrypto}}
 \end{figure}
 
-One of the first experimental demonstrations of quantum cryptography was carried out in 2000 by a group at the University of Vienna using pairs of entangled photons\cite{PhysRevLett.84.4729}. They transmitted the encoded qubits over a distance of 360\,m via an optical fibre showing that the principle is definitely possible. However, the errors in transmission and measurement meant that they were unable to extend the distance the data was transferred. In 2004 though, another group from Toshiba Research at Cambridge managed to securely encode, transfer and decode a still image over a distance of 122\,km via a standard Telecom cable\cite{gobby:3762}. Figure \ref{fig:quantumimage} shows the images that was transferred as well as the two keys that were generated and the decoded image. The small remaining errors in the image can be seen as defects to the colour, but overall, the image is very clearly the same as was transmitted.
+One of the first experimental demonstrations of quantum cryptography was carried out in 2000 by a group at the University of Vienna using pairs of entangled photons\cite{PhysRevLett.84.4729}. They transmitted the encoded qubits over a distance of 360\,m via an optical fibre showing that the principle is definitely possible. However, the errors in transmission and measurement meant that they were unable to extend the distance the data was transferred. In 2004 though, another group from Toshiba Research at Cambridge managed to securely encode, transfer and decode a still image over a distance of 122\,km via a standard Telecom cable\cite{gobby:3762}. Figure~\ref{fig:quantumimage} shows the images that was transferred as well as the two keys that were generated and the decoded image. The small remaining errors in the image can be seen as defects to the colour, but overall, the image is very clearly the same as was transmitted.
 
 \begin{figure}[ht]
 	\centering

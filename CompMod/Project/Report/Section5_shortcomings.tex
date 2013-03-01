@@ -12,7 +12,7 @@ The accuracy of the simulation depends both on the equations and approximations 
 \subsection{Ambiguous Dielectric Boundary} % (fold)
 \label{sub:ambiguous_dielectric_boundary}
 
-One example is when the wave encounters a dielectric boundary and is partially reflected from it. Consider the image in figure \ref{fig:magneticgain}.
+One example is when the wave encounters a dielectric boundary and is partially reflected from it. Consider the image in figure~\ref{fig:magneticgain}.
 
 \begin{figure}[ht]
     \centering
@@ -22,7 +22,7 @@ One example is when the wave encounters a dielectric boundary and is partially r
 
 For this simulation, the lossy-less of the dielectric has been set to zero and a permittivity of 5.0 set. As can be seen, the electric field is reduced as would be expected. The magnetic field, however, has increased in magnitude since passing through the boundary. This does not make physical sense since the combined magnitude of the reflected (not shown) and the transmitted wave would be greater than the initial incident wave. This means that some energy has been added to the system despite no external source being present.
 
-The reason for this discrepancy lies in the way that the nodes are arranged that make up the simulation area. There exist nodes that govern the size of the electric field and separate nodes for the magnetic field. These are arranged such that they alternate magnetic-electric-magnetic. This means that the boundary between the dielectric material and free space is not definite but somewhat ambiguous, as shown in figure \ref{fig:dielectricnodes}.
+The reason for this discrepancy lies in the way that the nodes are arranged that make up the simulation area. There exist nodes that govern the size of the electric field and separate nodes for the magnetic field. These are arranged such that they alternate magnetic-electric-magnetic. This means that the boundary between the dielectric material and free space is not definite but somewhat ambiguous, as shown in figure~\ref{fig:dielectricnodes}.
 
 \begin{figure}[ht]
 	\centering
@@ -64,13 +64,13 @@ The reason for this discrepancy lies in the way that the nodes are arranged that
 	\caption{Arrangement of the nodes that are used to calculate the evolution of the electric and magnetic fields and the ambiguity because of this when a dielectric is modelled.\label{fig:dielectricnodes}}
 \end{figure}
 
-When the simulation is run, using this arrangement of nodes, the boundary causes these irregularities to start, in the form of strange behaviour in the way the update equations are handled. To understand what is happening, we need to consider the individual nodes around the boundary, as shown in figure \ref{fig:dielectricnodes}. As the wave moves towards the dielectric, the leading edge crosses the boundary as the electric field nodes are concerned, and so the relevant equations cause transmitted and reflected waves to be generated in accordance to the properties of the dielectric being modelled. However, the wave has not yet reached the magnetic node that is closest to the boundary. This means that there is a component that exists only as an electric field. Clearly this is non physical since the electric and magnetic field essentially generate each other, but the simulation exists in this state for a finite time.
+When the simulation is run, using this arrangement of nodes, the boundary causes these irregularities to start, in the form of strange behaviour in the way the update equations are handled. To understand what is happening, we need to consider the individual nodes around the boundary, as shown in figure~\ref{fig:dielectricnodes}. As the wave moves towards the dielectric, the leading edge crosses the boundary as the electric field nodes are concerned, and so the relevant equations cause transmitted and reflected waves to be generated in accordance to the properties of the dielectric being modelled. However, the wave has not yet reached the magnetic node that is closest to the boundary. This means that there is a component that exists only as an electric field. Clearly this is non physical since the electric and magnetic field essentially generate each other, but the simulation exists in this state for a finite time.
 
 When the wave encounters the magnetic field, the update equations use the value from the corresponding electric field node to calculate the magnetic field, but since the electric field is greater at that point than would be expected, the resulting magnetic field is also greater than expected. As the wave continues into the dielectric material, the calculations continue as usual, but with this error included. Over the length of the wave, i.e.\ the time it takes to move entirely into the dielectric and create the resulting reflected wave, the effect of the initial error is exaggerated so that the magnetic field ends up growing to larger than its initial value. The size of this effect is dependant on the characteristics of the dielectric, but is generally of the order of 1.3 to 1.6 times larger.
 
 The best way to overcome this problem would be to have the dielectric boundary lie exactly on an electric and a magnetic field node. Unfortunately this would require the number of nodes to be increased hugely resulting in impractical calculation times and processor load. Alternatively, the electric and magnetic nodes could be placed at the same spacial position so that a boundary could be placed covering both, simply by placing it at a point where there are two nodes. This however would result in a simulation area that is unable to be used with the finite difference time domain algorithm since there would be no past value of one of the fields that could be used to calculate a further step in time. Other methods do exist, but the FDTD is one of the best in terms of calculation number and flexibility and so others are outside the scope of this report.
 
-A compromise between these idealised situations is more reasonable. Instead of forcing the dielectric boundary to exist only at a single location, and to still be able to apply the FDTD method to the system, the existing set-up can be adapted to make the boundary more ``fuzzy'' but also more symmetrical so that there is less danger of these sorts of errors developing. If the boundary point is treated as the average of the two nodes on either side, the dielectric will appear to make a more gradual change from free space to a finite permittivity. This is done by replacing the absolute definition of the permittivity across the boundary with one that takes into account this difference in location, as shown in equation \ref{eq:averagedielec}.
+A compromise between these idealised situations is more reasonable. Instead of forcing the dielectric boundary to exist only at a single location, and to still be able to apply the FDTD method to the system, the existing set-up can be adapted to make the boundary more ``fuzzy'' but also more symmetrical so that there is less danger of these sorts of errors developing. If the boundary point is treated as the average of the two nodes on either side, the dielectric will appear to make a more gradual change from free space to a finite permittivity. This is done by replacing the absolute definition of the permittivity across the boundary with one that takes into account this difference in location, as shown in equation~\ref{eq:averagedielec}.
 \begin{align}
 	E^{q+\frac{1}{2}}_z(m) &\approx \frac{E^{q+1}_z(m)+E^q_z(m)}{2} \label{eq:averagedielec}
 \end{align}
@@ -78,7 +78,7 @@ A compromise between these idealised situations is more reasonable. Instead of f
 
 \subsection{Dimensional Constraints} % (fold)
 \label{sub:dimensional_constraints}
-Finally, an obvious shortcoming of this model is that it represents only the single $z$ dimension. For real world purposes, the full three dimensions would be required. This would require generalising the update equations from section \ref{sub:finite_differences}
+Finally, an obvious shortcoming of this model is that it represents only the single $z$ dimension. For real world purposes, the full three dimensions would be required. This would require generalising the update equations from section~\ref{sub:finite_differences}
 % subsection dimensional_constraints (end)
 % section shortcomings (end)
 

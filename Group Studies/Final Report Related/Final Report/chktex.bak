@@ -1,0 +1,12 @@
+Warning 26 in Determining_Redshift_D-Stonel.tex line 8: You ought to remove spaces in front of punctuation.
+        Section ? described how contaminants could be eliminated from the large number of potential high redshift galaxies. Taking the remaining objects, the following methods are used to check whether they are in fact LBGs.  
+               ^
+Warning 36 in Euclid_D-Stonel.tex line 33: You should put a space in front of parenthesis.
+                                        Detector Array          & (\num{2e3})$\times$(\num{2e3})\,\si{\pixel} \\ \hline  
+                                                                                     ^
+Warning 2 in Spitzer_D-Stonel.tex line 12: Non-breaking space (`~') should have been used.
+        Spitzer had the following capabilities, table \ref{tab:Spitzer_cababilities}:  
+                                                     ^
+Warning 2 in Contaminants_M-ONeil.tex line 17: Non-breaking space (`~') should have been used.
+        Events such as Supernovae happen incredibly quickly releasing a vast amount of energy, as seen in figure \ref{fig:SNe_1987a}. These events can spoil images due to their short duration by introducing new data in only a portion of the sample. These effects are usually only considered when taking exposures years apart or when combining multiple sources over a long timescale. Such events are very unlikely to contaminate our results as we propose to take our images close in time.   
+                                                                                                                ^

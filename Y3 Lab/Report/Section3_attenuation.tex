@@ -4,13 +4,13 @@
 
 \subsection{Boron Tri-Flouride Detector} % (fold)
 \label{ssub:boron_tri_flouride_detector}
-The BF$_3$ detector is a proportional counter. It contains boron trifluoride gas at 0.5 to 1 atmospheres which acts as both a target for slow neutron conversion into secondary particles, as well as a proportional gas. A large potential difference is applied across the gas. The cathode which is held at ground is the outer tube of the detector and is generally made from aluminium since this has a low neutron absorption cross section so should not influence any readings made by the detector. The anode, at high voltage, is a single wire that passes through the centre of the detector, see figure \ref{fig:bf3detector}. When a neutron is incident in the reactor, one of the reaction below takes place\cite{krane}.
+The BF$_3$ detector is a proportional counter. It contains boron trifluoride gas at 0.5 to 1 atmospheres which acts as both a target for slow neutron conversion into secondary particles, as well as a proportional gas. A large potential difference is applied across the gas. The cathode which is held at ground is the outer tube of the detector and is generally made from aluminium since this has a low neutron absorption cross section so should not influence any readings made by the detector. The anode, at high voltage, is a single wire that passes through the centre of the detector, see figure~\ref{fig:bf3detector}. When a neutron is incident in the reactor, one of the reaction below takes place\cite{krane}.
 \begin{align}
 	\cf{^{10}_{5}B} + \cf{^{1}_{0}n} &\rightarrow \cf{^{7}_{3}Li} + \cf{^{4}_{2}\alpha} \label{eq:bf31}\\
 	\cf{^{10}_{5}B} + \cf{^{1}_{0}n} &\rightarrow \cf{^{7}_{3}Li^*} + \cf{^{4}_{2}\alpha} \label{eq:bf32}
 \end{align} 
 
-The products of these two equations differ only by the energy of the lithium which, in some cases, is left in an excited metastable state with a slightly different energy. The relative probabilities of each reaction is 96\% for equation \ref{eq:bf31} and 4\% for equation \ref{eq:bf32}\cite{baratta}. The resulting ions that are created are attracted to the poles of the detector and so provide a voltage through it. This provides a signal which is sent to the processing computer. It should be noted that this detector cannot give any information of the energy of the neutron since the formation of the ions is independent of energy over a certain level. Instead, this detector is used simply as a counter to obtain a value for the number of neutrons hitting it in a specified time period. 
+The products of these two equations differ only by the energy of the lithium which, in some cases, is left in an excited metastable state with a slightly different energy. The relative probabilities of each reaction is 96\% for equation~\ref{eq:bf31} and 4\% for equation~\ref{eq:bf32}\cite{baratta}. The resulting ions that are created are attracted to the poles of the detector and so provide a voltage through it. This provides a signal which is sent to the processing computer. It should be noted that this detector cannot give any information of the energy of the neutron since the formation of the ions is independent of energy over a certain level. Instead, this detector is used simply as a counter to obtain a value for the number of neutrons hitting it in a specified time period. 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{BF3detector.pdf}
@@ -22,9 +22,9 @@ When the reaction happens, the products, $\cf{^{7}_{3}Li}$ and $\cf{^4_2\alpha}$
 \subsubsection{Wall Effect} % (fold)
 \label{ssub:wall_effect}
 
-The BF$_3$ detector shall be used for several purposes later, so it is worth discussing some of the features of the data that is produced by this detector. Figure \ref{fig:walleffect2} shows a typical spectrum from the BF$_3$ detector. This shows a main peak, a smaller, higher energy secondary peak and an example of the wall effect.
+The BF$_3$ detector shall be used for several purposes later, so it is worth discussing some of the features of the data that is produced by this detector. Figure~\ref{fig:walleffect2} shows a typical spectrum from the BF$_3$ detector. This shows a main peak, a smaller, higher energy secondary peak and an example of the wall effect.
 
-When a neutron is incident with one of the atoms in the gas in the reactor, one of the reactions equation \ref{eq:bf31} or \ref{eq:bf32} takes place. If the reactor was extremely large compared to the travel distance of the Li and $\alpha$ products, then a single peak from each of the reactions would be observed, along with some amount of background noise, giving a spectrum similar to the top graph in figure \ref{fig:walleffect2}. The two peaks are from the reaction producing a ground state lithium atom or an excited lithium atom respectively. 
+When a neutron is incident with one of the atoms in the gas in the reactor, one of the reactions equation~\ref{eq:bf31} or~\ref{eq:bf32} takes place. If the reactor was extremely large compared to the travel distance of the Li and $\alpha$ products, then a single peak from each of the reactions would be observed, along with some amount of background noise, giving a spectrum similar to the top graph in figure~\ref{fig:walleffect2}. The two peaks are from the reaction producing a ground state lithium atom or an excited lithium atom respectively. 
 \begin{figure}[ht]
   \centering
   \begin{overpic}[width=0.8\columnwidth]{walleffect2.pdf}
@@ -39,7 +39,7 @@ When a neutron is incident with one of the atoms in the gas in the reactor, one 
     \put(46,12){$\alpha$}
     \put(32,9){Li}
   \end{overpic}
-  \caption{An exemplar spectrum from the BF$_3$ detector showing the two peaks from each of the two reaction products, and the wall effect when one of the products from equation \ref{eq:bf31} escapes the detector.\label{fig:walleffect2}}
+  \caption{An exemplar spectrum from the BF$_3$ detector showing the two peaks from each of the two reaction products, and the wall effect when one of the products from equation~\ref{eq:bf31} escapes the detector.\label{fig:walleffect2}}
 \end{figure}
 
 The two steps in the count number at lower channel numbers is known as the wall effect. These are due to the detector being finite, or small compared to the travel distance of the reaction products, and so there is a chance that one of the products from the reaction escapes from the detector. Due to the relative masses of the particles created, $\alpha$ and Li, the $\alpha$ particle takes most of the energy from the original neutron and so when it is lost from the detector, the recoded energy is lower\cite{krane}.
@@ -58,7 +58,7 @@ This means that the neutrons have a temperature in the order of tens of millions
 
 \subsubsection{Boron Triflouride Detector Set-up} % (fold)
 \label{ssub:boron_triflouride_detector_set_up}
-Since it is only a proportional counter, and so gives no information for the energy of the observed particles, there is no calibration to be done with the BF$_3$ detector. However, there is a certain degree of adjustment that can, and should, be made to the settings of the detector before proceeding with the data acquisition. The detector requires a high voltage of between 1.4 to 2.6\,keV. This is the safe working range, but inside these limits, the voltage that gives the clearest results can be chosen. Figure \ref{fig:bf3voltages} shows several graphs from the BF$_3$ detector using different voltages to ascertain which would be the most appropriate voltage to use.
+Since it is only a proportional counter, and so gives no information for the energy of the observed particles, there is no calibration to be done with the BF$_3$ detector. However, there is a certain degree of adjustment that can, and should, be made to the settings of the detector before proceeding with the data acquisition. The detector requires a high voltage of between 1.4 to 2.6\,keV. This is the safe working range, but inside these limits, the voltage that gives the clearest results can be chosen. Figure~\ref{fig:bf3voltages} shows several graphs from the BF$_3$ detector using different voltages to ascertain which would be the most appropriate voltage to use.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.6\textwidth]{BF3_calib_voltage.pdf}
@@ -70,14 +70,14 @@ Since it is only a proportional counter, and so gives no information for the ene
 \subsection{Neutron Attenuation} % (fold)
 \label{sub:neutron_attenuation}In order to examine the attenuation effects of water to neutrons from the beryllium-americium source, the spectrum of neutrons will be measured with the BF$_3$ detector at a range of distances from the source, moving radially outward through the water. The readings shall be taken for precisely the same length of time using the built in timing function of the software used to record the readings. The count value from the data will be taken from the centre of the lower wall upwards, since everything below this point must be background radiation.
 
-An estimate for the background radiation involved in the main section of the readings can also be made. By looking at the spectrum recorded from the detector, it can be seen that the background level just prior to the first wall, and so before any useful information from either reaction, and just after the second peak, can be joined by a straight line, representing a linear falloff of background across the channels. This is shown in figure \ref{fig:bf3errorest}. The count number represented by this triangle can be measured, and subtracted from the total count, which shall also be taken inside these limits. This should provide a reduced count number that has removed a significant proportion of the background that would have affected the result.
+An estimate for the background radiation involved in the main section of the readings can also be made. By looking at the spectrum recorded from the detector, it can be seen that the background level just prior to the first wall, and so before any useful information from either reaction, and just after the second peak, can be joined by a straight line, representing a linear falloff of background across the channels. This is shown in figure~\ref{fig:bf3errorest}. The count number represented by this triangle can be measured, and subtracted from the total count, which shall also be taken inside these limits. This should provide a reduced count number that has removed a significant proportion of the background that would have affected the result.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.8\textwidth]{BF3background.pdf}
   \caption{An estimate of the background is made by assuming it falls linearly from the beginning of the channel numbers, which has to be error, to a point where it is known to be zero, after the second peak. The green shaded region is known to background since the second step represents the loss of both the lithium and the $\alpha$ particles. \label{fig:bf3errorest}}
 \end{figure}
 
-The total number of counts is a function provided by the software that is used, called Maestro. This allows us to easily record the number of counts for specific regions of the graph. Using this method, and initial trial recording was taken to work out an estimate for the percentage of the total counts were contributed by this background radiation. Equation \ref{eq:backgroundcalc} shows the calculation used to calculate the background,
+The total number of counts is a function provided by the software that is used, called Maestro. This allows us to easily record the number of counts for specific regions of the graph. Using this method, and initial trial recording was taken to work out an estimate for the percentage of the total counts were contributed by this background radiation. Equation~\ref{eq:backgroundcalc} shows the calculation used to calculate the background,
 \begin{align}
   (1729-400)\times 400 \times 0.5 &= 264,000\,\text{counts} \label{eq:backgroundcalc}
 \end{align}
@@ -92,11 +92,11 @@ The Americium-Beryllium source that was used was assumed to be a point source, w
 \begin{align}
   \dx{n}{t} &= -\Sigma_a \phi - \div{J} \label{eq:neutronflux}
 \end{align}
-where $n$ is the number of neutrons at time $t$, $\Sigma_a$ is the absorption cross section of the water in the tank, $\phi$ is the neutron flux (number of neutrons travelling through a unit are in unit time) and the vector $\textbf{J}$ is the diffusion flux from Fick's law shown in equation \ref{eq:fick},
+where $n$ is the number of neutrons at time $t$, $\Sigma_a$ is the absorption cross section of the water in the tank, $\phi$ is the neutron flux (number of neutrons travelling through a unit are in unit time) and the vector $\textbf{J}$ is the diffusion flux from Fick's law shown in equation~\ref{eq:fick},
 \begin{align}
   \textbf{J} = - \textbf{D}\grad\phi \label{eq:fick}
 \end{align}
-This means that the term from equation \ref{eq:neutronflux}, $-\Sigma_a\phi$ is the loss of neutrons due to absorption, and the term $-\div{\textbf{J}}$ is the divergence. Since the flux is simply the number passing a static point multiplied by their velocity, $\phi = nv$, equation \ref{eq:neutronflux} can be written as
+This means that the term from equation~\ref{eq:neutronflux}, $-\Sigma_a\phi$ is the loss of neutrons due to absorption, and the term $-\div{\textbf{J}}$ is the divergence. Since the flux is simply the number passing a static point multiplied by their velocity, $\phi = nv$, equation~\ref{eq:neutronflux} can be written as
 \begin{align}
   \frac{1}{v}\dx{\phi}{t} &= -\Sigma_a\phi + D\laplacian\phi^2
   \intertext{But in the steady state, $\dx{\phi}{t} = 0$, so}
@@ -110,7 +110,7 @@ The region of interest around the source, the water tank filled with water, has 
 \begin{align}
   L &= \sqrt{\frac{D}{\Sigma_a}}.
 \end{align}
-The solutions of the equation \ref{eq:diffusion} have the form
+The solutions of the equation~\ref{eq:diffusion} have the form
 \begin{align}
   \phi &= A\frac{e^{-\frac{r}{L}}}{r} + B\frac{e^{\frac{r}{L}}}{r}
 \end{align}
@@ -125,7 +125,7 @@ Thus, when $\ln(r\phi)$ is plotted against $r$, the graph should have a gradient
 
 \subsection{Experimental Results} % (fold)
 \label{sub:bf3experimental_results}
-The data in table \ref{tab:bf3results} is from the experiment to measure how the attenuation of neutrons is affected by a moderator, in this case water, as a function of distance. The data was taken using the Boron-triflouride detector suspended in the water at a position $r$ from the source. The detector was used to take a count of the number of neutrons from the source in a 10 minute interval, and then moved to the next position where the count was retaken.
+The data in table~\ref{tab:bf3results} is from the experiment to measure how the attenuation of neutrons is affected by a moderator, in this case water, as a function of distance. The data was taken using the Boron-triflouride detector suspended in the water at a position $r$ from the source. The detector was used to take a count of the number of neutrons from the source in a 10 minute interval, and then moved to the next position where the count was retaken.
 \begin{table}[ht]
   \centering
   \begin{tabular}{c|c}
@@ -146,7 +146,7 @@ The data in table \ref{tab:bf3results} is from the experiment to measure how the
   \caption{The experimental data for the BF$_3$ was taken by moving the detector a given distance after measuring the neutron tank for 10 minutes.\label{tab:bf3results}}
 \end{table}
 
-These data are plotted in the graph in figure \ref{fig:bf3data1} which shows the channel number plotted against the logarithm of the count number. This roughly fits the straight line fit showing that there is an exponential decrease in the number of neutrons reaching the detector as the detector is moved away from the source. The fit is not good, however, for the first two data points. These show a number of counts considerably below the expected result if it were to follow the straight line fit. If these two points are removed, and the data fit again to the straight line, the fit becomes much better. This effect can be seen in figure \ref{fig:bf3data2}. 
+These data are plotted in the graph in figure~\ref{fig:bf3data1} which shows the channel number plotted against the logarithm of the count number. This roughly fits the straight line fit showing that there is an exponential decrease in the number of neutrons reaching the detector as the detector is moved away from the source. The fit is not good, however, for the first two data points. These show a number of counts considerably below the expected result if it were to follow the straight line fit. If these two points are removed, and the data fit again to the straight line, the fit becomes much better. This effect can be seen in figure~\ref{fig:bf3data2}. 
 \begin{figure}[ht]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
@@ -178,7 +178,7 @@ where
 \end{itemize}
 An attempt was made to solve this problem using the 
 
-We can also plot the data points as counts against the radial distance from the source, as shown in figure \ref{fig:bf3countsvsradius}. As can be seen, this provides a rough exponential decrease in the recorded counts as the distance from the source increases. The relevant data is also shown below, table \ref{tab:bf3data}. This table also shows the values that were used to calculate the background that was present in each measurement, as described in section \ref{sub:neutron_attenuation}.
+We can also plot the data points as counts against the radial distance from the source, as shown in figure~\ref{fig:bf3countsvsradius}. As can be seen, this provides a rough exponential decrease in the recorded counts as the distance from the source increases. The relevant data is also shown below, table~\ref{tab:bf3data}. This table also shows the values that were used to calculate the background that was present in each measurement, as described in section~\ref{sub:neutron_attenuation}.
 \begin{align}
   \text{total background} = (\text{max. channel} - \text{min. channel}) \times \text{est. background} \times \frac{1}{2}
 \end{align}
@@ -205,7 +205,7 @@ We can also plot the data points as counts against the radial distance from the 
     0.26  &403    &25.0   &1752   &0.16     &$1.70\times 10^{04}$     &$1.97\times 10^{05}$ &$1.80\times 10^{05}$     \\
     0.28  &408    &18.0   &1749   &0.12     &$1.21\times 10^{04}$     &$1.40\times 10^{05}$ &$1.27\times 10^{05}$     \\
   \end{tabular}
-  \caption{This table shows the values for the BF$_3$ experiment. The count number is shown as a function of the radial distance from the source, as well as the estimated background for each of these readings calculated from the known background at the start and end of the spectrum and then using equation \ref{eq:backgroundcalc}.\label{tab:bf3data}}
+  \caption{This table shows the values for the BF$_3$ experiment. The count number is shown as a function of the radial distance from the source, as well as the estimated background for each of these readings calculated from the known background at the start and end of the spectrum and then using equation~\ref{eq:backgroundcalc}.\label{tab:bf3data}}
 \end{table}
 
 % subsection experimental_results (end)

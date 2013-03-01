@@ -86,11 +86,11 @@
 
 	\subsection{Numerical Integration with GSL}
 	\subsubsection{$f(x) = \e{-x}\sin(x)$}
-	The number of functions included with the GSL is huge. We shall, therefore, examine just a single topic, that of numerical integration. Again, we shall consider the integral in figure \ref{eq:integral}
+	The number of functions included with the GSL is huge. We shall, therefore, examine just a single topic, that of numerical integration. Again, we shall consider the integral in figure~\ref{eq:integral}
 	\begin{align}
 		\int_0^2 \e{-x}\sin{x}\d{x} \label{eq:integral}
 	\end{align}
-	Using the trapezium rule again, the relative errors when using $N$ intervals is calculated and shown in figure \ref{fig:errorstrap}. 
+	Using the trapezium rule again, the relative errors when using $N$ intervals is calculated and shown in figure~\ref{fig:errorstrap}. 
 	\begin{figure}[h]
 		\centering
 			\inputTikZ{Graph1}
@@ -98,14 +98,14 @@
 	\end{figure}
 	This shows the error for the area calculated for each value of $N$ up to $10^8$ using the value calculated by direct analytical integration as a reference. When plotted as a log-log graph, the relation between the error in the area and the number of intervals is linear with a gradient of roughly 2. This suggests that the relation is a power law of the order of 2. As would be expected, the plot is negative since the error decreases as the number of intervals increases, i.e.\ the smaller the region to calculate over, the smaller the error generated.
 
-	This calculation can be performed with the GSL function \code{gsl\_integration\_qag}. When this is done, the error can be reduced to a much smaller value, around $5\times 10^{-15}$. As well as this, the number of times each function is called is very different. Whereas, to calculate the trapezium rule with $10^8$ separate intervals, the function in equation \ref{eq:integral} is called around 11\,million times, when using the GSL function, the function is called only once. This information is found from the size of the workspace that is used by the GSL function. Despite the much higher degree of accuracy achieved by the GSL function, the time taken is considerably smaller and so less cpu-intensive, hence their widespread use in scientific calculations.
+	This calculation can be performed with the GSL function \code{gsl\_integration\_qag}. When this is done, the error can be reduced to a much smaller value, around $5\times 10^{-15}$. As well as this, the number of times each function is called is very different. Whereas, to calculate the trapezium rule with $10^8$ separate intervals, the function in equation~\ref{eq:integral} is called around 11\,million times, when using the GSL function, the function is called only once. This information is found from the size of the workspace that is used by the GSL function. Despite the much higher degree of accuracy achieved by the GSL function, the time taken is considerably smaller and so less cpu-intensive, hence their widespread use in scientific calculations.
 
 	\subsubsection{$f(x) = x\sin(30x)\cos(x)$}
-	The second integral that will be considered is shown in equation \ref{eq:integral2},
+	The second integral that will be considered is shown in equation~\ref{eq:integral2},
 	\begin{align}
 		\int_0^{2\pi} x\sin(30\,x)\cos(x)\d{x} \label{eq:integral2}
 	\end{align}
-	It is plotted below in figure \ref{fig:graph2} from $0$ to $2\pi$. The area for integration is shaded.
+	It is plotted below in figure~\ref{fig:graph2} from $0$ to $2\pi$. The area for integration is shaded.
 	\begin{figure}[h]
 		\centering
 			\inputTikZ{Graph2}

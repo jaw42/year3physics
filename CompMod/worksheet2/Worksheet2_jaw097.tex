@@ -127,7 +127,7 @@
 		 &= -0.03337 + 0.5\\
 		 &= 0.46662966259 \approx 0.466630
 	\end{align*}
-	This function, plotted between $0$ and $\pi$ is shown in figure \ref{fig:graph1}.
+	This function, plotted between $0$ and $\pi$ is shown in figure~\ref{fig:graph1}.
 	\begin{figure}[h]
 			\centering
 				\inputTikZ{Graph1}
@@ -144,7 +144,7 @@
 
 	The trapezium rule gives a good estimate for the area under the curve, but has some limitations. Because the curve is simplified into straight lines, the accuracy will only be small if there are as many positive as negative gradients as this will allow the under and over estimates to cancel out. With the curve used here, however, the trapezium rule will produce an underestimate as some of the curve is lost.
 
-	The program that was written uses the trapezium rule to estimate the area under the curve shown in figure \ref{fig:graph1} by splitting the area into $N$ . 
+	The program that was written uses the trapezium rule to estimate the area under the curve shown in figure~\ref{fig:graph1} by splitting the area into $N$ . 
 	
 	\subsection{Simpson's Rule}
 	Simpson's Rule is an alternative method for numerically calculating the area under the curve, similar to the trapezium method. However, instead of using straight topped trapezia, Simpson's Rule uses a second order polynomial as the top of the panel. This allows for a much more accurate estimate, indeed, if the curve being approximated is at most a third order polynomial, the estimate will be an exact value for the area under the curve.

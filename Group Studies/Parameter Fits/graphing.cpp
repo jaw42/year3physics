@@ -41,8 +41,8 @@ private:
 	map<string, string> contents;
 	string fName;
 	void removeComment(string &line) const{
-    	if (line.find(';') != line.npos)
-		line.erase(line.find(';'));
+    	if (line.find('#') != line.npos)
+		line.erase(line.find('#'));
 	}
 	bool onlyWhitespace(const string &line) const{
     	return (line.find_first_not_of(' ') == line.npos);
@@ -216,6 +216,8 @@ int main(){
 			const char * initial_m = tmp.c_str();
 			tmp = cfg.getValueOfKey<string>("initial_c");
 			const char * initial_c = tmp.c_str();
+	tmp = cfg.getValueOfKey<string>("other_options");
+	const char * other_options = tmp.c_str();
 
 	string input_filename;
 	string output_filename;
@@ -259,6 +261,8 @@ int main(){
 			fprintf(gnuplotPipe, "%s","set terminal latex\n");
 			fprintf(gnuplotPipe, "%s%s%s","set output \"", output_filename_char,".tex\"\n");
 		}
+
+ 		fprintf(gnuplotPipe, "%s%s", other_options,"\n");
 		
 		if(draw_legend){
 			fprintf(gnuplotPipe, "%s%s%s", "set key ",legend_position," \n");

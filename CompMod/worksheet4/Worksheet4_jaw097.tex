@@ -100,7 +100,7 @@
 
 	\subsubsection{Problem 1}
 
-	For the first example, we shall consider a mass, $m$, hanging by two springs of un-stretched length $\frac{L}{2}$, from a bench, as shown in figure \ref{fig:spring}. In order to find the value of $\theta$, the system can be expressed as an equation, the derivation is shown below.
+	For the first example, we shall consider a mass, $m$, hanging by two springs of un-stretched length $\frac{L}{2}$, from a bench, as shown in figure~\ref{fig:spring}. In order to find the value of $\theta$, the system can be expressed as an equation, the derivation is shown below.
 	\begin{figure}[ht]
 		\centering
 		\input{spring.pdf_tex}
@@ -121,7 +121,7 @@
 		mg &= Lk(\tan(\theta) - \sin(\theta))
 	\end{align*}
 
-	The bisection method is used to solve this equation. When plotted, it can be seen that there are multiple roots to the equation, but because the system is physical, there are limits on the value of $\theta$. This means that a range for the calculation can be given so that the iterations provide a result that is physically possible. When given the limit, the value found is 0.533\,radians. This data is shown in table \ref{tab:prob1data} and plotted in figure \ref{fig:bisection1}.
+	The bisection method is used to solve this equation. When plotted, it can be seen that there are multiple roots to the equation, but because the system is physical, there are limits on the value of $\theta$. This means that a range for the calculation can be given so that the iterations provide a result that is physically possible. When given the limit, the value found is 0.533\,radians. This data is shown in table~\ref{tab:prob1data} and plotted in figure~\ref{fig:bisection1}.
 
 	\begin{table}[h!]
 		\centering
@@ -190,7 +190,7 @@
 	\begin{align*}
 		x^3 + 8x^2 - 5x +22 &= 0.
 	\end{align*}
-	This function is shown in figure \ref{fig:errorstrap} along with a demonstration of the Newton-Raphson method for two steps stating with an initial guess of $x_0$. The first step achieves the root at $x_1$ and is shown in red and the second $x_2$, shown in blue. As can be seen each iteration moves closer to the root.
+	This function is shown in figure~\ref{fig:errorstrap} along with a demonstration of the Newton-Raphson method for two steps stating with an initial guess of $x_0$. The first step achieves the root at $x_1$ and is shown in red and the second $x_2$, shown in blue. As can be seen each iteration moves closer to the root.
 	\begin{figure}[ht]
 		\centering
 			\inputTikZ{Graph1}
@@ -204,7 +204,7 @@
 	\end{figure}
 	 Some initial guesses converge quickly on the root. For example, when using $-100$ as a guess, the root is found most quickly because the function is simple for the range $[-100,x_{\text{root}}]$. The convergence is less simple for a guess of 100 because the iteration first encounters the stationary points which are more complex and so lead to the estimate diverging for a short time. If the initial guess is close to a stationary point, i.e.\ the first derivative is close to zero, the first estimate is very far from the actual root and so more iterations are required to bring the estimate back to the actual value. 
 
-	 The last graph in figure \ref{fig:guesses} shows the estimates when using the second stationary point. This graph shows that there are several times when the estimate diverges further away from the actual value and so the error increases. If the stating value was exactly equal to the stationary point, it is likely that the series would diverge and an estimate would not be returned. During the iterations, the estimate comes very close to the correct value, but the value is not accurate enough for the loop to finish and so the iterations continue. This however forces the value to diverge until a result is found that is within the error range. As can be seen, in figure \ref{fig:compare} the speed to get the within the error is very different. It can be seen that the Newton-Raphson method is faster by a factor of roughly 2. If, however, the initial guess for the Newton-Raphson method is changed, as shown in figure \ref{fig:guesses}, it can take far longer to reach the root.
+	 The last graph in figure~\ref{fig:guesses} shows the estimates when using the second stationary point. This graph shows that there are several times when the estimate diverges further away from the actual value and so the error increases. If the stating value was exactly equal to the stationary point, it is likely that the series would diverge and an estimate would not be returned. During the iterations, the estimate comes very close to the correct value, but the value is not accurate enough for the loop to finish and so the iterations continue. This however forces the value to diverge until a result is found that is within the error range. As can be seen, in figure~\ref{fig:compare} the speed to get the within the error is very different. It can be seen that the Newton-Raphson method is faster by a factor of roughly 2. If, however, the initial guess for the Newton-Raphson method is changed, as shown in figure~\ref{fig:guesses}, it can take far longer to reach the root.
 	\begin{table}[ht]
 		\centering
 		\begin{tabular}{c|r@{.}l|r@{.}l|r@{.}l}

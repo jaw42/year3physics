@@ -41,7 +41,7 @@ The algorithm used to perform finite difference time domain calculations was wri
 
 \subsection{Finite Differences} % (fold)
 \label{sub:finite_differences}
-We can now replace the differential forms of the equation relating electric and magnetic fields spatially and temporally in equations \ref{eq:max1z} and \ref{eq:max2z} with the finite differences discussed in section \ref{sub:central_differences_method}. The gives a form that relates the electric and magnetic field to the value of the fields one step in time previously. These are shown in equations \ref{eq:updateeqs1} and \ref{eq:updateeqs1}.
+We can now replace the differential forms of the equation relating electric and magnetic fields spatially and temporally in equations~\ref{eq:max1z} and~\ref{eq:max2z} with the finite differences discussed in section~\ref{sub:central_differences_method}. The gives a form that relates the electric and magnetic field to the value of the fields one step in time previously. These are shown in equations~\ref{eq:updateeqs1} and~\ref{eq:updateeqs1}.
 \begin{align}
 	\frac{E^q_z(m + 1) - E^q_z(m)}{\delta_x} &= \mu \frac{H^{q+\frac{1}{2}}_y\left(m + \frac{1}{2}\right) - H^{q-\frac{1}{2}}_y\left(m - \frac{1}{2}\right)}{\delta_t} \label{eq:updateeqs2}
 	\intertext{and}
@@ -49,7 +49,7 @@ We can now replace the differential forms of the equation relating electric and 
 \end{align}
 where $m$ is the spacial step, or the location of the sample being taken, $\delta_x$ is a small difference in space between the points where the samples are taken and likewise, $\delta_t$ is a small step in the temporal direction. The values $m\pm\frac{1}{2}$ and $m\pm 1$ are the values just near to that location, a single step in space or time away, that are used to calculate the approximation.
 
-These equations can be rearranged to give a pair of equations that give the value of the electric or magnetic field in terms of only previous results, so that the wave can be modelled at any point in time given that the wave is known at all points prior to that time. For the electric field, the equation is given in equation \ref{eq:updateE}, and similarly, for the magnetic field in equation \ref{eq:updateM}.
+These equations can be rearranged to give a pair of equations that give the value of the electric or magnetic field in terms of only previous results, so that the wave can be modelled at any point in time given that the wave is known at all points prior to that time. For the electric field, the equation is given in equation~\ref{eq:updateE}, and similarly, for the magnetic field in equation~\ref{eq:updateM}.
 \begin{align}
 	E^{q+1}_z(m) &= E^q_z(m) + \frac{\delta_t}{\epsilon\delta_x} \left[ H^{q+\frac{1}{2}}_y\left(m + \tfrac{1}{2}\right) - H^{q+\frac{1}{2}}_y\left(m-\tfrac{1}{2}\right) \right] \label{eq:updateE} \\
 	H^{q+\frac{1}{2}}_y(m+\tfrac{1}{2}) &= H^{q-\frac{1}{2}}_y\left(m+\tfrac{1}{2}\right) + \frac{\delta_t}{\mu\delta_x} \Bigg[ E^q_z(m+1) - E^q_z(m) \Bigg] \label{eq:updateM}

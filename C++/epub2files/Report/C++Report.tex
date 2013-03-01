@@ -115,7 +115,7 @@ This project is to build an application that aids in the creation of a simple eb
 \section{Details}
 The e-publication document format, or epub for short, is a free and open e-book standard created by the International Digital Publishing Forum (IDPF). It is designed to contain reflowable content which is content that can adapt its presentation depending on the device used to view it. This means that it is ideally suited for use by publishers on devices like e-book readers that have different sizes and means that some customisation by the user, like screen rotation and text size, is possible.
 
-The epub document consists of the html, or similar, files that make up the text of the document and are referenced from a number of files required by the ebook-reader. These files are then wrapped in a ZIP archive along with the directory structure. The file structure is shown in figure \ref{fig:structure}.
+The epub document consists of the html, or similar, files that make up the text of the document and are referenced from a number of files required by the ebook-reader. These files are then wrapped in a ZIP archive along with the directory structure. The file structure is shown in figure~\ref{fig:structure}.
 \begin{figure}[ht]
   \centering
   \begin{tikzpicture}
@@ -147,7 +147,7 @@ Each of the files included is required to exist by the reader, as long as that r
 
 \section{Project}
 \subsection{Graphical User Interface}
-My implementation of an epub creator uses a single main window that is opened when the user starts the program, shown in figure \ref{fig:main}. From here the main details of the book can be entered.
+My implementation of an epub creator uses a single main window that is opened when the user starts the program, shown in figure~\ref{fig:main}. From here the main details of the book can be entered.
 % \begin{figure}[ht]
 %   \centering
 %   \includegraphics[width=0.9\columnwidth]{main.png}
@@ -190,9 +190,9 @@ Also, from here, the html files can be chosen, as can the images used in the boo
 
 Below these entry boxes are the main controls for the program. ``Exit'' closes the window and ends the application, ``Refresh'' updates the in application information about the book to reflect and changes made by the user, and ``Create!'' takes the entered information and writes it to the relevant files. It also copies the selected files from the location chosen to the temporary folder used by the application. Once this has finished, it ZIPs the resulting folder as specified in the document specification and names it according the user's choice of name for the book.
 
-Next to the input boxes, on the right side of the window, are a number of tabs that inform the user what will be written when they click the create button to make their book. These tabs provide information for those interested in the structure of epub ebooks and provide a means of checking that the book will be created as expected. Each separate tab contains what will be included in each of several separate files (see figure \ref{fig:structure}).
+Next to the input boxes, on the right side of the window, are a number of tabs that inform the user what will be written when they click the create button to make their book. These tabs provide information for those interested in the structure of epub ebooks and provide a means of checking that the book will be created as expected. Each separate tab contains what will be included in each of several separate files (see figure~\ref{fig:structure}).
 
-At the top of the window, there is a menu bar with a few options and operations. These include buttons that perform the same functions as the buttons previously mentioned, exit, update and create as well as the ``About'' dialogue, shown in figure \ref{fig:about}, and an option to set the current operating system (see below for details).
+At the top of the window, there is a menu bar with a few options and operations. These include buttons that perform the same functions as the buttons previously mentioned, exit, update and create as well as the ``About'' dialogue, shown in figure~\ref{fig:about}, and an option to set the current operating system (see below for details).
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.35\columnwidth]{about.png}
@@ -200,7 +200,7 @@ At the top of the window, there is a menu bar with a few options and operations.
 \end{figure}
 
 \subsection{Internal Structure}
-The code for this project is shown at the end of this document in appendices \ref{app:code1} through \ref{app:code9}. The project started as a single long file with all of the various functions distributed throughout. I took the decision to split the code through several files that are interdependent, but which contain a smaller subset of the code, grouped according to the function that it achieves. Each of the files is used by one or more other files, the include tree is shown in figure \ref{fig:files}.
+The code for this project is shown at the end of this document in appendices~\ref{app:code1} through~\ref{app:code9}. The project started as a single long file with all of the various functions distributed throughout. I took the decision to split the code through several files that are interdependent, but which contain a smaller subset of the code, grouped according to the function that it achieves. Each of the files is used by one or more other files, the include tree is shown in figure~\ref{fig:files}.
 \begin{figure}[ht]
   \centering
     \inputTikZ{files}

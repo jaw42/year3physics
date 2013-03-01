@@ -139,7 +139,7 @@ with the boundary condition $y(0) = 0$. This equation can be solved analytically
 	\intertext{The boundary conditions mean that at $y(0)=0$, $0=\tan(C)$ and so}
 	y(t) &= \tan(t)
 \end{align*}
-So for the given time at $t=\frac{\pi}{4}$, the solution is $y=\tan(\frac{\pi}{4}) = 1$. This can be solved relatively easily analytically by hand, but would be extremely difficult for a computer to solve analytically. An estimate can, however, be found using numerical methods, in this case Euler's Method. Figure \ref{fig:euler1} shows how the value of the estimate gets closer to the actual value, using a starting value of $y(0)=0$.
+So for the given time at $t=\frac{\pi}{4}$, the solution is $y=\tan(\frac{\pi}{4}) = 1$. This can be solved relatively easily analytically by hand, but would be extremely difficult for a computer to solve analytically. An estimate can, however, be found using numerical methods, in this case Euler's Method. Figure~\ref{fig:euler1} shows how the value of the estimate gets closer to the actual value, using a starting value of $y(0)=0$.
 \begin{figure}[ht]
 	\centering
 		\inputTikZ{Graph1}
@@ -155,7 +155,7 @@ An extension to Euler's Method for numerically solving differential equations is
 	k_2 &= hf(x_n + \frac{h}{2}, y_n + \frac{k_1}{2}) \\
 	y_{n+1} &= y_n + k_2 +O(h^3)
 \end{align*}
-and is shown diagrammatically in figure \ref{fig:rungekutta}
+and is shown diagrammatically in figure~\ref{fig:rungekutta}
 \begin{figure}[ht]
 	\centering
 	\input{rungekutta.pdf_tex}
@@ -200,21 +200,21 @@ Also, we shall assume that the velocity at $t=0$ is zero, so
 \end{align*}	
 Solving this function analytically, again, is relatively easy, though not possible on a computer. As such we shall investigate how this can be solved numerically. We have already looked at Euler's method for solving differential equations, we shall now apply the Runge-Kutta method to this function.
 
-A second order Runge-Kutta is used to solve this equation, using the same initial conditions as were used above. When this is performed, the data in figure \ref{fig:runge2} is calculated.
+A second order Runge-Kutta is used to solve this equation, using the same initial conditions as were used above. When this is performed, the data in figure~\ref{fig:runge2} is calculated.
 \begin{figure}[ht]
 	\centering
 		\inputTikZ{graph2}
 	\caption{\label{fig:runge2}The plots of position and velocity against time with the error behaviour. A step size of 0.1\,seconds was chosen, therefore this plot represents 20\,seconds. As would be expected, the position lags the velocity by $\frac{\pi}{4}$.}
 \end{figure}
 
-The plot in \ref{fig:runge2} contains a representation of the error behaviour. This is calculated from the fact that the energy is conserved for the system. The energy is given by
+The plot in~\ref{fig:runge2} contains a representation of the error behaviour. This is calculated from the fact that the energy is conserved for the system. The energy is given by
 \begin{align*}
 	E &= \frac{p^2}{2} + \frac{x^2}{2}
 	\intertext{Where $p$ is the momentum. But we have defined the mass to be 1, so this can be written as}
 	E &= \frac{v^2}{2} + \frac{x^2}{2}
 \end{align*}
 
-This means that if the Energy is plotted, it should be constant. For the data, the energy is plotted offset by the magnitude to show the error throughout the duration of the time calculated. For the second order Runge-Kutta method, figure \ref{fig:runge2}, the error oscillates with the data. When the position is a maximum, the error is also maximum. This is because, at this turning point, the overshoot that is created by the finite step size is at the largest and so creates a larger error. The error is associated with the position and not the velocity simply because of the order that they are calculated in, meaning the position depends on the velocity calculation and so is less accurate.
+This means that if the Energy is plotted, it should be constant. For the data, the energy is plotted offset by the magnitude to show the error throughout the duration of the time calculated. For the second order Runge-Kutta method, figure~\ref{fig:runge2}, the error oscillates with the data. When the position is a maximum, the error is also maximum. This is because, at this turning point, the overshoot that is created by the finite step size is at the largest and so creates a larger error. The error is associated with the position and not the velocity simply because of the order that they are calculated in, meaning the position depends on the velocity calculation and so is less accurate.
 \begin{figure}[ht]
 	\centering
 		\inputTikZ{Graph4}
@@ -224,14 +224,14 @@ This means that if the Energy is plotted, it should be constant. For the data, t
 \subsubsection{Runge-Kutta 4th Order - GSL}
 The Runge-Kutta method is adaptable in that it can be used to generate data with smaller errors if desired. To do this, the order of the iterations is increased. Previously, a Runge-Kutta of order 2 was performed meaning that there we two steps for each iteration. If this is increased, then the calculated point for the next iteration will be closer to the actual value and so errors will propagate more slowly.
 
-The SHO potential problem is re-calculated to take advantage of a higher order algorithm. The data in figure \ref{fig:runge4} is using a fourth order Runge-Kutta method. This means that for every iteration of the algorithm, 4 separate corrections are made to the estimate, each bringing that estimate closer to the true value.
+The SHO potential problem is re-calculated to take advantage of a higher order algorithm. The data in figure~\ref{fig:runge4} is using a fourth order Runge-Kutta method. This means that for every iteration of the algorithm, 4 separate corrections are made to the estimate, each bringing that estimate closer to the true value.
 \begin{figure}[ht]
 	\centering
 		\inputTikZ{Graph3}
 	\caption{\label{fig:runge4}The plots of position and velocity against time with the error behaviour. A step size of 0.1\,seconds was chosen, therefore this plot represents 20\,seconds. As would be expected, the position lags the velocity by $\frac{\pi}{4}$.}
 \end{figure}
 
-By examining this new set of data, we can see that this is indeed more accurate. For example, due to the over shooting introduced by the errors in each step of the Runge-Kutta method, though the system starts at a maximum displacement of 1, the first system increases the displacement to a maximum of around $2.1$. This is clearly incorrect since the system being modelled has no driving force and no resistive force, thus, it should oscillate from the starting point, to the same magnitude in the negative direction and back to the starting point but no further. The new data in figure \ref{fig:runge4} does not do this. 
+By examining this new set of data, we can see that this is indeed more accurate. For example, due to the over shooting introduced by the errors in each step of the Runge-Kutta method, though the system starts at a maximum displacement of 1, the first system increases the displacement to a maximum of around $2.1$. This is clearly incorrect since the system being modelled has no driving force and no resistive force, thus, it should oscillate from the starting point, to the same magnitude in the negative direction and back to the starting point but no further. The new data in figure~\ref{fig:runge4} does not do this. 
 
 We can also see that this method increases the accuracy from the energy plot. Again, the energy is plotted as $E=\frac{v^2}{2} + \frac{x^2}{2}$ when the mass is 1. This time however, the energy is constant to a factor of around $10^{-7}$. 
 \begin{figure}[ht]
@@ -241,7 +241,7 @@ We can also see that this method increases the accuracy from the energy plot. Ag
 \end{figure}
 
 \subsubsection{Adaptive Step Control}
-Finally, using a dedicated algorithm, the accuracy of the Runge-Kutta method can be increased still further by replacing the slowly increasing iterative steps with step of varying sizes, the width of each being calculated by the complexity of the curve at that point, so as to reduce the error to as low as possible. This is shown in figure \ref{fig:stepcontrol}. The curve can be clearly seen to start at the initial starting point of 1 with very low error. This error is again confirmed to be small by using the energy of the system which is defined above. The variation of the energy from a constant value is representative of the error in the data and so is shown normalised to 0 in figure \ref{fig:stepcontrol}.
+Finally, using a dedicated algorithm, the accuracy of the Runge-Kutta method can be increased still further by replacing the slowly increasing iterative steps with step of varying sizes, the width of each being calculated by the complexity of the curve at that point, so as to reduce the error to as low as possible. This is shown in figure~\ref{fig:stepcontrol}. The curve can be clearly seen to start at the initial starting point of 1 with very low error. This error is again confirmed to be small by using the energy of the system which is defined above. The variation of the energy from a constant value is representative of the error in the data and so is shown normalised to 0 in figure~\ref{fig:stepcontrol}.
 \begin{figure}[ht]
 	\centering
 		\inputTikZ{Graph6}

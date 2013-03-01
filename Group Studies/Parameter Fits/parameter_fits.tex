@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[twocolumn]{article}
 \usepackage{graphicx}
 \usepackage{rotating}
 \usepackage[top=0.8in, left=1in, right=1in, bottom=0.8in]{geometry}
@@ -9,48 +9,84 @@
 	Ignore the log lables on the y-axes. These are referring to the fit, not the axis and shouldn't be there.
 	\subsection{Alpha}
 		\subsubsection{Linear Fit}
+
 		\begin{figure}[ht]
 			\begin{center}
-				\input{alpha_fit_to_linear.tex}
+				\begingroup\endlinechar=-1
+	  			\resizebox{0.5\textwidth}{!}{%
+					\input{alpha_fit_to_linear.tex}
+	  			}\endgroup
 			\end{center}
 		\end{figure}
+
+		\subsubsection{Linear Fit Pivot}
+		\begin{figure}[ht]
+			\begin{center}
+				\begingroup\endlinechar=-1
+	  			\resizebox{0.5\textwidth}{!}{%
+					\input{alpha_fit_to_linear_pivot.tex}
+	  			}\endgroup
+			\end{center}
+		\end{figure}
+		From fit, $m=-0.01464\pm 0.012$, 78.7\%
 
 		\subsubsection{Logarithmic Fit}
 		\begin{figure}[ht]
 			\begin{center}
-				\input{alpha_fit_to_log.tex}
+				\begingroup\endlinechar=-1
+	  			\resizebox{0.5\textwidth}{!}{%
+					\input{alpha_fit_to_log.tex}
+	  			}\endgroup
 			\end{center}
 		\end{figure}
-		\newpage
 
+	\newpage
 	\subsection{$M^{*}$}
 		\subsubsection{Linear Fit}
 		\begin{figure}[ht]
 			\begin{center}
-				\input{m-star_fit_to_linear.tex}
+				\begingroup\endlinechar=-1
+	  			\resizebox{0.5\textwidth}{!}{%
+					\input{m-star_fit_to_linear.tex}
+	  			}\endgroup
 			\end{center}
 		\end{figure}
 
 		\subsubsection{Logarithmic Fit}
 		\begin{figure}[ht]
 			\begin{center}
-				\input{m-star_fit_to_log.tex}
+				\begingroup\endlinechar=-1
+	  			\resizebox{0.5\textwidth}{!}{%
+					\input{m-star_fit_to_log.tex}
+	  			}\endgroup
 			\end{center}
 		\end{figure}
-		\newpage
 
+	\newpage
 	\subsection{$\phi^{*}$}
 		\subsubsection{Linear Fit}
 		\begin{figure}[ht]
 			\begin{center}
-				\input{phi-star_fit_to_linear.tex}
+			\begingroup\endlinechar=-1
+	  			\resizebox{0.5\textwidth}{!}{%
+					\input{phi-star_fit_to_linear.tex}
+	  			}\endgroup
 			\end{center}
 		\end{figure}
 
 		\subsubsection{Exponential Fit}
 		\begin{figure}[ht]
 			\begin{center}
-				\input{phi-star_fit_to_exponential.tex}
+			\begingroup\endlinechar=-1
+	  			\resizebox{0.5\textwidth}{!}{%
+					\input{phi-star_fit_to_exponential.tex}
+	  			}\endgroup
 			\end{center}
 		\end{figure}
+		\[
+			\phi^* = m\times e^{c x} + d
+		\]
+		From fit, $m=0.05215\pm 0.096$, 184\% \\
+		$c=1.4866\pm 0.79$, 52.9\% \\
+		$d=0.0010587\pm 0.00013$, 12.7\%
 \end{document}

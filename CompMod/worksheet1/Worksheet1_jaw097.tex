@@ -214,15 +214,15 @@
 				\phi^{n+1} &= \phi^{n-1} - \phi^n  \\
 				\shortintertext{is satisfied.}
 			\end{align*}
-		This means that the value of $\phi^n$ can be calculated by subtraction using equation \ref{eq:relation}. By specifying a value for $\phi^0=1$ and for $\phi^1=\phi$, this equation can then be used as a recursion relation.
+		This means that the value of $\phi^n$ can be calculated by subtraction using equation~\ref{eq:relation}. By specifying a value for $\phi^0=1$ and for $\phi^1=\phi$, this equation can then be used as a recursion relation.
 
-		Equation \ref{eq:relation} is used to calculate the values of the silver ratio raised to different powers, using the recursion relation demonstrated above. To demonstrate the limitations, the program is run in both float and double. Under these conditions, when the program is run, the output depends on the size of the address space available, i.e.\ whether the variable is assigned double or float precision.
+		Equation~\ref{eq:relation} is used to calculate the values of the silver ratio raised to different powers, using the recursion relation demonstrated above. To demonstrate the limitations, the program is run in both float and double. Under these conditions, when the program is run, the output depends on the size of the address space available, i.e.\ whether the variable is assigned double or float precision.
 
 		When using double precision, there are approximately $\pm1.7\times10^{\pm308}$ values, whereas with float precision, since it assigns a smaller address space, there are only $\pm3.4\times10^{\pm38}$ possible values. The differences in address space mean that errors occur at different rates when performing iterative calculations.
 
 		The errors occur more quickly when using float. The iterations output values which are consistent with the directly calculated vales but errors build up so that by the 16th iteration, the float value is $3.6\%$ different to the correct value as calculated by direct multiplication. The calculations using double precision however develop smaller errors so the values deviate more slowly. It takes until the 36th iteration to reach a comparable error, $2.7\%$.
 
-		As shown above, there are two possible values that satisfy the recursion relation used to calculate the value of $\phi^n$. This is another cause of the deviation away from the accepted value. As the natural computational errors increase, the value of $\phi^n$ tends to $\phi_1^n$ where $\phi_1$ is the alternative value, $\phi_1 = \frac{-1-\sqrt{5}}{2}$. After this, the value tends back towards the original value and so forth. The resulting pattern and the cumulative errors means that the value being calculated grows enormously, as can be seen in figure \ref{fig:float}, getting further from the correct answer.
+		As shown above, there are two possible values that satisfy the recursion relation used to calculate the value of $\phi^n$. This is another cause of the deviation away from the accepted value. As the natural computational errors increase, the value of $\phi^n$ tends to $\phi_1^n$ where $\phi_1$ is the alternative value, $\phi_1 = \frac{-1-\sqrt{5}}{2}$. After this, the value tends back towards the original value and so forth. The resulting pattern and the cumulative errors means that the value being calculated grows enormously, as can be seen in figure~\ref{fig:float}, getting further from the correct answer.
 		\newpage
 		\subsubsection{Results From Iterative Calculation of $\phi^n$}
 		\begin{figure}[htbp]
