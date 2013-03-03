@@ -1,11 +1,11 @@
 % !TEX TS-program = pdflatex
 % !TEX encoding = UTF-8 Unicode
 
-\documentclass[11pt]{article}%                                                    use larger type; default would be 10pt
+\documentclass[twoside]{article}%                                                    use larger type; default would be 10pt
 \usepackage[utf8]{inputenc}%                                                      set input encoding (not needed with XeLaTeX)
 
 %%% PAGE DIMENSIONS ------------------------------------------------------------
-\usepackage[top=0.8in, left=1in, right=1in, bottom=0.8in]{geometry}%              to change the page dimensions
+\usepackage{geometry}%              to change the page dimensions
 \geometry{a4paper}%                                                               or letterpaper (US) or a5paper or....
 \usepackage[parfill]{parskip}%                                                    Activate to begin paragraphs with an empty line rather than an indent
 
@@ -54,6 +54,7 @@
 %\usepackage[titles,subfigure]{tocloft}                                         % Alter the style of the Table of Contents
 %\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
 %\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape}                     % No bold!
+\setcounter{tocdepth}{2}
 
 %%% PDF LINKS AND STYLE --------------------------------------------------------
 \usepackage[unicode=true,
@@ -103,6 +104,8 @@
 \input{titlepage.tex}
 \newpage
 \tableofcontents
+\listoffigures
+\listoftables
 \newpage
 
 \input{Main_Intro}
@@ -110,6 +113,7 @@
 
 \part{General Theory} % (fold)
 \label{prt:general_theory}
+    \input{Gravitational_Lensing1_C-McDonald}
 
 % part general_theory (end)
 \newpage

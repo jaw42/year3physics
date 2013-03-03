@@ -20,16 +20,16 @@ Predictions:
             ☐ Co-moving distance / volume     (Jamie)
             ☐ Luminosity Function
             ☐ Red-shift
-        ☐ Schechter Function                  (Jamie)
-            ☐ What
-            ☐ Why
+        ✔ Schechter Function                  (Jamie)
+            ✔ What 
+            ✔ Why  
         ☐ Luminosity vs Red-shift
-    ☐ General Assumptions                     (Josh)
+    ✔ General Assumptions                     (Josh) 
     ☐ Program                                 (Andy, Owen)
         ☐ Methods
             ☐ Trapezium Rule
             ☐ Simpson Rule?
-        ☐ Parameters we used                  (Josh)
+        ✔ Parameters we used                  (Josh)
         ☐ Input / output                      (Andy, Owen)
     ☐ Extensions?                             (Lewis)
         ☐ Cosmic variance
