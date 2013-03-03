@@ -1,0 +1,52 @@
+%!TEX root = mainfile.tex
+
+\section{Parameter Values} % (fold)
+\label{sec:parameter_values}
+
+    It will be assumed that the universe has a curvature of, or very close to, zero\cite{1102.4485}, in other words, that the universe is flat. This has been shown before and is generally held to be true, ``we now know that the universe is flat with only a 0.4\% margin of error''\cite{nasa_uni_shape}. This means that we do not need to take into account any of the effects of observing objects near the beginning of the universe when it might have had different properties.
+
+    A second assumption that will be maintained through our calculations concerns the values of the matter, curvature and dark energy constants, $\Omega_M$, $\Omega_k$ and $\Omega_{\Lambda}$ respectively. We will assume that we are living in a matter dominated universe and that these parameters are related to the value of the Hubble parameter by equation~\ref{eq:hubble_parameter}\cite{hubble_parameter_astro_journal},
+    \begin{align}
+        H^2(z) &= H_0^2\left( \Omega_M {(1+z)}^3 + \Omega_k {(1+z)}^4 + \Omega_{\Lambda} \right) \label{eq:hubble_parameter}\\
+        \intertext{where}
+        \Omega_k &= 1- \Omega_M - \Omega_{\Lambda}
+    \end{align}
+    We will use values of $\Omega_M=0.27$ and $\Omega_{\Lambda}=0.728\pm0.015$, in accordance with the $\Lambda$CDM model\cite{WMAP_Observations_Cosmological_Interpretation}.
+
+    There are also a number of parameters in the Schechter function that must be specified. In order to find suitable values to use, we collected data from a number of different sources covering several studies. All of the studies that have been performed in the past concern galaxies at lower redshifts than we are expecting to examine. To get an estimate for the value of each of the parameters at higher redshift, the values found were plotted and the fit extrapolated to cover the era necessary. Since some of the fits demonstrate that these parameters are not constant with time, their evolution shall be incorporated into the calculations.
+
+    The values in the Schechter function that we have determined fits for are $\alpha$, $M^{*}$ and $\phi^{*}$. The data collected for each of these fits is shown in appendix~\ref{app:parameter_fit_data}.
+
+    \subsection{Parameter Evolution} % (fold)
+    \label{sub:parameter_evolution}
+        The early stages of the models we used assumed that the parameters of the Schechter function were static with respect to time. This means that, when iterating over the redshift, the only property that changed was the co-moving volume. This is unphysical since it does not allow for changes in the characteristic mass and characteristic luminosity for different conditions in the universe. In order to improve the model, we collected data from a number of previous studies for three values, the characteristic mass, $M^*$, the Schechter normalisation, $\phi^*$ and the linear parameter, $\alpha$.
+
+        \subsubsection{Linear Parameter Evolution with Redshift} % (fold)
+        \label{ssub:linear_parameter_evolution_with_redshift}
+
+            In order to provide useful errors on the fits of the parameters, a technique called the pivot fit method is used to decouple the errors on $y$-intercept and gradient. This involved fitting the data after it has been normalised around the mean value. This normalisation simply involves taking the mean $x$- and $y$-value from each data point so that the graph is centered about the origin. This means that the $y$-intercept is fixed to zero and thus the fitting error applies only to the gradient. Subsequent linear fits shall be treated in this manner, so that errors quoted corespond to the gradient. For clarity of presentation, the data shall be plotted in its original form.
+
+            The graph in figure~\ref{fig:alpha_evolution} shows the data collected, with the corresponding uncertainties, for the linear parameter, $\alpha$. From this data, a linear fit is taken.
+            \begin{figure}[ht]
+                \begin{center}
+                    \begingroup\endlinechar=-1
+                    \resizebox{0.7\textwidth}{!}{%
+                        \input{../Images/alpha_fit_to_linear.tex}
+                    }\endgroup
+                    \caption{The evolution of $\alpha$ as a function of redshift according to past observational studies.\label{fig:alpha_evolution}}
+                \end{center}
+            \end{figure}
+
+            Figure~\ref{fig:phi_evolution} shows the data for the evolution of the normalisation parameter $\phi^{*}$.
+            \begin{figure}[ht]
+                \begin{center}
+                    \begingroup\endlinechar=-1
+                    \resizebox{0.7\textwidth}{!}{%
+                        \input{../Images/phi-star_fit_to_exponential.tex}
+                    }\endgroup
+                    \caption{The evolution of $\phi^{*}$ as a function of redshift according to past observational studies.\label{fig:phi_evolution}}
+                \end{center}
+            \end{figure}
+        % subsubsection linear_parameter_evolution_with_redshift (end)
+% subsection parameter_evolution (end)
+    

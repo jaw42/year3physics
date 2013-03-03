@@ -1,7 +1,7 @@
 % !TEX TS-program = pdflatex
 % !TEX encoding = UTF-8 Unicode
 
-	\documentclass[11pt]{article}%                                                use larger type; default would be 10pt
+\documentclass[11pt]{article}%                                                    use larger type; default would be 10pt
 \usepackage[utf8]{inputenc}%                                                      set input encoding (not needed with XeLaTeX)
 
 %%% PAGE DIMENSIONS ------------------------------------------------------------
@@ -34,14 +34,17 @@
 \usepackage{listings}%                                                            for including external files as text, eg code
 \usepackage{color}%                                                               for coloring of files and images
 \usepackage{overpic}%                                                             for adding annotations to pictures
-	\usepackage{siunitx}
-	\usepackage{multirow}
+\usepackage[alsoload=astro]{siunitx}%                                                             for units \SI{}{}, \si{}, \num{} etc.
+\usepackage{multirow}%                                                            for multiple row spanning cells in tables
+\usepackage{rotating}%                                                            for the \begin{sideways} environment for sideways text
 
 %%% EQUATIONS ------------------------------------------------------------------
 \numberwithin{equation}{section}%                                                 Number equations by section (change for different levels)
-	\DeclareSIUnit[number-unit-product = {}]\pixel{\text{pix}}
-	\DeclareSIUnit[number-unit-product = {}]\ADU{\text{ADU}}
-	\DeclareSIUnit[number-unit-product = {}]\electron{\text{e}^{-{}}}
+	\DeclareSIUnit\pixel{pix}
+	\DeclareSIUnit\ADU{ADU}
+    \DeclareSIUnit\electron{\text{e}^{-{}}}
+	\DeclareSIUnit\erg{erg}
+    \DeclareSIUnit\year{yr}
 
 %% BIBIOGRAPHY ------------------------------------------------------------------
 \usepackage{cite}
@@ -64,31 +67,31 @@
 
 %%% NEW COMMANDS ---------------------------------------------------------------
 \renewcommand{\d}{\,\mathrm{d}}%                                                  for integrals
-\newcommand{\dx}[2]{\frac{\textrm{d}#1}{\textrm{d}#2}}%                         for derivatives
-\newcommand{\dd}[2]{\frac{\textrm{d}^2#1}{\textrm{d}#2^2}}%                     for double derivatives
-\newcommand{\pd}[2]{\frac{\partial#1}{\partial#2}}%                             for partial derivatives
-\newcommand{\pdd}[2]{\frac{\partial^2#1}{\partial#2^2}}%                        for double partial derivatives
+\newcommand{\dx}[2]{\frac{\textrm{d}#1}{\textrm{d}#2}}%                           for derivatives
+\newcommand{\dd}[2]{\frac{\textrm{d}^2#1}{\textrm{d}#2^2}}%                       for double derivatives
+\newcommand{\pd}[2]{\frac{\partial#1}{\partial#2}}%                               for partial derivatives
+\newcommand{\pdd}[2]{\frac{\partial^2#1}{\partial#2^2}}%                          for double partial derivatives
 \newcommand{\e}[1]{\text{e}^{#1}}%                                                for exponentials
 \newcommand{\code}[1]{\texttt{#1}}%                                               for verbatim code view
 \newcommand{\inter}[1]{\shortintertext{#1}}%                                      shorter version of intertext
 \newcommand{\under}[1]{\underline{#1}}%                                           for vectors etc.
 
-\let\vaccent=\v{}%                                                                  rename builtin command \v{} to \vaccent{}
+\let\vaccent=\v{}%                                                                rename builtin command \v{} to \vaccent{}
 \newcommand{\uv}[1]{\ensuremath{\hat{#1}}}%                                       for unit vector
-\newcommand{\abs}[1]{\left|#1\right|}%                                          for absolute value
-\newcommand{\avg}[1]{\left<#1\right>}%                                          for average
+\newcommand{\abs}[1]{\left|#1\right|}%                                            for absolute value
+\newcommand{\avg}[1]{\left<#1\right>}%                                            for average
 \let\underdot=\d%                                                                 rename builtin command \d{} to \underdot{}
-\newcommand{\ket}[1]{\left|#1\right>}%                                          for Dirac bras
-\newcommand{\bra}[1]{\left<#1\right|}%                                          for Dirac kets
+\newcommand{\ket}[1]{\left|#1\right>}%                                            for Dirac bras
+\newcommand{\bra}[1]{\left<#1\right|}%                                            for Dirac kets
 \newcommand{\braket}[2]{\left<#1\vphantom{#2} \right|
-    \left.#2 \vphantom{#1} \right>}%                                             for Dirac brackets
+    \left.#2 \vphantom{#1} \right>}%                                              for Dirac brackets
 \newcommand{\matrixel}[3]{\left<#1\vphantom{#2#3} \right|
-    #2 \left|#3 \vphantom{#1#2}\right>}%                                        for Dirac matrix elements
-\newcommand{\grad}[1]{\nabla#1}%                                                 for gradient
+    #2 \left|#3 \vphantom{#1#2}\right>}%                                          for Dirac matrix elements
+\newcommand{\grad}[1]{\nabla#1}%                                                  for gradient
 \let\divsymb=\div%                                                                rename builtin command \div to \divsymb
-\renewcommand{\div}[1]{\nabla\cdot#1}%                                          for divergence
-\newcommand{\curl}[1]{\nabla\times#1}%                                          for curl
-\let\baraccent=\={}%                                                                rename builtin command \= to \baraccent
+\renewcommand{\div}[1]{\nabla\cdot#1}%                                            for divergence
+\newcommand{\curl}[1]{\nabla\times#1}%                                            for curl
+\let\baraccent=\={}%                                                              rename builtin command \= to \baraccent
 \renewcommand{\=}[1]{\stackrel{#1}{=}}%                                           for putting numbers above =
 
 
@@ -113,7 +116,9 @@
 \part{Predictions} % (fold)
 \label{prt:predictions}
     \input{Predictions_Intro_B-Johnson}
-    \input{Parameters_and_Assumptions_J-Wainwright}
+    \input{Assumptions_J-Wainwright}
+    \input{Parameter_Evolution_J-Wainwright}
+    \input{Schechter_function_J-Bryant}
 % part predictions (end)
 \newpage
 \part{Observations} % (fold)

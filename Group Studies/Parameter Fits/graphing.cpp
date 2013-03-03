@@ -283,12 +283,12 @@ int main(){
 			fprintf(gnuplotPipe, "%s%s%s%s%s", "fit_title = sprintf(\"",formatted_equation,"\", ",variables,")\n");
  		}
 
-		fprintf(gnuplotPipe, "%s%s%s%s%s%s%s%s%s%s%s%s%s","plot \"",input_filename_char,"\" using ", data_columns,":",error_columns," ",with_error_bars," ",legend_title," ",with_lines, lines_and_points_char);
-
+		fprintf(gnuplotPipe, "%s","plot ");
 		if(apply_fit){
-			fprintf(gnuplotPipe, "%s",", f(x) title fit_title");
+			fprintf(gnuplotPipe, "%s","f(x) title fit_title, ");
 		}
-		fprintf(gnuplotPipe, "%s","\n");
+		fprintf(gnuplotPipe, "%s%s%s%s%s%s%s%s%s%s%s%s%s%s","\"",input_filename_char,"\" using ", data_columns,":",error_columns," ",with_error_bars," ",legend_title," ",with_lines, lines_and_points_char, "\n");
+
 
 		if(output_to_pdf){
 			fprintf(gnuplotPipe, "%s","set term post enhanced color solid \"Helvetica\" 16\n");

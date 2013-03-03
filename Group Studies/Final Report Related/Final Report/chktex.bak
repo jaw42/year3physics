@@ -1,0 +1,6 @@
+Warning 3 in Schechter_function_J-Bryant.tex line 22: You should enclose the previous parenthesis with `{}'.
+        \phi(L) &= \phi^{*}\left( \frac{L}{L^{*}}\right)^{\alpha} e^{-L/L^{*}}   
+                                                       ^
+Warning 3 in Schechter_function_J-Bryant.tex line 43: You should enclose the previous parenthesis with `{}'.
+            \phi(M)=\phi^{*}(\ln10)\left(10^{0.4(M^{*}-M)}\right)^{\alpha+1}\exp\left(-10^{0.4(M^{*}-M)}\right),   
+                                                                ^
