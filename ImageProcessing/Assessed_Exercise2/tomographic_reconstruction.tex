@@ -1,14 +1,18 @@
 %!TEX root = mainfile.tex
 
 \section{Introduction} % (fold)
-	\label{sec:introduction}
+\label{sec:introduction}
+	Tomography is a technique for imaging objects and examining the internal structure of them in a non-invasive way. It is of enormous use in the medical industry where the ability to view the inside of a patient's body can be invaluable in the diagnostic process. Tomography stands out from other methods of viewing the internal structures of objects since it is able to view a slice through the object without the addition of the material around it in other slices, i.e.\ the rest of the object does not obscure the slice being viewed.
 
+    Tomography can be applied to many different imaging techniques, x-ray, MRI and ultrasound, and has been applied to many areas of scientific study and research including medicine, chemistry, astronomy and geology.
+
+    Tomographic reconstruction involves the creation of an image of an object taken through a particular slice by recombining the data collected from a set of line integrals across that object in the plane of interest. In other words, it is the conversion of a 3D averaged, or integrated, view of an object into a 2D slice of the object at a particular location, so that the details of the interior can be examined.
+
+    The word tomography comes from the Greek \textit{tomos} meaning section and \textit{graphein} meaning to write, so tomography is simply writing `parts' of an object, in this case an image of a single plane through that object, in a useful form.
 % section introduction (end)
 
 \section{Tomographic Reconstruction} % (fold)
-	\label{sec:tomographic_reconstruction}
-	Tomographic reconstruction involves the creation of an image of an object taken through a particular slice by recombining the data collected from a set of line integrals across that object in the plane of interest. The word tomography comes from the Greek \textit{tomos} meaning section and \textit{graphein} meaning to write, so tomography is simply writing `parts' of an object, in this case an image of a single plane through that object, in a useful form.
-
+\label{sec:tomographic_reconstruction}
     In order to examine this method of image construction, we shall use a series of images which form \textit{sagittal} slices of a human head. This means that each of the 129 images in the collection are a slice from side to side at a slightly different position. Together, they form a 3 dimensional image of the head, with all of the interior detail maintained. A few of these images are shown in figure~\ref{fig:example_sagittal}
     \begin{figure}[ht]
         \centering
@@ -70,8 +74,19 @@
     \begin{figure}[ht]
         \centering
         \includegraphics[width=0.4\textwidth]{Files/report_images/reference_slice.jpg}
-        \caption{Example slices from the original sagittal 3D image that will be used to examine the tomographic reconstruction method. Out of the 129 images that make up the full image, these are, from top left to bottom right, image 78, 106, 126, 162 and 182 respectively.\label{fig:reference_slice}} 
+        \caption{Reference slice that shall be used to compare later.\label{fig:reference_slice}} 
     \end{figure}
     
+    \subsection{Tomographic Scanner} % (fold)
+    \label{sub:tomographic_scanner}
+        When used in medical imaging applications, the data that is collected by a tomographic scanner would be represented by the image in figure~\ref{fig:3d_scan_example}.
+        \begin{figure}[ht]
+            \centering
+                \includegraphics[width=0.4\textwidth]{Files/report_images/3D_scan_example.jpg}
+            \caption{An image of the 3 dimensional representation of an object that would be measured by a tomographic scanner. This is just one view of the $360^{\circ}$ image that is generated.\label{fig:3d_scan_example}}
+        \end{figure}
+
+        The full image consists of a number of views of the object, each showing what it looks like from a different angle, averaged or integrated over its depth. Tomographic reconstruction involves calculating the reference image above, starting from this 3D representation
+    % subsection tomographic_scanner (end)
 % section tomographic_reconstruction (end)
 
