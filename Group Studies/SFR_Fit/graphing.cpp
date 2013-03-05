@@ -248,7 +248,7 @@ int main(){
 	const char *input_filename_char = input_filename.c_str();
 	const char *output_filename_char = output_filename.c_str();
 
-	FILE *gnuplotPipe = popen("gnuplot -persist","w");
+	FILE *gnuplotPipe = popen("gnuplot46 -persist","w");
 
 	// If gnuplot is found
 	if (gnuplotPipe) {
@@ -307,3 +307,4 @@ int main(){
 		cout << endl << "ERROR: Could not open GnuPlot" << endl;
 	}
 }
+
