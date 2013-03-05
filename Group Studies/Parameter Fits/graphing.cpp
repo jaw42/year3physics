@@ -161,6 +161,9 @@ int main(){
 	
 	tmp = cfg.getValueOfKey<string>("output_to_latex");
 	bool output_to_latex = bool_convert(tmp);
+
+	tmp = cfg.getValueOfKey<string>("output_to_png");
+	bool output_to_png = bool_convert(tmp);
 	
 	tmp = cfg.getValueOfKey<string>("output_to_pdf");
 	bool output_to_pdf = bool_convert(tmp);
@@ -260,6 +263,10 @@ int main(){
 		if(output_to_latex){
 			fprintf(gnuplotPipe, "%s","set terminal latex\n");
 			fprintf(gnuplotPipe, "%s%s%s","set output \"", output_filename_char,".tex\"\n");
+		}
+		if(output_to_png){
+			fprintf(gnuplotPipe, "%s","set terminal pngcairo size 650,456 enhanced font 'Verdana,10'\n");
+			fprintf(gnuplotPipe, "%s%s%s","set output \"", output_filename_char,".png\"\n");
 		}
 
  		fprintf(gnuplotPipe, "%s%s", other_options,"\n");
