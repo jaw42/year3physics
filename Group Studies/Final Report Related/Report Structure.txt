@@ -10,8 +10,8 @@ Introduction                                (Joe, Mike, Beth)
 
 Theory - General
     Cosmic Re-ionisation                    (Beth)
-    Lyman Break Galaxies                    (Lewis)    
     Gunn Peterson Effect                    (Andy)
+    Lyman Break Galaxies                    (Lewis)    
     Gravitational Lensing                   (Catherine)
 
 Predictions
@@ -34,8 +34,10 @@ Predictions
     Extensions?                             (Lewis)
         Cosmic variance
         Dust
-        Gunn-Peterson Effect
         Perturbations
+        Recombination                   (Lewis)
+        SFR Density                     (Owen, Jamie)
+        Number of Re-Ionising photons
 
 Observations
     Theory
