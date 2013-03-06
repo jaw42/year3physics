@@ -74,9 +74,9 @@
     \begin{figure}[ht]
         \centering
         \includegraphics[width=0.4\textwidth]{Files/report_images/reference_slice.jpg}
-        \caption{Reference slice that shall be used to compare later.\label{fig:reference_slice}} 
+        \caption{Reference slice that shall be used to compare later.\label{fig:reference_slice}}
     \end{figure}
-    
+
     \subsection{Tomographic Scanner} % (fold)
     \label{sub:tomographic_scanner}
         When used in medical imaging applications, the data that is collected by a tomographic scanner would be represented by the image in figure~\ref{fig:3d_scan_example}.
@@ -89,4 +89,36 @@
         The full image consists of a number of views of the object, each showing what it looks like from a different angle, averaged or integrated over its depth. Tomographic reconstruction involves calculating the reference image above, starting from this 3D representation
     % subsection tomographic_scanner (end)
 % section tomographic_reconstruction (end)
+
+\section{Back Projection} % (fold)
+\label{sec:back_projection}
+    The general method for tomographic reconstruction is called back projection. There are number of variations on this method that provide varying quality of results. We shall first examine the basic method of back projection and then see how it can be improved to increase the accuracy of the images calculated with it.
+
+    \subsection{Sinogram} % (fold)
+    \label{sub:sinogram}
+        Since we now have a 3D image, such as would be collected when imaging an object from a large number of different angles around it, we can no longer determine what the interior contains. The first step to finding this is the plot a sinogram. Each slide of the 3D image is a view of the object from a particular angle. Since we require to see the interior of the object only through a particular single slice, most of the 3D image is not needed. Thus the useful information is a series of single pixel tall images of a single slice of the object taken at slightly different angle around it.
+
+        A sinogram is a combined image of all of these views plotted as the value of the line integral with $x'$ against the angle $theta$, as per the diagram in figure~\ref{fig:sinogram_diag}. Since the different views are all taken about a single static point, polar co-ordinates are used, such that
+        \begin{align}
+            x\cos(\theta) + y\sin(\theta) = x'
+        \end{align}
+        Thus, the set of measurements that are collected for a given angle, $\theta$, make up a single layer of figure~\ref{fig:example_sinogram} and are called the parallel projection of the object at the angle $\theta$, denoted as $P_{\theta}(x')$.
+        \begin{figure}[ht]
+            \begin{center}
+                \includegraphics[width=0.5\textwidth]{Files/report_images/sinogram_diag.pdf}
+            \end{center}
+            \caption{A sinogram is an image of the value of the line integral plotted against angle for all the views around a measured object. Each point from the object traces a sinusoidal line as the angle is increased, or as the object is rotated in front of the measuring device.\label{fig:sinogram_diag}}
+        \end{figure}
+
+        An example of a sinogram, showing the plot for the data concerning the slice that holds the information for the reference image above, is shown in figure~\ref{fig:example_sinogram}.
+        \begin{figure}[ht]
+            \begin{center}
+                \includegraphics[width=0.4\textwidth]{Files/report_images/example_sinograph.jpg}
+            \end{center}
+            \caption{A sinogram is an image of the value of the line integral plotted against angle for all the views around a measured object. Each point from the object traces a sinusoidal line as the angle is increased, or as the object is rotated in front of the measuring device.\label{fig:example_sinogram}}
+        \end{figure}
+
+
+    % subsection sinogram (end)
+% section back_projection (end)
 

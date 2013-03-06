@@ -9,15 +9,15 @@ Rough Plan For Report (Subject to Change):
 
 Theory - General:
     ☐ Cosmic Re-ionisation                    (Beth)
-    ☐ Lyman Break Galaxies                    (Lewis)    
     ☐ Gunn Peterson Effect                    (Andy)
+    ☐ Lyman Break Galaxies                    (Lewis)    
     ✔ Gravitational Lensing                   (Catherine)
 
 Predictions:
   ✔ Into to Predictions 
     Theory:
         ☐ Expansion of the Universe
-            ☐ Co-moving distance / volume     (Jamie)
+            ✔ Co-moving distance / volume     (Jamie)
             ☐ Luminosity Function
             ☐ Red-shift
         ✔ Schechter Function                  (Jamie)
@@ -34,8 +34,10 @@ Predictions:
     ☐ Extensions?                             (Lewis)
         ☐ Cosmic variance
         ☐ Dust
-        ☐ Gunn-Peterson Effect
         ☐ Perturbations
+        ☐ Recombination                       (Lewis)
+        ☐ SFR Density                         (Owen, Jamie)
+        ☐ Number of Re-Ionising photons
 
 Observations:
  ✔ Intro to Obs

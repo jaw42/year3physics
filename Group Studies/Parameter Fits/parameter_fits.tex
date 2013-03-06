@@ -4,7 +4,7 @@
 \usepackage[top=0.8in, left=1in, right=1in, bottom=0.8in]{geometry}
 
 \begin{document}
-\small{28th Feb 2013}
+\small{\today}
 \section{Parameter Fits}
 	\subsection{Alpha}
 		\subsubsection{Linear Fit}
@@ -22,7 +22,7 @@
 				c               = -1.66423         +/- 0.06781      (4.074\%) \\
 
 				Mean Coord: 5.3964,\,-1.7432
-			\end{minipage}			
+			\end{minipage}
 
 		\subsubsection{Linear Fit Pivot}
 			\begin{minipage}[h]{0.6\textwidth}
@@ -90,6 +90,25 @@
 				Mean Coord: 5.3577,\,-0.0013
 			\end{minipage}
 
+		\subsubsection{Linear Fit (With Cutoff)}
+			\begin{minipage}[h]{0.6\textwidth}
+					\begin{center}
+						\begingroup\endlinechar=-1
+			  			\resizebox{\textwidth}{!}{%
+							\input{phi-star_fit_to_linear_cutoff.tex}
+			  			}\endgroup
+					\end{center}
+			\end{minipage}
+			\begin{minipage}[h]{0.35\textwidth}
+				$y=mx + c$ \\
+				m               = -3.57873e-05     +/- 8.15e-05     (227.7\%) \\
+				c               = 0.00130465       +/- 0.0004902    (37.57\%) \\
+
+				Mean Coord: 5.8455,\,-0.0011 \\
+
+				This didn't really help.
+			\end{minipage}
+
 	\newpage
 	\subsection{$M^{*}$}
 		\subsubsection{Logarithmic Fit}
@@ -118,6 +137,22 @@
 				$y=mx+c$ \\
 				m               = 0.22116          +/- 0.03555      (16.07\%) \\
 				c               = -21.642          +/- 0.201        (0.9286\%) \\
+
+				Mean Coord: 5.3964,\,-20.4486
+			\end{minipage}
+
+		\subsubsection{Linear Fit Pivot}
+			\begin{minipage}[h]{0.6\textwidth}
+					\begin{center}
+						\begingroup\endlinechar=-1
+			  			\resizebox{\textwidth}{!}{%
+							\input{m-star_fit_to_linear_pivot.tex}
+			  			}\endgroup
+					\end{center}
+			\end{minipage}
+			\begin{minipage}[h]{0.35\textwidth}
+				$y=mx$ \\
+				m               = 0.22116          +/- 0.03416      (15.44\%) \\
 
 				Mean Coord: 5.3964,\,-20.4486
 			\end{minipage}
