@@ -1,4 +1,4 @@
-\documentclass[twocolumn]{article}
+\documentclass{article}
 \usepackage{graphicx}
 \usepackage{rotating}
 \usepackage[top=0.8in, left=1in, right=1in, bottom=0.8in]{geometry}
@@ -6,87 +6,119 @@
 \begin{document}
 \small{28th Feb 2013}
 \section{Parameter Fits}
-	Ignore the log lables on the y-axes. These are referring to the fit, not the axis and shouldn't be there.
 	\subsection{Alpha}
 		\subsubsection{Linear Fit}
+			\begin{minipage}[h]{0.6\textwidth}
+					\begin{center}
+						\begingroup\endlinechar=-1
+			  			\resizebox{\textwidth}{!}{%
+							\input{alpha_fit_to_linear.tex}
+			  			}\endgroup
+					\end{center}
+			\end{minipage}
+			\begin{minipage}[h]{0.35\textwidth}
+				$y = mx + c$ \\
+				m               = -0.0146437       +/- 0.012        (81.92\%) \\
+				c               = -1.66423         +/- 0.06781      (4.074\%) \\
 
-		\begin{figure}[ht]
-			\begin{center}
-				\begingroup\endlinechar=-1
-	  			\resizebox{0.5\textwidth}{!}{%
-					\input{alpha_fit_to_linear.tex}
-	  			}\endgroup
-			\end{center}
-		\end{figure}
+				Mean Coord: 5.3964,\,-1.7432
+			\end{minipage}			
 
 		\subsubsection{Linear Fit Pivot}
-		\begin{figure}[ht]
-			\begin{center}
-				\begingroup\endlinechar=-1
-	  			\resizebox{0.5\textwidth}{!}{%
-					\input{alpha_fit_to_linear_pivot.tex}
-	  			}\endgroup
-			\end{center}
-		\end{figure}
-		From fit, $m=-0.01464\pm 0.012$, 78.7\%
+			\begin{minipage}[h]{0.6\textwidth}
+					\begin{center}
+						\begingroup\endlinechar=-1
+			  			\resizebox{\textwidth}{!}{%
+							\input{alpha_fit_to_linear_pivot.tex}
+			  			}\endgroup
+					\end{center}
+			\end{minipage}
+			\begin{minipage}[h]{0.35\textwidth}
+				$y = mx$ \\
+				m               = -0.0146437       +/- 0.01152      (78.7\%) \\
+
+				Mean Coord: 5.3964,\,-1.7432
+			\end{minipage}
 
 		\subsubsection{Logarithmic Fit}
-		\begin{figure}[ht]
-			\begin{center}
-				\begingroup\endlinechar=-1
-	  			\resizebox{0.5\textwidth}{!}{%
-					\input{alpha_fit_to_log.tex}
-	  			}\endgroup
-			\end{center}
-		\end{figure}
-
-	\newpage
-	\subsection{$M^{*}$}
-		\subsubsection{Linear Fit}
-		\begin{figure}[ht]
-			\begin{center}
-				\begingroup\endlinechar=-1
-	  			\resizebox{0.5\textwidth}{!}{%
-					\input{m-star_fit_to_linear.tex}
-	  			}\endgroup
-			\end{center}
-		\end{figure}
-
-		\subsubsection{Logarithmic Fit}
-		\begin{figure}[ht]
-			\begin{center}
-				\begingroup\endlinechar=-1
-	  			\resizebox{0.5\textwidth}{!}{%
-					\input{m-star_fit_to_log.tex}
-	  			}\endgroup
-			\end{center}
-		\end{figure}
+			\begin{minipage}[h]{0.6\textwidth}
+					\begin{center}
+						\begingroup\endlinechar=-1
+			  			\resizebox{\textwidth}{!}{%
+							\input{alpha_fit_to_log.tex}
+			  			}\endgroup
+					\end{center}
+			\end{minipage}
+			\begin{minipage}[h]{0.35\textwidth}
+				Not using this fit
+			\end{minipage}
 
 	\newpage
 	\subsection{$\phi^{*}$}
-		\subsubsection{Linear Fit}
-		\begin{figure}[ht]
-			\begin{center}
-			\begingroup\endlinechar=-1
-	  			\resizebox{0.5\textwidth}{!}{%
-					\input{phi-star_fit_to_linear.tex}
-	  			}\endgroup
-			\end{center}
-		\end{figure}
-
 		\subsubsection{Exponential Fit}
-		\begin{figure}[ht]
-			\begin{center}
-			\begingroup\endlinechar=-1
-	  			\resizebox{0.5\textwidth}{!}{%
-					\input{phi-star_fit_to_exponential.tex}
-	  			}\endgroup
-			\end{center}
-		\end{figure}
-		\[
-			\phi^* = m\times e^{c x} + d
-		\]
-		From fit, $m=0.05215\pm 0.096$, 184\% \\
-		$c=1.4866\pm 0.79$, 52.9\% \\
-		$d=0.0010587\pm 0.00013$, 12.7\%
+			\begin{minipage}[h]{0.6\textwidth}
+					\begin{center}
+						\begingroup\endlinechar=-1
+			  			\resizebox{\textwidth}{!}{%
+							\input{phi-star_fit_to_exponential.tex}
+			  			}\endgroup
+					\end{center}
+			\end{minipage}
+			\begin{minipage}[h]{0.35\textwidth}
+				$\phi^* = m\times e^{c x} + d$ \\
+				m               = 0.0521538        +/- 0.09597      (184\%)\\
+				c               = 1.48655          +/- 0.7866       (52.92\%)\\
+				d               = 0.00105869       +/- 0.0001342    (12.68\%)\\
+
+				Mean Coord: 5.3577,\,-0.0013
+			\end{minipage}
+
+		\subsubsection{Linear Fit}
+			\begin{minipage}[h]{0.6\textwidth}
+					\begin{center}
+						\begingroup\endlinechar=-1
+			  			\resizebox{\textwidth}{!}{%
+							\input{phi-star_fit_to_linear.tex}
+			  			}\endgroup
+					\end{center}
+			\end{minipage}
+			\begin{minipage}[h]{0.35\textwidth}
+				$y=mx + c$ \\
+				m               = -0.00018463     +/- 7.933e-05    (42.97\%) \\
+				c               = 0.00225921       +/- 0.0004469    (19.78\%) \\
+
+				Mean Coord: 5.3577,\,-0.0013
+			\end{minipage}
+
+	\newpage
+	\subsection{$M^{*}$}
+		\subsubsection{Logarithmic Fit}
+			\begin{minipage}[h]{0.6\textwidth}
+					\begin{center}
+						\begingroup\endlinechar=-1
+			  			\resizebox{\textwidth}{!}{%
+							\input{m-star_fit_to_log.tex}
+			  			}\endgroup
+					\end{center}
+			\end{minipage}
+			\begin{minipage}[h]{0.35\textwidth}
+			Something
+			\end{minipage}
+
+		\subsubsection{Linear Fit}
+			\begin{minipage}[h]{0.6\textwidth}
+					\begin{center}
+						\begingroup\endlinechar=-1
+			  			\resizebox{\textwidth}{!}{%
+							\input{m-star_fit_to_linear.tex}
+			  			}\endgroup
+					\end{center}
+			\end{minipage}
+			\begin{minipage}[h]{0.35\textwidth}
+				$y=mx+c$ \\
+				m               = 0.22116          +/- 0.03555      (16.07\%) \\
+				c               = -21.642          +/- 0.201        (0.9286\%) \\
+
+				Mean Coord: 5.3964,\,-20.4486
+			\end{minipage}
 \end{document}
