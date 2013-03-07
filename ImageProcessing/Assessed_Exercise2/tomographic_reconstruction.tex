@@ -107,7 +107,7 @@
             \begin{center}
                 \includegraphics[width=0.5\textwidth]{Files/report_images/sinogram_diag.pdf}
             \end{center}
-            \caption{A sinogram is an image of the value of the line integral plotted against angle for all the views around a measured object. Each point from the object traces a sinusoidal line as the angle is increased, or as the object is rotated in front of the measuring device.\label{fig:sinogram_diag}}
+            \caption{A sinogram is an image of the value of the line integral plotted against angle for all the views around a measured object. Each point from the object traces a sinusoidal line as the angle is increased, or as the object is rotated in front of the measuring device. Angle is represented on the vertical axis and the position $x'$ on the horizontal.\label{fig:sinogram_diag}}
         \end{figure}
 
         An example of a sinogram, showing the plot for the data concerning the slice that holds the information for the reference image above, is shown in figure~\ref{fig:example_sinogram}.
@@ -118,7 +118,85 @@
             \caption{A sinogram is an image of the value of the line integral plotted against angle for all the views around a measured object. Each point from the object traces a sinusoidal line as the angle is increased, or as the object is rotated in front of the measuring device.\label{fig:example_sinogram}}
         \end{figure}
 
+        \subsubsection{Radon Transform} % (fold)
+        \label{ssub:radon_transform}
+            The mathematical operation that gives the sinogram of an imaged slice is called the Radon Transform, ``it is the integral transform consisting of the integral of a function over straight lines''. In other words, the Radon Transform is the line integral along each of the possible straight lines defined over the area of the space represented by the original function. The transform is defined over the line space, $L$, as
+            \begin{align}
+                R_f(L) &= \int_L f(\boldsymbol{r})|\d{\boldsymbol{r}}|
+            \end{align}
+            Any stright line through the original function space can be defined in polar co-ordinates given a point through which the line passes and an angle $\theta$, that the line subtends. If the line passes through the point $(x,y)$, then any line can be defined as
+            \begin{align}
+                (x,y) &= \Big(\big[x'\cos(\theta)+y'\sin(\theta)\big], \big[-y'\cos(\theta)+x'\sin(\theta)\big]\Big)
+            \end{align}
+            where $x'$ is the distance of the line from the origin, as shown in figure~\ref{fig:sinogram_diag}. This means, then, that the Radon transform can be rewritted in terms of this general line form,
+            \begin{align}
+                R_f(\theta,x') &= \int_{-\infty}^{\infty} f(x,y)\d{t} \\
+                &= \int_{-\infty}^{\infty} f\Big(\big[x'\cos(\theta)+y'\sin(\theta)\big], \big[-y'\cos(\theta)+x'\sin(\theta)\big]\Big)\d{t}
+            \end{align}
+            This means that every point in the original function is mapped to a location described by a combination of sine and cosine functions. This is clearly seen when considering the Radon Transform of several a Dirac Delta functions $\delta(x,y)$, which are described by the same number of sine waves with different phases, depending on their original position, as shown in figure~\ref{fig:delta_radon_transform}.
+            \begin{figure}[ht]
+                \centering
+                \begin{minipage}[c]{0.2\linewidth}
+                    \centering
+                    \includegraphics[width=\textwidth]{Files/report_images/radon_transform_deltas_original.png}
+                \end{minipage}
+                ~
+                \begin{minipage}[c]{0.5\linewidth}
+                    \centering
+                    \includegraphics[width=\textwidth]{Files/report_images/radon_transform_deltas.png}
+                \end{minipage}
+                \caption{The Radon Transform (left) of a series of finite delta functions (right). The Radon Transform can be thought of as the project of the original image as viewed from in the plane of the image, as the field of view is rotated around the image. The horizontal axis is now representing angle and vertical position.\label{fig:delta_radon_transform}}
+            \end{figure}
 
+            When this transform is applied to more complex images, the result is a very large number of blurred sine waves with different phases and also different amplitudes that, together, represent the whole image.
+        % subsubsection radon_transform (end)
+        \subsection{Back Projection Algorithm} % (fold)
+        \label{sub:back_projection_algorithm}
+            The basic steps when reconstructing the axial slice from the sinogram using back projection are as follows
+            \begin{enumerate}
+                \item Take the measured line integral at each offset along the projection
+                \item Spread this value back uniformly along the line of measurement
+                \item Repeat for every projection taken at all angles around the object
+                \item Sum the contributions from all of the projections to give a back-projected reconstruction of the axial slice.
+            \end{enumerate}
+
+            This process is simple and computationally simple. However, this method produces serious artefacts making the image only just recognisable as the desired reconstruction, when compared to the reference image above, as shown in figure~\ref{fig:simple_backprojection}.
+            \begin{figure}[ht]
+                \begin{center}
+                    \includegraphics[width=0.4\textwidth]{Files/report_images/simple_backprojection.jpg}
+                \end{center}
+                \caption{The reconstructed axial slice using only basic back projection. The image is just recognisable as being related to the reference image, but there are severe artefacts and tails making any application of this image almost useless.\label{fig:simple_backprojection}}
+            \end{figure}
+
+            The reason the image looks so blurred, with so much extra information, is that the back-projections of each individual linear projection are summed over the full width and heigh of the image. This means that, although most, if not all, of the original information is concentrated in the centre of the image, this is spread out to include the edges, simply because there is nothing to tell the algorithm not to, and so the tails are spread back to the extremities of the image.
+
+            We shall consider some methods for improving this image.
+        % subsection back_projection_algorithm (end)
     % subsection sinogram (end)
 % section back_projection (end)
+
+\section{Central Slice Theorem} % (fold)
+\label{sec:central_slice_theorem}
+    The back projection method works, insofar as we now have an image, reconstructed from the 3D scan that is recognisable as the reference image in figure~\ref{fig:reference_slice}. However we want to improve the algorithm, so that it does not trace the projections back uniformly which leads to the long tails shown above. One method of doing this involves the central slice theorem.
+
+    The Central Slice Theorem states that the results of the following two calculations are equal:
+    \begin{itemize}
+        \item Take a two-dimensional function $f(\boldsymbol{r})$, project it onto a one-dimensional line, and do a Fourier transform of that projection.
+        \item Take that same function, but do a two-dimensional Fourier transform first, and then take a single slice through the origin, which is parallel to the projection line.
+    \end{itemize}
+
+    This theorem means that we can use each row of the sinogram to build the 2D Fourier Transform of the axial slice since the 1D Fourier Transform of each row forms a radial (central) slice of the 2D transform.
+    \begin{figure}[ht]
+        \begin{center}
+            \includegraphics[width=0.6\textwidth]{Files/report_images/central_slice_theorem.pdf}
+        \end{center}
+        \caption{The central slice theorem means that the 2D Fourier Transform of the final image can be constructed from the 1D transforms of each slice of the sinogram.\label{fig:central_slice_theorem}}
+    \end{figure}
+
+    However, if this method is used to compute the axial slice, the same image as previously is found, with the tails and severe artefacts. This is because taking the Fourier Transform is a linear operation. This means that the steps taken here, taking the Fourier Transform (FT), adding the images and then taking the inverse FT is identical as adding the images and then taking the FT then the inverse FT. Since taking the FT and then inverse FT will clearly give the same original image, this is the same as before when just adding the back projections.
+
+    The reason that there was no improvement in  final image quality is due to the distribution of samples of the Fourier Transform. Moving radially outward from the centre of the image, the sample density decreases as $\frac{1}{|r|}$, where $r$ is the radius. To correct for this, a weighting factor must be used to make the FT uniform in sample density. This is performed either in frequency space once the FT has been taken, before the inverse, or in real space.
+
+    The weighting factor is usually applied in real space as this proves to be less computationally intensive. This is possible because multiplying each central slice by the weighting factor is the same as convolving the inverse FT of each slice with the inverse FT of the weighting factor.
+% section central_slice_theorem (end)
 
