@@ -198,5 +198,22 @@
     The reason that there was no improvement in  final image quality is due to the distribution of samples of the Fourier Transform. Moving radially outward from the centre of the image, the sample density decreases as $\frac{1}{|r|}$, where $r$ is the radius. To correct for this, a weighting factor must be used to make the FT uniform in sample density. This is performed either in frequency space once the FT has been taken, before the inverse, or in real space.
 
     The weighting factor is usually applied in real space as this proves to be less computationally intensive. This is possible because multiplying each central slice by the weighting factor is the same as convolving the inverse FT of each slice with the inverse FT of the weighting factor.
+
+    We can demonstrate this by considering the Fourier Transform for both cases. The general function, $f(x,y)$ can be obtained from its Fourier Transform $F(k_x,k_y)$ by the inverse transform,
+    \begin{align}
+        f(x,y) &= \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}F(k_x,k_y)\e{ik_xx+ik_yy} \d{k_x}\d{k_y}
+    \end{align}
+    Since the central slice theorem is defined through the centre of the transform, it is convenient to use polar coordinates, though with ranges $-\infty < k < \infty$ and $0 < \theta < \pi$,
+    \begin{align}
+        f(x,y) &= \int_{0}^{\pi}\int_{-\infty}^{\infty}F(k,\theta)|k|\e{ik(x\cos\theta + y\sin\theta)} \d{k}\d{\theta}
+    \end{align}
+    If we define $F(k,\theta) = Q_{\theta}(k)$, where $Q_{\theta}$ is the Fourier Transform of the projection $P_{\theta}$, then we have,
+    \begin{align}
+        f(x,y) &= \int_{0}^{\pi}\left\{\int_{-\infty}^{\infty}Q_{\theta}(k)|k|\e{ik(x\cos\theta + y\sin\theta)} \d{k}\right\}\d{\theta} \\
+        &= \int_{0}^{\pi}\underbrace{\int_{-\infty}^{\infty}Q_{\theta}(k)|k|\e{ikx'} \d{k}}_\text{A}\d{\theta} \label{eq:filtered_backprojection}
+    \end{align}
+    This means that the image $f(x,y)$ can be found by back projecting part A of equation~\ref{eq:filtered_backprojection}. Part A is the inverse Fourier Transform of the two functions $Q_{\theta}$ and $|k|$, and so, since $Q_{\theta}$ is the the FT of $P_{\theta}$, A can be expressed as the convolution of $P_{\theta}$ with a filter given by the inverse FT of the function $|k|$. All that remains, then, in order to perform the reconstruction is to find the filter, given by the inverse FT of the function $|k|$.
+
+
 % section central_slice_theorem (end)
 

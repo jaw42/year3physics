@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage[top=0.8in, left=1in, right=1in, bottom=0.8in]{geometry}
+
+\begin{document}
+\small{\today}
+\section{Star Formation Rate Density Fits}
+	\subsection{Linear Fit}
+		\begin{minipage}[h]{0.6\textwidth}
+				\begin{center}
+					\begingroup\endlinechar=-1
+		  			\resizebox{\textwidth}{!}{%
+						\input{sfr_fit_linear.tex}
+		  			}\endgroup
+				\end{center}
+		\end{minipage}
+		\begin{minipage}[h]{0.35\textwidth}
+			% $y = mx + c$ \\
+			% m               = -0.0146437       +/- 0.012        (81.92\%) \\
+			% c               = -1.66423         +/- 0.06781      (4.074\%) \\
+
+			% Mean Coord: 5.3964,\,-1.7432
+		\end{minipage}
+
+	\subsection{Exponential Fit}
+		\begin{minipage}[h]{0.6\textwidth}
+				\begin{center}
+					\begingroup\endlinechar=-1
+		  			\resizebox{\textwidth}{!}{%
+						\input{sfr_fit_exponential.tex}
+		  			}\endgroup
+				\end{center}
+		\end{minipage}
+		\begin{minipage}[h]{0.35\textwidth}
+			$SFR = m\times e^{c x} + d$ \\
+			m               = 1.66324          +/- 11.41        (685.9\%) \\
+			c               = 0.72669          +/- 1.674        (230.3\%) \\
+			d               = 0.0538716        +/- 0.05762      (107\%) \\
+
+			Mean Coord: 6.0625,\,0.0825
+		\end{minipage}
+
+		\subsection{Power Fit}
+		\begin{minipage}[h]{0.6\textwidth}
+				\begin{center}
+					\begingroup\endlinechar=-1
+		  			\resizebox{\textwidth}{!}{%
+						\input{sfr_fit_power.tex}
+		  			}\endgroup
+				\end{center}
+		\end{minipage}
+		\begin{minipage}[h]{0.35\textwidth}
+			$SFR = m^{c x} + d$ \\
+			m               = 0.681382         +/- 123          (1.805e+04\%) \\
+			c               = 1.56371          +/- 738.1        (4.72e+04\%) \\
+			d               = 0.0490061        +/- 0.1187       (242.3\%) \\
+
+			Mean Coord: 6.0625,\,0.0825
+		\end{minipage}
+
+		\subsection{Power Fit}
+		\begin{minipage}[h]{0.6\textwidth}
+				\begin{center}
+					\begingroup\endlinechar=-1
+		  			\resizebox{\textwidth}{!}{%
+						\input{sfr_fit_power2.tex}
+		  			}\endgroup
+				\end{center}
+		\end{minipage}
+		\begin{minipage}[h]{0.35\textwidth}
+			$SFR = m\times x^{c} + d$ \\
+			m               = -0.406815        +/- 22.83        (5611\%) \\
+			c               = 0.188555         +/- 7.919        (4200\%) \\
+			d               = 0.652192         +/- 23.89        (3663\%) \\
+
+			Mean Coord: 6.0625,\,0.0825
+		\end{minipage}
+
+		\subsection{Logarithm Fit}
+		\begin{minipage}[h]{0.6\textwidth}
+				\begin{center}
+					\begingroup\endlinechar=-1
+		  			\resizebox{\textwidth}{!}{%
+						\input{sfr_fit_log.tex}
+		  			}\endgroup
+				\end{center}
+		\end{minipage}
+		\begin{minipage}[h]{0.35\textwidth}
+			$SFR = m\log(c\times x) + d$ \\
+			m               = -0.107607        +/- 0.07037      (65.39\%) \\
+			c               = 0.463919         +/- 9.46e+11     (2.039e+14\%) \\
+			d               = 0.191617         +/- 2.193e+11    (1.145e+14\%) \\
+
+			Mean Coord: 6.0625,\,0.0825
+		\end{minipage}
+\end{document}

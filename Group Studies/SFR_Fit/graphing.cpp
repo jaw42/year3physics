@@ -19,7 +19,7 @@ using namespace std;
 //		return ostr.str();
 //	}
 	//
-//	// Convert a string to T.	
+//	// Convert a string to T.
 //	template <typename T>
 //	static T string_to_T(string const &val) {
 //		istringstream istr(val);
@@ -53,7 +53,7 @@ private:
 		if (temp[0] == '='){
 			return false;
 		}
-		for (size_t i = temp.find('=') + 1; i < temp.length(); i++){	
+		for (size_t i = temp.find('=') + 1; i < temp.length(); i++){
 			if (temp[i] != ' '){
 				return true;
 			}
@@ -154,19 +154,19 @@ bool bool_convert(string option){
 
 int main(){
 	ConfigFile cfg("graph_config.cfg");
-	
+
 	string tmp;
 
 	string input_filename_default = cfg.getValueOfKey<string>("input_filename_default");
-	
+
 	tmp = cfg.getValueOfKey<string>("output_to_latex");
 	bool output_to_latex = bool_convert(tmp);
-	
+
 	tmp = cfg.getValueOfKey<string>("output_to_pdf");
 	bool output_to_pdf = bool_convert(tmp);
 		tmp = cfg.getValueOfKey<string>("output_filename_default");
 		const char * output_filename_default = tmp.c_str();
-	
+
 	tmp = cfg.getValueOfKey<string>("use_auto_ranges");
 	bool use_auto_ranges = bool_convert(tmp);
 		tmp = cfg.getValueOfKey<string>("xrange");
@@ -184,17 +184,17 @@ int main(){
 
 	tmp = cfg.getValueOfKey<string>("join_points_with_lines");
 	bool join_points_with_lines = bool_convert(tmp);
-	
+
 	tmp = cfg.getValueOfKey<string>("draw_lines_and_points");
 	bool draw_lines_and_points = bool_convert(tmp);
-	
+
 	tmp = cfg.getValueOfKey<string>("draw_legend");
 	bool draw_legend = bool_convert(tmp);
 		tmp = cfg.getValueOfKey<string>("legend_title");
 		const char * legend_title = tmp.c_str();
 		tmp = cfg.getValueOfKey<string>("legend_position");
 		const char * legend_position = tmp.c_str();
-	
+
 	tmp = cfg.getValueOfKey<string>("title");
 	const char * title = tmp.c_str();
 		tmp = cfg.getValueOfKey<string>("xlabel");
@@ -248,7 +248,7 @@ int main(){
 	const char *input_filename_char = input_filename.c_str();
 	const char *output_filename_char = output_filename.c_str();
 
-	FILE *gnuplotPipe = popen("gnuplot46 -persist","w");
+	FILE *gnuplotPipe = popen("gnuplot -persist","w");
 
 	// If gnuplot is found
 	if (gnuplotPipe) {
@@ -256,14 +256,14 @@ int main(){
 		fprintf(gnuplotPipe, "%s%s%s","set title '",title,"'\n");
 		fprintf(gnuplotPipe, "%s%s%s","set xlabel '",xlabel,"'\n");
 		fprintf(gnuplotPipe, "%s%s%s","set ylabel '",ylabel,"'\n");
-		
+
 		if(output_to_latex){
 			fprintf(gnuplotPipe, "%s","set terminal latex\n");
 			fprintf(gnuplotPipe, "%s%s%s","set output \"", output_filename_char,".tex\"\n");
 		}
 
  		fprintf(gnuplotPipe, "%s%s", other_options,"\n");
-		
+
 		if(draw_legend){
 			fprintf(gnuplotPipe, "%s%s%s", "set key ",legend_position," \n");
 		}else{
@@ -287,7 +287,7 @@ int main(){
 		if(apply_fit){
 			fprintf(gnuplotPipe, "%s","f(x) title fit_title, ");
 		}
-		fprintf(gnuplotPipe, "%s%s%s%s%s%s%s%s%s%s%s%s%s%s","\"",input_filename_char,"\" using ", data_columns,":",error_columns," ",with_error_bars," ",legend_title," ",with_lines, lines_and_points_char, "\n");
+		fprintf(gnuplotPipe, "%s%s%s%s%s%s%s%s%s%s%s%s%s","\"",input_filename_char,"\" using ", data_columns, error_columns," ",with_error_bars," ",legend_title," ",with_lines, lines_and_points_char, "\n");
 
 
 		if(output_to_pdf){
