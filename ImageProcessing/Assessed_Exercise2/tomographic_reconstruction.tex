@@ -197,7 +197,7 @@
 
     The reason that there was no improvement in  final image quality is due to the distribution of samples of the Fourier Transform. Moving radially outward from the centre of the image, the sample density decreases as $\frac{1}{|r|}$, where $r$ is the radius. To correct for this, a weighting factor must be used to make the FT uniform in sample density. This is performed either in frequency space once the FT has been taken, before the inverse, or in real space.
 
-    The weighting factor is usually applied in real space as this proves to be less computationally intensive. This is possible because multiplying each central slice by the weighting factor is the same as convolving the inverse FT of each slice with the inverse FT of the weighting factor.
+    The weighting factor is usually applied in real space as this proves to be less computationally intensive. This is possible because multiplying each central slice by the weighting factor is the same as convolving the inverse FT of each slice with the inverse FT of the weighting factor. 
 
     We can demonstrate this by considering the Fourier Transform for both cases. The general function, $f(x,y)$ can be obtained from its Fourier Transform $F(k_x,k_y)$ by the inverse transform,
     \begin{align}
@@ -212,7 +212,40 @@
         f(x,y) &= \int_{0}^{\pi}\left\{\int_{-\infty}^{\infty}Q_{\theta}(k)|k|\e{ik(x\cos\theta + y\sin\theta)} \d{k}\right\}\d{\theta} \\
         &= \int_{0}^{\pi}\underbrace{\int_{-\infty}^{\infty}Q_{\theta}(k)|k|\e{ikx'} \d{k}}_\text{A}\d{\theta} \label{eq:filtered_backprojection}
     \end{align}
-    This means that the image $f(x,y)$ can be found by back projecting part A of equation~\ref{eq:filtered_backprojection}. Part A is the inverse Fourier Transform of the two functions $Q_{\theta}$ and $|k|$, and so, since $Q_{\theta}$ is the the FT of $P_{\theta}$, A can be expressed as the convolution of $P_{\theta}$ with a filter given by the inverse FT of the function $|k|$. All that remains, then, in order to perform the reconstruction is to find the filter, given by the inverse FT of the function $|k|$.
+    This means that the image $f(x,y)$ can be found by back projecting part A of equation~\ref{eq:filtered_backprojection}. Part A is the inverse Fourier Transform of the two functions $Q_{\theta}$ and $|k|$, and so, since $Q_{\theta}$ is the the FT of $P_{\theta}$, A can be expressed as the convolution of $P_{\theta}$ with a filter given by the inverse FT of the weighting function. All that remains, then, in order to perform the reconstruction is to find the filter, given by the inverse FT of the weighting function. The 2D Fourier Transform of $\frac{1}{r}$ is $\frac{1}{|k|}$, and so the weighting function that is used as the filter is the inverse FT of $|k|$.
+
+    \subsection{Filter} % (fold)
+    \label{sub:filter}
+        The function that we need to use as the filter, in order to correct for the changes in density of the FT sampling is the inverse FT of the function $|k|$. When considering the whole plane, from $-\infty < k < \infty$, this solution does not exist as the series diverges. But there is a maximum frequecy, $k$, that is of interest, the Nyquist Frequency outside of which the information can be disgarded, and so the function can be redefined as
+        \begin{align}
+            f(k) =
+                \begin{cases}
+                    |k| & |k| < k{_\text{max}} \\
+                    0   & |k| > {_\text{max}}
+                \end{cases}
+        \end{align}
+        The inverse FT for this function is defined as 
+        \begin{align}
+            f(x) &= k^2_{\text{max}} \left[ \frac{2\sin(2\pi xk_{\text{max}})}{2\pi xk_{\text{max}}} - \left( \frac{\sin(\pi xk_{\text{max}})}{\pi xk_{\text{max}}} \right)^2 \right]
+        \end{align}
+        and is shown in figure~\ref{fig:filter_graph}.
+        \begin{figure}[ht]
+            \centering
+                \includegraphics[width=0.7\textwidth]{Files/report_images/inverse_FT_filter.png}
+            \caption{The filter used to weight the projections to remove the long tails that obscure the image.\label{fig:filter_graph}}
+        \end{figure}
+    % subsection filter (end)
+    \subsection{Applying the Filter} % (fold)
+    \label{sub:applying_the_filter}
+        Applying the filter is performed by convolving it with the projections. Since the function is continuous, but the convolution kernel must be discrete, integer values are used, as shown by the dots in the graph in figure~\ref{fig:filter_graph}. The filter kernel is found by using the value of the filter function at these integer values of $x$ and is normalised so that the elements sum to zero.
+
+        Using this method of convolving the inverse FT of the weighting function with the projections, projecting them back and then summing the result to reconstruct the original image produces the image in figure~\ref{fig:filtered_backprojection}.
+        \begin{figure}[ht]
+            \centering
+                \includegraphics[width=0.4\textwidth]{Files/report_images/reconstructed_image.jpg}
+            \caption{The filter used to weight the projections to remove the long tails that obscure the image.\label{fig:filtered_backprojection}}
+        \end{figure}
+    % subsection applying_the_filter (end)
 
 
 % section central_slice_theorem (end)
