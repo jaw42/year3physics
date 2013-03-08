@@ -4,72 +4,73 @@ Rough Plan For Report (Subject to Change):
  ☐ Abstract                                    (Joe, Mike, Beth)
  ☐ Contents
  ☐ Introduction                                (Joe, Mike, Beth)
-	☐ Why observe?
-	☐ Aims
+    ☐ Why observe?
+    ☐ Aims
 
 Theory - General:
-	☐ Cosmic Re-ionisation                    (Beth)
-	☐ Gunn Peterson Effect                    (Andy)
-	☐ Lyman Break Galaxies                    (Lewis)
-	✔ Gravitational Lensing                   (Catherine)
+    ☐ Cosmic Re-ionisation                    (Beth)
+    ☐ Gunn Peterson Effect                    (Andy)
+    ☐ Lyman Break Galaxies                    (Lewis)    
+    ✔ Gravitational Lensing                   (Catherine)
 
 Predictions:
-  ✔ Into to Predictions
-	Theory:
-		☐ Expansion of the Universe
-			✔ Co-moving distance / volume     (Jamie)
-			☐ Luminosity Function
-			☐ Red-shift
-		✔ Schechter Function                  (Jamie)
-			✔ What
-			✔ Why
-		☐ Luminosity vs Red-shift
-	✔ General Assumptions                     (Josh)
-	☐ Program                                 (Andy, Owen)
-		☐ Methods
-			☐ Trapezium Rule
-			☐ Simpson Rule?
-		✔ Parameters we used                  (Josh)
-		☐ Input / output                      (Andy, Owen)
-	☐ Extensions?                             (Lewis)
-		☐ Cosmic variance
-		☐ Dust
-		☐ Perturbations
-		☐ Recombination                       (Lewis)
-		☐ SFR Density                         (Owen, Jamie)
-		☐ Number of Re-Ionising photons
+  ✔ Into to Predictions 
+    Theory:
+        ☐ Expansion of the Universe
+            ✔ Co-moving distance / volume     (Jamie)
+            ☐ Luminosity Function
+            ☐ Red-shift
+        ✔ Schechter Function                  (Jamie)
+            ✔ What 
+            ✔ Why  
+        ☐ Luminosity vs Red-shift
+    ✔ General Assumptions                     (Josh) 
+    ☐ Program                                 (Andy, Owen)
+        ☐ Methods
+            ☐ Trapezium Rule
+            ☐ Simpson Rule?
+        ✔ Parameters we used                  (Josh)
+        ☐ Input / output                      (Andy, Owen)
+    ☐ Extensions?                             (Lewis)
+        ☐ Cosmic variance
+        ☐ Dust
+        ☐ Perturbations
+        ☐ Recombination                       (Lewis)
+        ☐ SFR Density                         (Owen, Jamie)
+        ☐ Number of Re-Ionising photons
 
 Observations:
  ✔ Intro to Obs
-	Theory:
-		☐ Filters + Band Conversion           (Joe)
-		☐ Methods for Detection
-			✔ Dropout method                  (Ston)
-			☐ Spectroscopy                    (John)
-				☐ 21cm                        (Joe)
-				☐ Observational Gravitational lensing (Catherine)
-		☐ Exposure Times                      (Rahim)
-			☐ Errors                          (Rahim)
-				☐ Background
-				☐ Dark Noise
-				☐ Read Noise
-			☐ Signal to Noise
-				☐ Seeing
-
-	☐ Telescopes (introduction to)
-		☐ Ground vs Space based               (Rahim)
-		☐ Telescopes chosen for investigation
-			✔ Hubble                          (Mike)
-			☐ James Webb                      (John)
-			✔ Spitzer                         (Ston)
-			✔ Euclid                          (Ston+Joe)
-		✔ Contaminants                        (Mike)
-	☐ Observing Strategy (Results)
-		☐ Identify candidates
-		☐ Exposure
-		☐ Pick a telescope(s)
-		☐ Justification
-		☐ Time-scales (realistic?)
+    Theory:
+        ☐ Filters + Band Conversion           (Joe)
+        ☐ Methods for Detection 
+            ✔ Dropout method                  (Ston)
+            ☐ Spectroscopy                    (John)
+                ✔ 21cm                        (Joe)
+                ☐ Observational Gravitational lensing (Catherine)
+                ✔ Colour Photometry           (Joe)
+        ☐ Exposure Times                      (Rahim)
+            ☐ Errors                          (Rahim)
+                ☐ Background
+                ☐ Dark Noise
+                ☐ Read Noise
+            ☐ Signal to Noise
+                ☐ Seeing
+        
+    ☐ Telescopes (introduction to)
+        ☐ Ground vs Space based               (Rahim)
+        ☐ Telescopes chosen for investigation
+            ✔ Hubble                          (Mike)
+            ☐ James Webb                      (John)
+            ✔ Spitzer                         (Ston) 
+            ✔ Euclid                          (Ston+Joe) 
+        ✔ Contaminants                        (Mike) 
+    ☐ Observing Strategy (Results)
+        ☐ Identify candidates 
+        ☐ Exposure
+        ☐ Pick a telescope(s)
+        ☐ Justification
+        ☐ Time-scales (realistic?)
 
  ☐ Conclusion
 
