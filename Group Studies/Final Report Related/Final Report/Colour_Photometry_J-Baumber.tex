@@ -1,0 +1,31 @@
+%!TEX root = mainfile.tex
+
+\section{Photometry and Colour} % (fold)
+\label{section:Photometry_Colour}
+	Photometry is one of the principle methods that astronomers use to detect objects in the universe. In principle, Photometry is the measurement of flux from objects through filters with a certain wavelength range (bandpass). Using a filter does not disperse the light as in spectroscopy, so if you use a filter with a large bandpass, more light is obtained in the image than if the observation was done using spectroscopy or narrow band filters. This means much fainter objects can be observed quicker using broad band photometry. [Romanishin]. To detect lyman break galaxies the dropout method is used, which uses at least three filters to get enough spectral information to identify the object as a candidate for being a lyman break galaxy (see dropout method section). However,  using the dropout method is not enough to confirm the identities of these candidates, other observational methods need to be used to be certain the object is a lyman break galaxy and not a contaminant. One of the most effective ways of eliminating these contaminants is to use the colour information of the object, obtained from the photometric measurements.
+
+	MORE DETAIL ON BANDS AND PHOTOMETRY
+
+    \subsection{Eliminating Contaminants} %fold
+    \label{sub:Eliminating_Contanimants}
+		The ‘colour’ of an object in photometry is defined as the difference in magnitude between two filters. If there are two filters, for example purposes let them be called A and B, where A has a lower central wavelength, the colour for an object in these two filters would be  m(a)-m(b). The larger the value is, it is said that the ‘redder’ the object is, and equally as the value gets smaller, it gets ‘bluer’. To eliminate candidates from observations, a colour-colour diagram is made using three filters, with two colour values for each object. For instance if the observations were done in the J, H and K filters, the colour colour diagram would be (H-K) plotted against (J-H). 
+
+	%subsection Eliminating_Contaminants (end)
+
+    \subsection{Hyperz} %fold
+	\label{sub:Hyperz} 
+		To eliminate contaminates and predict colour windows for observations the program Hyperz and its subprogram ‘make_catalog’ can be used to produce a catalog of synthetic galaxies and their magnitudes in different bands at different redshifts. 
+
+		DESCRIPTION OF OPERATION AND PARAMTERS FOR HYPERZ
+
+	%subsection Hyperz (end)
+
+	\subsection{Results for Colour} %fold
+	\label{sub:Results_for_Colour}
+		GRAPHS FOR RANGE OF REDSHIFTS. APPROXIMATE MAXIMUM NUMBER OF GRAPHS: 10
+
+		COLOUR WINDOW SELECTION FOR TELESCOPES
+
+	%subsection Results_for_Colour (end)
+	
+%section Photometry_and_colour (end)
