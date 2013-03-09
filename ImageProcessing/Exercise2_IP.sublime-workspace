@@ -1,0 +1,340 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Assessed_Exercise2/tomographic_reconstruction.tex",
+			"settings":
+			{
+				"buffer_size": 22881,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assessed_Exercise2/mainfile.tex",
+			"settings":
+			{
+				"buffer_size": 8192,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assessed_Exercise2/Files/report_images/plot.gp",
+			"settings":
+			{
+				"buffer_size": 281,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assessed_Exercise2/Files/report_images/filter_values.txt",
+			"settings":
+			{
+				"buffer_size": 414,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"packins",
+				"Package Control: Install Package"
+			],
+			[
+				"packre",
+				"Package Control: Remove Package"
+			],
+			[
+				"pacins",
+				"Package Control: Install Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"packl",
+				"Package Control: List Packages"
+			],
+			[
+				"packena",
+				"Package Control: Enable Package"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/josh/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/josh/Documents/Physics/Year 3/ImageProcessing/Assessed_Exercise2/chktex",
+		"/home/josh/Documents/Physics/Year 3/ImageProcessing/Assessed_Exercise2/Files/report_images/inverse_FT_filter.tex",
+		"/home/josh/Documents/Physics/Year 3/CompMod/gnuplot/plot2D.gnu",
+		"/home/josh/Documents/Physics/Year 3/ImageProcessing/Assessed_Exercise2/Files/report_images/inverse_FT_filter",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/mainfile.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Group_Studies_Report.sublime-project",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Report Structure.todo",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Assumptions_J-Wainwright.tex",
+		"/home/josh/Dropbox/Preferences.sublime-settings",
+		"/home/josh/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"theme",
+			"f1",
+			"\\text{max}",
+			"scroll"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\\max"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Assessed_Exercise2/tomographic_reconstruction.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22881,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20593,
+								20593
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3676.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assessed_Exercise2/mainfile.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3451,
+								3451
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assessed_Exercise2/Files/report_images/plot.gp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Assessed_Exercise2/Files/report_images/filter_values.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 414,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "Exercise2_IP.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/Physics/Year 3/Group Studies/Group_Studies_Report.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 241.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

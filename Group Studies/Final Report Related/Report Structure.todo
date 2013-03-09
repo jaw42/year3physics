@@ -1,30 +1,30 @@
-Rough Plan For Report (Subject to Change):
+Progress So Far:
 
  ✔ Title
  ☐ Abstract                                    (Joe, Mike, Beth)
  ☐ Contents
- ☐ Introduction                                (Joe, Mike, Beth)
-    ☐ Why observe?
+ ✔ Introduction                                (Joe, Mike, Beth)
+    ✔ Why observe?
     ☐ Aims
 
 Theory - General:
-    ☐ Cosmic Re-ionisation                    (Beth)
+    ✔ Cosmic Re-ionisation                    (Beth)
     ☐ Gunn Peterson Effect                    (Andy)
-    ☐ Lyman Break Galaxies                    (Lewis)    
+    ☐ Lyman Break Galaxies                    (Lewis)
     ✔ Gravitational Lensing                   (Catherine)
 
 Predictions:
-  ✔ Into to Predictions 
+  ✔ Into to Predictions
     Theory:
         ☐ Expansion of the Universe
             ✔ Co-moving distance / volume     (Jamie)
             ☐ Luminosity Function
             ☐ Red-shift
         ✔ Schechter Function                  (Jamie)
-            ✔ What 
-            ✔ Why  
+            ✔ What
+            ✔ Why
         ☐ Luminosity vs Red-shift
-    ✔ General Assumptions                     (Josh) 
+    ✔ General Assumptions                     (Josh)
     ☐ Program                                 (Andy, Owen)
         ☐ Methods
             ☐ Trapezium Rule
@@ -42,13 +42,14 @@ Predictions:
 Observations:
  ✔ Intro to Obs
     Theory:
-        ☐ Filters + Band Conversion           (Joe)
-        ☐ Methods for Detection 
+        ☐ Methods for Detection
             ✔ Dropout method                  (Ston)
             ☐ Spectroscopy                    (John)
                 ✔ 21cm                        (Joe)
+                ✔ CMB Anistropy               (Mike)
                 ☐ Observational Gravitational lensing (Catherine)
                 ✔ Colour Photometry           (Joe)
+                    ✔ Filters + Band Conversion (Joe)
         ☐ Exposure Times                      (Rahim)
             ☐ Errors                          (Rahim)
                 ☐ Background
@@ -56,17 +57,17 @@ Observations:
                 ☐ Read Noise
             ☐ Signal to Noise
                 ☐ Seeing
-        
+
     ☐ Telescopes (introduction to)
         ☐ Ground vs Space based               (Rahim)
         ☐ Telescopes chosen for investigation
             ✔ Hubble                          (Mike)
             ☐ James Webb                      (John)
-            ✔ Spitzer                         (Ston) 
-            ✔ Euclid                          (Ston+Joe) 
-        ✔ Contaminants                        (Mike) 
+            ✔ Spitzer                         (Ston)
+            ✔ Euclid                          (Ston+Joe)
+        ✔ Contaminants                        (Mike)
     ☐ Observing Strategy (Results)
-        ☐ Identify candidates 
+        ☐ Identify candidates
         ☐ Exposure
         ☐ Pick a telescope(s)
         ☐ Justification

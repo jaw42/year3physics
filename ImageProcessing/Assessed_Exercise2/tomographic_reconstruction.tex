@@ -197,11 +197,11 @@
 
     The reason that there was no improvement in  final image quality is due to the distribution of samples of the Fourier Transform. Moving radially outward from the centre of the image, the sample density decreases as $\frac{1}{|r|}$, where $r$ is the radius. To correct for this, a weighting factor must be used to make the FT uniform in sample density. This is performed either in frequency space once the FT has been taken, before the inverse, or in real space.
 
-    The weighting factor is usually applied in real space as this proves to be less computationally intensive. This is possible because multiplying each central slice by the weighting factor is the same as convolving the inverse FT of each slice with the inverse FT of the weighting factor. 
+    The weighting factor is usually applied in real space as this proves to be less computationally intensive. This is possible because multiplying each central slice by the weighting factor is the same as convolving the inverse FT of each slice with the inverse FT of the weighting factor.
 
     We can demonstrate this by considering the Fourier Transform for both cases. The general function, $f(x,y)$ can be obtained from its Fourier Transform $F(k_x,k_y)$ by the inverse transform,
     \begin{align}
-        f(x,y) &= \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}F(k_x,k_y)\e{ik_xx+ik_yy} \d{k_x}\d{k_y}
+        f(x,y) &= \int_{-\infty}^{\infty}\int_{-\infty}^{\infty} F(k_x,k_y)\e{ik_x x+ik_y y} \d{k_x}\d{k_y}
     \end{align}
     Since the central slice theorem is defined through the centre of the transform, it is convenient to use polar coordinates, though with ranges $-\infty < k < \infty$ and $0 < \theta < \pi$,
     \begin{align}
@@ -216,33 +216,40 @@
 
     \subsection{Filter} % (fold)
     \label{sub:filter}
-        The function that we need to use as the filter, in order to correct for the changes in density of the FT sampling is the inverse FT of the function $|k|$. When considering the whole plane, from $-\infty < k < \infty$, this solution does not exist as the series diverges. But there is a maximum frequecy, $k$, that is of interest, the Nyquist Frequency outside of which the information can be disgarded, and so the function can be redefined as
+        The function that we need to use as the filter, in order to correct for the changes in density of the FT sampling, is the inverse FT of the function $|k|$. When considering the whole plane, from $-\infty < k < \infty$, this solution does not exist as the series diverges. But there is a maximum frequency, $k_\max$, that is of interest, the Nyquist Frequency, outside of which the information can be discarded, and so the function can be redefined as
         \begin{align}
             f(k) =
                 \begin{cases}
-                    |k| & |k| < k{_\text{max}} \\
-                    0   & |k| > {_\text{max}}
+                    |k| & |k| < k{_\max} \\
+                    0   & |k| > {_\max}
                 \end{cases}
         \end{align}
-        The inverse FT for this function is defined as 
+        The inverse FT for this function is defined as
         \begin{align}
-            f(x) &= k^2_{\text{max}} \left[ \frac{2\sin(2\pi xk_{\text{max}})}{2\pi xk_{\text{max}}} - \left( \frac{\sin(\pi xk_{\text{max}})}{\pi xk_{\text{max}}} \right)^2 \right]
+            f(x) &= k^2_{\max} \left[ \frac{2\sin(2\pi xk_{\max})}{2\pi xk_{\max}} - \left( \frac{\sin(\pi xk_{\max})}{\pi xk_{\max}} \right)^2 \right]
         \end{align}
-        and is shown in figure~\ref{fig:filter_graph}.
+        This can be adapted for use when the function is discretised. So for $k_\max =\frac{1}{2D}$, where $D$ is the sampling interval, and $n=\frac{x}{D}$, the filter becomes
+        \begin{align}
+            f(n) &\propto \left[ \frac{2\sin(\pi n)}{\pi n} - \left( \frac{\sin(\frac{\pi n}{2})}{\frac{\pi n}{2}} \right)^2 \right]
+        \end{align}
+        and is shown plotted in figure~\ref{fig:filter_graph}.
         \begin{figure}[ht]
             \centering
-                \includegraphics[width=0.7\textwidth]{Files/report_images/inverse_FT_filter.png}
+                \begingroup\endlinechar=-1
+                \resizebox{0.7\textwidth}{!}{%
+                    \input{Files/report_images/inverse_FT_filter.tex}
+                }\endgroup
             \caption{The filter used to weight the projections to remove the long tails that obscure the image.\label{fig:filter_graph}}
         \end{figure}
     % subsection filter (end)
     \subsection{Applying the Filter} % (fold)
     \label{sub:applying_the_filter}
-        Applying the filter is performed by convolving it with the projections. Since the function is continuous, but the convolution kernel must be discrete, integer values are used, as shown by the dots in the graph in figure~\ref{fig:filter_graph}. The filter kernel is found by using the value of the filter function at these integer values of $x$ and is normalised so that the elements sum to zero.
+        Applying the filter is performed by convolving it with the projections. Since the function is continuous, but the convolution kernel must be discrete, integer values are used, as shown by the dots in the graph in figure~\ref{fig:filter_graph}. The filter kernel is found by using the value of the filter function at these integer values of $x$ and is normalised so that the elements sum to zero. The kernel is symmetrical about the origin and exists as an $n \times n$ matrix where the value of $n$ is the number of samples to use. As can be seen from the graph, the function tend to close to zero at the integer values very quickly and so the kernel can be small without decreasing the quality of the convolution. Obviously, the larger the kernel, the better the results.
 
         Using this method of convolving the inverse FT of the weighting function with the projections, projecting them back and then summing the result to reconstruct the original image produces the image in figure~\ref{fig:filtered_backprojection}.
         \begin{figure}[ht]
             \centering
-                \includegraphics[width=0.4\textwidth]{Files/report_images/reconstructed_image.jpg}
+                \includegraphics[width=0.3\textwidth]{Files/report_images/reconstructed_image.jpg}
             \caption{The filter used to weight the projections to remove the long tails that obscure the image.\label{fig:filtered_backprojection}}
         \end{figure}
     % subsection applying_the_filter (end)
