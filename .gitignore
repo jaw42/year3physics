@@ -47,3 +47,6 @@
 *.vrb
 *.xdy
 *.tdo
+
+# Sublime
+*.sublime-workspace
