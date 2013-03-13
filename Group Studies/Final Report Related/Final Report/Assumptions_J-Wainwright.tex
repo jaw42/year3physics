@@ -29,12 +29,19 @@
 		\begin{align}
 			\Omega &= \Omega_\text{M} + \Omega_\text{R} + \Omega_\Lambda \label{eq:fraction_with_redshift}
 		\end{align}
-		The values of each of these parameters is varies with redshift. These relations account for the changes in the geometry of the universe.
+		The values of each of these parameters is varies with redshift. These relations account for the changes in the geometry of the universe. The values that have been used are shown in equations~\ref{eq:omega_m} to~\ref{eq:omega_lambda}, along with the relations that govern their evolution with time, in accordance with the $\Lambda$CDM model.\cite{WMAP_Observations_Cosmological_Interpretation}.
 		\begin{align}
-			\text{Matter Density}, 		&& \Omega_{\text{M},0} 	&= 0.27\pm 0.04,			& \Omega_\text{M} &= \Omega_{\text{M},0}(1+z)^3\\
-			\text{Radiation Density}, 	&& \Omega_{\text{R},0}	&= 8.24\times 10^{-5}, 	& \Omega_\Lambda  &= \Omega_{\Lambda,0}\\
-			\text{Dark energy Density}, 	&& \Omega_{\Lambda,0} 	&= 0.73\pm 0.04,			& \Omega_\text{R} &= \Omega_{\text{R},0}(1+z)^4
+			\text{Matter Density}, 		&& \Omega_{\text{M},0} 	&= 0.27\pm 0.04,			& \Omega_\text{M} &= \Omega_{\text{M},0}(1+z)^3 \label{eq:omega_m}\\
+			\text{Radiation Density}, 	&& \Omega_{\text{R},0}	&= 8.24\times 10^{-5}, 	& \Omega_\Lambda  &= \Omega_{\Lambda,0} \label{eq:omega_r}\\
+			\text{Dark energy Density}, 	&& \Omega_{\Lambda,0} 	&= 0.73\pm 0.04,			& \Omega_\text{R} &= \Omega_{\text{R},0}(1+z)^4 \label{eq:omega_lambda}
 		\end{align}
+
+		Together, these values set the Hubble parameter, and so this parameter can be written in terms of the current values of the parameters, and redshift, as shown in equation~\ref{eq:hubble_parameter}\cite{hubble_parameter_astro_journal}.
+		\begin{align}
+	        H^2(z) &= H_0^2\left( \Omega_M {(1+z)}^3 + \Omega_R {(1+z)}^4 + \Omega_{\Lambda} \right) \label{eq:hubble_parameter}
+    	\end{align}
+
+    	It will be assumed that the universe has a curvature of, or very close to, zero\cite{1102.4485}, in other words, that the universe is flat. This has been shown before and is generally held to be true, ``we now know that the universe is flat with only a 0.4\% margin of error''\cite{nasa_uni_shape}. This means that we do not need to take into account any of the effects of observing objects near the beginning of the universe when it might have had different properties.
 	% subsubsection cosmological_parameters (end)
 
 % section assumptions_made (end)
