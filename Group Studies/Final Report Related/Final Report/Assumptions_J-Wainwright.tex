@@ -10,11 +10,31 @@
 
 	\subsubsection{AB Magnitude} % (fold)
 	\label{ssub:ab_magnitude}
-		In order to keep consistancy between the parts of this project, we have used the AB magnitude system throughout. This is a system for measuring the magnutide of an object in the sky. It is defined as
+		In order to keep consistency between the parts of this project, we have used the AB magnitude system throughout. This is a system for measuring the magnitude of an object in the sky. It is defined as
 		\begin{align}
 			M(AB) &= -2.5\log(f_\nu) -48.60
 		\end{align}
-		where $f_\nu$ is the monochormatic flux measured in \si{\erg\per\second\per\square\centi\metre\per\hertz}.
+		where $f_\nu$ is the monochromatic flux measured in \si{\erg\per\second\per\square\centi\metre\per\hertz}.
 	% subsubsection ab_magnitude (end)
+
+	\subsubsection{Cosmological Parameters} % (fold)
+	\label{ssub:cosmological_parameters}
+		In addition to the parameters of the Schechter function, there are a number of cosmological parameters that govern the relative fractions of matter, radiation and dark energy in the universe for any given redshift. These are defined as functions of redshift in equation~\ref{eq:fraction_with_redshift}.
+
+		At the current redshift, $z=0$, the universe is flat and so the total density parameter is defined as
+		\begin{align}
+			\Omega &= \frac{\rho}{\rho_{\text{crit}}}
+		\end{align}
+		where $\rho_{\text{crit}}$ is the density required for a flat universe, meaning that the total density is required to be unity. Thus, the sum of the separate density parameters must be 1.
+		\begin{align}
+			\Omega &= \Omega_\text{M} + \Omega_\text{R} + \Omega_\Lambda \label{eq:fraction_with_redshift}
+		\end{align}
+		The values of each of these parameters is varies with redshift. These relations account for the changes in the geometry of the universe.
+		\begin{align}
+			\text{Matter Density}, 		&& \Omega_{\text{M},0} 	&= 0.27\pm 0.04,			& \Omega_\text{M} &= \Omega_{\text{M},0}(1+z)^3\\
+			\text{Radiation Density}, 	&& \Omega_{\text{R},0}	&= 8.24\times 10^{-5}, 	& \Omega_\Lambda  &= \Omega_{\Lambda,0}\\
+			\text{Dark energy Density}, 	&& \Omega_{\Lambda,0} 	&= 0.73\pm 0.04,			& \Omega_\text{R} &= \Omega_{\text{R},0}(1+z)^4
+		\end{align}
+	% subsubsection cosmological_parameters (end)
 
 % section assumptions_made (end)
