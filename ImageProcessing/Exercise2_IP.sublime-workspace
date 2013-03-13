@@ -141,7 +141,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -157,8 +157,8 @@
 						"selection":
 						[
 							[
-								20593,
-								20593
+								0,
+								26
 							]
 						],
 						"settings":
@@ -169,7 +169,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3676.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -187,8 +187,8 @@
 						"selection":
 						[
 							[
-								3451,
-								3451
+								0,
+								8192
 							]
 						],
 						"settings":
@@ -291,6 +291,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 343.0
+	},
 	"project": "Exercise2_IP.sublime-project",
 	"replace":
 	{

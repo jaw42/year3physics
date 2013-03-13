@@ -3,39 +3,43 @@
 	{
 		"selected_items":
 		[
+			[
+				"c",
+				"color"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "Final Report Related/Final Report/mainfile.tex",
+			"file": "Final Report Related/Final Report/Assumptions_J-Wainwright.tex",
 			"settings":
 			{
-				"buffer_size": 9712,
+				"buffer_size": 3851,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Final Report Related/Final Report/Cosmic_Reionisation_B-Johnson.tex",
+			"file": "Personl Statement/personal_statement.tex",
 			"settings":
 			{
-				"buffer_size": 3308,
-				"line_ending": "Windows"
+				"buffer_size": 3932,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Final Report Related/Final Report/E-ELT_R-Topadar.tex",
+			"file": "/home/josh/.i3/conkyrc",
 			"settings":
 			{
-				"buffer_size": 5769,
-				"line_ending": "Windows"
+				"buffer_size": 2099,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Final Report Related/Final Report/Ground_vs_Space_Based_Telescopes_R-Topadar.tex",
+			"file": "Personl Statement/mainfile.tex",
 			"settings":
 			{
-				"buffer_size": 15344,
+				"buffer_size": 8742,
 				"line_ending": "Windows"
 			}
 		}
@@ -43,9 +47,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 54.0,
+		"height": 98.0,
 		"selected_items":
 		[
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
 			[
 				"pacing",
 				"Package Control: Install Package"
@@ -112,32 +120,41 @@
 	},
 	"file_history":
 	[
-		"/home/josh/.config/dunst/dunstrc",
+		"/home/josh/.i3/conkyrc",
 		"/home/josh/.i3/config",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/references.bib",
+		"/home/josh/.config/dunst/dunstrc",
+		"/home/josh/Documents/Physics/Year 3/TeachingInSchools/Problems2/Problems2.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Personl Statement/mainfile.tex",
+		"/home/josh/Documents/Physics/Year 3/TeachingInSchools/Problems2/Answers2.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Euclid_D-Stonel.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Colour_Photometry_J-Baumber.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Contaminants_M-ONeil.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/CMB_Anistropy_M-ONeill.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Determining_Redshift_D-Stonel.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/E-ELT_R-Topadar.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Gravitational_Lensing1_C-McDonald.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Introduction_J-Baumber.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observing_Intro_M-ONeil.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Other_methods_21cm_J-Baumber.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.aux",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Ground_vs_Space_Based_Telescopes_R-Topadar.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Spitzer_D-Stonel.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Hubble_M-ONeil.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Spitzer_D-Stonel.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/references.bib",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.log",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/mainfile.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Cosmic_Reionisation_B-Johnson.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Assumptions_J-Wainwright.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Group Studies Rahim.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Report Structure.todo",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Derivation_of_Thermal_Background.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/chktex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Colour_Photometry_J-Baumber.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observational_Gravitational_Lensing_C-McDonald.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Other_methods_21cm_J-Baumber.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/SFR_and_Calculating_Z_OMCCONNELL.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/mainfile.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Introduction_J-Baumber.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Introduction Joe.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Other methods 21cm Joe.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Assumptions_J-Wainwright.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/CMB_Anistropy_M-ONeill.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/references.bib",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Cosmic_Reionisation_B-Johnson.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observing_Intro_M-ONeil.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Colour Photometry Joe.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.log",
 		"/home/josh/Documents/Physics/Year 3/.gitignore",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/appendix.tex",
 		"/home/josh/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
@@ -157,6 +174,8 @@
 		"height": 101.0,
 		"where_history":
 		[
+			"",
+			"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report",
 			""
 		]
 	},
@@ -165,6 +184,36 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"dunst",
+			"alt",
+			"Dark",
+			"Dark matter",
+			"planned for launch in 2018",
+			"Lyman Break Galaxy",
+			"sec:LBG",
+			"(?![a-zA-Z0-9\\s@{},\\\\/:\\.=_-';])",
+			"(?![a-zA-Z0-9\\s@{},\\\\/:\\.=_-])",
+			"(?![a-zA-Z0-9\\s@{},\\\\/:\\.=_-\\\"])",
+			"(?![a-zA-Z0-9\\s@{},\\\\/:\\.=_])",
+			"(?![a-zA-Z0-9\\s@{},\\\\/:\\.])",
+			"(?![a-zA-Z0-9\\s])",
+			"(?!([a-zA-Z0-9]))",
+			"(?!([a-z][0-9]))",
+			"(?![a-z])",
+			"(?!a)",
+			"’",
+			"infra-red",
+			"Romanishin",
+			"red-shift",
+			"redshift",
+			"redshitf",
+			"fig:figure1",
+			"multiply defined",
+			"ssub:capabilities",
+			"meter",
+			" meter",
+			" metre",
+			"metre",
 			"scale",
 			"adaptive optics",
 			"history",
@@ -203,9 +252,12 @@
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"'",
+			"infrared",
+			"redshift",
 			"re-ionization",
 			"",
 			"\\i tez"
@@ -224,19 +276,114 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Final Report Related/Final Report/mainfile.tex",
+					"file": "Final Report Related/Final Report/Assumptions_J-Wainwright.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9712,
+						"buffer_size": 3851,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8333,
-								8333
+								3462,
+								3462
+							],
+							[
+								3590,
+								3590
+							],
+							[
+								3705,
+								3705
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Personl Statement/personal_statement.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3932,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								462,
+								462
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/josh/.i3/conkyrc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2099,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1223,
+								1223
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 235.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Personl Statement/mainfile.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8742,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6871,
+								6871
 							]
 						],
 						"settings":
@@ -246,90 +393,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3276.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Final Report Related/Final Report/Cosmic_Reionisation_B-Johnson.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3308,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3247,
-								3247
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 345.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Final Report Related/Final Report/E-ELT_R-Topadar.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5769,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2847,
-								2847
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 338.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Final Report Related/Final Report/Ground_vs_Space_Based_Telescopes_R-Topadar.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 15344,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6010,
-								6010
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3921.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -424,8 +488,8 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 192.0,
+	"side_bar_visible": false,
+	"side_bar_width": 165.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
