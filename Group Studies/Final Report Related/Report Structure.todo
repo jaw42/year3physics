@@ -44,7 +44,7 @@ Observations:
     Theory:
         ☐ Methods for Detection
             ✔ Dropout method                  (Ston)
-            ☐ Spectroscopy                    (John)
+            ✔ Spectroscopy                    (John)
                 ✔ 21cm                        (Joe)
                 ✔ CMB Anistropy               (Mike)
                 ✔ Observational Gravitational lensing (Catherine)
@@ -62,7 +62,7 @@ Observations:
         ☐ Ground vs Space based               (Rahim)
         ☐ Telescopes chosen for investigation
             ✔ Hubble                          (Mike)
-            ☐ James Webb                      (John)
+            ✔ James Webb                      (John)
             ✔ Spitzer                         (Ston)
             ✔ Euclid                          (Ston+Joe)
             ✔ E-ELT                           (Rahim)
