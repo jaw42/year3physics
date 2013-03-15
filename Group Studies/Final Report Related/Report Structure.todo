@@ -18,8 +18,8 @@ Predictions:
     Theory:
         ☐ Expansion of the Universe
             ✔ Co-moving distance / volume     (Jamie)
-            ☐ Luminosity Function
-            ☐ Red-shift
+            ✔ Luminosity Function
+            ✔ Red-shift
         ✔ Schechter Function                  (Jamie)
             ✔ What
             ✔ Why
@@ -28,16 +28,15 @@ Predictions:
     ☐ Program                                 (Andy, Owen)
         ☐ Methods
             ☐ Trapezium Rule
-            ☐ Simpson Rule?
         ✔ Parameters we used                  (Josh)
         ☐ Input / output                      (Andy, Owen)
     ☐ Extensions?                             (Lewis)
         ☐ Cosmic variance
-        ☐ Dust
+        ☐ Dust? (Observations Group)
         ☐ Perturbations
         ☐ Recombination                       (Lewis)
         ☐ SFR Density                         (Owen, Jamie)
-        ☐ Number of Re-Ionising photons
+    ☐ Number of Re-Ionising photons
 
 Observations:
  ✔ Intro to Obs
