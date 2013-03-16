@@ -32,34 +32,18 @@
 			}
 		},
 		{
-			"file": "Final Report Related/Final Report/Ground_vs_Space_Based_Telescopes_R-Topadar.tex",
-			"settings":
-			{
-				"buffer_size": 19673,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "Final Report Related/Final Report/references.bib",
 			"settings":
 			{
-				"buffer_size": 41248,
+				"buffer_size": 43701,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/tmp/ref.bib",
+			"file": "/home/josh/.scripts/dwm/config.h",
 			"settings":
 			{
-				"buffer_size": 466,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Final Report Related/Submissions/Submissions_and_Changes.txt",
-			"settings":
-			{
-				"buffer_size": 758,
+				"buffer_size": 5916,
 				"line_ending": "Unix"
 			}
 		}
@@ -140,6 +124,9 @@
 	},
 	"file_history":
 	[
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Submissions_and_Changes.txt",
+		"/tmp/ref.bib",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Ground_vs_Space_Based_Telescopes_R-Topadar.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Ground_vs_Space_Based_Telescopes_R-Topadar_temp.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/E-ELT_R-Topadar.tex",
 		"/tmp/untitled.tex",
@@ -154,7 +141,6 @@
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Determining_Redshift_D-Stonel.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Euclid_D-Stonel.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Gravitational_Lensing1_C-McDonald.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Ground_vs_Space_Based_Telescopes_R-Topadar.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/references.bib",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.aux",
 		"/home/josh/.zshrc",
@@ -354,7 +340,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -413,47 +399,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "Final Report Related/Final Report/Ground_vs_Space_Based_Telescopes_R-Topadar.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 19673,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								16532,
-								16532
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3824.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "Final Report Related/Final Report/references.bib",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 41248,
+						"buffer_size": 43701,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								38568,
-								38568
+								323,
+								323
 							]
 						],
 						"settings":
@@ -463,58 +421,32 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 17828.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/tmp/ref.bib",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 466,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/Bibtex.tmLanguage"
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "Final Report Related/Submissions/Submissions_and_Changes.txt",
+					"buffer": 3,
+					"file": "/home/josh/.scripts/dwm/config.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 758,
+						"buffer_size": 5916,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								758,
-								758
+								833,
+								833
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
