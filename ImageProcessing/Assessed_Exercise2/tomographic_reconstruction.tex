@@ -244,15 +244,49 @@
     % subsection filter (end)
     \subsection{Applying the Filter} % (fold)
     \label{sub:applying_the_filter}
-        Applying the filter is performed by convolving it with the projections. Since the function is continuous, but the convolution kernel must be discrete, integer values are used, as shown by the dots in the graph in figure~\ref{fig:filter_graph}. The filter kernel is found by using the value of the filter function at these integer values of $x$ and is normalised so that the elements sum to zero. The kernel is symmetrical about the origin and exists as an $n \times n$ matrix where the value of $n$ is the number of samples to use. As can be seen from the graph, the function tend to close to zero at the integer values very quickly and so the kernel can be small without decreasing the quality of the convolution. Obviously, the larger the kernel, the better the results.
+        Applying the filter is performed by convolving it with the projections. Since the function is continuous, but the convolution kernel must be discrete, integer values are used, as shown by the dots in the graph in figure~\ref{fig:filter_graph}. The filter kernel is found by using the values of the filter function at these integer steps of $x$ and is normalised so that the elements sum to zero. The kernel is symmetrical about the origin and exists as an $n \times n$ matrix where the value of $n$ is the number of samples to use. As can be seen from the graph, the function tends zero for the integer values very quickly and so the kernel can be small without decreasing the quality of the convolution. Obviously, the larger the kernel, the better the results.
 
         Using this method of convolving the inverse FT of the weighting function with the projections, projecting them back and then summing the result to reconstruct the original image produces the image in figure~\ref{fig:filtered_backprojection}.
         \begin{figure}[ht]
             \centering
-                \includegraphics[width=0.3\textwidth]{Files/report_images/reconstructed_image.jpg}
+                \includegraphics[width=0.3\textwidth]{Files/report_images/SUM_backprojections_k5.jpg}
             \caption{The filter used to weight the projections to remove the long tails that obscure the image.\label{fig:filtered_backprojection}}
         \end{figure}
+
+        Because the filter is applied as a discrete kernel, the size must be chosen to compromise between speed and accuracy. This image in figure~\ref{fig:filtered_backprojection} shows a kernel size of $5\times 5$. The effect of increasing the kernel size can be seen below in figure~\ref{fig:kernel_sizes}.
+        \begin{figure}[ht]
+            \centering
+            \begin{minipage}[c]{0.3\linewidth}
+                \centering
+                \includegraphics[width=\textwidth]{Files/report_images/SUM_backprojections_k7.jpg}
+            \end{minipage}
+            \begin{minipage}[c]{0.3\linewidth}
+                \centering
+                \includegraphics[width=\textwidth]{Files/report_images/SUM_backprojections_k9.jpg}
+            \end{minipage}
+            \begin{minipage}[c]{0.3\linewidth}
+                \centering
+                \includegraphics[width=\textwidth]{Files/report_images/SUM_backprojections_k11.jpg}
+            \end{minipage}
+
+            \begin{minipage}[c]{0.3\linewidth}
+                \centering
+                \includegraphics[width=\textwidth]{Files/report_images/SUM_backprojections_k13.jpg}
+            \end{minipage}
+            \begin{minipage}[c]{0.3\linewidth}
+                \centering
+                \includegraphics[width=\textwidth]{Files/report_images/SUM_backprojections_k15.jpg}
+            \end{minipage}
+            \caption{The images reconstructed using different sized kernels, from, top left to bottom right, $7\times 7$ to $15\times 15$.\label{fig:kernel_sizes}}
+        \end{figure}
+
+        As the kernel size increases, the change in image quality decreases as the tails of the Fourier Transform of the weighting function decrease away from the centre.
     % subsection applying_the_filter (end)
+
+    \subsection{Tomographic Reconstruction} % (fold)
+    \label{sub:tomographic_reconstruction}
+        We have seen how a tomographic scan can be used to reconstruct a particular slice through an object using both simple back projection, and by employing the central slice theorem to allow the errors, in the form of long tails that obscure the image, to be reduced. The image that is arrived at is not as clear as the image that was aimed for, figure~\ref{fig:reference_slice}, as these tails cannot be removed completely due to the finite kernel used to reduce them.
+    % subsection tomographic_reconstruction (end)
 
 
 % section central_slice_theorem (end)

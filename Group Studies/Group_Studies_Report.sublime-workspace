@@ -4,58 +4,70 @@
 		"selected_items":
 		[
 			[
-				"dmenu",
-				"dmenu_run"
+				"c",
+				"c"
 			],
 			[
-				"c",
-				"color"
+				"m",
+				"m"
+			],
+			[
+				"dmenu",
+				"dmenu_run"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "Final Report Related/Final Report/Introduction_J-Baumber.tex",
+			"file": "Final Report Related/Final Report/Parameter_Evolution_J-Wainwright.tex",
 			"settings":
 			{
-				"buffer_size": 4142,
+				"buffer_size": 5072,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Final Report Related/Final Report/Cosmic_Reionisation_B-Johnson.tex",
+			"file": "Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_m-star_linear.gnu",
 			"settings":
 			{
-				"buffer_size": 3318,
+				"buffer_size": 1387,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Final Report Related/Final Report/references.bib",
+			"file": "Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_m-star_data.txt",
 			"settings":
 			{
-				"buffer_size": 43701,
+				"buffer_size": 645,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/home/josh/.scripts/dwm/config.h",
+			"file": "Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_phi-star_exponential.gnu",
 			"settings":
 			{
-				"buffer_size": 5916,
-				"line_ending": "Unix"
+				"buffer_size": 1401,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 54.0,
+		"height": 98.0,
 		"selected_items":
 		[
 			[
 				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"wra",
 				"Word Wrap: Toggle"
 			],
 			[
@@ -124,6 +136,46 @@
 	},
 	"file_history":
 	[
+		"/home/josh/.scripts/dwm/config.h",
+		"/home/josh/.scripts/dwm/conkyrc",
+		"/home/josh/1227.todo",
+		"/home/josh/.scripts/dwm/PKGBUILD",
+		"/home/josh/.scripts/dwm/src/dwm-6.0/config.def.h",
+		"/home/josh/.scripts/dwm/dwm-6.0-statusallmons.diff",
+		"/home/josh/.scripts/dwm/dwm-6.0-panel_padding.patch",
+		"/home/josh/.scripts/dwm.old/config.h",
+		"/home/josh/.scripts/dwm/src/dwm-6.0/dwm.c",
+		"/home/josh/.scripts/dwm/src/dwm-6.0/config.h",
+		"/home/josh/.scripts/dwm/src/dwm-6.0/config.def.h.rej",
+		"/home/josh/.scripts/dwm/src/dwm-6.0/dwm.c.rej",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_fit_phi-star_data.txt",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_phi-star_exponential.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_alpha_linear.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_alpha_data.txt",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/mainfile.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Schechter_function_J-Bryant.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_linear.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Graphs/StellarDens_exponential.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/SFR.txt",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/SFR.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/StellarDens_exponential.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/StellarDens_exponential.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.log",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.fdb_latexmk",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.fls",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Stella Density/stella_density.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/SFR_Fit/graph_config.cfg",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Stella Density/StellarDens.txt",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph Data/SFR.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/references.bib",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Stella Density/StellarDens_exponential.tex",
+		"/home/josh/Documents/Physics/Year 3/CompMod/gnuplot/plot2D.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Parameter Fits/graphing.cpp",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Stella Density/graphing.cpp",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Stella Density/graph_config.cfg",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Schechter_function_J-Bryant.tex.old",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Cosmic_Reionisation_B-Johnson.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Introduction_J-Baumber.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Submissions_and_Changes.txt",
 		"/tmp/ref.bib",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Ground_vs_Space_Based_Telescopes_R-Topadar.tex",
@@ -141,13 +193,10 @@
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Determining_Redshift_D-Stonel.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Euclid_D-Stonel.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Gravitational_Lensing1_C-McDonald.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/references.bib",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.aux",
 		"/home/josh/.zshrc",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Parameter_Evolution_Data.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/chktex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/mainfile.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.log",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Report Structure.todo",
 		"/home/josh/.i3/conkyrc",
 		"/home/josh/.i3/config",
@@ -158,10 +207,8 @@
 		"/home/josh/Documents/Physics/Year 3/TeachingInSchools/Problems2/Answers2.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Colour_Photometry_J-Baumber.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/CMB_Anistropy_M-ONeill.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Introduction_J-Baumber.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observing_Intro_M-ONeil.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Other_methods_21cm_J-Baumber.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Cosmic_Reionisation_B-Johnson.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Group Studies Rahim.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Derivation_of_Thermal_Background.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/SFR_and_Calculating_Z_OMCCONNELL.tex",
@@ -201,6 +248,26 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"config.",
+			"setup",
+			"GRAPH_Parameter_Fit_alpha_linear",
+			"GRAPH_Parameter_Fit_alpha_data",
+			"GRAPH_Parameter_Fit_alpha_linear",
+			"GRAPH_StellarDens_exponential",
+			"SFR",
+			"StellarDens_exponential",
+			"Graphs/",
+			"Graph_Data",
+			"StellarDens_",
+			"StellarDens_exponential",
+			"StellarDens.txt",
+			"jp",
+			"alpha_fit",
+			"input_filename",
+			"input_filename_default",
+			"stella_density",
+			"sfr_data",
+			"spectra",
 			"astronomical seeing",
 			" ",
 			"sky bac",
@@ -308,13 +375,7 @@
 			"\\i tez",
 			"\\itez",
 			"Narciso",
-			"strongly lensed images of a candidate",
-			"overbar",
-			"angle",
-			"epsilon",
-			"\\input",
-			"ADC_Kamensky",
-			"DRIZZLE"
+			"strongly lensed images of a candidate"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -340,85 +401,87 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Final Report Related/Final Report/Introduction_J-Baumber.tex",
+					"file": "Final Report Related/Final Report/Parameter_Evolution_J-Wainwright.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4142,
+						"buffer_size": 5072,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1893,
-								1893
+								1643,
+								1643
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+							"spell_check": true,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 504.0,
+						"translation.y": 189.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Final Report Related/Final Report/Cosmic_Reionisation_B-Johnson.tex",
+					"file": "Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_m-star_linear.gnu",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3318,
+						"buffer_size": 1387,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								406,
-								406
+								190,
+								190
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 8.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "Final Report Related/Final Report/references.bib",
+					"file": "Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_m-star_data.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 43701,
+						"buffer_size": 645,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								323,
-								323
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LaTeX/Bibtex.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -428,28 +491,28 @@
 				},
 				{
 					"buffer": 3,
-					"file": "/home/josh/.scripts/dwm/config.h",
+					"file": "Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_phi-star_exponential.gnu",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5916,
+						"buffer_size": 1401,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								833,
-								833
+								592,
+								592
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 45.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -549,7 +612,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 339.0,
+	"side_bar_width": 108.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

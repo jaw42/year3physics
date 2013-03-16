@@ -1,7 +1,6 @@
 \documentclass{article}
 \include{graphicx}
 \begin{document}
-%1534 words 4 and 1/2 pages
 
 \section{Cosmological Distances}
 This section introduces some of the important distances used in various prediction calculations. First of all is the comoving distance between two observers at different redshifts this is calculated via \cite{distance_measures_cosmology},
@@ -15,17 +14,26 @@ E(z)=\sqrt{\Omega_{M}(1+z)^{3}+\Omega_{R}(1+z)^{4}+\Omega_{\Lambda}}
 \indent Where the omegas are the different density parameters for mass, radiation and dark energy respectively.\\
 \indent To calculate the comoving distance to a object at a particular redshift the integral above must be done for $z_{1}=0$ up to a arbitrary z. Comoving distance is a distance between two comoving observers i.e. both moving with respect to the Hubble flow (factoring out the expansion of the universe). In the project this has been used to determine a volume of space for a given redshift range. This was done via finding the area between two shells of radius comoving distance at two different redshifts.\\
 
-\indent The luminosity distance is the distance a photon travels from that source. As a photon will undergo a Doppler shift and be redshifted into longer wavelengths (red part of the spectrum). Therefore the luminosity distance is essentially a redshifted transverse comoving distance (Hogg 1999), which for a flat universe is the comoving distance therefore,
+\indent The luminosity distance is the distance a photon travels from that source. As a photon will undergo a Doppler shift and be redshifted into longer wavelengths (red part of the spectrum). Therefore the luminosity distance is essentially a redshifted transverse comoving distance \cite{distance_measures_cosmology}, which for a flat universe is the comoving distance therefore,
 \begin{equation}
 D_{L}(z)=(1+z)D_{C}(z)
 \end{equation}
 In this project the luminosity distance has been used to convert between magnitudes, luminosity and flux.\\
 
+\indent Also, the angular diameter distance is simply the proper distance along a radius $r_{e}$ where this is the radius at tim of emission. Therefore angular diameter distance is,
+\begin{equation}
+D_{A}=r_{e}a_{e}=\frac{a_{0}r_{e}}{1+z_{e}}
+\end{equation}
+where $a_{0}r_{e}$ in a flat universe is the same as,
+\begin{equation}
+D_{A}(z)=\frac{D_{C}}{1+z}
+\end{equation}
+This is used to convert angular seperations in telescope images to actual angular seperations and then can determine the size of objects \cite{distance_measures_cosmology}.
 
 \section{Schechter Function}
 One important part of our project is to determine the luminosity function at high redshift, which is a plot of the number density of galaxies binned against their respective luminosity. A schechter function is used to fit this luminosity function. A schechter function is a form that has a power law which has a certain cut-off at which it becomes an exponential curve. The schechter function in terms of luminosity i.e. the luminosity function is shown below, \cite{cosmo_number_densities}.
 \begin{equation}
-\phi(L)=\phi^{*}\frac{L}{L^{*}}^{\alpha}e^{-L/L^{*}}
+\phi(L)=\frac{\phi^{*}}{L^{*}}\frac{L}{L^{*}}^{\alpha}e^{-L/L^{*}}
 \end{equation}
 \indent $\phi^{*}$ is the normalization factor in units of $Mpc^{-3}$, $\alpha$ is the gradient of the faint end slope of the luminosity function and $L^{*}$ is the characteristic luminosity at which the function changes from a power law to an exponential cut off. Therefore there are a majority of lower luminosity galaxies and not many bright ones.\\
 
@@ -84,8 +92,13 @@ These values were then plotted against redshift. The function of redshift that w
 \begin{equation}
 \rho_{SFR}(z)=0.399(\pm0.181)e^{-0.253(\pm0.118)z}-0.011(\pm0.025)
 \end{equation}
-However this equation will only work up to a redshift of around 5 as the star formation rate for galaxies will drop with redshifts lower than this due to the ICM being used up and star formation will drop off. This should not effect our results too much however as we are looking at redshifts higher than this anyway.\\
+However this equation will only work up to a redshift of around 5 as the star formation rate for galaxies will drop with redshifts lower than this due to the gas being used up and star formation will drop off. This should not effect our results too much however as we are looking at redshifts higher than this anyway.\\
 We also used rough estimates of $f_{esc}=0.2$ and $\zeta=10^{53.5}$ obtained from \cite{2010Natur.468...49R}.\\
+\indent The code also used a function of the global stellar mass density to figure out the amount of hydrogen that was calculated was in stars at a given redshift and therefore did not need an ionizing photon. These values were taken from the observations of three papers \cite{2006A&A...459..745F}, \cite{2003A&A...401...73W} and \cite{2003ApJS..149..289B}. The function of redshift that was calculated was,\\
+\begin{equation}
+
+\end{equation}
+but this did not have much effect on the number of hydrogen as the stellar fraction was very small so this is not a significant contributing factor.\\
 \indent The code then loops for different values of redshift from redshift 25 at redshift intervals of 0.1, calculating the number of ionizing photons at those different epochs and equating this to the hydrogen number. This then outputs a ionized fraction against redshift relation shown in figure \ref{fig:IonizedFraction1}.\\
 
 \begin{figure}
@@ -95,7 +108,7 @@ We also used rough estimates of $f_{esc}=0.2$ and $\zeta=10^{53.5}$ obtained fro
 	\label{fig:IonizedFraction1}
 \end{figure}
 
-From this we get that the universe is completely ionized at a redshift $7.6\pm2.1$, ignoring the rather large errors, this number is not a bad estimate of the epoch compared to articles such as from \cite{Ota:arXiv0707.1561} which shows from observations of Lyman-$\alpha$ emitters that there must be a large ionized fraction at 6.5, due to attenuation from neutral hydrogen. However this does show that this number is at a slightly higher value than what we would expect. Also as we have not included recombination which will slow down the rate at which the universe is ionized or the fact that not all the hydrogen in the universe is in the form of IGM some of it will be in the form of stars, therefore this number is not actually realistic.\\
+From this we get that the universe is completely ionized at a redshift $6.3\pm1.7$, ignoring the rather large errors, this number is not a bad estimate of the epoch compared to articles such as from \cite{Ota:arXiv0707.1561} which shows from observations of Lyman-$\alpha$ emitters that there must be a large ionized fraction at 6.5, due to attenuation from neutral hydrogen. However as we have not included recombination which will slow down the rate at which the universe is ionized or the fact that not all the hydrogen in the universe is in the form of IGM some of it will be in the form of stars, therefore this number is not actually realistic.\\
 
 %Next Bit to write!
 \subsection{Recombinations}
@@ -153,6 +166,56 @@ archivePrefix = "arXiv",
    adsurl = {http://adsabs.harvard.edu/abs/2012ApJ...759L..38A},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }  
+
+@ARTICLE{2006A&A...459..745F,
+   author = {{Fontana}, A. and {Salimbeni}, S. and {Grazian}, A. and {Giallongo}, E. and 
+	{Pentericci}, L. and {Nonino}, M. and {Fontanot}, F. and {Menci}, N. and 
+	{Monaco}, P. and {Cristiani}, S. and {Vanzella}, E. and {de Santis}, C. and 
+	{Gallozzi}, S.},
+    title = "{The Galaxy mass function up to z =4 in the GOODS-MUSIC sample: into the epoch of formation of massive galaxies}",
+%  journal = {\aap},
+   eprint = {arXiv:astro-ph/0609068},
+ keywords = {galaxies: distances and redshift, galaxies: evolution, galaxies: high-redshift, galaxies: fundamental parameters, galaxies: luminosity fuction, mass function},
+     year = 2006,
+    month = dec,
+   volume = 459,
+    pages = {745-757},
+      doi = {10.1051/0004-6361:20065475},
+   adsurl = {http://adsabs.harvard.edu/abs/2006A%26A...459..745F},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2003A&A...401...73W,
+   author = {{Wolf}, C. and {Meisenheimer}, K. and {Rix}, H.-W. and {Borch}, A. and 
+	{Dye}, S. and {Kleinheinrich}, M.},
+    title = "{The COMBO-17 survey: Evolution of the galaxy luminosity function from 25 000 galaxies with 0.2{\lt} z {\lt}1.2}",
+%  journal = {\aap},
+   eprint = {arXiv:astro-ph/0208345},
+ keywords = {techniques: photometric, surveys, galaxies: evolution, galaxies: distances and redshifts},
+     year = 2003,
+    month = apr,
+   volume = 401,
+    pages = {73-98},
+      doi = {10.1051/0004-6361:20021513},
+   adsurl = {http://adsabs.harvard.edu/abs/2003A%26A...401...73W},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2003ApJS..149..289B,
+   author = {{Bell}, E.~F. and {McIntosh}, D.~H. and {Katz}, N. and {Weinberg}, M.~D.
+	},
+    title = "{The Optical and Near-Infrared Properties of Galaxies. I. Luminosity and Stellar Mass Functions}",
+  journal = {\apjs},
+   eprint = {arXiv:astro-ph/0302543},
+ keywords = {Galaxies: Evolution, Galaxies: General, Galaxies: Luminosity Function, Mass Function, Galaxies: Stellar Content},
+     year = 2003,
+    month = dec,
+   volume = 149,
+    pages = {289-312},
+      doi = {10.1086/378847},
+   adsurl = {http://adsabs.harvard.edu/abs/2003ApJS..149..289B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
 
 @article {Ota:arXiv0707.1561,
 author="Kazuaki Ota and Masanori Iye and Nobunari Kashikawa and Kazuhiro Shimasaku and Masakazu A. R. Kobayashi and Tomonori Totani and Masahiro Nagashima and Tomoki Morokuma and Hisanori Furusawa and Takashi Hattori and Yuichi Matsuda and Tetsuya Hashimoto and Masami Ouchi",

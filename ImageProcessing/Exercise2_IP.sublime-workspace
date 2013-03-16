@@ -11,7 +11,7 @@
 			"file": "Assessed_Exercise2/tomographic_reconstruction.tex",
 			"settings":
 			{
-				"buffer_size": 22881,
+				"buffer_size": 25217,
 				"line_ending": "Windows"
 			}
 		},
@@ -141,7 +141,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -150,15 +150,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 22881,
+						"buffer_size": 25217,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								26
+								21882,
+								21882
 							]
 						],
 						"settings":
@@ -169,7 +169,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 6350.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -187,8 +187,8 @@
 						"selection":
 						[
 							[
-								0,
-								8192
+								321,
+								321
 							]
 						],
 						"settings":
