@@ -92,7 +92,10 @@
 	The code then loops for different values of redshift from redshift 25 at redshift intervals of 0.1, calculating the number of ionizing photons at those different epochs and equating this to the hydrogen number. This then outputs a ionized fraction against redshift relation shown in figure \ref{fig:IonizedFraction1}.
 	\begin{figure}[!htb]
 		\centering
-			\includegraphics[width=0.8\textwidth]{../Images/IonizedFraction1.png}
+			\begingroup\endlinechar=-1
+		  		\resizebox{0.7\textwidth}{!}{%
+					\input{GRAPH_StellarDens_exponential.tex}
+		  		}\endgroup
 		\caption{Plot of modeled ionized fraction of the IGM as a function of redshift.\label{fig:IonizedFraction1}}
 	\end{figure}
 

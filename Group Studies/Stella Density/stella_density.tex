@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage[top=0.8in, left=1in, right=1in, bottom=0.8in]{geometry}
+
+\begin{document}
+\small{\today}
+\section{Star Density Fits}
+	\subsection{Exponential Fit}
+		\begin{minipage}[h]{0.6\textwidth}
+				\begin{center}
+					\begingroup\endlinechar=-1
+		  			\resizebox{\textwidth}{!}{%
+						\input{StellarDens_exponential.tex}
+		  			}\endgroup
+				\end{center}
+		\end{minipage}
+		\begin{minipage}[h]{0.35\textwidth}
+			$y = \textrm{e}^{mx + c}$ \\
+			m               = 0.810469         +/- 0.1507       (18.59\%)\\
+			c               = 19.6949          +/- 0.1112       (0.5646\%)\\
+		\end{minipage}
+
+		Any others you want me to do? I couldn't get a few different fits to play nicely, $m\times x^{c}$ etc., but if you have an idea of what it should be I can have another go.
+
+\end{document}
