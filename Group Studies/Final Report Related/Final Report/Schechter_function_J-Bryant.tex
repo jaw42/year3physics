@@ -8,7 +8,7 @@
 	\end{align}
 	where $E(z)$ is the dimensionless Hubble parameter, which general form is,
 	\begin{align}
-		E(z)=\sqrt{\Omega_{M}(1+z)^{3}+\Omega_{R}(1+z)^{4}+\Omega_{\Lambda}}
+		E(z)=\sqrt{\Omega_{M}{(1+z)}^{3}+\Omega_{R}{(1+z)}^{4}+\Omega_{\Lambda}}
 	\end{align}
 	Where the omegas are the different density parameters for mass, radiation and dark energy respectively.
 
@@ -26,12 +26,12 @@
 		\intertext{where $a_{0}r_{e}$ in a flat universe is the same as,}
 		D_{A}(z) &= \frac{D_{C}}{1+z}
 	\end{align}
-	This is used to convert angular seperations in telescope images to actual angular seperations and then can determine the size of objects \cite{distance_measures_cosmology}.
+	This is used to convert angular seperations in telescope images to actual angular seperations and then can determine the size of objects\cite{distance_measures_cosmology}.
 % section cosmological_distances (end)
 
 \section{Schechter Function} % (fold)
 \label{sec:schechter_function}
-	One important part of our project is to determine the luminosity function at high redshift, which is a plot of the number density of galaxies binned against their respective luminosity. A schechter function is used to fit this luminosity function. A schechter function is a form that has a power law which has a certain cut-off at which it becomes an exponential curve. The schechter function in terms of luminosity i.e. the luminosity function is shown in equation~\ref{eq:shechter_luminosity}\cite{cosmo_number_densities}.
+	One important part of our project is to determine the luminosity function at high redshift, which is a plot of the number density of galaxies binned against their respective luminosity. A schechter function is used to fit this luminosity function. A schechter function is a form that has a power law which has a certain cut-off at which it becomes an exponential curve. The schechter function in terms of luminosity i.e.\ the luminosity function is shown in equation~\ref{eq:shechter_luminosity}\cite{cosmo_number_densities}.
 	\begin{align}
 		\phi(L)=\frac{\phi^{*}}{L^{*}}\frac{L}{L^{*}}^{\alpha}e^{-L/L^{*}} \label{eq:shechter_luminosity}
 	\end{align}
@@ -51,13 +51,13 @@
 	\end{align}
 	which is then multiplied by the derivative and rearranged to get the equation,
 	\begin{align}
-		\phi(M)=\phi^{*}(\ln(10))\left[10^{0.4(M^{*}-M)}\right]^{\alpha+1}\e{\left[-10^{0.4(M^{*}-M)}\right]}
+		\phi(M)=\phi^{*}(\ln(10)){\left[10^{0.4(M^{*}-M)}\right]}^{\alpha+1}\e{\left[-10^{0.4(M^{*}-M)}\right]}
 	\end{align}
 	Where $M^{*}$ is the characteristic absolute magnitude where the cut off happens.
 
 	However the observing team will be looking at a range of apparent magnitudes rather than absolute magnitudes and so we can change the absolute magnitude equation above to apparent using the simple relationship below,
 	\begin{align}
-		m=M+5((log_{10}D_{L})-1)
+		m=M+5((\log_{10}D_{L})-1)
 	\end{align}
 	Where $D_{L}$ is the luminosity distance. Note that the derivative of this substitution is one and so does not need to be accounted for.
 
@@ -80,30 +80,31 @@
 
 	First of all the program gets the critical density of the universe by,
 	\begin{align}
-		\rho_{crit}(z)=\frac{3H(z)^{2}}{8\pi G}
+		\rho_{crit}(z)=\frac{3H{(z)}^{2}}{8\pi G}
 	\end{align}
 	And then by multiplying this by the baryonic density parameter, $\Omega_{b}=0.045\pm0.004$, the baryonic density is achieved, which then by multiplying by the fraction of hydrogen, calculated from big bang nucleosynthesis, the total density of hydrogen in the universe can be obtained. Then finally dividing this number by the atomic mass unit to get a number density.
 
 	In the code a redshift time relation $\frac{1}{(1+z)}\propto t^{2/3}$, assuming a matter dominated universe, is used and therefore,
 	\begin{align}
-		t &= \frac{t_{0}}{(1+z)^{3/2}} \\
-		\Rightarrow \dx{t}{z} &= \frac{3}{2}\frac{t_{0}}{(1+z)^{5/2}}
+		t &= \frac{t_{0}}{{(1+z)}^{3/2}} \\
+		\Rightarrow \dx{t}{z} &= \frac{3}{2}\frac{t_{0}}{{(1+z)}^{5/2}}
 	\end{align}
 
-	In the first version of the code, values of star formation rate densities from  various articles with redshifts varying from redshifts 4 to up to about 8 from \cite{2010MNRAS.401.2561W}, which determine star formation rates from observations of Gamma-ray bursts (GRBs) from deaths of massive short lived stars which can be directly related to star formation rate. Also compiling these values with those from \cite{2012ApJ...759L..38A}, which use a semi-analytical model to determine star formation rates from redshifts 9 to 16. These two papers with very different methods have surprising correlation in values.
+	In the first version of the code, values of star formation rate densities from  various articles with redshifts varying from redshifts 4 to up to about 8 from\cite{2010MNRAS.401.2561W}, which determine star formation rates from observations of Gamma-ray bursts (GRBs) from deaths of massive short lived stars which can be directly related to star formation rate. Also compiling these values with those from\cite{2012ApJ...759L..38A}, which use a semi-analytical model to determine star formation rates from redshifts 9 to 16. These two papers with very different methods have surprising correlation in values.
+
 	These values were then plotted against redshift. The function of redshift that was used for $\rho_\text{SFR}$ was,
 	\begin{align}
-		\rho_\text{SFR}(z)=0.399(\pm0.181)\e{-0.253(\pm0.118)z}-0.011(\pm0.025)
+		\rho_\text{SFR}(z)=0.399(\pm 0.181)\e{-0.253(\pm 0.118)z}-0.011(\pm 0.025)
 	\end{align}
 	However this equation will only work up to a redshift of around 5 as the star formation rate for galaxies will drop with redshifts lower than this due to the gas being used up and star formation will drop off. This should not effect our results too much however as we are looking at redshifts higher than this anyway. We also used rough estimates of $f_{esc}=0.2$ and $\zeta=10^{53.5}$ obtained from previous studies\cite{2010Natur.468...49R}.
 
-	The code also used a function of the global stellar mass density to figure out the amount of hydrogen that was calculated was in stars at a given redshift and therefore did not need an ionizing photon. These values were taken from the observations of three papers \cite{2006AA...459..745F}, \cite{2003AA...401...73W} and \cite{2003ApJS..149..289B}. The function of redshift that was calculated was,
+	The code also used a function of the global stellar mass density to figure out the amount of hydrogen that was calculated was in stars at a given redshift and therefore did not need an ionizing photon. These values were taken from the observations of three papers\cite{2006AA...459..745F},\cite{2003AA...401...73W} and\cite{2003ApJS..149..289B}. The function of redshift that was calculated was,
 	\begin{align}
-
+		Insert Equation Here
 	\end{align}
 	but this did not have much effect on the number of hydrogen as the stellar fraction was very small so this is not a significant contributing factor.
 
-	The code then loops for different values of redshift from redshift 25 at redshift intervals of 0.1, calculating the number of ionizing photons at those different epochs and equating this to the hydrogen number. This then outputs a ionized fraction against redshift relation shown in figure \ref{fig:IonizedFraction1}.
+	The code then loops for different values of redshift from redshift 25 at redshift intervals of 0.1, calculating the number of ionizing photons at those different epochs and equating this to the hydrogen number. This then outputs a ionized fraction against redshift relation shown in figure~\ref{fig:IonizedFraction1}.
 	\begin{figure}[!htb]
 		\centering
 			\begingroup\endlinechar=-1
@@ -113,7 +114,7 @@
 		\caption{Plot of modeled ionized fraction of the IGM as a function of redshift.\label{fig:IonizedFraction1}}
 	\end{figure}
 
-	From this we get that the universe is completely ionized at a redshift $6.3\pm1.7$, ignoring the rather large errors, this number is not a bad estimate of the epoch compared to articles such as from \cite{OtaarXiv0707.1561} which shows from observations of Lyman-$\alpha$ emitters that there must be a large ionized fraction at 6.5, due to attenuation from neutral hydrogen. However as we have not included recombination which will slow down the rate at which the universe is ionized or the fact that not all the hydrogen in the universe is in the form of IGM some of it will be in the form of stars, therefore this number is not actually realistic.
+	From this we get that the universe is completely ionized at a redshift $6.3\pm1.7$, ignoring the rather large errors, this number is not a bad estimate of the epoch compared to articles such as from\cite{OtaarXiv0707.1561} which shows from observations of Lyman-$\alpha$ emitters that there must be a large ionized fraction at 6.5, due to attenuation from neutral hydrogen. However as we have not included recombination which will slow down the rate at which the universe is ionized or the fact that not all the hydrogen in the universe is in the form of IGM some of it will be in the form of stars, therefore this number is not actually realistic.
 % section lower_redshift_limit_on_reionization (end)
 
 %Next Bit to write!

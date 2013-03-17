@@ -31,7 +31,8 @@ Predictions:
         ✔ Parameters we used                  (Josh)
         ☐ Input / output                      (Andy, Owen)
     ☐ Extensions?                             (Lewis)
-        ☐ Cosmic variance
+        ✔ Cosmic variance
+            ✔ Aspect Ratio
         ☐ Dust? (Observations Group)
         ☐ Perturbations
         ☐ Recombination                       (Lewis)

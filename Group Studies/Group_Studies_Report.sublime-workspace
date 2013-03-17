@@ -28,26 +28,18 @@
 			}
 		},
 		{
-			"file": "Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_m-star_linear.gnu",
+			"file": "Final Report Related/Final Report/Schechter_function_J-Bryant.tex",
 			"settings":
 			{
-				"buffer_size": 1387,
-				"line_ending": "Windows"
+				"buffer_size": 10929,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_m-star_data.txt",
+			"file": "Final Report Related/Final Report/references.bib",
 			"settings":
 			{
-				"buffer_size": 645,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_phi-star_exponential.gnu",
-			"settings":
-			{
-				"buffer_size": 1401,
+				"buffer_size": 45940,
 				"line_ending": "Windows"
 			}
 		}
@@ -136,20 +128,22 @@
 	},
 	"file_history":
 	[
-		"/home/josh/.scripts/dwm/config.h",
-		"/home/josh/.scripts/dwm/conkyrc",
-		"/home/josh/1227.todo",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_m-star_linear.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_m-star_data.txt",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_phi-star_exponential.gnu",
 		"/home/josh/.scripts/dwm/PKGBUILD",
+		"/home/josh/.scripts/dwm/conkyrc",
+		"/home/josh/.scripts/dwm/src/dwm-6.0/dwm.c.rej",
+		"/home/josh/.scripts/dwm/src/dwm-6.0/dwm.c",
+		"/home/josh/.scripts/dwm/config.h",
+		"/home/josh/1227.todo",
 		"/home/josh/.scripts/dwm/src/dwm-6.0/config.def.h",
 		"/home/josh/.scripts/dwm/dwm-6.0-statusallmons.diff",
 		"/home/josh/.scripts/dwm/dwm-6.0-panel_padding.patch",
 		"/home/josh/.scripts/dwm.old/config.h",
-		"/home/josh/.scripts/dwm/src/dwm-6.0/dwm.c",
 		"/home/josh/.scripts/dwm/src/dwm-6.0/config.h",
 		"/home/josh/.scripts/dwm/src/dwm-6.0/config.def.h.rej",
-		"/home/josh/.scripts/dwm/src/dwm-6.0/dwm.c.rej",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_fit_phi-star_data.txt",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_phi-star_exponential.gnu",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_alpha_linear.gnu",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_alpha_data.txt",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/mainfile.tex",
@@ -248,6 +242,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"if(m == selmon)",
+			"equation",
+			"{equation}",
 			"config.",
 			"setup",
 			"GRAPH_Parameter_Fit_alpha_linear",
@@ -372,10 +369,7 @@
 			"hyperz",
 			"ogofsyntheticgalaxies",
 			"\\i tez\noduceacatalogofsyntheticgalaxiesandtheirmagnitudesindifferentbandsatdifferentre",
-			"\\i tez",
-			"\\itez",
-			"Narciso",
-			"strongly lensed images of a candidate"
+			"\\i tez"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -401,7 +395,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -436,83 +430,57 @@
 				},
 				{
 					"buffer": 1,
-					"file": "Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_m-star_linear.gnu",
+					"file": "Final Report Related/Final Report/Schechter_function_J-Bryant.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1387,
+						"buffer_size": 10929,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								190,
-								190
+								8004,
+								8004
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"word_wrap": true
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 8.0,
+						"translation.y": 3914.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_m-star_data.txt",
+					"file": "Final Report Related/Final Report/references.bib",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 645,
+						"buffer_size": 45940,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								815,
+								818
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/LaTeX/Bibtex.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_phi-star_exponential.gnu",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1401,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								592,
-								592
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 45.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -609,10 +577,10 @@
 	{
 	},
 	"show_minimap": false,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 108.0,
+	"side_bar_width": 162.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
