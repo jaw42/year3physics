@@ -5,8 +5,14 @@ This'll act as a ToDo list, so as things are completed they'll be deleted from h
 -----------------------------------------------------------------------------------------------------
 
 
+
+
+DONE
+-----------------------------------------------------------------------------------------------------
 Hi Josh i've changed my sky background section and will submit it as a document in this folder.Its called changes-rahim. Could you replace the other one with this. Ive also reworded part of my astronomical seein section. Just the first section but i'll put the text in the document with the sky background.Sorry i'm just gunna sort out the references then i'll put it in. Rahim
 
 Hi I've put in my new report version with the bibtex just at the bottom. Let me know if anything is wrong. (added improved theory section) Jamie
 
 Hey man, added the cosmic variance, everything along with images is the folder. wasn't sure how to reference the images tho? Lew x
+
+Hey i've uploaded EUclid strategy 8.5-10 and method for observational strategy sections . Dorothy x

@@ -20,26 +20,58 @@
 	"buffers":
 	[
 		{
-			"file": "Final Report Related/Final Report/Parameter_Evolution_J-Wainwright.tex",
+			"file": "Final Report Related/Final Report/mainfile.tex",
 			"settings":
 			{
-				"buffer_size": 5072,
+				"buffer_size": 10201,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Final Report Related/Final Report/Schechter_function_J-Bryant.tex",
-			"settings":
-			{
-				"buffer_size": 10929,
-				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "Final Report Related/Final Report/references.bib",
 			"settings":
 			{
-				"buffer_size": 45940,
+				"buffer_size": 50269,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Final Report Related/Final Report/Euclid_for_a_survey_of_8-10_D-Stonell.tex",
+			"settings":
+			{
+				"buffer_size": 4616,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Final Report Related/Final Report/Determining_Redshift_D-Stonel.tex",
+			"settings":
+			{
+				"buffer_size": 5856,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Final Report Related/Final Report/How_to_determine_fesc_ad_zeta_B-Johnson.tex",
+			"settings":
+			{
+				"buffer_size": 6593,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Final Report Related/Submissions/Submissions_and_Changes.txt",
+			"settings":
+			{
+				"buffer_size": 1244,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Final Report Related/Report Structure.todo",
+			"settings":
+			{
+				"buffer_size": 2752,
 				"line_ending": "Windows"
 			}
 		}
@@ -128,6 +160,18 @@
 	},
 	"file_history":
 	[
+		"/tmp/Book1.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Method_for_Strategy_Choosing_D-Stonell.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Parameter_Evolution_Data.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Determining_Redshift_D-Stonel.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Schechter_function_J-Bryant.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Cosmic_Variance_L-Clegg.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observing_Intro_M-ONeil.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/CMB_Anistropy_M-ONeill.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.bbl",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/chktex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Report Structure.todo",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Parameter_Evolution_J-Wainwright.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_m-star_linear.gnu",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_m-star_data.txt",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_phi-star_exponential.gnu",
@@ -147,7 +191,6 @@
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_alpha_linear.gnu",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_alpha_data.txt",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/mainfile.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Schechter_function_J-Bryant.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_linear.gnu",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Graphs/StellarDens_exponential.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/SFR.txt",
@@ -181,17 +224,12 @@
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Assumptions_J-Wainwright.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Hubble_M-ONeil.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observational_Gravitational_Lensing_C-McDonald.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Parameter_Evolution_J-Wainwright.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Spitzer_D-Stonel.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Contaminants_M-ONeil.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Determining_Redshift_D-Stonel.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Euclid_D-Stonel.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Gravitational_Lensing1_C-McDonald.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.aux",
 		"/home/josh/.zshrc",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Parameter_Evolution_Data.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/chktex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Report Structure.todo",
 		"/home/josh/.i3/conkyrc",
 		"/home/josh/.i3/config",
 		"/home/josh/.config/dunst/dunstrc",
@@ -200,8 +238,6 @@
 		"/home/josh/Documents/Physics/Year 3/TeachingInSchools/Problems2/Problems2.tex",
 		"/home/josh/Documents/Physics/Year 3/TeachingInSchools/Problems2/Answers2.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Colour_Photometry_J-Baumber.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/CMB_Anistropy_M-ONeill.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observing_Intro_M-ONeil.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Other_methods_21cm_J-Baumber.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Group Studies Rahim.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Derivation_of_Thermal_Background.tex",
@@ -242,6 +278,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sub",
+			"begin{table}",
+			"2003ApJS..149..289B",
+			"tab:filter_characteristics",
+			"2003ApJS..149..289B",
+			"\\SI{10^7}{",
+			"from 25 000 galaxies",
+			"tab:program",
+			"mil",
+			"5c",
+			"c",
+			"$4\\times 0.25$\\,mil",
+			"table",
+			"i.e.",
+			"cubed",
+			"equation}",
 			"if(m == selmon)",
 			"equation",
 			"{equation}",
@@ -353,23 +405,7 @@
 			"mouse",
 			"section",
 			"subsection",
-			"\\cite[p",
-			"\\cite[page",
-			"\\cite[",
-			"\\section{",
-			"section{",
-			"sub:",
-			"sub",
-			"subsection",
-			"[0-9]\\]",
-			"%",
-			"reionization",
-			"reionisation",
-			"sec:cosmic",
-			"hyperz",
-			"ogofsyntheticgalaxies",
-			"\\i tez\noduceacatalogofsyntheticgalaxiesandtheirmagnitudesindifferentbandsatdifferentre",
-			"\\i tez"
+			"\\cite[p"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -395,54 +431,109 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Final Report Related/Final Report/Parameter_Evolution_J-Wainwright.tex",
+					"file": "Final Report Related/Final Report/mainfile.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5072,
+						"buffer_size": 10201,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1643,
-								1643
+								8980,
+								8980
 							]
 						],
 						"settings":
 						{
-							"spell_check": true,
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 189.0,
+						"translation.y": 2457.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Final Report Related/Final Report/Schechter_function_J-Bryant.tex",
+					"file": "Final Report Related/Final Report/references.bib",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10929,
+						"buffer_size": 50269,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8004,
-								8004
+								49946,
+								49946
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/Bibtex.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 25292.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Final Report Related/Final Report/Euclid_for_a_survey_of_8-10_D-Stonell.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4616,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2813,
+								2813
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 168.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Final Report Related/Final Report/Determining_Redshift_D-Stonel.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5856,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -451,32 +542,92 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3914.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "Final Report Related/Final Report/references.bib",
+					"buffer": 4,
+					"file": "Final Report Related/Final Report/How_to_determine_fesc_ad_zeta_B-Johnson.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 45940,
+						"buffer_size": 6593,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								815,
-								818
+								5421,
+								5421
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LaTeX/Bibtex.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1646.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Final Report Related/Submissions/Submissions_and_Changes.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								518,
+								518
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "Final Report Related/Report Structure.todo",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2752,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2145,
+								2145
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -505,11 +656,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -560,7 +718,7 @@
 		[
 			[
 				"",
-				"~/Documents/Physics/Year 3/ImageProcessing/Exercise2_IP.sublime-project"
+				"~/Documents/Physics/Year 3/Group Studies/untitled.sublime-workspace"
 			]
 		],
 		"width": 380.0
@@ -580,7 +738,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 162.0,
+	"side_bar_width": 412.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
