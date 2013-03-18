@@ -7,12 +7,16 @@ This'll act as a ToDo list, so as things are completed they'll be deleted from h
 
 
 
-DONE
+******************DONE**************************
 -----------------------------------------------------------------------------------------------------
-Hi Josh i've changed my sky background section and will submit it as a document in this folder.Its called changes-rahim. Could you replace the other one with this. Ive also reworded part of my astronomical seein section. Just the first section but i'll put the text in the document with the sky background.Sorry i'm just gunna sort out the references then i'll put it in. Rahim
+***Hi Josh i've changed my sky background section and will submit it as a document in this folder.Its called changes-rahim. Could you replace the other one with this. Ive also reworded part of my astronomical seein section. Just the first section but i'll put the text in the document with the sky background.Sorry i'm just gunna sort out the references then i'll put it in. Rahim
 
-Hi I've put in my new report version with the bibtex just at the bottom. Let me know if anything is wrong. (added improved theory section) Jamie
+***Hi I've put in my new report version with the bibtex just at the bottom. Let me know if anything is wrong. (added improved theory section) Jamie
 
-Hey man, added the cosmic variance, everything along with images is the folder. wasn't sure how to reference the images tho? Lew x
+***Hey man, added the cosmic variance, everything along with images is the folder. wasn't sure how to reference the images tho? Lew x
 
-Hey i've uploaded EUclid strategy 8.5-10 and method for observational strategy sections . Dorothy x
+***Hey i've uploaded EUclid strategy 8.5-10 and method for observational strategy sections . Dorothy x
+
+***I (Beth) have submitted a revised version of the predictions group introduction. I haven't changed much beyond
+the final paragraph but it might just be easier for you to replace the whole thing, I've put it in the submissions
+folder under 'predictions group intro'

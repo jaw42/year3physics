@@ -68,15 +68,15 @@
 	This will become useful for calculating star formation rates in later sections.
 % section schechter_function (end)
 
-\section{Lower Redshift limit on Reionization} % (fold)
-\label{sec:lower_redshift_limit_on_reionization}
+\section{Lower Redshift limit on Re-ionization} % (fold)
+\label{sec:lower_redshift_limit_on_re-ionization}
 	In the project the way that the lower redshift limit has been calculated is to first calculate the rate of photons capable of ionizing a hydrogen atom via equation~\ref{eq:rate_of_ionising_photons}\cite{2010Natur.468...49R}.
 	\begin{align}
 		\frac{\d{n_{ion}}}{\d{t}}=f_{esc}\zeta\rho_\text{SFR}\label{eq:rate_of_ionising_photons}
 	\end{align}
 	Where $f_{esc}$ is the fraction of ionizing photons that escape a galaxy, $\zeta$ is the number of hydrogen-ionizing photons produced per second per unit star formation rate and $\rho_\text{SFR}$ is the star formation rate per unit volume.
 
-	Therefore by integrating this equation over the time that the universe has been around for a specific redshift a total number of photons capable of ionizing the universe can be outputted. This number is then simply equated to the number of hydrogen in the universe to get a lower redshift limit of Reionization.
+	Therefore by integrating this equation over the time that the universe has been around for a specific redshift a total number of photons capable of ionizing the universe can be outputted. This number is then simply equated to the number of hydrogen in the universe to get a lower redshift limit of Re-ionization.
 
 	First of all the program gets the critical density of the universe by,
 	\begin{align}
@@ -115,7 +115,7 @@
 	\end{figure}
 
 	From this we get that the universe is completely ionized at a redshift $6.3\pm1.7$, ignoring the rather large errors, this number is not a bad estimate of the epoch compared to articles such as from\cite{OtaarXiv0707.1561} which shows from observations of Lyman-$\alpha$ emitters that there must be a large ionized fraction at 6.5, due to attenuation from neutral hydrogen. However as we have not included recombination which will slow down the rate at which the universe is ionized or the fact that not all the hydrogen in the universe is in the form of IGM some of it will be in the form of stars, therefore this number is not actually realistic.
-% section lower_redshift_limit_on_reionization (end)
+% section lower_redshift_limit_on_re-ionization (end)
 
 %Next Bit to write!
 \subsection{Recombinations} % (fold)
