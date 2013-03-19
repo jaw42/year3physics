@@ -2,9 +2,9 @@
 
 \section{Method For Strategy Choosing} % (fold)
 \label{sec:method_for_strategy_choosing}
-	A range of factors were considered when determining which telescope, survey area and survey depth were best suited to the mission of observing the EoR. Firstly, time was an overall constraint on observations, with the Hubble ultra-deep field setting a realistic upper limit of around 2\,million seconds for a total exposure time. The primary aim was to see a significant number of $z\ge6$ galaxies, but it was also considered that at very high redshift (i.e.\ greater than ten), the number density of visible objects would decrease rapidly, so there were diminishing returns when looking for candidates at increasingly high redshifts. The following procedure outlines the method by which the final photometry strategy was obtained:
+	A range of factors were considered when determining which telescope, survey area and survey depth were best suited to the mission of observing the EoR. Firstly, time was an overall constraint on observations, with the Hubble ultra-deep field setting a realistic upper limit of around \SI{2e6}{\second} for a total exposure time. The primary aim was to see a significant number of $z\ge6$ galaxies, but it was also considered that at very high redshift (i.e.\ greater than ten), the number density of visible objects would decrease rapidly, so there were diminishing returns when looking for candidates at increasingly high redshifts. The following procedure outlines the method by which the final photometry strategy was obtained.
 
-	Firstly the prediction group’s program was run for a large range of magnitudes and redshifts. The inputs were as shown in figure~\ref{tab:program_inputs}.
+	Firstly the prediction group’s program was run for a large range of magnitudes and redshifts. The inputs were as shown in table~\ref{tab:program_inputs}.
 	\begin{table}[ht]
 		\begin{center}
 			\begin{tabular}{c|c}
@@ -33,7 +33,7 @@
 
 	\paragraph{Example} % (fold)
 	\label{par:example}
-		For a particular telescope, the total exposure time constrains the magnitude.
+		For a particular telescope, the total exposure time constrains the magnitude. A set of data that demonstrates this is shown in table~\ref{tab:dimmest_mag_observable}.
 		\begin{table}[ht]
 			\begin{center}
 				\begin{tabular}{c|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{4cm}}
@@ -47,7 +47,7 @@
 			\caption{The limit of magnitude, and hence number of galaxies observable, for different observing times.\label{tab:dimmest_mag_observable}}
 		\end{table}
 
-		Subsequently, there are many possible ways to make up a total survey time of 1\,million seconds.
+		Subsequently, there are many possible ways to make up a total survey time of \SI{1e6}{\second}, as demonstrated in table~\ref{tab:total_survey_time_breakdowns}.
 		\begin{table}[ht]
 			\begin{center}
 				\begin{tabular}{c|>{\centering\arraybackslash}m{5cm}}
@@ -59,9 +59,9 @@
 					$4\times 0.25$ + $1\times 0.5$ & 5800 \\
 				\end{tabular}
 			\end{center}
-			\caption{Different ways of making up a total survey time of 1\,million seconds.\label{tab:total_survey_time_breakdowns}}
+			\caption{Different ways of making up a total survey time of \SI{1e6}{\second}.\label{tab:total_survey_time_breakdowns}}
 		\end{table}
 
-		In the above example, the largest number of galaxies can be observed by doing $4 \times 0.25$\,mil second exposures. However, this favours finding more galaxies at low redshift and fewer at the high end.
+		In the above example, the largest number of galaxies can be observed by doing $4 \times (0.25\times 10^6)$\,\si{\second} exposures. However, this favours finding more galaxies at low redshift and fewer at the high end.
 	% paragraph example (end)
 % section method_for_strategy_choosing (end)

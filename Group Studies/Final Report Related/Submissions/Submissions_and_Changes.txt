@@ -3,7 +3,10 @@ Also, if you make a change to a submission, can you add that to the list as well
 
 This'll act as a ToDo list, so as things are completed they'll be deleted from here. Thanks
 -----------------------------------------------------------------------------------------------------
+Hi Josh i've uploaded the latest version of my work onto the Group Studies Rahim latex document. I've updated every section but i've included notes for you to hopefully avoid any confusion and simplify things. The references should be ok but let me know if u need anything else. Rahim 
 
+Hi, I've uploaded an edited version of the theory of GL with the changes in red, and theres one extra reference
+  - the last one on the page. Also a new observational GL section which is pretty much all different.Thanks :) Catherine
 
 
 
@@ -20,3 +23,7 @@ This'll act as a ToDo list, so as things are completed they'll be deleted from h
 ***I (Beth) have submitted a revised version of the predictions group introduction. I haven't changed much beyond
 the final paragraph but it might just be easier for you to replace the whole thing, I've put it in the submissions
 folder under 'predictions group intro'
+
+***Also added a small section about clumping factor, i guess best to include it before the sections on crit sfr dens, if owen has written 
+them yet. lew x
+

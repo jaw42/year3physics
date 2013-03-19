@@ -2,25 +2,25 @@
 
 \section{Cosmological Distances} % (fold)
 \label{sec:cosmological_distances}
-	This section introduces some of the important distances used in various prediction calculations. First of all is the comoving distance between two observers at different redshifts this is calculated via equation~\ref{fig:comoving_distance}\cite{distance_measures_cosmology},
+	This section introduces some of the important distances used in various prediction calculations. First of all is the comoving distance between two observers at different redshifts. This is calculated via equation~\ref{fig:comoving_distance}\cite{distance_measures_cosmology},
 	\begin{align}
 		D_{C}(z)=\frac{c}{H_{0}}\int^{z_{2}}_{z_{1}}\frac{\d{z'}}{E(z')} \label{fig:comoving_distance}
 	\end{align}
-	where $E(z)$ is the dimensionless Hubble parameter, which general form is,
+	where $E(z)$ is the dimensionless Hubble parameter which is,
 	\begin{align}
 		E(z)=\sqrt{\Omega_{M}{(1+z)}^{3}+\Omega_{R}{(1+z)}^{4}+\Omega_{\Lambda}}
 	\end{align}
-	Where the omegas are the different density parameters for mass, radiation and dark energy respectively.
+	Where $\Omega_{M}$, $\Omega_{R}$ and $\Omega_{\Lambda}$ are the different density parameters for mass, radiation and dark energy respectively.
 
-	To calculate the comoving distance to a object at a particular redshift the integral above must be done for $z_{1}=0$ up to a arbitrary $z$. Comoving distance is a distance between two comoving observers i.e.\ both moving with respect to the Hubble flow (factoring out the expansion of the universe). In the project this has been used to determine a volume of space for a given redshift range. This was done via finding the area between two shells of radius comoving distance at two different redshifts.
+	To calculate the comoving distance to an object at a particular redshift the integral above must be done for $z_{1}=0$ up to an arbitrary $z$. Comoving distance is the distance between two comoving observers i.e.\ both moving with respect to the Hubble flow (factoring out the expansion of the universe). In the project this has been used to determine a volume of space for a given redshift range. This was done by finding the volume difference between two shells of comoving radius at two different redshifts.
 
-	The luminosity distance is the distance a photon travels from that source. As a photon will undergo a Doppler shift and be redshifted into longer wavelengths (red part of the spectrum). Therefore the luminosity distance is essentially a redshifted transverse comoving distance\cite{distance_measures_cosmology}, which for a flat universe is the comoving distance therefore,
+	The luminosity distance is the distance that a photon travels from a source to an observer. As a photon will undergo a Doppler shift and be redshifted into longer wavelengths (red part of the spectrum). Therefore the luminosity distance is essentially a redshifted transverse comoving distance\cite{distance_measures_cosmology}, which for a flat universe is the comoving distance therefore,
 	\begin{align}
 		D_{L}(z)=(1+z)D_{C}(z)
 	\end{align}
 	In this project the luminosity distance has been used to convert between magnitudes, luminosity and flux.
 
-	Also, the angular diameter distance is simply the proper distance along a radius $r_{e}$ where this is the radius at tim of emission. Therefore angular diameter distance is,
+	Also, the angular diameter distance is simply the proper distance along a radius $r_{e}$ where this is the radius at the time of emission. Therefore angular diameter distance is,
 	\begin{align}
 		D_{A} &= r_{e}a_{e} = \frac{a_{0}r_{e}}{1+z_{e}}
 		\intertext{where $a_{0}r_{e}$ in a flat universe is the same as,}
@@ -31,13 +31,13 @@
 
 \section{Schechter Function} % (fold)
 \label{sec:schechter_function}
-	One important part of our project is to determine the luminosity function at high redshift, which is a plot of the number density of galaxies binned against their respective luminosity. A schechter function is used to fit this luminosity function. A schechter function is a form that has a power law which has a certain cut-off at which it becomes an exponential curve. The schechter function in terms of luminosity i.e.\ the luminosity function is shown in equation~\ref{eq:shechter_luminosity}\cite{cosmo_number_densities}.
+	One important part of our project is to determine the luminosity function at high redshift, which is a plot of the number density of galaxies binned against their respective luminosities. A schechter function is used to fit this luminosity function. A schechter function is a form that has a power law which has a certain cut-off at which it becomes an exponential curve. The schechter function in terms of luminosity i.e.\ the luminosity function is shown in equation~\ref{eq:shechter_luminosity}\cite{cosmo_number_densities}.
 	\begin{align}
 		\phi(L)=\frac{\phi^{*}}{L^{*}}\frac{L}{L^{*}}^{\alpha}e^{-L/L^{*}} \label{eq:shechter_luminosity}
 	\end{align}
 	$\phi^{*}$ is the normalization factor in units of \si{\per\mega\parsec\cubed}, $\alpha$ is the gradient of the faint end slope of the luminosity function and $L^{*}$ is the characteristic luminosity at which the function changes from a power law to an exponential cut off. Therefore there are a majority of lower luminosity galaxies and not many bright ones.
 
-	There are two basic methods to determine the best fit parameters of the schechter function\cite{luminosity_functions_online}. The first one is to take cluster samples and bin them by apparent magnitude then fit a schechter function trying to minimize the error. The other way is to use the ``maximum likelihood method''. This method takes a flux limited sample and finds the probability that a galaxy actually has a particular luminiostity at respective distances and then define a likelihood function which is the joint probability of finding all luminosities at their respective distances. These are then the most likely parameters consistent with the data and a schechter form. However in this project schechter parameters were simply cited from various articles.
+	There are two basic methods to determine the best fit parameters of the schechter function\cite{luminosity_functions_online}. The first one is to take cluster samples and bin them by apparent magnitude then fit a schechter function trying to minimize the error. The other way is to use the ``maximum likelihood method''. This method takes a flux limited sample and finds the probability that a galaxy actually has a particular luminiostity at respective distances and then define a likelihood function which is the joint probability of finding all luminosities at their respective distances. These are then the most likely parameters consistent with the data and a schechter form. However in this project schechter parameters were simply cited from various articles as we are not doing any observations ourselves to get our predictions.
 
 	The luminosity function can then be integrated to find the number density in \si{\per\mega\parsec\cubed},
 	\begin{align}
@@ -45,7 +45,7 @@
 	\end{align}
 	Where $L$ is the lower limit luminosity that can be seen in the universe, this is needed as the luminosity function tends to infinity at the faint end.
 
-	It is easier to plot the luminosity function on the log scale and therefore most of the papers we cite state the absolute magnitude schechter function instead which is obtained by substituting in,
+	It is easier to plot the luminosity function on the log scale and therefore most of the papers we cite state the absolute magnitude schechter function instead which is obtained by substituting,
 	\begin{align}
 		\frac{L}{L*}=10^{0.4(M^{*}-M)}
 	\end{align}
@@ -55,11 +55,11 @@
 	\end{align}
 	Where $M^{*}$ is the characteristic absolute magnitude where the cut off happens.
 
-	However the observing team will be looking at a range of apparent magnitudes rather than absolute magnitudes and so we can change the absolute magnitude equation above to apparent using the simple relationship below,
+	However a range of apparent magnitudes is normally observed, rather than absolute magnitudes and so the absolute magnitude equation above is changed to it's apparent magnitude form, using the simple relationship below,
 	\begin{align}
 		m=M+5((\log_{10}D_{L})-1)
 	\end{align}
-	Where $D_{L}$ is the luminosity distance. Note that the derivative of this substitution is one and so does not need to be accounted for.
+	Where $D_{L}$ is the luminosity distance. Note that the derivative of this substitution is 1 and so does not need to be accounted for.
 
 	Or the luminosity density of galaxies in \si{\erg\per\second\per\mega\parsec\cubed\per\hertz} can also be calculated using,
 	\begin{align}
@@ -76,15 +76,17 @@
 	\end{align}
 	Where $f_{esc}$ is the fraction of ionizing photons that escape a galaxy, $\zeta$ is the number of hydrogen-ionizing photons produced per second per unit star formation rate and $\rho_\text{SFR}$ is the star formation rate per unit volume.
 
-	Therefore by integrating this equation over the time that the universe has been around for a specific redshift a total number of photons capable of ionizing the universe can be outputted. This number is then simply equated to the number of hydrogen in the universe to get a lower redshift limit of Re-ionization.
+	Therefore by integrating this equation up to the age of the universe at a specific redshift a total number of photons capable of ionizing the universe can be outputted. The number of ionizing photons are then equated to the total number of hydrogen atoms in the IGM of the universe to get a lower redshift limit of re-ionization.
 
 	First of all the program gets the critical density of the universe by,
 	\begin{align}
 		\rho_{crit}(z)=\frac{3H{(z)}^{2}}{8\pi G}
 	\end{align}
-	And then by multiplying this by the baryonic density parameter, $\Omega_{b}=0.045\pm0.004$, the baryonic density is achieved, which then by multiplying by the fraction of hydrogen, calculated from big bang nucleosynthesis, the total density of hydrogen in the universe can be obtained. Then finally dividing this number by the atomic mass unit to get a number density.
+	Then by multiplying this by the baryonic density parameter, $\Omega_{b}=0.045\pm0.004$, the baryonic density is achieved. By then multiplying by the fraction of hydrogen, calculated from big bang nucleosynthesis, the total density of hydrogen in the universe can be obtained.
 
-	In the code a redshift time relation $\frac{1}{(1+z)}\propto t^{2/3}$, assuming a matter dominated universe, is used and therefore,
+	From the 7 year WMAP survey\cite{2011ApJS..192...18K}, we can get the primordial Helium fraction to be $Y=0.33\pm0.09$. Where we assume that Hydrogen fraction ($X$) is simply $1-Y$ (therefore 0 metallicity). Although a simplifying assumption it is not too bad as the errors on fraction of helium are higher than the actual fraction of heavier elements.
+
+	Then finally dividing the mass density of hydrogen by the atomic mass unit the code obtains a number density of hydrogen. In the code a redshift time relation $\frac{1}{(1+z)}\propto t^{2/3}$, assuming a matter dominated universe, is used and therefore,
 	\begin{align}
 		t &= \frac{t_{0}}{{(1+z)}^{3/2}} \\
 		\Rightarrow \dx{t}{z} &= \frac{3}{2}\frac{t_{0}}{{(1+z)}^{5/2}}
@@ -96,15 +98,17 @@
 	\begin{align}
 		\rho_\text{SFR}(z)=0.399(\pm 0.181)\e{-0.253(\pm 0.118)z}-0.011(\pm 0.025)
 	\end{align}
-	However this equation will only work up to a redshift of around 5 as the star formation rate for galaxies will drop with redshifts lower than this due to the gas being used up and star formation will drop off. This should not effect our results too much however as we are looking at redshifts higher than this anyway. We also used rough estimates of $f_{esc}=0.2$ and $\zeta=10^{53.5}$ obtained from previous studies\cite{2010Natur.468...49R}.
+	However this equation will only work up to a redshift of around 5 as the star formation rate for galaxies will drop with redshifts lower than this due to the gas being used up and star formation will drop off. This should not effect our results too much however as the project tends to study redshifts higher than this anyway. Also there will be large errors on higher redshift values due to problems with extrapolating the data, and unrealistic numbers of star formation where in reality there would be none.
+	%Reference to beth's section
+	We also used rough estimates of $f_\text{esc}=0.2$ and $\zeta=10^{53.5}$ as stated in section~\ref{???}.
 
-	The code also used a function of the global stellar mass density to figure out the amount of hydrogen that was calculated was in stars at a given redshift and therefore did not need an ionizing photon. These values were taken from the observations of three papers\cite{2006AA...459..745F},\cite{2003AA...401...73W} and\cite{2003ApJS..149..289B}. The function of redshift that was calculated was,
+	The code also used a function of the global stellar mass density to figure out the amount of hydrogen that was calculated was in stars at a given redshift. This therefore gives us a certain fraction that is not part of the IGM and does not need to be ionized. These values were taken from the direct observations of three papers \cite{2006A&A...459..745F}, \cite{2003A&A...401...73W} and \cite{2003ApJS..149..289B}. The function of redshift that was calculated was,
 	\begin{align}
-		Insert Equation Here
+		\rho_\text{stellar}(M_{\odot}\si{\per\mega\parsec\cubed})=\e{-0.81z+19.7}
 	\end{align}
-	but this did not have much effect on the number of hydrogen as the stellar fraction was very small so this is not a significant contributing factor.
+	but this does not have much effect on the number of hydrogen as the stellar fraction is very small, so this is not a significant contributing factor.
 
-	The code then loops for different values of redshift from redshift 25 at redshift intervals of 0.1, calculating the number of ionizing photons at those different epochs and equating this to the hydrogen number. This then outputs a ionized fraction against redshift relation shown in figure~\ref{fig:IonizedFraction1}.
+	The code then loops for different values of redshift from redshift 25 at redshift intervals of 0.1, calculating the number of ionizing photons at those different epochs and equating this to the hydrogen number. This then outputs ionized fraction against redshift, shown in figure \ref{fig:IonizedFraction1}.
 	\begin{figure}[!htb]
 		\centering
 			\begingroup\endlinechar=-1
@@ -114,11 +118,40 @@
 		\caption{Plot of modeled ionized fraction of the IGM as a function of redshift.\label{fig:IonizedFraction1}}
 	\end{figure}
 
-	From this we get that the universe is completely ionized at a redshift $6.3\pm1.7$, ignoring the rather large errors, this number is not a bad estimate of the epoch compared to articles such as from\cite{OtaarXiv0707.1561} which shows from observations of Lyman-$\alpha$ emitters that there must be a large ionized fraction at 6.5, due to attenuation from neutral hydrogen. However as we have not included recombination which will slow down the rate at which the universe is ionized or the fact that not all the hydrogen in the universe is in the form of IGM some of it will be in the form of stars, therefore this number is not actually realistic.
+	From this we get that the universe is completely ionized at a redshift $6.3\pm1.7$, ignoring the rather large errors, this number is not a bad estimate of the epoch. We know this from articles which show from observations of Lyman-$\alpha$ emitters that there must be a large ionized fraction at 6.5, due to attenuation from neutral hydrogen\cite{Ota:arXiv0707.1561}. Various theoretical models of star formation rate predict a ionized universe at around 6 and it is stated that the Sunyaev-Zeldovich effect has put a limit that Reionization ends earlier than 5.8 \cite{2012MNRAS.423..862K}.
+
+	However as recombination has not been included which will slow down the rate at which the universe is ionized or the fact that both the escape fraction and $\zeta$ are likely to change with redshift, this number is not actually realistic.
+
+	\subsection{Evolving Escape Fraction} % (fold)
+	\label{sub:evolving_escape_fraction}
+		As already stated the previous results make a basic assumption of of the escape fraction to be about $20\%$ during the epoch of reionization. This is obviously not a very good assumption as it will evolve with redshift. However there lies a problem in this which is related to the previous section, section~\ref{???}(Beth's bit on fesc) which explained the difficulty in measuring this parameter as well as the problems in extrapolating out to higher redshifts much like in our star formation rates. This uncertainty in the measure is what leads to the differences stated in\cite{2012ApJ...759L..38A}, which states a higher fraction at higher redshift due to lack of dust, and\cite{2000ApJ...545...86W} which states the opposite, due to increasing disk densities and increasing density in the universe as a whole. However from\cite{2012arXiv1209.2123F} and\cite{2013MNRAS.428L...1M} by using recent semi-analytical model they found that the escape fraction does indeed increase with redshift and so this is the model that is used in this project.
+
+		Once again using the fit program to fit a exponential to the escape fraction measurements and predictions from\cite{2012ApJ...759L..38A},\cite{2006ApJ...651L..89R} and\cite{2006MNRAS.371L...1I}. The functional form that is achieved is,
+		\begin{align}
+			f_\text{esc}(z)=\e{0.013\pm0.011-0.952\pm0.06}
+		\end{align}
+		The code is then run again with this escape fraction instead of the constant $20\%$, the results achieved are shown in \ref{fig:IonizedFraction2}
+		\begin{figure}
+			\centering
+				\includegraphics[width=0.8\textwidth]{F:/Extragalactic cosmology/IonizedFraction2.png}
+				\caption{Plot of modeled ionized fraction of the IGM as a function of redshift with predicting evolving escape fraction.\label{fig:IonizedFraction2}}
+		\end{figure}
+
+		The graph in figure~\ref{fig:IonizedFraction2} shows that the addition of the evolving escape fraction has resulted in the universe being ionized quicker which is what is expected, since recombinations have not been included in this model. This model outputs a redshift of $7.5\pm2.1$, which shows the increase in redshift and also in error due to the error on $f_\text{esc}$ itself. It is very hard to determine whether this is an improvement or a hindrance to the previous model just due to the errors on measuring/predicting f_{esc}.
+
+		%Not completed having trouble with it not sure if it should be included without conclusive results?
+	% subsection evolving_escape_fraction (end)
+
+	\subsection{Recombinations} % (fold)
+	\label{sub:recombinations}
+		To include Recombinations into our project, the rate at which hydrogen will recombine. The mean recombination time was found in \cite{2012MNRAS.423..862K} to be,
+		\begin{align}
+			\bar{t}_\text{rec} &= \frac{1}{C_{HII}\alpha_{B}(T_{0})\bar{n}_{H}(1+Y/4X)(1+z)^{3}}\\
+			&\approx 0.93Gyr\left(\frac{3}{C_{HII}}\right)\left(\frac{T_{0}}{2\times 10^{4}K}\right)^{0.7}\left(\frac{7}{1+z}\right)^{3}
+		\end{align}
+		Where $C_{HII}$ is the clumping factor of ionized hydrogen and $T_{0}$ is the mean IGM temperature. Both of these values are plotted and fitted against redshift exactly in the same way as previous parameters. Where values of the clumping factor against redshift are cited from a theoretical model in\cite{2011MNRAS.412L..16R} and the IGM mean temperature is cited from\cite{2006MNRAS.373.1265O} based on simulations.
+
+		The code then takes this equation for the mean recombination time of hydrogen and integrates the inverse of this from 0 to the specific $t(z)$. This will give us a mean total of hydrogen that will have recombined in that time period. However when this method is implemented into the code and ran, it outputs values of recombination that are insignificant because they are so low. This seems unphysical as we would expect the recombinations in the universe to be much higher than this and make a significant contribution to the rate at which the universe ionizes.
+	% subsection recombinations (end)
+
 % section lower_redshift_limit_on_re-ionization (end)
-
-%Next Bit to write!
-\subsection{Recombinations} % (fold)
-\label{sub:recombinations}
-
-% subsection recombinations (end)
