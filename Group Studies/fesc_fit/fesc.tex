@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage[top=0.8in, left=1in, right=1in, bottom=0.8in]{geometry}
+
+\begin{document}
+\small{\today}
+\section{Escape Fraction}
+	\subsection{Linear Fit}
+		\begin{minipage}[h]{0.6\textwidth}
+				\begin{center}
+					\begingroup\endlinechar=-1
+		  			\resizebox{\textwidth}{!}{%
+						\input{fesc_linear.tex}
+		  			}\endgroup
+				\end{center}
+		\end{minipage}
+		\begin{minipage}[h]{0.35\textwidth}
+			$y=mx+c$ \\
+			m               = 0.0657591        +/- 0.02085      (31.71\%) \\
+			c               = -0.164302        +/- 0.1296       (78.88\%) \\
+		\end{minipage}
+
+	\subsection{Exponential Fit}
+		\begin{minipage}[h]{0.6\textwidth}
+				\begin{center}
+					\begingroup\endlinechar=-1
+		  			\resizebox{\textwidth}{!}{%
+						\input{fesc_exponential.tex}
+		  			}\endgroup
+				\end{center}
+		\end{minipage}
+		\begin{minipage}[h]{0.35\textwidth}
+			$y = \textrm{e}^{mx + c}$ \\
+			m               = 0.0133643        +/- 0.01065      (79.68\%) \\
+			c               = -0.951566        +/- 0.05994      (6.299\%) \\
+		\end{minipage}
+
+	\subsection{Power Fit}
+		\begin{minipage}[h]{0.6\textwidth}
+				\begin{center}
+					\begingroup\endlinechar=-1
+		  			\resizebox{\textwidth}{!}{%
+						\input{fesc_power.tex}
+		  			}\endgroup
+				\end{center}
+		\end{minipage}
+		\begin{minipage}[h]{0.35\textwidth}
+			$y = m\times x^c$ \\
+			m               = 0.00030280      +/- 0.000518    (171.1\%) \\
+			c               = 3.27429          +/- 0.7267       (22.19\%) \\
+		\end{minipage}
+
+		Hope this is useful. Let me know if theres anything else.
+
+		Josh
+\end{document}
