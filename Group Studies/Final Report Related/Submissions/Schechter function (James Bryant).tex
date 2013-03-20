@@ -147,12 +147,15 @@ This graph shows that the addition of the evolving escape fraction has resulted 
 
 %Not completed having trouble with it not sure if it should be included without conclusive results?
 \subsection{Recombinations}
-To include Recombinations into our project, the rate at which hydrogen will recombine. The mean recombination time was found in \cite{2012MNRAS.423..862K} to be, 
+To include Recombinations into our project, the rate at which hydrogen will recombine. The recombination rate was found in \cite{2012ApJ...746..125H} to be, 
 \begin{equation} 
-\bar{t}_{rec}= \frac{1}{C_{HII}\alpha_{B}(T_{0})\bar{n}_{H}(1+Y/4X)(1+z)^{3}}\\
-\approx 0.93Gyr\left(\frac{3}{C_{HII}}\right)\left(\frac{T_{0}}{2\times 10^{4}K}\right)^{0.7}\left(\frac{7}{1+z}\right)^{3}
+\frac{dn_{rec}}{dt}=\frac{Q_{HII}}{\bar{t}_{rec}}
 \end{equation}
-Where $C_{HII}$ is the clumping factor of ionized hydrogen and $T_{0}$ is the mean IGM temperature. Both of these values are plotted and fitted against redshift exactly in the same way as previous parameters. Where values of the clumping factor against redshift are cited from a theoretical model in \cite{2011MNRAS.412L..16R} and the IGM mean temperature is cited from \cite{2006MNRAS.373.1265O} based on simulations.\\
+Where $\bar{t}_{rec}$ is the mean recombination time and $Q_{HII}$ is the ``volume filling factor''. The mean recombination time has the form, 
+\begin{equation} 
+\bar{t}_{rec}= [1.08<n_{H}>\alpha_{B}C]^{-1}
+\end{equation}
+Where C is the clumping factor the IGM, $\alpha_{B}$ is the recombination coefficent for excited states of hydrogen and the 1.08 accounts for the presence of photoelectrons from singly ionized helium.  Where values of the clumping factor against redshift are cited from a theoretical model in \cite{2011MNRAS.412L..16R}.\\
 The code then takes this equation for the mean recombination time of hydrogen and integrates the inverse of this from 0 to the specific t(z). This will give us a mean total of hydrogen that will have recombined in that time period. However when this method is implemented into the code and ran, it outputs values of recombination that are insignificant because they are so low. This seems unphysical as we would expect the recombinations in the universe to be much higher than this and make a significant contribution to the rate at which the universe ionizes.\\ 
 
 @ARTICLE{2010Natur.468...49R,
@@ -379,6 +382,24 @@ archivePrefix = "arXiv",
     pages = {L1-L5},
       doi = {10.1111/j.1745-3933.2006.00195.x},
    adsurl = {http://adsabs.harvard.edu/abs/2006MNRAS.371L...1I},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2012ApJ...746..125H,
+   author = {{Haardt}, F. and {Madau}, P.},
+    title = "{Radiative Transfer in a Clumpy Universe. IV. New Synthesis Models of the Cosmic UV/X-Ray Background}",
+  journal = {\apj},
+archivePrefix = "arXiv",
+   eprint = {1105.2039},
+ primaryClass = "astro-ph.CO",
+ keywords = {cosmology: theory, diffuse radiation, intergalactic medium, galaxies: evolution, quasars: general},
+     year = 2012,
+    month = feb,
+   volume = 746,
+      eid = {125},
+    pages = {125},
+      doi = {10.1088/0004-637X/746/2/125},
+   adsurl = {http://adsabs.harvard.edu/abs/2012ApJ...746..125H},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 

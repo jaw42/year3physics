@@ -1,16 +1,16 @@
 %!TEX root = mainfile.tex
 
 \section{Derivation of Thermal Background} % (fold)
-\label{sec:derivation_of_thermal_background}
+\label{app:derivation_of_thermal_background}
 	Number of incident photons, $N_{\gamma}$, is
 	\begin{align}
-		N_{\gamma} &= \int_{\nu_1}^{\nu_2} \frac{\epsilon B_\nu(T)}{h_\nu}\d{\nu}
+		N_{\gamma} &= \int_{\nu_1}^{\nu_2} \frac{\epsilon B_\nu(T)}{h\nu}\d{\nu}
 	\end{align}
-	This integral spans the filter from the red to the blue end.
+	This integral spans the filter from the red to the blue end, where $\nu$ is the frequency of light, $h$ is Planck's constant and $B_\nu$ is given by:
 	\begin{align}
 		B_\nu(T) &= \frac{2h\nu^3}{c^2}\frac{1}{\e{\frac{h\nu}{kT}}-1}
 	\end{align}
-	where $\e{\frac{h\nu}{kT}} \ll 1$. Using the substitution
+	where $c$ is the speed of light, $T$ is the temperature of, $k$ is Boltzmann's constant and $\e{\frac{h\nu}{kT}} \ll 1$. Using the substitution
 	\begin{align}
 		x = \frac{h\nu}{kT}, \qquad \nu &= \frac{kTx}{h} \\
 		\Rightarrow \d{\nu} &= \frac{kT}{h}\d{x}

@@ -1,13 +1,13 @@
 %!TEX root = mainfile.tex
 
-\subsubsection{Using Euclid for a Survey of edshift 8.54 to 10.1} % (fold)
-\label{ssub:using_euclid_for_a_survey_of_edshift_8_54_to_10_1}
-	Due to its large field of view, Euclid space telescope will be useful for studying a large number of galaxies, however it has been found to be limited by its filters to providing colour information for only those objects between redshift 8.5 and 10, section~\ref{sec:???}(reference Joe’s section on bands and my section on euclid). The Euclid survey as described in section~\ref{sec:???} is planned to take approximately six years, but this will only reach a magnitude of 26. It was investigated what galaxies the telescope would be able to observe if the magnitude limit was increased, and the results are shown in table~\ref{tab:???}.
+\subsection{Using Euclid for a Survey of edshift 8.54 to 10.1} % (fold)
+\label{sub:using_euclid_for_a_survey_of_edshift_8_54_to_10_1}
+	Due to its large field of view, Euclid space telescope will be useful for studying a large number of galaxies, however it has been found to be limited by its filters to providing colour information only for those objects between redshift 8.5 and 10, Section~\ref{sec:Photometry_Colour}. The Euclid survey as described in Section~\ref{sub:euclid} is planned to take approximately six years, but this will only reach a magnitude of 26. It was investigated what galaxies the telescope would be able to observe if the magnitude limit was increased, and the results are shown in Table~\ref{tab:filters_for_particular_redshift_galaxies}.
 
-	It must be noted that the program results predict different numbers of galaxies than the Euclid documentation. The prediction group's program is the data on which the following calculations are based. The survey method adopted for this project would also be different from that detailed by the Euclid ``red book'': rather than revisiting the same patch of sky infrequently, the aim would be to stare continuously at a particular point until the required depth was met. No wide survey is required for this project since the galaxies at the high redshifts being studied all have faint magnitudes. This will take a considerable amount of time to see; hence a wide survey at such depths is implausible.
+	It must be noted that the program results predict different numbers of galaxies than the Euclid documentation. The prediction group’s program is the data on which the following calculations are based. The survey method adopted for this project would also be different from that detailed by the Euclid ``red book''; rather than revisiting the same patch of sky infrequently, the aim would be to stare continuously at a particular point until the required depth was met. No wide survey is required for this project since the galaxies at the high redshifts being studied all have faint magnitudes. This will take a considerable length of time to see; hence a wide survey at such depths is implausible.
 
-	Table~\ref{tab:???} shows the number of galaxies observable for survey times of 0.1, 0.2, and 0.5\,million seconds. The number of galaxies that would be observed at different magnitudes is presented, and the table also displays the time taken for 1\,FoV, and the number of galaxies in that field of view for each magnitude. The red number indicates how many FoVs were possible given the set total observing time. N/A indicates that there were either no galaxies at this magnitude, or that the time taken to get to this magnitude was larger than the intended total survey time.
-	\begin{table}[ht]
+	Table~\ref{tab:filters_for_particular_redshift_galaxies} shows the number of galaxies observable for survey times of 0.1, 0.2, and 0.5\,million seconds. The number of galaxies that would be observed at different magnitudes is presented, and the table also displays the time taken for 1\,FoV, and the number of galaxies in that field of view for each magnitude. The red number indicates how many FoVs were possible given the set total observing time. N/A indicates that there were either no galaxies at this magnitude, or that the time taken to get to this magnitude was larger than the intended total survey time.
+	\begin{table}[!htbp]
 		\begin{center}
 			\begin{tabular}{c|c|c|c|c|c}
 				\multirow{2}{*}{Magnitude}	&Time for	&Number of	&\multicolumn{3}{|c}{Galaxies in total observing time of:}\\
@@ -24,12 +24,29 @@
 			\end{tabular}
 		\end{center}
 		\caption{Data highlighting which filters would be useful for observing particular redshift galaxies\cite{Galactic_Astronomy_Binney_Merrifield}}
-		\label{tab:filter_characteristics}
+		\label{tab:filters_for_particular_redshift_galaxies}
 	\end{table}
 
+	\begin{figure}[!htbp]
+		\centering
+			\begingroup\endlinechar=-1
+				\resizebox{0.8\textwidth}{!}{%
+					\input{GRAPH_Mag_vs_galaxies_in_time_Euclid.tex}
+				}\endgroup
+		\caption{Number of galaxies expected for different magnitudes, given set overall observing time (JW 6--8.5).\label{fig:galaxies_expected_JWST_6-8}}
+	\end{figure}
+
 	For increasing magnitudes, the total number of objects given a total observing time was found to increase within the range \numrange{27}{31}. A survey of \SI{0.1e6}{\second} for each filter yielded best results at a magnitude of 29.5. Around 70 galaxies between a redshift of 8.5 and 10 would be expected. However this would involve one pointing of the telescope, which would lead to a large uncertainty on the number due to cosmic variance.
+	\begin{figure}[!htbp]
+		\centering
+			\begingroup\endlinechar=-1
+				\resizebox{0.8\textwidth}{!}{%
+					\input{GRAPH_Mag_vs_galaxies_in_time_Euclid_errors.tex}
+				}\endgroup
+		\caption{Number of galaxies expected for different magnitudes, given set overall observing time for the Euclid Telescope.\label{fig:galaxies_expected_JWST_6-8}}
+	\end{figure}
 
 	The alternative option was to double the survey time to \SI{0.2e6}{\second}, which yielded 63 galaxies at a magnitude of 29.0, and increasing the number of pointings (and survey area) by a factor of five, thus reducing the cosmic variance. For the same time, there was also the option of observing around 140 galaxies down to a magnitude of 29.5, with 2 pointings of the telescope.
 
 	In order to keep time to a minimum, it was decided that the \SI{0.1e6}{\second} option was best, as each galaxy needs to be observed in three filters, and subsequently confirmed by spectroscopy. The multi-band photometry approximately triples the \SI{0.1e6}{\second} to \SI{0.3e6}{\second}. Added to this, overhead times extend the time further as the telescope will need to be read out. As an approximation, this increases the total time taken to do photometry to around \SI{0.6e6}{\second}, or 7\,days continuous viewing. The telescope is assumed to be operational for 18\,hours a day, meaning that the shortest time over which this survey could be done is around ten days, not including spectroscopy.
-% subsubsection using_euclid_for_a_survey_of_edshift_8_54_to_10_1 (end)
+% subsection using_euclid_for_a_survey_of_edshift_8_54_to_10_1 (end)

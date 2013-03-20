@@ -1,0 +1,28 @@
+%!TEX root = mainfile.tex
+
+\subsection{Including Recombinations} % (fold)
+\label{sub:including_recombinations}
+
+	To include Recombinations into our project, the rate at which hydrogen will recombine. The mean recombination time\cite{2012ApJ...746..125H} has the form,
+	\begin{align}
+		\overline{t}_\text{rec}= \left[1.08\langle n_{H}\rangle\alpha_{B}C \right]^{-1}
+	\end{align}
+	Where $C$ is the clumping factor the IGM, $\alpha_{B}$ is the recombination coefficent for excited states of hydrogen and the 1.08 accounts for the presence of photoelectrons from singly ionized helium.  Where values of the clumping factor against redshift are cited from a theoretical model in \cite{2011MNRAS.412L..16R}. The recombination coefficent for excited hydrogen from \cite{1993PhyA..192..249L} is proportional to $T_\text{IGM}^{-0.7}$ and at $T_\text{IGM}= 10^{4}K$ it is equal to $2.6\times 10^{-13}$, therefore it is computed in the code as,
+	\begin{align}
+		\alpha_{B}(T)(\si{\cubic\centi\metre\per\second}) &= \frac{2.6\times 10^{-13}*(10^{4})^{0.7}}{T^{0.7}}
+	\end{align}
+	However this also needs to be converted to \si{\cubic\mega\parsec} therefore we divide this equation by $(3.086\times 10^{24})^{3}$.
+
+	Therefore an ionized hydrogen atom will recombine on average at the mean time stated above. To convert this into a rate of recombinations the code treats the recombinations as decays from hydrogen ionized state, with a lifetime of the mean recombination time. Then using the universal decay law the number of recombinations at a time, $t$, is,
+	\begin{align}
+		n_{rec}(t)=n_\text{ion}(t)*\e{-t/\overline{t}_{rec}(t)}
+	\end{align}
+	The code then does as it did in the previous cases but this time minus the number of recombinations. This is shown in figure \ref{fig:}.\\
+
+	%insert figure of results
+
+	%talk about results
+% subsection including_recombinations (end)
+
+
+

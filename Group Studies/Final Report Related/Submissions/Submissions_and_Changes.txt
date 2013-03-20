@@ -3,12 +3,21 @@ Also, if you make a change to a submission, can you add that to the list as well
 
 This'll act as a ToDo list, so as things are completed they'll be deleted from here. Thanks
 -----------------------------------------------------------------------------------------------------
-Hi Josh i've uploaded the latest version of my work onto the Group Studies Rahim latex document. I've updated every section but i've included notes for you to hopefully avoid any confusion and simplify things. The references should be ok but let me know if u need anything else. Rahim 
+hi Josh i've made some changes. Exposure time paragraph1, mirror reflectivity, CCDs p2, p4 (in p3 photosites should be spelt without a hyphen), dark current p2 should be below figure 16, sky background section should be after dark current with figure 22 after p2, equations 21.2, 21.3 & current 23.3 have been amended. Calculating exposure time final paragraph and adaptive optics p1 has been changed, the blank reference in overheads is 17 on my list, in seeing, figure ?? is 18 (the one below) and figure 20 should be above p2 in adaptive optics.Also could you make figure17 smaller and finally, if possible, could you put the zodiacal light pics (23 & 24) together(sky background) underneath a combined p3 & p4. If not can i have f23 under p3 and f24 under p4. Also f22 should be below p2. Also some of my section is duplicated at the end. Very, very, very sorry about the hassle (changes are in group studies rahim). Rahim   
 
 Hi, I've uploaded an edited version of the theory of GL with the changes in red, and theres one extra reference
   - the last one on the page. Also a new observational GL section which is pretty much all different.Thanks :) Catherine
 
 
+Hi, thought id put it on here as well (forgot). Uploaded my newest version tex file. Jamie
+
+
+I have now uploaded 'Observing strategy, high redshift' which goes after the other 2 strategies dorothy has handed to you over the last couple of days. in it there is a table in red, this is simply the data for the graph above it(table doesnt need to go in final draft, delete once the graph is done please) Mike.
+
+
+Hi josh, new folder for you, its just final updates to Euclid and Spitzer, all should be highlighted in purple, some things are deletions, others are additions. :) Dorothy
+
+Hey josh, Under OwensSubmission, theres a file called owenssubmission. It is, believe it or not, my submission :P Still very rough as you will inevitably see but ill get on to the regions in capital letters ASAP.
 
 ******************DONE**************************
 -----------------------------------------------------------------------------------------------------
@@ -27,3 +36,8 @@ folder under 'predictions group intro'
 ***Also added a small section about clumping factor, i guess best to include it before the sections on crit sfr dens, if owen has written 
 them yet. lew x
 
+
+***Hi Josh i've uploaded the latest version of my work onto the Group Studies Rahim latex document. I've updated every section but i've included notes for you to hopefully avoid any confusion and simplify things. The references should be ok but let me know if u need anything else. Rahim 
+
+***Hi Josh, I've uploaded the theory again, just have added an equation near the end - in red again.  And have made some changes (red) and added results to the observational GL section. 
+Also added a how we'll use GL in the strategy section which I think will probably go in the results-type section at the end. Thanks, Catherine

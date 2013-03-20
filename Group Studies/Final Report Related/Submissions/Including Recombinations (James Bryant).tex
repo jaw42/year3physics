@@ -1,0 +1,69 @@
+
+\subsection{Including Recombinations}
+To include Recombinations into our project, the rate at which hydrogen will recombine.\\
+The mean recombination time, \cite{2012ApJ...746..125H}, has the form, 
+\begin{equation} 
+\bar{t}_{rec}= [1.08<n_{H}>\alpha_{B}C]^{-1}
+\end{equation}
+Where C is the clumping factor the IGM, $\alpha_{B}$ is the recombination coefficent for excited states of hydrogen and the 1.08 accounts for the presence of photoelectrons from singly ionized helium.  Where values of the clumping factor against redshift are cited from a theoretical model in \cite{2011MNRAS.412L..16R}. The recombination coefficent for excited hydrogen from \cite{1993PhyA..192..249L} is proportional to $T_{IGM}^{-0.7}$ and at $T_{IGM}= 10^{4}K$ it is equal to $2.6\times 10^{-13}$, therefore it is computed in the code as,
+
+\begin{equation}
+\alpha_{B}(T)(cm^{3}s^{-1})=\frac{2.6\times 10^{-13}*(10^{4})^{0.7}{T^{0.7}}
+\end{equation}
+
+However this also needs to be converted to $Mpc^{3}$ therefore we divide this equation by $(3.086\times 10^{24})^{3}$.//
+Therefore an ionized hydrogen atom will recombine on average at the mean time stated above. To convert this into a rate of recombinations the code treats the recombinations as decays from hydrogen ionized state, with a lifetime of the mean recombination time. Then using the universal decay law the number of recombinations at a time t is,
+\begin{equation}
+n_{rec}(t)=nion(t)*e^{-t/\bar{t}_{rec}(t)}
+\end{equation}
+The code then does as it did in the previous cases but this time minus the number of recombinations. This is shown in figure \ref{fig:}.\\
+
+%insert figure of results
+
+%talk about results
+
+
+@ARTICLE{2012ApJ...746..125H,
+   author = {{Haardt}, F. and {Madau}, P.},
+    title = "{Radiative Transfer in a Clumpy Universe. IV. New Synthesis Models of the Cosmic UV/X-Ray Background}",
+%  journal = {\apj},
+archivePrefix = "arXiv",
+   eprint = {1105.2039},
+ primaryClass = "astro-ph.CO",
+ keywords = {cosmology: theory, diffuse radiation, intergalactic medium, galaxies: evolution, quasars: general},
+     year = 2012,
+    month = feb,
+   volume = 746,
+      eid = {125},
+    pages = {125},
+      doi = {10.1088/0004-637X/746/2/125},
+   adsurl = {http://adsabs.harvard.edu/abs/2012ApJ...746..125H},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+ARTICLE{2011MNRAS.412L..16R,
+   author = {{Rai{\v c}evi{\'c}}, M. and {Theuns}, T.},
+    title = "{Modelling recombinations during cosmological reionization}",
+%  journal = {\mnras},
+ keywords = {radiative transfer, methods: numerical, cosmology: dark ages, reionization, first stars},
+     year = 2011,
+    month = mar,
+   volume = 412,
+    pages = {L16-L19},
+      doi = {10.1111/j.1745-3933.2010.00993.x},
+   adsurl = {http://adsabs.harvard.edu/abs/2011MNRAS.412L..16R},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{1993PhyA..192..249L,
+   author = {{Leonhardt}, U. and {Ebeling}, W.},
+    title = "{Ionization and recombination coefficients of excited states in nonideal hydrogen plasmas}",
+  journal = {Physica A Statistical Mechanics and its Applications},
+     year = 1993,
+    month = jan,
+   volume = 192,
+    pages = {249-261},
+      doi = {10.1016/0378-4371(93)90154-V},
+   adsurl = {http://adsabs.harvard.edu/abs/1993PhyA..192..249L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
