@@ -1,0 +1,68 @@
+\section{Derivation of Magnitude Schechter function} % (fold)
+\label{app:derivation_of_magnitude_schechter_function}
+	The luminosity function of galaxies is the object, $\Phi_L$, such that the number density of galaxies can be calculated as
+	\begin{align}
+		n = \int { \Phi_L \d{L} }.\label{eq:nfromphiL}
+	\end{align}
+	We, therefore define the magnitude equivalent of the luminosity function to be the object, $\Phi_M$, which obeys the equivalent formula
+	\begin{align}
+		n = \int { \Phi_M \d{M} }.\label{eq:nfromphiM}
+	\end{align}
+	From equation~(\ref{eq:nfromphiL}), we deduce that
+	\begin{align}
+		n = \int { \Phi_L \dx{L}{M}\d{M} },
+	\end{align}
+	it is then clear, from comparison of this result with equation~(\ref{eq:nfromphiM}), that
+	\begin{align}
+		\Phi_M = \Phi_L \dx{L}{M}.\label{eq:conversion}
+	\end{align}
+	We then choose the standard Schechter function as our model of the luminosity function and aim to derive the form of it's magnitude equivalent, $\Phi_M(M)$.
+	\begin{align}
+		\Phi_L = \Phi^*  \left(\frac{L}{L^*}\right)^\alpha \exp{\left( -\frac{L}{L^*} \right)} \frac{1}{L^*}
+	\end{align}
+	\begin{align}
+		M &= -2.5\log_{10}\left ( \frac{L}{L_0}\right) \\
+		   &= \frac{-2.5}{\ln(10)} \ln\left ( \frac{L}{L_0}\right) \\[1em]
+		\Rightarrow \dx{M}{L} &= \frac{-2.5}{\ln(10)} \frac{1}{L}
+	\end{align}
+	Substituting this result into equation~(\ref{eq:conversion}), gives
+	\begin{align}
+		\Phi_M(L) &= \frac{-L\ln(10)}{2.5} \Phi^*  \left(\frac{L}{L^*}\right)^\alpha \exp{\left( \frac{-L}{L^*} \right)} \frac{1}{L^*} \\
+		&= \frac{-\ln(10)}{2.5} \Phi^*  \left(\frac{L}{L^*}\right)^{\alpha+1} \exp{\left( \frac{-L}{L^*} \right)}
+	\end{align}
+	\begin{align}
+		M - M^* = -2.5 \log_{10}\left( \frac{L}{L^*} \right)	\\
+		\left( \frac{L}{L^*} \right)= 10^{0.4(M^*-M)}
+	\end{align}
+	Finally, we apply this substitution
+	\begin{align}
+		\Phi_M(M) = \frac{-\ln(10)}{2.5} \Phi^*  10^{0.4(M^*-M)(\alpha+1)} \exp(-10^{0.4(M^*-M)}) .
+	\end{align}
+	In practice, the minus sign is accounted for by inverting the limits of integration and integrating from low M to high M (dim galaxies to bright galaxies).
+% section derivation_of_magnitude_schechter_function (end)
+
+\newpage
+
+\section{Derivation of Light travel Distance} % (fold)
+\label{app:derivation_of_light_travel_distance}
+	\begin{align}
+		dl = cdt.
+	\end{align}
+	If there is a 1:1 relationship between scale factor, $a$, and time, $t$, then we can say
+	\begin{align}
+		\d{t} = \dx{t}{a} \d{a} = \frac{\d{a}}{\dot{a}}
+	\end{align}
+	We then use
+	\begin{align}
+		a &= \frac{1}{1+z} \\
+		\Rightarrow \d{a} &= -\frac{\d{z}}{(1+z)^2} = -\frac{a\d{z}}{1+z}.
+	\end{align}
+	and by the definition of the Hubble parameter, $H(z) = \frac{\dot{a}}{a}$, so
+	\begin{align}
+		\d{t} = \frac{\d{a}}{\dot{a}} = \frac{-\d{z} }{1+z} \frac{a}{\dot{a}} = \frac{-\d{z}}{(1+z) H(z)}
+	\end{align}
+	\begin{align}
+		l &= \int c \d{t} = \int_z^0 \frac {-c\d{z'}}{(1+z') H(z')} \\
+		\Rightarrow l &= \int_0^z \frac{c\d{z'}}{(1+z') H(z')}
+	\end{align}
+% section derivation_of_light_travel_distance (end)

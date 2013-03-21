@@ -10,7 +10,7 @@
 	\end{align}
 	where $\left \langle N \right \rangle$ is the mean and $\left \langle N^2 \right \rangle$ is the variance\cite{Trenti2008}.
 
-	Any number or density measurement derived from a galaxy population is susceptible to cosmic variance. As an extreme example, it is reported to be potentially at the 50--70\% level in the HST UDF surveys\cite{Driver01102010}. Evidently, it will be particularly relevant to this study of cosmic re-ionization.
+	Any number or density measurement derived from a galaxy population is susceptible to cosmic variance. As an extreme example, it is reported to be potentially at the 50--70\% level in the HST UDF surveys\cite{Driver01102010}. Evidently, it will be particularly relevant to this study of cosmic reionization.
 
 	\subsection{Factors which affect the Cosmic Variance} % (fold)
 	\label{sub:factors_which_affect_the_cosmic_variance}
@@ -63,7 +63,7 @@
 		\end{align}
 		The formula employs the median redshift transverse lengths $A$ and $B$, and the radial depth $C$, all given in \si{\mega\parsec}, to represent the volume of each survey sample. The number of such samples i.e.\ the number of sight-lines is $N$. The aspect ratio is dealt with in the amplitude term at the front of the expression, where the aspect ratio 1:128 would be submitted as $X=128$, for example.
 
-		Although it is extrapolated from an equation that applies at $z<0.1$, it takes advantage of the fact that cosmic variance should vary according to Poisson statistics along the radial length. This means that a survey with twice the radial depth will have $\sqrt{2}$ less cosmic variance. Hence the factor of $\sqrt{C}$ in the denominator. Equation~(\ref{eq:cvmain}) does not, however, make any corrections for the evolution of the clustering signature of the galaxy population, with this expected to be lower towards higher redshift. Correspondingly, any estimate output should be treated as an upper limit.
+		Although it is extrapolated from an equation that applies at $z<0.1$, it takes advantage of the fact that cosmic variance should vary according to Poisson statistics along the radial length. This means that a survey with twice the radial depth will have $\sqrt{2}$ less cosmic variance. Hence the factor of $\sqrt{C}$ in the denominator. equation~(\ref{eq:cvmain}) does not, however, make any corrections for the evolution of the clustering signature of the galaxy population, with this expected to be lower towards higher redshift. Correspondingly, any estimate output should be treated as an upper limit.
 
 		This equation has been entered into the code which, from the survey parameters input, calculates the required quantities and gives an estimate of the cosmic variance as a percentage of the number counts expected to be observed. Furthermore, it will inform the user of how many random pointings of such a survey are necessary to achieve less than $10\%$ cosmic variance.
 	% subsection general_formula (end)

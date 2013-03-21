@@ -143,20 +143,8 @@ The code is then run again with this escape fraction instead of the constant $20
 	\label{fig:IonizedFraction2}
 \end{figure}
 
-This graph shows that the addition of the evolving escape fraction has resulted in the universe being ionized quicker which is what is expected, since recombinations have not been included in this model. This model outputs a redshift of $7.5\pm2.1$, which shows the increase in redshift and also in error due to the error on $f_{esc}$ itself. It is very hard to determine whether this is an improvement or a hindrance to the previous model just due to the errors on measuring/predicting f_{esc}.\\
+This graph shows that the addition of the evolving escape fraction has resulted in the universe being ionized quicker which is what is expected, since recombinations have not been included in this model. This model outputs a redshift of $7.5\pm2.1$, which shows the increase in redshift and also in error due to the error on $f_{esc}$ itself. It is very hard to determine whether this is an improvement or a hindrance to the previous model just due to the uncertainty on measuring/predicting $f_{esc}$, therefore it is hard to be certain of accuracy of the evolving form of $f_{esc}$.\\
 
-%Not completed having trouble with it not sure if it should be included without conclusive results?
-\subsection{Recombinations}
-To include Recombinations into our project, the rate at which hydrogen will recombine. The recombination rate was found in \cite{2012ApJ...746..125H} to be, 
-\begin{equation} 
-\frac{dn_{rec}}{dt}=\frac{Q_{HII}}{\bar{t}_{rec}}
-\end{equation}
-Where $\bar{t}_{rec}$ is the mean recombination time and $Q_{HII}$ is the ``volume filling factor''. The mean recombination time has the form, 
-\begin{equation} 
-\bar{t}_{rec}= [1.08<n_{H}>\alpha_{B}C]^{-1}
-\end{equation}
-Where C is the clumping factor the IGM, $\alpha_{B}$ is the recombination coefficent for excited states of hydrogen and the 1.08 accounts for the presence of photoelectrons from singly ionized helium.  Where values of the clumping factor against redshift are cited from a theoretical model in \cite{2011MNRAS.412L..16R}.\\
-The code then takes this equation for the mean recombination time of hydrogen and integrates the inverse of this from 0 to the specific t(z). This will give us a mean total of hydrogen that will have recombined in that time period. However when this method is implemented into the code and ran, it outputs values of recombination that are insignificant because they are so low. This seems unphysical as we would expect the recombinations in the universe to be much higher than this and make a significant contribution to the rate at which the universe ionizes.\\ 
 
 @ARTICLE{2010Natur.468...49R,
    author = {{Robertson}, B.~E. and {Ellis}, R.~S. and {Dunlop}, J.~S. and 

@@ -1,35 +1,125 @@
 %!TEX root = mainfile.tex
 
+
 \section{Photometry and Colour} % (fold)
 \label{section:Photometry_Colour}
 
-Photometry is one of the principle methods that astronomers use to detect objects in the universe. In principle, Photometry is the measurement of flux from objects through filters with a certain wavelength range (bandpass). Using a filter does not disperse the light as in spectroscopy, so if you use a filter with a large bandpass, more light is obtained in the image than if the observation was done using spectroscopy or narrow band filters. This means much fainter objects can be observed quicker using broad band photometry. [Romanishin]. To detect lyman break galaxies the dropout method is used, which uses at least three filters to get enough spectral information to identify the object as a candidate for being a lyman break galaxy (see dropout method section). However,  using the dropout method is not enough to confirm the identities of these candidates, other observational methods need to be used to be certain the object is a lyman break galaxy and not a contaminant. One of the most effective ways of eliminating these contaminants is to use the colour information of the object, obtained from the photometric measurements.
+Photometry is one of the methods that astronomers use to detect objects in the universe. In principle, Photometry is the measurement of flux from objects through filters with a certain wavelength range (bandpass). These set of filters are known as a photometric system. There are three main types of photometric systems: Wide, intermediate and narrowband. As a rough guide for the visible band, wide filters tend to have bandwidth of 100nm, intermediate filters range from around 10 to 50nm and narrow bands range from 0.05 to 10nm.[kitchin] Photometry can often be confused with imaging, as it appears to be just imaging using a set of filters; astrophysicists take the view that Photometry is for the purpose of measuring the brightness of an object or objects in different wavelength bands and imaging is used to determine the structure and appearance of the object [Kitchin]. Using a filter does not disperse the light as in spectroscopy, so if you use a filter with a large bandpass, more light is obtained in the image than if the observation was done using spectroscopy or narrow band filters. This means much fainter objects can be observed quicker using wide band photometry, this means it is a very effective method for studying many objects. [Romanishin].
 
-MORE DETAIL ON BANDS AND PHOTOMETRY
+Photometry today is used primaily with CCDs, which can convert the transmitted flux into an electric signal which can then be interpretted as a magnitude. The magnitude system used in this project was the AB magnitude system as outlined in section........cite josh! 
+
+In this project wide and intermediate filters have been used predominantly.  A common method for making these filters is to use coloured glass which either pass all light above a certain wavelength or pass all light up to a certain wavelength, these are known as cutoff filters. A bandpass filter can be made by combining two types of coloured glass, one which will act as the low wavelength cutoff and the other as the high wavelength cutoff. Filters don't transmit 100 per cent of the wavelengths that are allowed to pass, and the cutoff isn't at an exact frequency. An example of this is shown in Figure ....  
+
+
+
+
+
+To detect lyman-break galaxies the dropout method is used, which uses at least three filters to get enough spectral information to identify the object as a candidate for being a lyman break galaxy (see dropout method section). However,  observing the drop due to the Gunn-Peterson effect is not enough to confirm the identities of these candidates, other observational methods need to be used to be certain the object is a lyman break galaxy and not a contaminant. One of the most effective ways of eliminating contaminants is to use the colour of the object between different filters, obtained from the photometric measurements.
 
     
     \subsection{Eliminating Contaminants} %fold
     \label{sub:Eliminating_Contanimants}
 
- The ‘colour’ of an object in photometry is defined as the difference in magnitude between two filters.  If there are two filters, for example purposes let them be called A and B, where A has a lower central wavelength, the colour for an object in these two filters would be  m(a)-m(b). The larger the value is, it is said that the ‘redder’ the object is, and equally as the value gets smaller, it gets ‘bluer’. To eliminate candidates from observations, a colour-colour diagram is made using three filters, with two colour values for each object. For instance if the observations were done in the J, H and K filters, the colour colour diagram would be (H-K) plotted against (J-H). 
+ The ‘colour’ of an object in photometry is defined as the difference in magnitude between two filters.  If there are two filters, for example purposes let them be called A and B, where A has a lower central wavelength, the colour for an object in these two filters would be,
+%\begin{equation}
+%m_A-m_B=-2.5log\left(\frac{f_A}{f_B}\right).
+%\end{equation}
+This equation is specifically for the AB magnitude system and it is clear that if the colour is zero there is no change in flux for the object in those two filters. For other magnitude systems there would be a constant added to the right hand side of the equation as there is still a difference in flux between the two filters if the colour is zero. If the colour is positive it is said to be 'red' and if it is negative it is said to be 'blue', i.e. an aboject which is red between two filters has a lower flux in the blueward filter compared to the redward filter and an object which is red has a larger flux in the blueward filter than the redward one.  The larger the value is, it is said that the ‘redder’ the object is. To eliminate candidates from observations, a colour-colour diagram can be made using three filters, with two colour values for each object. For instance if the observations were done in the J, H and K filters, the colour colour diagram would be (H-K) plotted against (J-H). Although this study does not take any observtions, colour diagrams can be built up for observations by simulating a catalog of lyman break galaxies at high redshift and determine colour windows for observations using the program Hyperz.
 
 %subsection Eliminating_Contaminants (end)
 
     \subsection{Hyperz} %fold
 	\label{sub:Hyperz} 
 
-To eliminate contaminates and predict colour windows for observations the program Hyperz and its subprogram ‘make_catalog’ can be used to produce a catalog of synthetic galaxies and their magnitudes in different bands at different redshifts. 
+To eliminate contaminates and predict colour windows for observations the program Hyperz and its subprogram ‘make\_catalog’ can be used to produce a catalog of synthetic galaxies and their magnitudes in different filters at different redshifts. 
 
-DESCRIPTION OF OPERATION AND PARAMTERS FOR HYPERZ
+         \subsubsection{Inputs} %fold
+            \label{subsub:Hyperz_inputs}
+The operation of the program is quite complex and is only summarised here. Also, the operation of make catalog is slightly different to Hyperz and a full manual for make catalog was not obtainable. The program starts with a sample Spectral Energy Distribution (SED)to  The Predictions group schecter function used the 1500$\AA$ rest UV wavelength with the assumption that the flux from a lyman break galaxy was approximately the same for 1350A to 1750A. The program uses a known magnitude in a reference filter to convert to other bands. Using the Prediction's group program, a range of magnitudes can be found for a certain redshift interval by looking at the number of galaxies for a certain magnitude at a certain redshift. As the redshifted 1500$\AA$ line will move with redshift, a range of reference filters were required to cover the redshift range for the observing strategy. As the flux is assumed to be constant over the range 1350A-1750A, this meant a single filter could be used for a wide interval of redshifts. Below is a table listing the reference filters
+
+
+REDDENING LAW
+
+\begin{equation}
+f_{obs}(\lambda)=f_{int}(\lambda)10^{-0.4A_\lambda}
+\end{equation}
+\begin{equation}
+A_\lambda=k(\lambda)E(B-V)=\frac{k(\lambda)A_V}{R_V}
+\end{equation}
+\begin{equation}
+k(\lambda)=2.659(-1.857+\frac{1.040}{\lambda})+R_V for 0.63%{\mew}%m
+\end{equation}
+
+To keep consistency between the two groups, the same cosmological constants were used as the predicitons group, which were : $\Omega_M=0.27$, $\Omega_\Lambda=0.73$ and $H_0=71$ km/s/Mpc  
+
+Conversions from Vega to AB are complex. Therefore conversions for a ground based telescope for typical filters have been used from [Graham] The only filter which wasn't comparable to another filter in [Graham] was the Y-filter for Euclid. As there was information for two filters either side of this filter, and noticing that the AB conversion increased with wavelength, an average value of the conversions for ... and ... to find a conversion for the Y band filter. The reference filters were from the database of filters that came with Hyperz and so came ready with conversions to AB. The conversions for the reference filters were applied for the input into the program, and the output magnitude in the various filters were changed to AB from Vega.
+
+\begin{table}[ht]
+			\begin{center}
+				\begin{tabular}{c|c}
+					Filter band 	& M(AB)-M(Vega) \\
+					\hline \hline
+					I	& 0.5 \\	 
+					Y 	& \\ 
+					J 	& 0.9\\
+					H 	& 1.4\\
+					K 	& 1.9\\
+				\end{tabular}
+			\end{center}
+			\caption{AB conversion}
+			\label{tab:AB_conversion}
+		\end{table}
+
+	
+
+%subsubsection Inputs (end)
+         \subsubsection {Output}
+
+AfteMr running the executable file, the output is shown as in the example below for five galaxies,
+
+
+		
+
+From the output, the colour of an object can be found from subtracting the magnitude of two filters, a colour diagram can then be plotted. 
+
+%subsubsection output (end)
+
 
 %subsection Hyperz (end)
 
 \subsection{Results for Colour} %fold
 	\label{sub:Results_for_Colour}
  
-GRAPHS FOR RANGE OF REDSHIFTS. APPROXIMATE MAXIMUM NUMBER OF GRAPHS: 10
+Below are the results for four of the specified ranges, the redshift range 14 to 15 was not included here as there was an unresolved problem with the f275w filter on NIRcam, which will be discussed below.
 
-COLOUR WINDOW SELECTION FOR TELESCOPES
+\begin{figure}
+				\centering
+				\includegraphics[width=0.7\textwidth]{../Images/GRAPHZ=6-7.5.JPG}
+				\caption{Graph showing the colour-colour region for z=6-7.5. The colour window was defined as $f070w-f090w{\ge}3.257$ and $f090w-f115w{\le}8.242$.\label{fig:col1}}
+			\end{figure}
 
+\begin{figure}
+				\centering
+				\includegraphics[width=0.7\textwidth]{../Images/GRAPHZ=7.5-8.5.JPG}
+				\caption{Graph showing the colour-colour region for z=7.5-8.5. The colour window was defined as $f090w-f115w{\ge}8.251$ and $f115w-f150w{\le}2.869$\label{fig:col2}}
+			\end{figure}
+
+\begin{figure}
+				\centering
+				\includegraphics[width=0.7\textwidth]{../Images/GRAPHZ=8.54-10.1.JPG}
+				\caption{Graph showing the colour-colour region for z=8.54-10.1. The colour window was defined as $Y-J{\ge}11.019$ and $J-H{\le}5.298$\label{fig:col3}}
+			\end{figure}
+
+\begin{figure}
+				\centering
+				\includegraphics[width=0.7\textwidth]{../Images/GRAPHZ=10-14.JPG}
+				\caption{Graph showing the colour-colour region for z=10-14. The colour window was defined as $f115w-f150w{\ge}14.439$ and $f150w-f200w{\le}14.815$\label{fig:col4}}
+			\end{figure}
 %subsection Results_for_Colour (end)
+\subsection{Interpretation of Colour Results}
+       \label{sub:Interp_Colour}
+
+Constraining a colour window for observations turned out to be a challenging task. There are various errors that could make the results invalid and are discussed here.
+
+%section Interpetation_of_colour_results (end)
 %section Photometry_and_colour (end)

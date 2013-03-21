@@ -3,8 +3,8 @@
 \section{Gravitational Lensing} % (fold)
 \label{sec:gravitational_lensing}
 
-	\subsection{Introduction} % (fold)
-	\label{sub:introduction}
+	% \subsection{Introduction} % (fold)
+	% \label{sub:introduction}
 		Contrary to a popularly held belief that it was Newton who first referred to gravitational lensing in his publication ``Opticks''\cite{Newton_Opticks} (put into context, it is clear that he was discussing diffraction), the first person to allude directly to the bending of light due to gravitational attraction was Henry Cavendish. Around the turn of the 19th century Cavendish used Newton's corpuscular theory to correctly calculate the bending of light around a massive object.  Around the same time, German astronomer Johann Soldner was independently addressing the same problem\cite{Soldner} and although his results were similar to those obtained by Cavendish, his method was fundamentally flawed due to incorrect assumptions\cite{Conceptual_origins_of_GL}.
 
 		The subject of gravitational lensing was then largely put to rest until 1915 when Einstein postulated his theory of General Relativity, from which it is clear that massive objects will cause light to bend as a result of the curvature of spacetime. Despite having complete and correct calculations of the phenomenon of gravitational lensing, including the lens equation and the position of images, Einstein displayed very little interest in it. He mentions it only briefly in his notebooks and published a single, very short discussion in Science Magazine upon the request of a friend at the end of which he dismissively comments that there is ``no great chance of this phenomenon being observed''\cite{Einstein_science_magazine}.
@@ -20,7 +20,7 @@
 		\begin{figure}[!htbp]
 			\centering
 				\includegraphics[width=0.6\textwidth]{../Images/Lensing_light_bending.pdf}
-			\caption[Diagram of a gravitational lens]{In this schematic diagram of a gravitational lens, DL, DS and DLS represent the observer-lens, observer-source and lens-source distances respectively. $\theta_i$ is the image angle and $\theta_S$ the source angle, relative to the observer-lens axis. The light ray (solid line) passes by the lens at impact parameter $b$ and as a result is deflected by angle $\alpha$, converging with a second ray at the observer. The dotted lines indicate the position at which the images are observed\cite{Lensing_light_bending_diagram}.\label{fig:Lensing_light_bending}}
+			\caption[Diagram of a gravitational lens]{In this schematic diagram of a gravitational lens, $D_L$, $D_S$ and $D_{LS}$ represent the observer-lens, observer-source and lens-source distances respectively. $\theta_i$ is the image angle and $\theta_S$ the source angle, relative to the observer-lens axis. The light ray (solid line) passes by the lens at impact parameter $b$ and as a result is deflected by angle $\alpha$, converging with a second ray at the observer. The dotted lines indicate the position at which the images are observed\cite{Lensing_light_bending_diagram}.\label{fig:Lensing_light_bending}}
 		\end{figure}
 
 		The schematic diagram in Figure~\ref{fig:Lensing_light_bending} shows a gravitational lens acting on light from a background source in such a way as to form two images. The distances between observer, lens and source are so large in comparison to the impact parameter $b$ that to good approximation, the lens radius is negligible and it can be modelled as a thin lens. It is therefore reasonable to assume that the light travels in straight lines at all times except in the lens plane where the complete deflection occurs. Furthermore, it can be assumed that for all values of $b$, the deflection angle is given by
@@ -31,15 +31,15 @@
 		\begin{align}
 			\theta_i D_S &= \theta_S D_S + \alpha D_{LS}
 		\end{align}
-		and also to approximate the impact parameter to $b\approx\theta_i DL$, it follows that
+		and also to approximate the impact parameter to $b\approx\theta_i D_L$. It follows that
 		\begin{align}
 			\theta_i &= \theta_S + \frac{\theta_E^2}{\theta_i} \label{eq:einstein_angle}
 		\end{align}
 		where $\theta_E$ corresponds to the Einstein angle (or Einstein radius), given by
 		\begin{align}
-			\theta_E &= \frac{4GM}{c^2}\frac{D_{LS}}{D_L D_S}
+			\theta_E &= \frac{4GM}{c^2}\frac{D_{LS}}{D_L D_S} \label{eq:Einstein_radius}
 		\end{align}
-		sets the characteristic angular scale for any lensing system\cite{Hartle}.
+		which sets the characteristic angular scale for any lensing system\cite{Hartle}.
 
 		Lensing in which multiple images are formed and the source is significantly magnified is known as strong lensing. For strong lensing to occur, it is a mathematical requirement for the projected surface density to be greater than the critical surface density which is given by\cite{Critical_surface_density}
 		\begin{align}
@@ -52,13 +52,13 @@
 				\caption[Schematic diagram of location of images]{Schematic diagram of location of images. The centre labelled L represents the observer-lens axis. The diagram on the left shows what would be observed if the lens was not present. The right hand diagram includes the effects of lensing\cite{Hartle}.\label{fig:Lensing_image_positions2}}
 		\end{figure}
 
-		In the case shown in Figure~\ref{fig:Lensing_image_positions2} where two visible images are observed, one image will form inside the Einstein radius ($\theta_{i+}$) and the other outside ($\theta_{i+}$). The positions of these two images are calculated by solving the Equation~\ref{eq:einstein_angle} giving
+		In the case shown in Figure~\ref{fig:Lensing_image_positions2} where two visible images are observed, one image will form inside the Einstein radius ($\theta_{i+}$) and the other outside ($\theta_{i+}$). The positions of these two images are calculated by solving the equation~(\ref{eq:einstein_angle}) giving
 		\begin{align}
 			\theta_{i\pm} &= \frac{1}{2}\left( \theta_S \pm {(\theta_S^2 + 4\theta_E^2)} ^{\frac{1}{2}} \right) \label{eq:image_position}
 		\end{align}
-		yielding the positions of the two unobstructed images as shown in Figure~\ref{fig:Lensing_image_positions2} one inside the Einstein radius, the other outside. Unlike optical lenses, gravitational lenses are achromatic, so the frequency of the light has no effect on the position of the images. As a result, images of the same object have exactly the same spectra and can easily be identified\cite{Hartle}.
+		Unlike optical lenses, gravitational lenses are achromatic, so the frequency of the light has no effect on the position of the images. As a result, images of the same object have exactly the same spectra and can easily be identified\cite{Hartle}.
 
-		The azimuthal angle $\phi$ remains unchanged with and without the lens but as shown in figure lensing image positions, the polar angle and the width of the images are changed. The observed images are, therefore, stretched out into arcs and at any given radius will have the same curvature of a circle with origin at the centre of the lens\cite{Image_arc_curvature}. The change in the polar angle $\theta$ can be calculated by differentiating Equation~\ref{eq:image_position}, giving
+		The azimuthal angle, $\phi$, remains unchanged with and without the lens but as shown in Figure~\ref{} lensing image positions, the polar angle and the width of the images are changed. The observed images are, therefore, stretched out into arcs and at any given radius will have the same curvature as a circle with origin at the centre of the lens\cite{Image_arc_curvature}. The change in the polar angle $\theta$ can be calculated by differentiating equation~(\ref{eq:image_position}), giving
 		\begin{align}
 			\Delta\theta_{i\pm} &= \frac{1}{2}\left( 1 \pm \frac{\theta_S}{(\theta_S^2 +4\theta_E^2)}^{\frac{1}{2}} \right) \Delta\theta_S
 		\end{align}
@@ -70,14 +70,14 @@
 		\end{align}
 		is also increased. As the observed brightness of the source depends on the flux, the magnification is given by
 		\begin{align}
-			\mu &= \frac{F_{i\pm}}{F_S} = \frac{\Omega_{i\pm}}{\Omega_S}
-			\intertext{Since in the small angle approximation, $\sin\theta \approx \theta$, the solid angles for the image and source are given by $\theta_{i\pm}\Delta\theta_{i\pm}\Delta\phi$ and $\theta_S \Delta_S \phi$ respectively. Given that $\Delta\phi$ is the same for both images, the magnification can be expressed as}
+			\mu &= \frac{F_{i\pm}}{F_S} = \frac{\Omega_{i\pm}}{\Omega_S} \label{eq:mu_magnification}
+			\intertext{Since in the small angle approximation, $\sin\theta \approx \theta$, the solid angles for the image and source are given by $\theta_{i\pm}\Delta\theta_{i\pm}\Delta\phi$ and $\theta_S \Delta\theta_S \phi$ respectively. Given that $\Delta\phi$ is the same for both images, the magnification can be expressed as}
 			\mu_{\pm} &= \left| \left( \frac{\theta_{i\pm}}{\theta_S} \dx{\theta_{i\pm}}{\theta_S} \right) \right| \\
 			&=\frac{1}{4}\left( \frac{\theta_S}{{(\theta_S^2 +4\theta_E^2)}^{\frac{1}{2}}} + \frac{{(\theta_S^2 +4\theta_E^2)}^{\frac{1}{2}}}{\theta_S} \pm 2 \right)
 			\intertext{For a lens modelled as a single isothermal sphere, this reduces to}
-			\mu_\pm &= \frac{\theta_{i\pm}}{\theta_S} = \left( 1\mp \frac{\theta_E}{\theta_\pm} \right)^{-1}
+			\mu_\pm &= \frac{\theta_{i\pm}}{\theta_S} = \left( 1\mp \frac{\theta_E}{\theta_\pm} \right)^{-1} \label{eq:magnification_equation}
 		\end{align}
-		The change in AB magnitude is then found using Equation~\ref{eq:magnitude_conversion}\cite{IOP_ABmagnification_site},
+		The change in AB magnitude is then found using\cite{IOP_ABmagnification_site},
 		\begin{align}
 			\Delta m &= -2.5\log(\mu) \label{eq:magnitude_conversion}
 		\end{align}

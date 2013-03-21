@@ -14,18 +14,30 @@
 
 	\subsubsection{Capabilities} % (fold)
 	\label{ssub:euclid_capabilities}
-		\begin{itemize}
-			\item Visual Imaging/ Photometry, 550--900\si{\nano\metre}
-			\item Spectroscopy, 1100--2000\si{\nano\metre}
-			\item NIR Imaging/ Photometry, 920--2000\si{\nano\metre} (Y, J,H bands)
-		\end{itemize}
+		% \begin{itemize}
+		% 	\item Visual Imaging/ Photometry, 550--900\si{\nano\metre}
+		% 	\item Spectroscopy, 1100--2000\si{\nano\metre}
+		% 	\item NIR Imaging/ Photometry, 920--2000\si{\nano\metre} (Y, J,H bands)
+		% \end{itemize}
+		\begin{table}[!htbp]
+            \begin{center}
+                \begin{tabular}{l|l}
+                    Component   &   Wavelength Range \\
+                    \hline\hline
+                    Imaging/Photometry & 550--900\si{\micro\metre} \\
+                    Spectroscopy       & 1100--2000\si{\micro\metre} \\
+                    NIR Imaging/ Photometry  & 920--2000\si{\micro\metre} (Y, J,H bands)
+                \end{tabular}
+            \end{center}
+            \caption{Details of instrumentation for Euclid.\label{tab:Euclid_cababilities}}
+        \end{table}
 
 		Euclid will have two instruments in order to do the above; a wide-band imaging system in the visible (VIS), and an instrument capable of both slit-less spectroscopy as well as NIR imaging (NISP). These instruments will be able to operate simultaneously when required.
 	% subsubsection capabilities (end)
 
 	\subsubsection{Method of Conducting Deep Survey} % (fold)
 	\label{ssub:method_of_conducting_deep_survey}
-		The Euclid deep survey will be carried out by re-visiting particular areas in the wide survey over an extended period of time. Over this time, the depth will be built up by combining a series of images taken of the same piece of sky (known as stacking). The wide survey will reach the required magnitude depth with one exposure, but to reach 2 magnitudes deeper (26th magnitude AB at 5 sigma) considerably more exposures will be needed. Figure~\ref{fig:euclid_visits_magnitude} shows the number of visits to increase the depth to 26th magnitude. The current estimate is that this will take around 36 exposures, and it has been decided to do 40 to make sure\cite{NISP_Performance_Analysis_ReportEUCL}. The telescope operates a 4 step dithering mode so that if there are faulty pixels or systematic errors, the image is still usable.
+		The Euclid deep survey will be carried out by re-visiting particular areas in the wide survey over an extended period of time. Over this time, the depth will be built up by combining a series of images taken of the same piece of sky (known as stacking). The wide survey will reach the required magnitude depth with one exposure, but to reach 2 magnitudes deeper (26th magnitude AB at 5\,sigma) considerably more exposures will be needed. Figure~\ref{fig:euclid_visits_magnitude} shows the number of visits to increase the depth to 26th magnitude. The current estimate is that this will take around 36 exposures, but it has been decided that 40 will be done to guarantee that the depth requirement is met\cite{NISP_Performance_Analysis_ReportEUCL}.
 		\begin{figure}[!htbp]
 			\begin{center}
 				\includegraphics[width=0.62\textwidth]{../Images/Euclid_visits_magnitude.jpg}
@@ -51,9 +63,7 @@
 
 		From this, it can be concluded that the survey will be unhelpful in determining galaxies past a redshift of 10.5 (corresponding to the drop being observed at \SI{1.40}{\micro\metre}): The object would be detected in the J band, but not in either H or Y. The end of the H filter and start of the J filter is at \SI{1.37}{\micro\metre}. To get significant flux in the Y band, ideally the galaxy would need to be at a redshift of 10 or lower, such that a noticeable amount of flux was detected in H.
 
-		A weak lensing survey is planned with Euclid. This will help find gravitational lenses which could be used to magnify very faint Lyman break galaxies at high redshift. From this weak lensing survey, the strongest lenses could be selected and used as targets for other telescopes such as JWST or ELT to study more closely to see if any high redshift LBGs lay behind.
-
-		The spectroscopic mode can be used (grism spectroscopy) to determine the redshift of LBGs as outlined in Section~\ref{sec:lyman_break_galaxies}. The advantage of grism spectroscopy is that multiple objects can be studied simultaneously, meaning if there are multiple likely candidates in the field of view, their spectra can all be gathered at once, reducing the overall time taken to study a large number of redshift galaxies. This is particularly useful to Euclid, which has a wide field of view of just over 0.5\,square\,degrees, increasing the chance of multiple candidates.
+		The spectroscopic mode can be used (grism spectroscopy) to determine the redshift of LBGs as outlined in Section~\ref{sub:the_lyman_break}. The advantage of grism spectroscopy is that multiple objects can be studied simultaneously, meaning if there are multiple likely candidates in the field of view, their spectra can all be gathered at once, reducing the overall time taken to study a large number of redshift galaxies. This is particularly useful to Euclid, which has a wide field of view of just over 0.5\,square\,degrees, increasing the chance of multiple candidates.
 	% subsubsection uses_and_limitations_for_euclid_s_use_in_studying_high_redshift_galaxies (end)
 
 	\subsubsection{Key Technical Data} % (fold)

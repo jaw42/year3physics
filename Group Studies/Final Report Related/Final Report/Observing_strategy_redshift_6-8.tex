@@ -1,12 +1,17 @@
 %!TEX root = mainfile.tex
 
-\section{Observing Strategy for Redshift 6--8} % (fold)
+\subsection{Observing Strategy for Redshift 6--8.5} % (fold)
 \label{sec:observing_strategy_for_redshift_6_8}
-	Due to their filters, James Webb Space Telescope and E-ELT were considered for the survey used to observe galaxies between a redshift of 6 and 8.5. Both had the ability to do the colour photometry needed to identify the high redshift candidates. E-ELT had a larger field of view, and a larger primary mirror, but James Webb was able to resolve faint objects faster due to its low background. The following section outlines the motivation behind the choice of telescope for this survey.
+	Due to their filters, Figure~\ref{fig:JWST_NIRspec_filters}, James Webb Space Telescope and E-ELT were considered for the survey used to observe galaxies between a redshift of 6 and 8.5. Both had the ability to do the colour photometry needed to identify the high redshift candidates. E-ELT had a larger field of view, and a larger primary mirror, but James Webb was able to resolve faint objects faster due to its low background. The following section outlines the motivation behind the choice of telescope for this survey.
+	\begin{figure}[!htbp]
+		\centering
+			\includegraphics[width=0.7\textwidth]{../Images/JWST_NIRspec_filters.jpeg}
+		\caption{\label{fig:JWST_NIRspec_filters}}
+	\end{figure}
 
-	\subsection{Results for E-ELT} % (fold)
+	\subsubsection{Results for E-ELT} % (fold)
 	\label{sub:results_for_e_elt}
-		Table 1 shows the number of galaxies observable for survey times of 0.1, 0.2, and 0.5\,million seconds. The number of galaxies that would be observed at different magnitudes is presented, and the table also displays the time taken to observe 1\,FoV down to each magnitude, and the number of galaxies in that field of view. The red number indicates how many FoVs were possible given the set total observing time. N/A indicates that there were either no galaxies at this magnitude, or that the time taken to get to this magnitude was larger than the intended total survey time. The total number of galaxies is also plotted against the magnitude in Figure~\ref{fig:galaxies_for_set_total_observing_time}.
+		Table 1 shows the number of galaxies observable for survey times of 0.1, 0.2, and 0.5\,million seconds. The number of galaxies that would be observed at different magnitudes is presented, and the table also displays the time taken to observe 1\,FoV down to each magnitude, and the number of galaxies in that field of view. The red number indicates how many FoVs were possible given the set total observing time. N/A indicates that there were either no galaxies at this magnitude, or that the time taken to get to this magnitude was larger than the intended total survey time. The total number of galaxies is also plotted against the magnitude in Figure~\ref{tab:galaxies_for_set_total_observing_time}.
 		\begin{table}[!htbp]
 			\begin{center}
 				\begin{tabular}{c|c|>{\centering\arraybackslash}m{2.3cm}|c|c|c}
@@ -38,7 +43,7 @@
 		The data for E-ELT was then compared to JWST for the same magnitudes and survey times to decide which telescope would be better equipped to find galaxies in this redshift range.
 	% subsection results_for_e_elt (end)
 
-	\subsection{Comparison} % (fold)
+	\subsubsection{Comparison} % (fold)
 	\label{sub:comparison}
 		The number of galaxies at each magnitude was plotted for both James Webb and E-ELT. Figure~\ref{fig:GRAPH_Mag_vs_galaxies_JWST_ELT_05} shows the comparison for the two telescopes each with the shutter open for 0.1 million seconds. Figure~\ref{fig:GRAPH_Mag_vs_galaxies_JWST_ELT_10} then displays the equivalent result but for a total time of 0.5\,million seconds.
 		% \begin{figure}[!htbp]
@@ -79,9 +84,9 @@
 		The results indicate that James Webb would be able to observe more galaxies at higher magnitudes, with E-ELT peaking around 280 galaxies for 0.5\,million seconds, compared to JWST's 516 (and still increasing). In Figure~\ref{fig:GRAPH_Mag_vs_galaxies_JWST_ELT_10} it can be seen that for the 0.1\,million data set, although E-ELT is expected to observe more galaxies at lower magnitudes, James Webb produces the most promising result at a magnitude of 29.5. James Webb was therefore chosen over E-ELT to conduct the 6 to 8.5 redshift survey.
 	% subsection comparison (end)
 
-	\subsection{Detailed Results for JWST} % (fold)
+	\subsubsection{Detailed Results for JWST} % (fold)
 	\label{sub:detailed_results_for_jwst}
-		Table~\ref{tab:galaxies_for_set_total_observing_time_JWST} and figure~\ref{} 4 present the same information as shown for ELT, but instead using James Webb observing times and field of view.
+		Table~\ref{tab:galaxies_for_set_total_observing_time_JWST} and figure~\ref{fig:galaxies_expected_JWST_6-8} 4 present the same information as shown for ELT, but instead using James Webb observing times and field of view.
 		\begin{table}[!htbp]
 			\begin{center}
 				\begin{tabular}{c|c|>{\centering\arraybackslash}m{2.3cm}|c|c|c}
@@ -102,7 +107,6 @@
 			\end{center}
 			\caption{Number of galaxies for set total observing time given different magnitudes/ survey areas for JWST.\label{tab:galaxies_for_set_total_observing_time_JWST}}
 		\end{table}
-
 		\begin{figure}[!htbp]
 			\centering
 				\begingroup\endlinechar=-1
@@ -125,7 +129,7 @@
 		It can be seen that the results for 29.5 and 30th magnitude predict very similar numbers of galaxies, however the error due to cosmic variance is significantly reduced for the 29.5\,magnitude due to the increased number of pointings at the sky, making it preferable. It was therefore decided that a survey with JWST, down to magnitude 29.5\,magnitude, with a total of 15 pointings, covering a total of 72.36\,square\,arc\,minutes would be used. This would take 0.1\,million seconds of open-shutter time for each filter.
 	% subsection detailed_results_for_jwst (end)
 
-	\subsection{Total Time for Survey} % (fold)
+	\subsubsection{Total Time for Survey} % (fold)
 	\label{sub:total_time_for_survey}
 		With each filter taking 0.1\,million seconds, and 3 filters needed to do colour analysis, the shutter will be open for around 0.3\,million seconds. On top of this are the overhead times, which as a crude approximation add an extra 10\% to take the time up to a total of 0.33\,million seconds. Given that the telescope can be operational for around 18\,hours per day, it is expected that the survey will take a minimum of 5.1\,days. Spectroscopy will be used to confirm the most promising candidates out of those observed using photometry, which will further add time to the survey.
 	% subsection total_time_for_survey (end)
