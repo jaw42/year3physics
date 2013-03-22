@@ -1,8 +1,8 @@
 %!TEX root = mainfile.tex
 
-\subsection{Full Width at Half Maximum} % (fold)
+\subsubsection{Full Width at Half Maximum} % (fold)
 \label{sub:full_width_at_half_maximum}
-	To accurately calculate the FWHM of the galaxies it is essential to model them as extended bodies rather than point sources. To do this the angular size that a galaxy would subtend on the sky is calculated. The first requirement of this is to determine the size of an average galaxy. There have been limited detections of high redshift galaxies and even fewer have had their parameters defined using spectroscopy. Using values based on confirmed galaxies at redshifts of 6 and candidates at higher redshifts %[Ono_FWHM] [Bouwens_FWHM] [Oesc_FWHM] [Jiang_FWHM] the diameter of a galaxy is fixed at 1.5kpc for all redshifts.
+	To accurately calculate the FWHM of the galaxies it is essential to model them as extended bodies rather than point sources. To do this the angular size that a galaxy would subtend on the sky is calculated. The first requirement of this is to determine the size of an average galaxy. There have been limited detections of high redshift galaxies and even fewer have had their parameters defined using spectroscopy. Using values based on confirmed galaxies at redshifts of 6 and candidates at higher redshifts\cite{Ono_FWHM}\cite{Bouwens_FWHM}\cite{Jiang_FWHM} the diameter of a galaxy is fixed at 1.5\,kpc for all redshifts.
 
 	To avoid unnecessarily complex calculations a cosmological calculator\cite{Ned_Calc} is used to calculate the angular scale \si{\kilo\parsec\per ''} at the given redshifts, a plot of these values is shown in Figure~\ref{fig:redshift_vs_angular_size}.
 	\begin{figure}[htbp]
@@ -21,7 +21,7 @@
 	this FWHM function then fits into the CCD equation program. This linear trend matches very well with the theory, as is shown in Figure~\ref{fig:angular_size_function_of_redshift}.
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=0.5\textwidth]{../Images/angular_size_function_of_redshift.jpeg}
+		\includegraphics[width=0.4\textwidth]{../Images/angular_size_function_of_redshift.jpeg}
 		\caption{A graph showing variation in angular size as a function of redshift\cite{Sahni_FWHM}.\label{fig:angular_size_function_of_redshift}}
 	\end{figure}
 

@@ -19,52 +19,36 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "Final Report Related/Final Report/mainfile.tex",
-			"settings":
-			{
-				"buffer_size": 10439,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Final Report Related/Final Report/Observing_strategy_redshift_6-8.tex",
-			"settings":
-			{
-				"buffer_size": 3788,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Final Report Related/Final Report/Parameter_Evolution_J-Wainwright.tex",
-			"settings":
-			{
-				"buffer_size": 4724,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 98.0,
+		"height": 32.0,
 		"selected_items":
 		[
 			[
-				"wrap",
-				"Word Wrap: Toggle"
-			],
-			[
 				"shell",
 				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"",
+				"About"
 			],
 			[
 				"case",
 				"Convert Case: Title Case"
 			],
 			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
 				"wra",
 				"Word Wrap: Toggle"
+			],
+			[
+				"she",
+				"Set Syntax: Shell Script (Bash)"
 			],
 			[
 				"pacing",
@@ -132,130 +116,134 @@
 	},
 	"file_history":
 	[
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Other_methods_21cm_J-Baumber.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Mag_vs_galaxies_in_time.gnu",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Mag_vs_galaxies_in_time_data.txt",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Method_for_Strategy_Choosing_D-Stonell.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Euclid_for_a_survey_of_8-10_D-Stonell.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Hubble_M-ONeil.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Euclid_D-Stonel.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Determining_Redshift_D-Stonel.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observing_Intro_M-ONeil.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/FWHM_M-ONeill.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Lower_redshift_limit_on_reionization_J-Bryant.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Xh1_Evolution_R-Topadar.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Ground_vs_Space_Based_Telescopes_R-Topadar.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Report Structure.todo",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/titlepage.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Predictions_conclusion_B-Johnson.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Exposure_times_R-Topadar.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/references.bib",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Contaminants_M-ONeil.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/E-ELT_R-Topadar.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Gravitational_Lensing1_C-McDonald.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Determining_Redshift_D-Stonel.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Hubble_M-ONeil.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/mainfile.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/FWHM_M-ONeill.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Project_conclusion.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Introduction Joe.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Calculating_timescale_reionization_O-McConnel.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/James_Webb_J-Shepley.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observational_Gravitational_Lensing_C-McDonald.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Parameter_Evolution_Data.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Parameter_Evolution_J-Wainwright.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Colour_Photometry_J-Baumber.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Candiate_Telescopes_J-Shepley.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Calculations_of_Exposure_times_J-Shepely.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Spectroscopy_J-Shepley.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/E-ELT_R-Topadar.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Method_for_Strategy_Choosing_D-Stonell.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/SFR_and_Calculating_Z_OMCCONNELL.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Clumping_factor_L-Clegg.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Lower_redshift_limit_on_reionization_J-Bryant.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.toc",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Euclid_D-Stonel.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Galaxy_numbers_A-King.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Calculating_exposure_time_R-Topadar.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Other_methods_21cm_J-Baumber.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observing_Intro_M-ONeil.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observational_Gravitational_Lensing_C-McDonald.tex.old",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Gravitational_lensing_error_L-Clegg.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Including_Recombinations_J-Bryant.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/app_Derivation_of_magnitude_schechter_function.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observations_conclusion_M-ONeill.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observing_strategy_redshift_6-8.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Results_planned_use_of_gravitational_lensing_C-McDonald.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Contaminants_M-ONeil.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Spitzer_D-Stonel.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Cosmic_Variance_L-Clegg.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Cosmological_distances_J-Bryant.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Parameter_Evolution_J-Wainwright.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Schechter_function_J-Bryant.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Gravitational_Lensing1_C-McDonald.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Gunn_peterson_A-King.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.blg",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Assumptions_J-Wainwright.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/app_Derivation_Gunn-Peterson_Optical_Depth.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Colour Photometry Joe.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Predictions_Intro_B-Johnson.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Cosmic_Reionisation_B-Johnson.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Introduction_J-Baumber.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/app_Derivation_of_Thermal_Background.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/app_Parameter_Evolution_Data.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_SFR_CriticalSFR.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_recombinations.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_SFR_Density.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.log",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Euclid_for_a_survey_of_8-10_D-Stonell.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observational_Gravitational_Lensing_C-McDonald.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observing_strategy_redshift_10-more_M-ONeill.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_SFR_ionised_fraction.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_SFR_ionised_fraction.txt",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.lof",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/How_to_determine_fesc_ad_zeta_B-Johnson.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Dithering_M-ONiell.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Decision_on_detection_techniques_M-ONeill.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_SFR_Density.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/CMB_Anistropy_M-ONeill.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.aux",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.bbl",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Observing strategy, high redshift - changes.docx",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Dithering.docx",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Gravitational lensing/Results and planned use of gravitational lensing.docx",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Intro for detection methods_MONEILL.docx",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Other methods 21cm Joe.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_m-star_bounds.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_fit_phi-star_bounds.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_alpha_bounds_data.txt",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/GRAPH_distribution_of_magnification2.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/GRAPH_distribution_of_magnification1.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_fit_phi-star_bounds_data.txt",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_m-star_bounds_data.txt",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_alpha_bounds_data.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_fesc_redshift.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_fesc_redshift.txt",
+		"/home/josh/Dropbox/ExtraGalactic Group Studies/Final Report Related/Submissions/Schechter function (James Bryant).tex",
+		"/home/josh/Dropbox/ExtraGalactic Group Studies/Final Report Related/Submissions/Schechter_function_J-Bryant.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_SFR_Density.txt",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_colour_graph1.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_colour_graphs.txt",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_FoV_mag_limit.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_FoV_mag_limit.txt",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/references.bib",
+		"/home/josh/Book2.tex",
+		"/home/josh/Book1.tex",
+		"/tmp/Book1.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_distribution_of_magnification2.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_distribution_of_magnification_data.txt",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Mag_vs_galaxies_in_time_Euclid_errors.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Mag_vs_galaxies_in_time_Euclid_errors_data.txt",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Mag_vs_galaxies_in_time_Euclid_data.txt",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Mag_vs_galaxies_in_time_JWST_01_errors.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Mag_vs_galaxies_in_time_JWST.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Mag_vs_galaxies_JWST_ELT_10.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Mag_vs_galaxies_JWST_ELT_05.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Mag_vs_galaxies_in_time.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Mag_vs_galaxies_in_time_Euclid.gnu",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Mag_vs_galaxies_in_time_JWST_data.txt",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Mag_vs_galaxies_JWST_ELT_05_data.txt",
+		"/home/josh/Documents/Physics/Year 3/ImageProcessing/Assessed_Exercise2/tomographic_reconstruction.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/GRAPH_Mag_vs_galaxies_in_time.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Mag_vs_galaxies_in_time_data.txt",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Report Structure.todo",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Parameter_Evolution_Data.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/GRAPH_fwhm_M-ONeill_linear.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/GRAPH_StellarDens_exponential.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/GRAPH_Parameter_Fit_phi-star_exponential.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/GRAPH_Parameter_Fit_m-star_linear.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/GRAPH_Parameter_Fit_alpha_linear.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/FWHM_M-ONeill.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Decision_on_detection_techniques_M-ONeill.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Derivation_of_Thermal_Background.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/How_to_determine_fesc_ad_zeta_B-Johnson.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Cosmic_Variance_L-Clegg.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/SFR_and_Calculating_Z_OMCCONNELL.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Cosmic_Reionisation_B-Johnson.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Introduction_J-Baumber.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Predictions_Intro_B-Johnson.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Schechter_function_J-Bryant.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Assumptions_J-Wainwright.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Clumping_factor_L-Clegg.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Schechter_function_J-Bryant.tex.old",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_fwhm_M-ONeill.txt",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_fwhm_M-ONeill.gnu",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_fwhm_M-ONeill.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Dithering_M-ONiell.tex",
 		"/home/josh/Dropbox/ExtraGalactic Group Studies/Final Report Related/Submissions/Group Studies Rahim.tex",
 		"/home/josh/.config/sublime-text-3/Packages/User/Distraction Free.sublime-settings",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/fesc_fit/Fesc2.txt",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/fesc_fit/fesc.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/fesc_fit/parameter_plots.gnu",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/fesc_fit/fesc_exponential.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Stella Density/parameter_plots.gnu",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Parameter Fits/parameter_plots.gnu",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/mainfile.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/CMB_Anistropy_M-ONeill.tex",
-		"/home/josh/Documents/Physics/Year 3/TeachingInSchools/Josh_Wainwright_LogSheet_week9.html",
-		"/home/josh/Documents/Physics/Year 3/TeachingInSchools/Josh_Wainwright_LogSheet_week10.html",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Submissions_and_Changes.txt",
-		"/tmp/Book1.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.bbl",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/chktex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_m-star_linear.gnu",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_m-star_data.txt",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_phi-star_exponential.gnu",
-		"/home/josh/.scripts/dwm/PKGBUILD",
-		"/home/josh/.scripts/dwm/conkyrc",
-		"/home/josh/.scripts/dwm/src/dwm-6.0/dwm.c.rej",
-		"/home/josh/.scripts/dwm/src/dwm-6.0/dwm.c",
-		"/home/josh/.scripts/dwm/config.h",
-		"/home/josh/1227.todo",
-		"/home/josh/.scripts/dwm/src/dwm-6.0/config.def.h",
-		"/home/josh/.scripts/dwm/dwm-6.0-statusallmons.diff",
-		"/home/josh/.scripts/dwm/dwm-6.0-panel_padding.patch",
-		"/home/josh/.scripts/dwm.old/config.h",
-		"/home/josh/.scripts/dwm/src/dwm-6.0/config.h",
-		"/home/josh/.scripts/dwm/src/dwm-6.0/config.def.h.rej",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_fit_phi-star_data.txt",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_alpha_linear.gnu",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_alpha_data.txt",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_linear.gnu",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Graphs/StellarDens_exponential.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/SFR.txt",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/SFR.gnu",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph_Data/StellarDens_exponential.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/StellarDens_exponential.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.log",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.fdb_latexmk",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.fls",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Stella Density/stella_density.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/SFR_Fit/graph_config.cfg",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Stella Density/StellarDens.txt",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Images/Graph Data/SFR.gnu",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Stella Density/StellarDens_exponential.tex",
-		"/home/josh/Documents/Physics/Year 3/CompMod/gnuplot/plot2D.gnu",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Parameter Fits/graphing.cpp",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Stella Density/graphing.cpp",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Stella Density/graph_config.cfg",
-		"/tmp/ref.bib",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Ground_vs_Space_Based_Telescopes_R-Topadar_temp.tex",
-		"/tmp/untitled.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.aux",
-		"/home/josh/.zshrc",
-		"/home/josh/.i3/conkyrc",
-		"/home/josh/.i3/config",
-		"/home/josh/.config/dunst/dunstrc",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Personl Statement/mainfile.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Personl Statement/personal_statement.tex",
-		"/home/josh/Documents/Physics/Year 3/TeachingInSchools/Problems2/Problems2.tex",
-		"/home/josh/Documents/Physics/Year 3/TeachingInSchools/Problems2/Answers2.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Colour_Photometry_J-Baumber.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Group Studies Rahim.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Introduction Joe.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Other methods 21cm Joe.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/references.bib",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Colour Photometry Joe.tex",
-		"/home/josh/Documents/Physics/Year 3/.gitignore",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/appendix.tex",
-		"/home/josh/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-		"/home/josh/Dropbox/ExtraGalactic Group Studies/Observationals/Derivation_of_thermal_background.tex",
-		"/home/josh/.config/sublime-text-3/Packages/PlainTasks/PlainTasks (Linux).sublime-settings",
-		"/home/josh/.config/sublime-text-3/Packages/User/PlainTasks.sublime-settings",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Group_Studies_Report.sublime-project",
-		"/home/josh/Dropbox/Preferences.sublime-settings",
-		"/home/josh/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings"
+		"/home/josh/Documents/Physics/Year 3/Group Studies/fesc_fit/Fesc2.txt"
 	],
 	"find":
 	{
@@ -266,6 +254,12 @@
 		"height": 101.0,
 		"where_history":
 		[
+			"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report,-*.pdf,-*.aux,-*.bbl",
+			"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report,-*.pdf",
+			"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report",
+			"",
+			"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report",
+			"",
 			"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report",
 			"",
 			"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report",
@@ -281,134 +275,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"Petrovic",
-			"GRAPH_Parameter_Fit_alpha",
-			"cline",
-			"begin{table}",
-			"column",
-			"±",
-			"table",
-			"Due to their filters, James Webb Space Telescope and E-ELT were considered for the survey used to observe galaxies",
-			"2012ApJ...746..125H",
-			"{equation}",
-			" include Recombinations into our project, ",
-			"An astronomical filter is used on telescopes",
-			"’",
-			"image is also slightly contaminated",
-			"IonizedFraction2",
-			"the hubble ultra",
-			"a schematic of",
-			"../Images/SNR",
-			"(\\[ht\\])|(\\[htb\\])|(\\[\\!htb\\])",
-			"(\\[ht\\])|(\\[htb\\])|(\\[\\!htb\\])|(\\[\\!ht\\])",
-			"(\\[ht\\])|(\\[htb\\])|(\\[\\!htb\\])",
-			"(\\[ht\\])|(\\[htb\\])",
-			"Occurs at Redshift",
-			"\\begin{figure}[!htb]",
-			"\\begin{table}[",
-			"\\begin{table}[ht]",
-			"Spitzer",
-			"Oceanside Photo",
-			"      Package color not loaded in conjunction with\n      terminal option `colourtext'%\n    }{See the gnuplot documentation for explanation.%\n    }{Either use 'blacktext' in gnuplot or load the package\n      color.sty in LaTeX.}%\n    \\renewcommand\\color[2][]{}%",
-			"dithering",
-			"21 cm",
-			"21cm",
-			"epoch of re-ionization",
-			"survey",
-			"phi_evolution",
-			"figure",
-			"schechter ",
+			"Oesc_FWHM",
+			"eft: Photograph of HST orbiting th",
+			"hubble mission",
+			"hubble mission ",
+			"hubble mission launch",
+			"hubble mission launhch",
+			"Kitchin",
+			"a graph showing variation",
+			"the accumulation of signal",
+			"the relationship between intensity",
+			"{sky background",
+			"OTA",
+			"Ground Based versus Space Based Telescopes",
+			"[H]",
+			"The volume averaged",
+			"{Telescope Propertie",
+			"(red) (shift)",
+			"red shift",
+			"As mentioned above the redshift at which the ",
+			"fig:HUDF",
+			"Many EoR galaxies and candidate galaxies have",
+			"Photograph of HST orbiting",
+			"{ground",
+			"{determining",
+			"{james webb",
+			"{full width",
+			"{signal-to-noise",
+			"re-ionisation",
+			"re-ionization",
+			"{clumping",
+			"As mentioned above the redshift",
+			"{Dithering",
+			"fig:zodiacal_light",
+			"Airglow in the upper atmosphere as observed",
+			"Section~\\refl",
+			"{ground based",
+			"{potential",
+			"\\begin{tabular}{l|c}",
+			"Component & Details",
+			"photometry",
+			"{sources of ",
+			"eq:spectroscopy",
+			"dropout",
+			"Morphology of the Rest-Frame",
+			"of the Sizes of Galaxies over",
+			"[",
+			"The Evolution of the Neutral Hydrogen Fraction",
+			"In this section we will outline 5 techniques",
+			"strategy will be established as follows:",
+			"figure ",
+			"figure...",
+			"The wavelength range this corresponds to is just",
+			"calculation of exposure times",
+			"multi object",
+			"Function to Gamma Function",
+			"conclusion",
+			"overall value. The predictions",
+			"Using results from the",
+			"Observing Strategy for Redshift",
+			"sec:contaminants",
+			"sec:Contaminants",
+			"Number of galaxies for",
+			"{final s",
+			"programme",
+			"TECHNICAL",
+			"TECHNICAL DE",
+			"shifts and magnitudes at a set signal",
+			"{potential",
+			"{ground based",
+			"{photometry ex",
+			"{photometry and",
+			"{observing me",
+			"{galaxy number",
+			"{clumping factor}",
+			"gravitational lensing bias",
+			"cosmic variance",
+			"calculating the timescale of ",
+			"lower redshift limit",
+			"rearranged to get the equation",
+			"EvidenceRion",
+			"EvidenceReion",
+			"Evidence",
+			"sec:contaminants",
+			"contaminants",
+			"sec:contaminants",
+			"\\ref{}",
+			"Assumptions Made",
+			"Cosmological Distances",
+			"toc",
+			"\\newpage",
+			"Narciso",
+			"lower_limit_H",
+			"BBNabundance",
+			"Liu",
+			"???",
+			"liu2011method",
+			"hyperp",
+			"other methods for",
+			"Coordinate Transformation",
+			"vega to ab",
+			"and Joan-Marc Mi",
+			"Micol~Bolzonella",
+			"is the observed flux and",
+			"reddening law",
+			"account for Reddening of galaxies",
+			"Hyperz can account for Reddening of",
+			" program is quite complex and",
+			"object in photometry is defined",
+			"dropout_technique",
+			"Photometry today is used primaily",
+			"Photometry is one of the methods that astronomers",
+			"of an object in photometry is define",
+			"Eliminating Contaminants}",
+			"z=\\frac{{{\\lambda}",
+			"Romanishin",
+			"Cosmic reionization",
+			"Predictions Group",
+			"Observing Strategy Group",
+			"indicating the current image quality",
+			"Full Width at Half Maximum",
+			"\\begin{figure}[htbp]",
+			"\\clearpage",
+			"\\section{",
+			"reddening law",
 			"schechter",
-			"section~",
-			" section",
-			"normalization",
-			"schechter",
-			"the resultant ",
-			"the resultant values",
-			"derivation_of_thermal_background",
-			"schechter",
-			"\\nu",
-			"flux_per_unit_frequency",
-			"calculati",
-			"dependant",
-			"\\ref{J",
-			"fraction of photons that",
-			"techniques for finding",
-			"to include",
-			"to include recombinations in our",
-			"without conclusive results",
-			"evolving escape fraction",
-			"star for",
-			"equation~",
-			"table~",
-			"figure~",
-			"sun ",
-			"sun",
-			"Pawlik",
-			"Pawlik21042009",
-			"Filters",
-			"Field of View",
-			"appendix",
-			"GRAPH_Parameter_Fit_alph",
-			"astronomical seeing",
-			"F_\\nu",
-			"adapti",
-			"Adaptive Optics\\}",
-			"Adaptive Optics}",
-			"Adaptive Optics",
-			"\\[[0-9]\\]",
-			"it",
-			"\\it",
-			"{equation}",
-			"{pix}",
-			"\\$\\\\it\\{[a-zA-Z]\\}\\$",
-			"\\$\\\\it\\{E\\}\\$",
-			"$\\it{E}$",
-			"\\$\\\\it\\{[a-zA-Z]\\}\\$",
-			"\\$\\\\it{[a-zA-Z]}\\$",
-			"$\\\\it{[a-zA-Z]}$",
-			"$\\it{[a-zA-Z]}$",
-			"\\[[0-9]{2}\\]",
-			"sky background",
-			"’",
-			"\\[[0-9]\\]",
-			"equation}",
-			"Ota:arXiv0707.1561",
-			"2003A&A...401...73W,",
-			"2006A&A...459..745F,",
-			"equation",
-			"fesc",
-			"GRAPH_Parameter_Fit_alpha",
-			"GRAPH_Parameter_Fit_alpha_linear",
-			"cairo",
-			"StellarDens",
-			"A range of factors were considered when determining ",
-			"Reionization",
-			"reionization",
-			"Lower redshift limit on reionization",
-			"\\item",
-			"* ",
-			"sub",
-			"begin{table}",
-			"2003ApJS..149..289B",
-			"tab:filter_characteristics",
-			"2003ApJS..149..289B",
-			"\\SI{10^7}{",
-			"from 25 000 galaxies",
-			"tab:program",
-			"mil",
-			"5c",
-			"c",
-			"$4\\times 0.25$\\,mil",
-			"table",
-			"i.e.",
-			"cubed",
-			"equation}",
-			"if(m == selmon)",
-			"equation",
-			"{equation}",
-			"config.",
-			"setup"
+			"see section-Schechter function",
+			"press schec",
+			"graph of star formation rate"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -416,6 +410,24 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\\1\\2",
+			"fig:air_glow_in_upper_atmosphere",
+			"\\newpage\nprogram",
+			"\\newpage\n\\section{",
+			"htbp",
+			"Gunn-Peterson",
+			"@\\1\\{",
+			"'",
+			"redward",
+			"blueward",
+			"reionization",
+			"equation~",
+			"Equation~\\(\\1\\)",
+			"Equation~",
+			"Table~",
+			"0",
+			"9",
+			"",
 			"'",
 			"[!htbp]",
 			"[!htpb]",
@@ -449,101 +461,14 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Final Report Related/Final Report/mainfile.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10439,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9945,
-								9945
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3620.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Final Report Related/Final Report/Observing_strategy_redshift_6-8.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3788,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2391,
-								2391
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 491.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Final Report Related/Final Report/Parameter_Evolution_J-Wainwright.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4724,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								896,
-								896
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 176.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 39.0
 	},
 	"input":
 	{
@@ -588,12 +513,328 @@
 		"selected_items":
 		[
 			[
-				"todo",
-				"Final Report Related/Report Structure.todo"
+				"intro",
+				"Final Report Related/Submissions/Introduction Joe.tex"
+			],
+			[
+				"concl",
+				"Final Report Related/Final Report/Project_conclusion.tex"
+			],
+			[
+				".bib",
+				"Final Report Related/Final Report/references.bib"
+			],
+			[
+				"predi",
+				"Final Report Related/Final Report/Predictions_conclusion_B-Johnson.tex"
+			],
+			[
+				"titl",
+				"Final Report Related/Final Report/titlepage.tex"
+			],
+			[
+				"tit",
+				"Final Report Related/Final Report/titlepage.tex"
+			],
+			[
+				"conn",
+				"Final Report Related/Final Report/SFR_and_Calculating_Z_OMCCONNELL.tex"
+			],
+			[
+				"conne",
+				"Final Report Related/Final Report/Calculating_timescale_reionization_O-McConnel.tex"
+			],
+			[
+				"groun",
+				"Final Report Related/Final Report/Ground_vs_Space_Based_Telescopes_R-Topadar.tex"
+			],
+			[
+				"photo",
+				"Final Report Related/Final Report/Colour_Photometry_J-Baumber.tex"
+			],
+			[
+				"spe",
+				"Final Report Related/Final Report/Spectroscopy_J-Shepley.tex"
+			],
+			[
+				"spec",
+				"Final Report Related/Final Report/Spectroscopy_J-Shepley.tex"
+			],
+			[
+				"fwhm",
+				"Final Report Related/Final Report/FWHM_M-ONeill.tex"
+			],
+			[
+				"baumb",
+				"Final Report Related/Final Report/Other_methods_21cm_J-Baumber.tex"
+			],
+			[
+				"determ",
+				"Final Report Related/Final Report/Determining_Redshift_D-Stonel.tex"
+			],
+			[
+				".old",
+				"Final Report Related/Final Report/Observational_Gravitational_Lensing_C-McDonald.tex.old"
+			],
+			[
+				".tex",
+				"Final Report Related/Final Report/Hubble_M-ONeil.tex"
+			],
+			[
+				"project",
+				"Final Report Related/Final Report/Project_conclusion.tex"
+			],
+			[
+				"cosmol",
+				"Final Report Related/Final Report/Cosmological_distances_J-Bryant.tex"
+			],
+			[
+				"paratex",
+				"Final Report Related/Final Report/Parameter_Evolution_J-Wainwright.tex"
+			],
+			[
+				"sche",
+				"Final Report Related/Final Report/Schechter_function_J-Bryant.tex"
+			],
+			[
+				"gun",
+				"Final Report Related/Final Report/Gunn_peterson_A-King.tex"
+			],
+			[
+				"other",
+				"Final Report Related/Final Report/Other_methods_21cm_J-Baumber.tex"
+			],
+			[
+				"colour",
+				"Final Report Related/Submissions/Colour Photometry Joe.tex"
+			],
+			[
+				"colo",
+				"Final Report Related/Final Report/Colour_Photometry_J-Baumber.tex"
+			],
+			[
+				"mai",
+				"Final Report Related/Final Report/mainfile.tex"
+			],
+			[
+				"graph_sfr_criticalsfr",
+				"Final Report Related/Images/Graph_Data/GRAPH_SFR_CriticalSFR.gnu"
+			],
+			[
+				"calc",
+				"Final Report Related/Final Report/Calculating_timescale_reionization_O-McConnel.tex"
+			],
+			[
+				"graph_recombinations",
+				"Final Report Related/Images/Graph_Data/GRAPH_recombinations.gnu"
+			],
+			[
+				"graph_sfr_density",
+				"Final Report Related/Images/Graph_Data/GRAPH_SFR_Density.gnu"
+			],
+			[
+				"calcu",
+				"Final Report Related/Final Report/Calculating_timescale_reionization_O-McConnel.tex"
+			],
+			[
+				"gunn",
+				"Final Report Related/Final Report/Gunn_peterson_A-King.tex"
+			],
+			[
+				"critica",
+				"Final Report Related/Images/Graph_Data/GRAPH_SFR_CriticalSFR.gnu"
+			],
+			[
+				".log",
+				"Final Report Related/Final Report/build/mainfile.log"
+			],
+			[
+				"graphion",
+				"Final Report Related/Images/Graph_Data/GRAPH_SFR_ionised_fraction.gnu"
+			],
+			[
+				"graphio",
+				"Final Report Related/Images/Graph_Data/GRAPH_SFR_ionised_fraction.txt"
+			],
+			[
+				"xh",
+				"Final Report Related/Submissions/Xh1_Evolution_Rahim.tex"
+			],
+			[
+				"app",
+				"Final Report Related/Final Report/app_Derivation_of_magnitude_schechter_function.tex"
+			],
+			[
+				"schec",
+				"Final Report Related/Final Report/Schechter_function_J-Bryant.tex"
+			],
+			[
+				"j-br",
+				"Final Report Related/Final Report/Schechter_function_J-Bryant.tex"
+			],
+			[
+				"cand",
+				"Final Report Related/Final Report/Candiate_Telescopes_J-Shepley.tex"
+			],
+			[
+				"predictions_conclusion_b",
+				"Final Report Related/Final Report/Predictions_conclusion_B-Johnson.tex"
+			],
+			[
+				"topa",
+				"Final Report Related/Final Report/Exposure_times_R-Topadar.tex"
+			],
+			[
+				"king",
+				"Final Report Related/Final Report/Galaxy_numbers_A-King.tex"
+			],
+			[
+				"candi",
+				"Final Report Related/Final Report/Candiate_Telescopes_J-Shepley.tex"
+			],
+			[
+				"fw",
+				"Final Report Related/Final Report/FWHM_M-ONeill.tex"
+			],
+			[
+				"expo",
+				"Final Report Related/Final Report/Exposure_times_R-Topadar.tex"
+			],
+			[
+				"graphdens",
+				"Final Report Related/Images/Graph_Data/GRAPH_SFR_Density.tex"
+			],
+			[
+				"owen",
+				"Final Report Related/Submissions/Owen Submission/OwenFinalSubmission.tex"
+			],
+			[
+				"mccon",
+				"Final Report Related/Final Report/SFR_and_Calculating_Z_OMCCONNELL.tex"
+			],
+			[
+				"clumping",
+				"Final Report Related/Final Report/Clumping_factor_L-Clegg.tex"
+			],
+			[
+				"bryant",
+				"Final Report Related/Final Report/Including_Recombinations_J-Bryant.tex"
+			],
+			[
+				"lower",
+				"Final Report Related/Final Report/Lower_redshift_limit_on_reionization_J-Bryant.tex"
 			],
 			[
 				"main",
 				"Final Report Related/Final Report/mainfile.tex"
+			],
+			[
+				"results",
+				"Final Report Related/Final Report/Results_planned_use_of_gravitational_lensing_C-McDonald.tex"
+			],
+			[
+				"observ",
+				"Final Report Related/Final Report/Observing_strategy_redshift_10-more_M-ONeill.tex"
+			],
+			[
+				"obser",
+				"Final Report Related/Submissions/Observing strategy, high redshift - changes.docx"
+			],
+			[
+				"eucl",
+				"Final Report Related/Final Report/Euclid_for_a_survey_of_8-10_D-Stonell.tex"
+			],
+			[
+				"meth",
+				"Final Report Related/Final Report/Method_for_Strategy_Choosing_D-Stonell.tex"
+			],
+			[
+				"dither",
+				"Final Report Related/Final Report/Dithering_M-ONiell.tex"
+			],
+			[
+				"conta",
+				"Final Report Related/Final Report/Contaminants_M-ONeil.tex"
+			],
+			[
+				"observation",
+				"Final Report Related/Final Report/Observational_Gravitational_Lensing_C-McDonald.tex"
+			],
+			[
+				"deci",
+				"Final Report Related/Final Report/Decision_on_detection_techniques_M-ONeill.tex"
+			],
+			[
+				"spect",
+				"Final Report Related/Final Report/Spectroscopy_J-Shepley.tex"
+			],
+			[
+				"determin",
+				"Final Report Related/Final Report/Determining_Redshift_D-Stonel.tex"
+			],
+			[
+				"fwh",
+				"Final Report Related/Final Report/FWHM_M-ONeill.tex"
+			],
+			[
+				"stra",
+				"Final Report Related/Final Report/Observing_strategy_redshift_6-8.tex"
+			],
+			[
+				"highre",
+				"Final Report Related/Submissions/Observing strategy, high redshift - changes.docx"
+			],
+			[
+				"euclid",
+				"Final Report Related/Final Report/Euclid_D-Stonel.tex"
+			],
+			[
+				"spit",
+				"Final Report Related/Final Report/Spitzer_D-Stonel.tex"
+			],
+			[
+				"graph_distribution_of_magnification1",
+				"Final Report Related/Final Report/GRAPH_distribution_of_magnification1.tex"
+			],
+			[
+				"graph_distribution_of_magnification2",
+				"Final Report Related/Final Report/GRAPH_distribution_of_magnification2.tex"
+			],
+			[
+				"gravitation",
+				"Final Report Related/Final Report/Gravitational_Lensing1_C-McDonald.tex"
+			],
+			[
+				"lower_li",
+				"Final Report Related/Final Report/Lower_redshift_limit_on_reionization_J-Bryant.tex"
+			],
+			[
+				"inclu",
+				"Final Report Related/Final Report/Including_Recombinations_J-Bryant.tex"
+			],
+			[
+				"bounds",
+				"Final Report Related/Images/Graph_Data/GRAPH_Parameter_Fit_m-star_bounds.gnu"
+			],
+			[
+				"phix",
+				"Final Report Related/Submissions/andy subission/andy graphs/phiX evolution plot.txt"
+			],
+			[
+				"mx",
+				"Final Report Related/Submissions/andy subission/andy graphs/MX evolution plot.txt"
+			],
+			[
+				".gnu",
+				"Final Report Related/Images/Graph_Data/GRAPH_SFR_Density.gnu"
+			],
+			[
+				"alphe",
+				"Final Report Related/Submissions/andy subission/andy graphs/alpha evolution plot.txt"
+			],
+			[
+				"todo",
+				"Final Report Related/Report Structure.todo"
 			],
 			[
 				"ref",
@@ -638,10 +879,10 @@
 	{
 	},
 	"show_minimap": false,
-	"show_open_files": true,
+	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 317.0,
+	"side_bar_width": 296.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

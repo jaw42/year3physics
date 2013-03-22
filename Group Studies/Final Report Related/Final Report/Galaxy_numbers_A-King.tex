@@ -2,6 +2,8 @@
 
 \section{Galaxy Number Predictions} % (fold)
 \label{sec:galaxy_number_predictions}
+(Andrew with calculations assisted by Owen)
+
 	One of the central tasks of the predictions subgroup is to make informed predictions regarding the distribution of galaxies around and during the epoch of reionization. As previously described, the distribution of galaxies in the early universe can be modelled using a Schechter function
 	\begin{align}
 		\Phi_L = \Phi^*  \left(\frac{L}{L^*}\right)^\alpha \exp{\left( -\frac{L}{L^*} \right)} \frac{1}{L^*}
@@ -27,7 +29,7 @@
 			\Phi_L &= \Phi_L(L,r); \qquad r= r(z);\\
 			\therefore	\Phi_L &= \Phi_L(L,z).
 		\end{align}
-		The inaccuracy of this simplification on smaller scales is considered in more depth later, in the section on cosmic variance. The volume of integration can then be chosen to be a spherical shell with limits of constant redshift, so that the volume integration may be carried out over concentric and infinitesimal redshift shells
+		The inaccuracy of this simplification on smaller scales is considered in more depth in Section~\ref{sec:cosmic_variance}. The volume of integration can then be chosen to be a spherical shell with limits of constant redshift, so that the volume integration may be carried out over concentric and infinitesimal redshift shells
 		\begin{align}
 			N = \int_{z_1}^{z_2} \int_{L_1}^{L_2} \Phi_L(L,z) \d{L} \dx{V}{z} \d{z}.
 		\end{align}
@@ -62,7 +64,7 @@
 		\begin{align}
 			N = \int_{z_1}^{z_2} {\int_{M_1}^{M_2} { \Phi_M(M,z) \frac{4 \pi c}{H(z)} \d{M} \d{z} \left[ \int_0^{z}{\frac{c }{H(z')} \d{z'}}\right ]^2} } .
 		\end{align}
-		Finally, by substituting in the we substitute in the Schechter function
+		Finally, we rearrange to give
 		\begin{align}
 					N = \frac{4 \pi c^3}{H_0^3} \int_{z_1}^{z_2}  \frac{1}{E(z)} \left[ \int_0^{z}{\frac{1}{E(z')} \d{z'} }\right ]^2 \d{z} \int_{M_1}^{M_2} \Phi_M(M,z) \d{M}
 		\end{align}

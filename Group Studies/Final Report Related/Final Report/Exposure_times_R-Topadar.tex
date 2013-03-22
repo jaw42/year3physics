@@ -2,6 +2,8 @@
 
 \section{Photometry Exposure Times} % (fold)
 \label{sec:exposure_times}
+(Rahim, except~\ref{sub:full_width_at_half_maximum} Dorothy and Mike)
+
 	The main aim of this project is to produce an observing strategy to view some of the earliest galaxies in the universe and map the epoch of reionization during which they were produced. An important aspect of this is therefore the viewing of the galaxies themselves and the time it will take to do so. The time required to view these galaxies depends not only on the telescope being used, but also the devices used. A charged coupled device (CCD) will be used to measure the light from these sources and so to calculate the times required to view these galaxies, these must be understood in more detail. The telescope or telescopes used during the observation of these galaxies will have different properties which will affect the time required to view the source. Some of these are discussed below.
 
 	\subsection{Telescope Properties} % (fold)
@@ -70,24 +72,35 @@
 			The sky background is the incoming light from the sky measured on the telescope that is not from the source being observed. The amount of sky background can vary at different wavelengths and is mainly due to light diffusion by the atmosphere. There are numerous sources that contribute towards the sky background such as airglow, zodiacal light and thermal radiation.
 
 			Airglow is the atmospheric emission of photons at wavelengths from the near-UV to the near-IR range due to chemical reactions in the upper atmosphere\cite[p.~9]{An_atmospheric_radiation_model_for_Cerro_Paranal}. These chemical reactions lead to photon emissions due to the decay of electrons from an excited state in one of the reaction products. One such example is the emission in the near infrared region by OH radicals created from a reaction between ozone and hydrogen in the upper atmosphere\cite[p.~1]{MNRMNR11383}. Other processes contributing to airglow are the recombination of ions originally ionised by the sun, and the luminescence of cosmic rays striking the upper atmosphere. Airglow therefore produces a faint glow and can be seen in Figure~\ref{fig:air_glow_in_upper_atmosphere}.
+			% \begin{figure}[htbp]
+			% 	\centering
+			% 	\includegraphics[width=0.7\textwidth]{../Images/airglow_in_upper_atmosphere.jpeg}
+			% 	\caption{Airglow in the upper atmosphere as observed from the International Space Station\cite{ISS028_E_050185}}\label{fig:air_glow_in_upper_atmosphere}
+			% \end{figure}
+			% \begin{figure}[htbp]
+			% 	\centering
+			% 	\includegraphics[width=0.7\textwidth]{../Images/zodiacal_light.jpeg}
+			% 	\caption{An image of zodiacal light above the earth}\label{fig:air_glow_in_upper_atmosphere}
+			% \end{figure}
 			\begin{figure}[htbp]
-				\centering
-				\includegraphics[width=0.7\textwidth]{../Images/airglow_in_upper_atmosphere.jpeg}
-				\caption{Airglow in the upper atmosphere as observed from the International Space Station\cite{ISS028_E_050185}}\label{fig:air_glow_in_upper_atmosphere}
+				\begin{minipage}[c]{0.5\linewidth}
+					\centering
+					\includegraphics[height=4.5cm]{../Images/airglow_in_upper_atmosphere.jpeg}
+				\end{minipage}
+				\begin{minipage}[c]{0.5\linewidth}
+					\centering
+					\includegraphics[height=4.5cm]{../Images/zodiacal_light.jpeg}
+				\end{minipage}
+				\caption{Left: Airglow in the upper atmosphere as observed from the International Space Station\cite{ISS028_E_050185}. Right: An image of zodiacal light above the earth}\label{fig:air_glow_in_upper_atmosphere}
 			\end{figure}
 
-			Another of the contributors to the sky background is zodiacal light which is the scattering of sunlight off interplanetary dust\cite[p.~5--6]{MNRMNR21602}. This can be seen in Figure~\ref{fig:zodiacal_light} below. This causes a faint white glow that can be best seen before sunrise or after sunset but is generally so faint it cannot be seen over moonlight or light pollution. The dust in the solar system forms a thick lens shape cloud known as the interplanetary dust cloud or zodiacal cloud and it is off this cloud that light from the Sun is scattered. Zodiacal light is mainly seen in the ecliptic plane, the plane of the solar system, as most of the dust making up this cloud is located in this plane. Another similar effect to this is the gegenschein, or counter shine, which is a faint glow in the antisolar direction\cite{Observational_Studies_of_Interplanetary_Dust}. At this point, the zodiacal light is enhanced by backscattering off interplanetary dust producing a small brightening in this part of the sky.
-			\begin{figure}[htbp]
-				\centering
-				\includegraphics[width=0.7\textwidth]{../Images/zodiacal_light.jpeg}
-				\caption{An image of zodiacal light above the earth}\label{fig:zodiacal_light}
-			\end{figure}
+			Another of the contributors to the sky background is zodiacal light which is the scattering of sunlight off interplanetary dust\cite[p.~5--6]{MNRMNR21602}. This can be seen in Figure~\ref{fig:air_glow_in_upper_atmosphere} below. This causes a faint white glow that can be best seen before sunrise or after sunset but is generally so faint it cannot be seen over moonlight or light pollution. The dust in the solar system forms a thick lens shape cloud known as the interplanetary dust cloud or zodiacal cloud and it is off this cloud that light from the Sun is scattered. Zodiacal light is mainly seen in the ecliptic plane, the plane of the solar system, as most of the dust making up this cloud is located in this plane. Another similar effect to this is the gegenschein, or counter shine, which is a faint glow in the antisolar direction\cite{Observational_Studies_of_Interplanetary_Dust}. At this point, the zodiacal light is enhanced by backscattering off interplanetary dust producing a small brightening in this part of the sky.
 
-			Background from zodiacal light can however be greatly reduced by observing outside of the ecliptic plane as this is where the flux of photons due to zodiacal light is weakest. This can be seen in Figure~\ref{fig:zodiacal_light_graph} below which shows the flux of photons as a function of angle to the ecliptic plane.
+			Background from zodiacal light can however be greatly reduced by observing outside of the ecliptic plane as this is where the flux of photons due to zodiacal light is weakest. This can be seen in Figure~\ref{fig:air_glow_in_upper_atmosphere_graph} below which shows the flux of photons as a function of angle to the ecliptic plane.
 			\begin{figure}[htbp]
 				\centering
-				\includegraphics[trim = 110mm 198mm 25mm 30mm, clip, width=0.7\textwidth]{../Images/zodiacal_Light_graph.pdf}
-				\caption[Zodiacal light vs angle]{The relationship between intensity of zodiacal light and the angle to the plane of the solar sytem}\label{fig:zodiacal_light_graph}
+				\includegraphics[trim = 110mm 198mm 25mm 30mm, clip, width=0.4\textwidth]{../Images/zodiacal_Light_graph.pdf}
+				\caption[Zodiacal light vs angle]{The relationship between intensity of zodiacal light and the angle to the plane of the solar sytem}\label{fig:air_glow_in_upper_atmosphere_graph}
 			\end{figure}
 
 			The zodiacal light is strongest at a very small angle to the ecliptic plane but significantly decreases as the angle increases and so viewing well outside the ecliptic plane should considerably reduce background from zodiacal light\cite{Zodiacal_Light_over_La_Silla}.Thermal radiation in the atmosphere by greenhouse gases also contributes to the sky background and is due to the absorption and emission of radiation from the Sun into the atmosphere in the mid-IR region. In this case, observations in the mid- and far-IR region must be carried out from outside the atmosphere\cite{Extragalactic_Astronomy_and_Cosmology}. The sky background is therefore primarily an issue for ground based telescopes as they can incur a large background number of photons compared to the number of photons arriving from the source being observed.
@@ -115,32 +128,32 @@
 				\sigma_\text{RN} = R\sqrt{N_\text{pix}}
 			\end{align}
 		% subsubsection read_noise (end)
-
-		\subsubsection{Signal-to-noise Ratio} % (fold)
-		\label{ssub:signal_to_noise_ratio}
-			The quality of a CCD image is quantified by a signal-to-noise ratio which can be established from the source signal and all noise contributions. The different types of noise discussed above, all contribute to a total noise ($\sigma$) in the received signal which can be calculated using equation~(\ref{eq:total_noise_in_recieved_signal}).
-			\begin{align}
-				\sigma^{2} = \sigma_{Poisson}^{2} + \sigma_{Dark}^{2} + \sigma_{Sky}^{2} + \sigma_{RN}^{2} \label{eq:total_noise_in_recieved_signal}
-			\end{align}
-			As the CCD is exposed to incoming light, both the background and the source signal build up. The background is randomly and evenly distributed and so also contributes to the peak of the signal which therefore sits as a peak or peaks above a layer of background and so can be distinguished. This can be seen on Figure~\ref{fig:signal_noise_accumulation} below where B is labelled in the region of background\cite{Signal_to_Noise_Ratio}.
-			\begin{figure}[htbp]
-				\centering
-				\includegraphics[width=0.6\textwidth]{../Images/SNR.png}
-				\caption{The accumulation of signal, background and noise.\label{fig:signal_noise_accumulation}}
-			\end{figure}
-
-			The signal-to-noise ratio is therefore the total number of photons from the source reaching the CCD divided by the total noise for a given exposure time. As the exposure time increases, both signals, from source and background, cause an increase in counts establishing the signal more clearly. The signal-to-noise ratio is therefore also dependant on the exposure time although it is common for astronomers to decide on a signal-to-noise ratio to be obtained before calculating an exposure time.
-			\begin{align}
-				\frac{S}{N} = \frac{Ft}{\sigma} =\frac{Ft}{\sqrt{\sigma_\text{Poisson}^{2} + \sigma_\text{Dark}^{2} + \sigma_\text{Sky}^{2} + \sigma_{RN}^{2}}}
-			\end{align}
-			Either the signal-to-noise ratio or exposure time can then be calculated using the equation shown below commonly known as the CCD equation.
-			\begin{align}
-				\frac{S}{N} = \frac{Ft}{\sqrt{(F + BN_\text{pix} + DN_\text{pix})t + R{^2}N_\text{pix}}}
-			\end{align}
-			$F$ is the incident number of photons from the source per second, $t$ is the exposure time, $D$ is the dark current in electrons per second per pixel, $B$ is the sky background in photons per second per pixel and $R$ is the read noise in electrons. $N_\text{pix}$ is the number of pixels within the aperture area of the CCD and so is the number of pixels that are clocked to produce an image. This is dependent on the either the angular resolution of the telescope or the angular size of the object being observed depending on which is the limiting factor of the telescope and for photometry, can be calculated using equation~(\ref{eq:number_of_pixels_limiting}) below. The limiting factor becomes the FWHM in the equation and is discussed in Sections~\ref{sub:astronomical_seeing} and~\ref{sub:full_width_at_half_maximum} whilst $\theta_\text{pixel}$ is the angle subtended on the sky by one pixel. Observations on the James Webb Space Telescope will produce images with a signal-to-noise ratio of 10 indicating the current image quality desired.
-			\begin{align}
-				N_\text{pix} = \pi \left(\frac{4 \times \text{FWHM}}{\theta_\text{pixel}}\right)^2 \label{eq:number_of_pixels_limiting}
-			\end{align}
-		% subsubsection signal_to_noise_ratio (end)
 	% subsection charged_coupled_devices (end)
+
+	\subsection{Signal-to-noise Ratio} % (fold)
+	\label{ssub:signal_to_noise_ratio}
+		The quality of a CCD image is quantified by a signal-to-noise ratio which can be established from the source signal and all noise contributions. The different types of noise discussed above, all contribute to a total noise ($\sigma$) in the received signal which can be calculated using equation~(\ref{eq:total_noise_in_recieved_signal}).
+		\begin{align}
+			\sigma^{2} = \sigma_{Poisson}^{2} + \sigma_{Dark}^{2} + \sigma_{Sky}^{2} + \sigma_{RN}^{2} \label{eq:total_noise_in_recieved_signal}
+		\end{align}
+		As the CCD is exposed to incoming light, both the background and the source signal build up. The background is randomly and evenly distributed and so also contributes to the peak of the signal which therefore sits as a peak or peaks above a layer of background and so can be distinguished. This can be seen on Figure~\ref{fig:signal_noise_accumulation} below where B is labelled in the region of background\cite{Signal_to_Noise_Ratio}.
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=0.4\textwidth]{../Images/SNR.png}
+			\caption{The accumulation of signal, background and noise.\label{fig:signal_noise_accumulation}}
+		\end{figure}
+
+		The signal-to-noise ratio is therefore the total number of photons from the source reaching the CCD divided by the total noise for a given exposure time. As the exposure time increases, both signals, from source and background, cause an increase in counts establishing the signal more clearly. The signal-to-noise ratio is therefore also dependant on the exposure time although it is common for astronomers to decide on a signal-to-noise ratio to be obtained before calculating an exposure time.
+		\begin{align}
+			\frac{S}{N} = \frac{Ft}{\sigma} =\frac{Ft}{\sqrt{\sigma_\text{Poisson}^{2} + \sigma_\text{Dark}^{2} + \sigma_\text{Sky}^{2} + \sigma_{RN}^{2}}}
+		\end{align}
+		Either the signal-to-noise ratio or exposure time can then be calculated using the equation shown below commonly known as the CCD equation.
+		\begin{align}
+			\frac{S}{N} = \frac{Ft}{\sqrt{(F + BN_\text{pix} + DN_\text{pix})t + R{^2}N_\text{pix}}}
+		\end{align}
+		$F$ is the incident number of photons from the source per second, $t$ is the exposure time, $D$ is the dark current in electrons per second per pixel, $B$ is the sky background in photons per second per pixel and $R$ is the read noise in electrons. $N_\text{pix}$ is the number of pixels within the aperture area of the CCD and so is the number of pixels that are clocked to produce an image. This is dependent on the either the angular resolution of the telescope or the angular size of the object being observed depending on which is the limiting factor of the telescope and for photometry, can be calculated using equation~(\ref{eq:number_of_pixels_limiting}) below. The limiting factor becomes the FWHM in the equation and is discussed in Sections~\ref{sub:astronomical_seeing} and~\ref{sub:full_width_at_half_maximum} whilst $\theta_\text{pixel}$ is the angle subtended on the sky by one pixel. Observations on the James Webb Space Telescope will produce images with a signal-to-noise ratio of 10 indicating the current image quality desired.
+		\begin{align}
+			N_\text{pix} = \pi \left(\frac{4 \times \text{FWHM}}{\theta_\text{pixel}}\right)^2 \label{eq:number_of_pixels_limiting}
+		\end{align}
+	% subsubsection signal_to_noise_ratio (end)
 % section exposure_times (end)
