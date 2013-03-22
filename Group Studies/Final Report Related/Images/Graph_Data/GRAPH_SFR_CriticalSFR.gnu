@@ -4,7 +4,7 @@ set output "GRAPH_SFR_CriticalSFR.tex"
 
 set title ""
 set xlabel 'Redshift ($z$)'
-set ylabel 'Star Formation Raet Density ($\M_\odot$\si{\per\year\per\cubic\mega\parsec})'
+set ylabel 'Star Formation Raet Density'
 set key at 19.5,0.33
 #set xrange[0:16]
 #set yrange[-2.3:-1.2]
@@ -30,8 +30,8 @@ set key at 19.5,0.33
 #titleg = sprintf("%.2flog(x)+%.2f", n, d)
 
 plot\
- "GRAPH_SFR_CriticalSFR.txt" using 1:2 pt 6 ps 0.7 lw 4 lc rgb "#4d81be" t "Critical SFR Density", \
- "GRAPH_SFR_CriticalSFR.txt" using 1:3 pt 2 ps 0.7 lw 4 lc rgb "#c05048" t "SFR Density"
+ "GRAPH_SFR_CriticalSFR.txt" using 1:2 w l lw 4 lc rgb "#4d81be" t "Critical SFR Density", \
+ "GRAPH_SFR_CriticalSFR.txt" using 1:3 w l lw 4 lc rgb "#c05048" t "SFR Density"
 
 #with xyerrorbars pt 6 ps 0.7 lw 2 lc rgb "black" notitle, f(x) lw 3 lc rgb "red" t titlef
 

@@ -1,3 +1,4 @@
+\newpage
 \section{Derivation of the Gunn-Peterson Optical Depth} % (fold)
 \label{app:derivation_of_the_gunn_peterson_optical_depth}
 	The optical depth, $\tau$, of a medium to light of some frequency, $\nu$, can be calculated using
@@ -21,9 +22,9 @@
 	\begin{align}
 		\sigma (\nu) = \frac{\mu_0 e^2 c}{4 m_e} f \phi(\nu) \label{eq:crosssection}
 	\end{align}
-	where f is the upward oscillator strength of the transition, with a value of 0.4162 for the Lyman-$\alpha$ transition and $\phi(\nu)$ is the normalised line profile. Since the scattering cross section is highly resonant at the Lyman-$\alpha$ frequency and negligible elsewhere, $\phi$ can be approximated by the form of a delta function $\phi(\nu) = \delta (\nu - \nu_\alpha)$.
+	where f is the upward oscillator strength of the transition, with a value of 0.4162 for the Lyman-$\alpha$ transition\cite{MadauIGM} and $\phi(\nu)$ is the normalised line profile. Since the scattering cross section is highly resonant at the Lyman-$\alpha$ frequency and negligible elsewhere, $\phi$ can be approximated by the form of a delta function $\phi(\nu) = \delta (\nu - \nu_\alpha)$.
 
-	The mean density of neutral Hydrogen can be calculated from the baryon density, $\Omega_b$. We start with the definition of $\Omega_b$
+	The mean density of neutral Hydrogen can be calculated from the baryon density, $\Omega_b$. Starting with the definition of $\Omega_b$
 	\begin{align}
 		\rho_b &= \rho_\text{crit} \Omega_b =  \frac{3H_0^2}{ 8 \pi G} \Omega_b \\
 			&= \frac{3H_0^2}{ 8 \pi G} \Omega_{b0}(1+z)^3,
@@ -31,7 +32,7 @@
 		\rho_b &= \sum_\text{elements} \rho_i \\
 		&\approx \rho_H + \rho_{He} = \rho_H + Y\rho_b,
 	\end{align}
-	where $Y$ is the primordial abundance, by mass, of He with a value $Y = 0.247 \pm 0.02$. Equating the two resulting expressions for $\rho_b$ gives
+	where $Y$ is the primordial abundance, by mass, of He with a value $Y = 0.246 \pm 0.0014$\cite{BBNabundance}. Equating the two resulting expressions for $\rho_b$ gives
 	\begin{align}
 		\frac{3H_0^2}{ 8 \pi G} \Omega_{b0}(1+z)^3 &= \frac{\rho_H}{1-Y} = \frac{n_H m_H}{1-Y}
 	\end{align}
@@ -59,7 +60,7 @@
 		\frac{ \overline{n}_{H0} \mu_0 e^2 c^2 f}{4 m_e H_0} = (8.621\times 10^{20} ) \; h \; \Omega_{b0}
 	\end{align}
 	Therefore
-	\begin{align}
+	\begin{align} \label{eq:tgp1}
 		\tau_{GP} = (8.621\times 10^{20} ) \frac{h \Omega_{b0}}{\sqrt{\Omega_{M0}}} \int_0^{z_e} \delta(\nu - \nu_\alpha) (1+z)^{1/2} x_{HI} \d{z}
 	\end{align}
 	The frequency of observed radiation, $\nu_0$ can be related to the frequency of the same radiation at some redshift, $z$, by:
@@ -67,7 +68,7 @@
 				\nu(z) &= \nu_0(1+z)  \\
 		\Rightarrow \frac{d\nu}{dz} &= \nu_0.
 	\end{align}
-	This allows us to write the integral purely in terms of $\nu$ and the action of the delta function is then to simply pick out the value of the integrand at the point $\nu = \nu_\alpha$. For convenience, we name the integral part $I$
+	This allows the integral to be writen purely in terms of $\nu$ and the action of the delta function is then to simply pick out the value of the integrand at the point $\nu = \nu_\alpha$. For convenience, we name the integral part of Equation~\ref{eq:tgp1} $I$
 	\begin{align}
 		I &=  \int_0^{z_e} \delta(\nu - \nu_\alpha)(1+z)^{1/2} x_{HI} \d{z} \\
 		  &=  \int_{\nu_0}^{\nu_e} \delta(\nu - \nu_\alpha) \sqrt{\frac{\nu}{\nu_0}} \; \frac{dz}{d\nu} \; x_{HI} \d{\nu} \\
@@ -81,7 +82,7 @@
 	Substituting the new value for the integral back into the optical depth equations gives
 	\begin{align}
 		\tau_{GP} &=  \frac{(8.621\times 10^{20} )}{\nu_\alpha} \frac{h \Omega_{b0}}{\sqrt{\Omega_{M0}}} \; (1+z)^{3/2} \; x_{HI} \\
-	       &=  (3.494 \times 10^{5}) \frac{h \Omega_{b0}}{\sqrt{\Omega_{M0}}} \; (1+z)^{3/2} \; x_{HI}.
+	       &=  (3.6 \times 10^{5}) \frac{h \Omega_{b0}}{\sqrt{\Omega_{M0}}} \; (1+z)^{3/2} \; x_{HI}.
 	\end{align}
 	This is conventionally writen in the form
 	\begin{align}

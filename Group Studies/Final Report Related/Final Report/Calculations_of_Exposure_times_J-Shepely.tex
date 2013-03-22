@@ -4,7 +4,14 @@
 	\begin{align}
 		R &= \frac{\lambda}{\Delta\lambda}
 	\end{align}
-	Where $R$ is the resolving power of the diffraction grating or prism and $\lambda$ is the red-shifted wavelength of the Lyman-$\alpha$ absorption line. If these are both known then, $\Delta\lambda$ the spectral resolution can be found for the diffraction grating or prism being used. This is put in place of the band width used in photometry. Light will fall on the CCD in a narrow strip across its width. For the purposes of simplicity, this report will assume that light falls across the entire width of the CCD. The wavelength range this corresponds to is just the wavelength range that can be dispersed particular to the grating or prism being used. The number of pixels across the width of the CCD is known, therefore the wavelength range to which each pixel corresponds can be found. Hence, the number of pixels the spectral resolution can also be found. This value is then multiplied by the spatial resolution element, the number of pixels on the CCD to which the galaxy subtends, to give $N_\text{pix}$. The spatial resolution element has been found to be in the order of a few for the size and redshifts of galaxies considered\cite{}[17].
+	Where $R$ is the resolving power of the diffraction grating or prism and $\lambda$ is the red-shifted wavelength of the Lyman-$\alpha$ absorption line. If these are both known then, $\Delta\lambda$ the spectral resolution can be found for the diffraction grating or prism being used. This is put in place of the band width used in photometry. Light will fall on the CCD in a narrow strip across its width. For the purposes of simplicity, this report will assume that light falls across the entire width of the CCD. This is shown in Figure~\ref{fig:multi_object_spectrum}.
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.5\textwidth]{../Images/Multi_Object_spectrum_picture.png}
+		\caption{Photograph of HST orbiting the Earth.\label{fig:multi_object_spectrum}}
+	\end{figure}
+
+	The wavelength range this corresponds to is just the wavelength range that can be dispersed particular to the grating or prism being used. The number of pixels across the width of the CCD is known, therefore the wavelength range to which each pixel corresponds can be found. Hence, the number of pixels the spectral resolution can also be found. This value is then multiplied by the spatial resolution element, the number of pixels on the CCD to which the galaxy subtends, to give $N_\text{pix}$. The spatial resolution element has been found to be in the order of a few for the size and redshifts of galaxies considered\cite{SpatialRes}.
 
 	Background for the JWST will mainly be from zodiacal light and thermal radiation from the sun. However, like the flux from the galaxies being observed it will be dispersed by the prism or grating in the spectrometer. Therefore, to calculate the total sky background, the background per pixel is multiplied by the number of pixels in each spectral resolution element.
 
@@ -38,9 +45,9 @@
 		\item $N_{\lambda \text{spix}} =$ Number of pixels in the spatial direction,
 		\item $N_{\lambda \text{spix}} =$ Number of pixels in the spectral direction.
 	\end{itemize}
-	Having found the Counts we can then use equation (below) to find the time required for a desired signal to noise ratio
+	Having found the Counts we can then use equation~\ref{eq:Counts}\cite{Counts} to find the time required for a desired signal to noise ratio
 	\begin{align}
-		\frac{S}{N} &= \frac{CtG}{\sqrt{CtG + N_\text{pix}(B_\text{sky} + B_\text{det}) Gt + \frac{N_\text{pix}}{N_\text{bin}}(N_\text{read} R^2)}}
+		\frac{S}{N} &= \frac{CtG}{\sqrt{CtG + N_\text{pix}(B_\text{sky} + B_\text{det}) Gt + \frac{N_\text{pix}}{N_\text{bin}}(N_\text{read} R^2)}} \label{eq:Counts}
 	\end{align}
 	where
 	\begin{itemize}

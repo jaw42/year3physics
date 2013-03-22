@@ -130,7 +130,7 @@ F^2t^2 - (\frac{S}{N})(F + BN_{pix} + DN_{pix})t - (\frac{S}{N})R{^2}N_{pix} = 0
 The quadratic formula can then be used to calculate a value of exposure time $\it{t}$ in seconds. For ground based telescopes that are background limited, i.e. they receive more photons from background than from the source, this calculation of exposure using the CCD equation can be slightly simplified to:\\
 \newline
 \begin{equation}
-t = (\frac{S}{N})^2 \frac{BN}{F^2}
+t = (\frac{S}{N})^2 \frac{BN_{pix}}{F^2}
 \end{equation}
 \newline  
 A program was created to complete these calculations incorporating the above equations for various sources and provide the exposure times required for numerous telescopes. These values were then used to determine the suitability of the numerous telescopes for observing high redshift galaxies from the start of the epoch of re-ionization along with galaxies formed at the end of the EoR. These exposure times calculated are the time required to produce an image with a certain signal-to-noise ratio in one band and so a further 2 or 3 observations must be taken in different bands to confirm the redshift of the galaxies via the dropout method. 

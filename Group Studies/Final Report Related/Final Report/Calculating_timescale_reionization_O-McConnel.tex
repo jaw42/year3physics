@@ -1,3 +1,6 @@
+%!TEX root = mainfile.tex
+
+\newpage
 \section{Calculating the timescale of Reionization} % (fold)
 \label{sec:calculating_the_timescale_of_reionization}
 
@@ -12,7 +15,7 @@
 			\rho^*_\text{SFR} = 0.027 \times f^{-1}_\text{esc} \left (\frac{C}{30} \right ) \left (\frac{1+z}{7} \right )^3 \left (\frac{\Omega_b h^2}{0.0465} \right )^2 (M_\odot \text{yr}^{-1} \text{Mpc}^{-3})
 		\end{align}
 		where $z$ is the redshift, $\Omega_b$ is the baryonic mass density and $C$ is the clumping factor. The graph of $\rho^*_\text{SFR}$ was plotted see Figure~\ref{fig:GRAPH_SFR_Density}.
-		\begin{figure}[!htbp]
+		\begin{figure}[htbp]
 			\centering
 				\begingroup\endlinechar=-1
 					\resizebox{0.8\textwidth}{!}{%
@@ -32,7 +35,7 @@
 		\begin{align}
 			F_v = 10^{0.4(5-AB-48.6)}
 		\end{align}
-		Where $F_v$ is the Spectral Flux Density in units of \si{\erg\per\second\per\hertz\per\square\centi\metre} and AB is a monochromatic AB Magnitude see Appendix~\ref{???} 2. This was used in conjunction with
+		Where $F_v$ is the Spectral Flux Density in units of \si{\erg\per\second\per\hertz\per\square\centi\metre} and AB is a monochromatic AB Magnitude see Appendix~\ref{sec:magnitude_to_spectral_luminosity}. This was used in conjunction with
 		\begin{align}
 			L_v=4\pi D_L^2 F_v
 		\end{align}
@@ -71,7 +74,7 @@
 				k\int^{\infty}_{0}I \d{v} &= L_\text{bol} \\
 				L_v &= \frac{I(v,T)}{\int^{\infty}_{0}I \d{v}} \times L_{bol}
 			\end{align}
-			where k is a constant, and $I(v,T)$ is the intensity as a function of frequency and temperature in units of \si{\erg\per\second\per\omega\per\square\centi\metre\per\hertz}. $L_\text{Bol}/k$ was computed to be \SI{75224.6}{\erg\per\second\per\omega\per\square\centi\metre}. The intensity of a blackbody against frequency is as shown in Figure X.
+			% where$k$ is a constant, and $I(v,T)$ is the intensity as a function of frequency and temperature. $L_\text{Bol}/k$ was computed to be \SI{75224.6}{\erg\per\second\per\omega\per\square\centi\metre}.
 			\begin{align}
 				I(v,T)=\frac{8\pi v^2}{c^3}\frac{hv}{e^\frac{hv}{kT}-1}
 			\end{align}
@@ -80,8 +83,8 @@
 
 		\subsection{Upper Redshift Limit of Reionization} % (fold)
 		\label{sub:upper_redshift_limit_of_reionization}
-			In order to compute the luminosity density, it was necessary to convert the Schechter function integral into a gamma function. See Appendix~\ref{???}1. This permitted the actual star formation rate density to be computed. Subsequently both star formation rate density and critical star formation rate density were plotted against redshift in Figure~\ref{fig:GRAPH_SFR_CriticalSFR}.
-			\begin{figure}[!htbp]
+			In order to compute the luminosity density, it was necessary to convert the Schechter function integral into a gamma function. See Appendix~\ref{sec:schechter_function_to_gamma_function}. This permitted the actual star formation rate density to be computed. Subsequently both star formation rate density and critical star formation rate density were plotted against redshift in Figure~\ref{fig:GRAPH_SFR_CriticalSFR}.
+			\begin{figure}[htbp]
 				\centering
 					\begingroup\endlinechar=-1
 						\resizebox{0.8\textwidth}{!}{%
@@ -90,74 +93,6 @@
 				\caption{Graph of star formation rate density and critical star formation rate.\label{fig:GRAPH_SFR_CriticalSFR}}
 			\end{figure}
 
-			As mentioned above the redshift at which the star formation rate density exceeds the critical star formation rate density will mark the beginning of reionization. This redshift corresponds to the point in Figure X, where the two curves intersect. The resultant redshift was found to be $z=17.82$.
+			As mentioned above the redshift at which the star formation rate density exceeds the critical star formation rate density will mark the beginning of reionization. This redshift corresponds to the point in Figure~\ref{GRAPH_SFR_CriticalSFR}, where the two curves intersect. The resultant redshift was found to be $z=17.82$.
 		% subsection upper_redshift_limit_of_reionization (end)
-
 % section calculating_the_timescale_of_reionization (end)
-
-%APPENDIXES
-\section{Schechter Function to Gamma Function}
-
-\begin{align}
-\rho_L = \int^{\infty}_{L'=L} \phi(L')L'dL'=\ \ \ \ \ \ \ \frac{\phi^*}{L^*}\int^{\infty}_{L'=L}\left (\frac{L'}{L^*} \right )^{\alpha}e^\frac{-L'}{L^*}L'dL'\\
-= \ \ \ \frac{\phi^*}{L^*}\int^{\infty}_{L'=L}\left (\frac{L'}{L^*}\right )^{\alpha}e^\frac{-L'}{L^*}\frac{L'L^*}{L^*}dL'\\
-= \ \frac {\phi^*}{L^*}\int^{\infty}_{L'=L}\left ( \frac{L'}{L^*} \right )^{\alpha+1}e^\frac{-L'}{L^*}L^{*2}d\frac{L'}{L^*} \\
-= \ \ \ \phi^*L^*\int^{\infty}_{L'=L}\left ( \frac{L'}{L^*} \right )^{\alpha+1}e^\frac{-L'}{L^*}d\frac{L'}{L^*} \\
-= \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \phi^*L^*\Gamma(\alpha+2, L/L^*)
-\end{align}
-
-
-\section{Appendix 2 - Magnitude to Spectral Luminosity}
-\begin{align}
-m-M=5(log d_l - 1)\\
-5(1-log (d_l))= M + (48.6+2.5log f_v) \\
-5(1-log (d_l))= M + 48.6 + 2.5(log l_v - log 4\pi - 2 log d_l) \\
-5(1-log (d_l))= M+48.6 + 2.5(log L_v - log 4\pi)
-M+48.6=-2.5 log (\frac{L_v}{4\pi})+5 \\
-M=5-2.5(log (\frac{L_v}{4\pi})) - 48.6
-\end{align}
-
-
-
-%and the Absolute Magnitude (i.e. the dimmest ionizing galaxy.) DOES MINIMUM MASS GIVE THIS?
-
-%\subsection{Press Schechter Formalism}
-
-%PSF is a method of obtaining the number of objects with a specific mass within a certain volume. It assumes that the universe linearly “clumped” at the beginning of the universe, until a point where the density of the clumps break away from the rest of the universal expansion, and is treated as a massive body which collapses rapidly. (this occurs at around $\delta_c$\~1.68 – Gunn and Gott). Press and Schechter suggest a probability distribution function of =:
-
-%\begin{align}
-%p(M,z)=-2p_0 \frac{\Delta P [\delta_v>\delta_c(z)]} {\Delta M} dM
-%\end{align}
-%Where $p_0$ is the mean density of the universe, and $\delta_c(z)$ is the overdensity threshold per redshift. P is the cumulative probability distribution of $\delta_v$ (volume)\\
-%\newline
- %It is from this that Schechter functions of luminosity and magnitude could arise....
-
-%WRITE ABOUT THE PROGRAM
-
-
-
-
-%\begin{align}
-%M_J=\left ( \frac{5kT}{Gm}\right ) ^{3/2} \left ( \frac{3}{4\pi\rho} \right ) ^{1/2}
-%\end{align}
-%\begin{align}
-%M_J = 5.73\times 10^3\left (\frac{\Omega_mh}{0.15} \right )^{-1/2} \left (\frac{\Omega_b h^2}{0.022}\right )^{-3/5}  \left ( \frac {1+z}{10} \right ) ^{3/2} M_\odot
-%\end{align}
-
-
-%IS BOLOMETRIC -> ABSOLUTE? NO ABSOLUDE IS IN A PARTICULAR BAND
-
-
-
-
-%\subsection{Beginning of Reionization}
-%Using estimates of the fractional escape and zeta, we can use the formula (X.X) combined with formula (X.X) to calculate the rate of reionization. From this, and the number of neutral hydrogen particles in the universe, it is possible to calculate the timescale of reionization.
-%
-%\begin{align}
-%t =\frac{dnion}{dt}\times \frac{1}{n_H}
-%\end{align}
-%Where t is the time between the start of reionization and the end, in seconds, nion is the number of ionizing photons produced and $n_H$ is the number of Hydrogen atoms in the universe. \\
-%\newline
-%As the number of photons produced roughly equals the number of neutral hydrogen in the universe, it is possible to calculate a limit on the redshift associated with the end of reionization, given the corresponding opposite limit. \\
-%\newline
-%A simulation of this was undergone using the equation above, and the resultant timescale was found to be NEED TO GIVE FINAL RESULT

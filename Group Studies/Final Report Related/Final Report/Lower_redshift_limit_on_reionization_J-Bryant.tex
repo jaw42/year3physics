@@ -1,7 +1,7 @@
 %!TEX root = mainfile.tex
 
-\section{Lower Redshift limit on reionization} % (fold)
-\label{sec:lower_redshift_limit_on_reionization}
+\section{Lower Redshift limit on Re-ionization} % (fold)
+\label{sec:lower_redshift_limit_on_Re-ionization}
 	In the project the way that the lower redshift limit has been calculated is to first calculate the rate of photons capable of ionizing a hydrogen atom via equation~(\ref{eq:rate_of_ionising_photons})\cite{2010Natur.468...49R}.
 	\begin{align}
 		\frac{\d{n_{ion}}}{\d{t}}=f_{esc}\zeta\rho_\text{SFR}\label{eq:rate_of_ionising_photons}
@@ -14,9 +14,9 @@
 	\begin{align}
 		\rho_{crit}(z)=\frac{3H{(z)}^{2}}{8\pi G}
 	\end{align}
-	Then by multiplying this by the baryonic density parameter, $\Omega_{b}=0.045\pm0.004$, the baryonic density is achieved. By then multiplying by the fraction of hydrogen, calculated from big bang nucleosynthesis, the total density of hydrogen in the universe can be obtained.
+	Then by multiplying this by the baryonic density parameter, $\Omega_{b}=0.045\pm0.004$, the baryonic density is achieved. Then, by multiplying by the fraction of hydrogen, calculated from big bang nucleosynthesis, the total density of hydrogen in the universe can be obtained.
 
-	From the 7 year WMAP survey\cite{2011ApJS..192...18K}, the primordial Helium fraction was found to be $Y=0.33\pm0.09$. Where it is assumed that Hydrogen fraction ($X$) is simply $1-Y$ (therefore 0 metallicity). Nevertheless a simplifying assumption it is not too bad as the errors on fraction of helium are higher than the actual fraction of heavier elements.
+	From the 7 year WMAP survey\cite{2011ApJS..192...18K}, the primordial Helium fraction was found to be $Y=0.33\pm0.09$. Where it is assumed that Hydrogen fraction ($X$) is simply $1-Y$ (therefore 0 metallicity). Nevertheless as a simplifying assumption it is not too bad as the errors on fraction of helium are higher than the actual fraction of heavier elements.
 
 	Then finally dividing the mass density of hydrogen by the atomic mass unit the code obtains a number density of hydrogen. In the code a redshift time relation $\frac{1}{(1+z)}\propto t^{2/3}$, assuming a matter dominated universe, is used and therefore,
 	\begin{align}
@@ -39,7 +39,7 @@
 	but this does not have much effect on the number of hydrogen as the stellar fraction is very small, so this is not a significant contributing factor.
 
 	The code then loops for different values of redshift from redshift 25 at redshift intervals of 0.1, calculating the number of ionizing photons at those different epochs and equating this to the hydrogen number. This then outputs ionized fraction against redshift, shown in Figure~\ref{fig:IonizedFraction1}.
-	\begin{figure}[!htbp]
+	\begin{figure}[htbp]
 		\centering
 			\begingroup\endlinechar=-1
 		  		\resizebox{0.7\textwidth}{!}{%
@@ -48,9 +48,9 @@
 		\caption{Plot of modeled ionized fraction of the IGM as a function of redshift.\label{fig:IonizedFraction1}}
 	\end{figure}
 
-	This implies that the universe is completely ionized at a redshift $6.3\pm1.7$, ignoring the rather large errors, this number is not a bad estimate of the epoch. This is known from articles which show from observations of Lyman-$\alpha$ emitters that there must be a large ionized fraction at $z=6.5$, due to attenuation from neutral hydrogen\cite{Ota:arXiv0707.1561}. Various theoretical models of star formation rate predict a ionized universe at around $z=6$ and it is stated that the Sunyaev-Zeldovich effect has limited the end of reionization to earlier than $z=5.8$\cite{2012MNRAS.423..862K}.
+	This implies that the universe is completely ionized at a redshift $6.3\pm1.7$, ignoring the rather large errors, this number is not a bad estimate of the epoch. This is known from articles which show from observations of Lyman-$\alpha$ emitters that there must be a large ionized fraction at $z=6.5$, due to attenuation from neutral hydrogen\cite{Ota:arXiv0707.1561}. Various theoretical models of star formation rate predict a ionized universe at around $z=6$ and it is stated that the Sunyaev-Zeldovich effect has limited the end of reionization to earlier than $z=5.8$\cite{2012MNRAS.423..862K}. Therefore we have a predicted epoch of reionization of $5.8<z<6.5$ from the literature.
 
-	However as recombination has not been included which will slow down the rate at which the universe is ionized or the fact that both the escape fraction and $\zeta$ are likely to change with redshift, this number is not entirely realistic.
+	However as recombination has not been included which will slow down the rate at which the universe is ionized, as it is effectively the opposite effect of reionization. Or the fact that both the escape fraction and $\zeta$ are likely to change with redshift, makes this number is not entirely realistic.
 
 	\subsection{Reionization Parameters} % (fold)
 	\label{sub:reionization_parameters}
@@ -59,9 +59,9 @@
 
 		\subsubsection{Escape Fraction} % (fold)
 		\label{sub:escape_fraction}
-			This value is the escape fraction of photons. If this number were one then every single photon that’s produced would escape from the galaxy into the IGM to contribute to the ionization of the neutral hydrogen however this is not the case. This figure is in fact much smaller meaning that most of the photons never reach the IGM at all. This is due to the neutral hydrogen within the galaxy itself absorbing the photons before they can escape. The amount of neutral hydrogen, the density and size of the galaxy and whether or not the galaxy is part of a cluster all contribute to the value of fesc and hence it is notoriously difficult to determine.
+			This value is the escape fraction of photons. If this number were one then every single photon that's produced would escape from the galaxy into the IGM to contribute to the ionization of the neutral hydrogen however this is not the case. This figure is in fact much smaller meaning that most of the photons never reach the IGM at all. This is due to the neutral hydrogen within the galaxy itself absorbing the photons before they can escape. The amount of neutral hydrogen, the density and size of the galaxy and whether or not the galaxy is part of a cluster all contribute to the value of fesc and hence it is notoriously difficult to determine.
 
-			It is often obtained by measuring the flux of UV photons below the Lyman limit of \SI{912}{\angstrom} which emerge from galaxies using methods such as intrepid spectroscopic and narrow-band imaging\cite{robertson2010early}. This is because only a certain fraction of the photons that were produced do emerge having managed to avoid interaction with the neutral gas within the galaxy thus measuring this flux directly and making assumptions of how many were initially produced would result in an estimate of the escape fraction. This comes with its own difficulties as often those photons which have managed to escape the galaxy are further absorbed by the IGM along the line of sight, reducing the flux that can be observed. This method relies on observations it has not been possible to determine the escape value for high redshift galaxies and so it has been extrapolated back to earlier cosmic times in Section~\ref{sub:evolving_escape_fraction}. As this value is so difficult to determine and varies from galaxy to galaxy it hasn’t been confirmed but instead has been constrained so hence this project will trial a range of these values to see how this can affect the rate of re-ionizing photons. Robertson et al.'s 2010 paper estimates this value to lie within the range $0.1\lesssim f_\text{esc}\lesssim 0.2$\cite{robertson2010early} whereas Inoue (2006) claims that ``fesc increases from a value less than 0.01 at $z\le 1$ to about 0.1 at $z\ge 4$''\cite{inoue2006escape}. Furthermore there isn’t enough data available to determine this to a great deal of accuracy and hence the extrapolated value for the escape fraction at high redshifts would be an approximation. As the value for the escape fraction can only vary from 0 to 1 its exact value cannot greatly alter the outcome of the calculation and thus an approximate value is sufficient within the realms of this project.
+			It is often obtained by measuring the flux of UV photons below the Lyman limit of \SI{912}{\angstrom} which emerge from galaxies using methods such as intrepid spectroscopic and narrow-band imaging\cite{robertson2010early}. This is because only a certain fraction of the photons that were produced do emerge having managed to avoid interaction with the neutral gas within the galaxy thus measuring this flux directly and making assumptions of how many were initially produced would result in an estimate of the escape fraction. This comes with its own difficulties as often those photons which have managed to escape the galaxy are further absorbed by the IGM along the line of sight, reducing the flux that can be observed. This method relies on observations it has not been possible to determine the escape value for high redshift galaxies and so it has been extrapolated back to earlier cosmic times in Section~\ref{sub:evolving_escape_fraction}. As this value is so difficult to determine and varies from galaxy to galaxy it hasn't been confirmed but instead has been constrained so hence this project will trial a range of these values to see how this can affect the rate of re-ionizing photons. Robertson et al.'s 2010 paper estimates this value to lie within the range $0.1\lesssim f_\text{esc}\lesssim 0.2$\cite{robertson2010early} whereas Inoue (2006) claims that ``fesc increases from a value less than 0.01 at $z\le 1$ to about 0.1 at $z\ge 4$''\cite{inoue2006escape}. Furthermore there isn't enough data available to determine this to a great deal of accuracy and hence the extrapolated value for the escape fraction at high redshifts would be an approximation. As the value for the escape fraction can only vary from 0 to 1 its exact value cannot greatly alter the outcome of the calculation and thus an approximate value is sufficient within the realms of this project.
 
 			The escape fraction can also be determined using galaxy formation simulations which is exactly what was done by Wood and Loeb in 2000. They found that the escape fraction at $z\approx 10$ is $\le1$\% for stars\cite{gnedin2008escape}. Calculating the escape fraction of ionizing photons from disk galaxies as a function of galaxy mass and redshift requires a complex code and that certain assumptions be made. These are that the gas in the disks is isothermal and radially exponential and that the source of radiation is either the stars within the disks or a central quasar. The mechanics of the program extend well beyond the scope of this project however the outcome of $f_\text{esc}=0.01$ is of use. As this particular paper was published in 2000 and has made relatively idealistic assumptions its legitimacy nowadays can be questioned. Therefore for the purposes of this project the observed values of $f_\text{esc}\approx 0.2$ were initially used with its evolution with redshift incorporated later.
 		% subsection escape_fraction (end)
@@ -72,7 +72,7 @@
 
 			For the purposes of this project it has been assumed that $\zeta=10^{53.5}$\si{s^{-1}.M_{\odot}^{-1}.yr^{-1}}\cite{robertson2010early}. This particular value has been realised through the same detection methods as the escape fraction however as with fesc its precise value remains uncertain.
 
-			The value for $\zeta$ can also be obtained numerically; more detail is included in Schull’s 2011 paper\cite{shull2012critical}. This applies a very complicated method however it essentially converts the star formation rate density into numbers of OB sequence stars and computes the total number of ionizing photons produced by a star of a certain mass over its lifetime. Combining this with the rate at which stars of this mass are formed would give a good estimate for $\zeta$. As this method is highly complex it is not clear to what extent it relates to the specifics of this project and hence although it is a highly advanced way of calculating $\zeta$ it is perhaps more sensible for the value obtained in Robertson to be used as this is a very common and better understood figure.
+			The value for $\zeta$ can also be obtained numerically; more detail is included in Schull's 2011 paper\cite{shull2012critical}. This applies a very complicated method however it essentially converts the star formation rate density into numbers of OB sequence stars and computes the total number of ionizing photons produced by a star of a certain mass over its lifetime. Combining this with the rate at which stars of this mass are formed would give a good estimate for $\zeta$. As this method is highly complex it is not clear to what extent it relates to the specifics of this project and hence although it is a highly advanced way of calculating $\zeta$ it is perhaps more sensible for the value obtained in Robertson to be used as this is a very common and better understood figure.
 		% subsection hydrogen_ionizing_photons_produced_per_second_per_unit_star_formation_rate (end)
 
 	\subsection{Evolving Escape Fraction} % (fold)
@@ -84,11 +84,11 @@
 			f_\text{esc}(z)=\e{0.013\pm0.011-0.952\pm0.06}
 		\end{align}
 		The code is then run again with this escape fraction instead of the constant $20\%$, the results achieved are shown in \ref{fig:IonizedFraction2}
-		\begin{figure}[!htbp]
+		\begin{figure}[htbp]
 			\centering
 				\begingroup\endlinechar=-1
-					\resizebox{0.6\textwidth}{!}{%
-						\input{GRAPH_fesc_redshift.tex}
+					\resizebox{0.7\textwidth}{!}{%
+						\input{GRAPH_SFR_ionised_fraction.tex}
 					}\endgroup
 			\caption{Plot of modeled ionized fraction of the IGM as a function of redshift with predicting evolving escape fraction.\label{fig:IonizedFraction2}}
 		\end{figure}

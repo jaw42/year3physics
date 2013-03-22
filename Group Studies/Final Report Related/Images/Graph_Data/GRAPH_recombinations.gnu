@@ -30,9 +30,9 @@ set key at 24,1.1
 #titleg = sprintf("%.2flog(x)+%.2f", n, d)
 
 plot\
- "GRAPH_recombinations.txt" using 1:2 pt 6 ps 0.7 lw 4 lc rgb "#4d81be" t 'Best Fit', \
- "GRAPH_recombinations.txt" using 1:3 pt 2 ps 0.7 lw 4 lc rgb "#c05048" t 'Lower Limit', \
- "GRAPH_recombinations.txt" using 1:4 pt 1 ps 0.7 lw 4 lc rgb "#9bbb59" t 'Upper Limit'
+ "GRAPH_recombinations.txt" using 1:2 w l lw 4 lc rgb "#4d81be" t 'Best Fit', \
+ "GRAPH_recombinations.txt" using 1:3 w l lw 4 lc rgb "#c05048" t 'Lower Limit', \
+ "GRAPH_recombinations.txt" using 1:4 w l lw 4 lc rgb "#9bbb59" t 'Upper Limit'
 #with xyerrorbars pt 6 ps 0.7 lw 2 lc rgb "black" notitle, f(x) lw 3 lc rgb "red" t titlef
 
 pause -1 "Hit return to continue"

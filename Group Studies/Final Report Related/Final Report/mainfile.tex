@@ -22,6 +22,7 @@
 \allsectionsfont{\sffamily\mdseries\upshape}%                                     (See the fntguide.pdf for font help)
 
 %%% PACKAGES -------------------------------------------------------------------
+\usepackage{morefloats}
 \usepackage[font=small,labelfont=bf,textfont=it]{caption}%                        stylize captions
 \usepackage[pdftex]{graphicx}%                                                    support the \includegraphics command and options
 \usepackage{booktabs}%                                                            for much better looking tables
@@ -38,7 +39,6 @@
 \usepackage[alsoload=astro]{siunitx}%                                                             for units \SI{}{}, \si{}, \num{} etc.
 \usepackage{multirow}%                                                            for multiple row spanning cells in tables
 \usepackage{rotating}%                                                            for the \begin{sideways} environment for sideways text
-\usepackage{morefloats}
 
 %%% EQUATIONS ------------------------------------------------------------------
 \numberwithin{equation}{section}%                                                 Number equations by section (change for different levels)
@@ -57,7 +57,7 @@
 %\usepackage[titles,subfigure]{tocloft}                                         % Alter the style of the Table of Contents
 %\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
 %\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape}                     % No bold!
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{2}
 
 %%% PDF LINKS AND STYLE --------------------------------------------------------
 \usepackage[unicode=true,
@@ -109,8 +109,8 @@
 \newpage
 \tableofcontents
 \addcontentsline{toc}{section}{Contents}
-\listoffigures
-\listoftables
+% \listoffigures
+% \listoftables
 \newpage
 
 \pagestyle{headings}
@@ -122,7 +122,6 @@
     \input{Cosmic_Reionisation_B-Johnson}
     \newpage
     \input{Gravitational_Lensing1_C-McDonald}
-    \newpage
     \input{Gunn_peterson_A-King}
 % part general_theory (end)
 
@@ -130,20 +129,16 @@
 \part{Predictions} % (fold)
 \label{prt:predictions}
     \input{Predictions_Intro_B-Johnson}
-    \newpage
     \input{Assumptions_J-Wainwright}
     \input{Cosmological_distances_J-Bryant}
-    \newpage
     \input{Schechter_function_J-Bryant}
         \input{Parameter_Evolution_J-Wainwright}
     % \input{How_to_determine_fesc_ad_zeta_B-Johnson}
 
-    \newpage
     \input{Lower_redshift_limit_on_reionization_J-Bryant.tex}
         \input{Including_Recombinations_J-Bryant}
     \input{Calculating_timescale_reionization_O-McConnel}
     \input{SFR_and_Calculating_Z_OMCCONNELL}
-    \newpage
     \input{Cosmic_Variance_L-Clegg}
     \input{Gravitational_lensing_error_L-Clegg}
     \input{Clumping_factor_L-Clegg}
@@ -157,23 +152,21 @@
     \input{Observing_Intro_M-ONeil}
     \input{Determining_Redshift_D-Stonel}
     \input{Other_methods_21cm_J-Baumber}
+    \input{Xh1_Evolution_R-Topadar}
     \input{CMB_Anistropy_M-ONeill}
     \input{Spectroscopy_J-Shepley}
     \input{Observational_Gravitational_Lensing_C-McDonald}
     \input{Decision_on_detection_techniques_M-ONeill}
-    \newpage
     \input{Colour_Photometry_J-Baumber}
-    \newpage
     % \input{Contaminants_M-ONeil}
+    \clearpage
     \input{Exposure_times_R-Topadar}
     \input{FWHM_M-ONeill}
     \input{Calculating_exposure_time_R-Topadar}
-    \newpage
 
     \input{Ground_vs_Space_Based_Telescopes_R-Topadar}
 
-    \newpage
-    \section{Potential Telescopes for Photometry Strategy} % (fold)
+\section{Potential Telescopes for Photometry Strategy} % (fold)
     \label{sec:telescopes_chosen_for_investigation}
         \input{Hubble_M-ONeil}
         \input{Spitzer_D-Stonel}
@@ -183,10 +176,8 @@
     % section telescopes_chosen_for_investigation (end)
     \input{Candiate_Telescopes_J-Shepley}
 
-    \newpage
     \input{Method_for_Strategy_Choosing_D-Stonell}
-
-    \newpage
+    \input{Observations_conclusion_M-ONeill}
         \input{Observing_strategy_redshift_6-8}
         \input{Euclid_for_a_survey_of_8-10_D-Stonell}
         \input{Observing_strategy_redshift_10-more_M-ONeill}
@@ -194,7 +185,6 @@
         \input{Calculations_of_Exposure_times_J-Shepely}
 
 % part observations (end)
-\newpage
 \input{Project_conclusion}
 
 \newpage

@@ -1,10 +1,11 @@
 %!TEX root = mainfile.tex
 
+\newpage
 \section{Parameter Fit Data} % (fold)
 \label{app:parameter_fit_data}
 	\subsection{Faint End Slope Data} % (fold)
 	\label{sub:alpha_data}
-		\begin{table}[!htbp]
+		\begin{table}[htbp]
 			\begin{center}
 			\makebox[\linewidth]{
 				\begin{tabular}{L|L|L|c|c|c|L|L|c|c|L}
@@ -34,9 +35,10 @@
 
 	\subsection{Normalisation Data} % (fold)
 	\label{sub:phi_data}
-		\begin{table}[!htbp]
+		\begin{table}[htbp]
 			\begin{center}
-			\makebox[\linewidth]{
+			\begingroup\endlinechar=-1
+					\resizebox{\textwidth}{!}{%
 				\begin{tabular}{L|L|L|c|c|c|L|L|c|c|L}
 					Rest $\lambda$ (\AA)	&$z$	&error $z$	&$\phi^*$	&pos error $\phi^*$	&neg error $\phi^*$	&upper $z$	&lower $z$	&upper 	&lower& Citation\\
 					\hline \hline
@@ -55,7 +57,7 @@
 					1350	&5.9	&	&1.50E-03	&2.90E-03	&1.00E-03	&5.9	&5.9	&4.40E-03	&5.00E-04	&\cite{Bouwens2011}\\
 					1350	&5.9	&	&1.40E-03	&6.00E-04	&4.00E-04	&5.9	&5.9	&2.00E-03	&1.00E-03	&\cite{2007ApJ...670..928B}\\
 				\end{tabular}
-			}
+					}\endgroup
 			\end{center}
 			\caption{Data describing the evolution of the Schechter normalisation parameter, $\phi^{*}$.\label{tab:phi_star_data}}
 		\end{table}
@@ -63,7 +65,7 @@
 
 	\subsection{Characteristic Magnitude Data} % (fold)
 	\label{sub:m_data}
-		\begin{table}[!htbp]
+		\begin{table}[htbp]
 			\begin{center}
 			\makebox[\linewidth]{
 				\begin{tabular}{L|c|c|c|c|c|c|c|c|c}

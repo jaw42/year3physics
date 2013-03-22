@@ -8,20 +8,20 @@
 
 	\subsection{The Lyman Break} % (fold)
 	\label{sub:the_lyman_break}
-		The Lyman-$\alpha$ line is the spectral line corresponding to the $n=1$ to $n=2$ electron level transition in neutral Hydrogen; it is the first transition in the Lyman series and the lowest energy level transition a Hydrogen atom is capable of undergoing from its ground state. This transition is of particular relevance to cosmology and cosmic reionization, firstly, because during primordial nucleosynthesis, Hydrogen atoms were created in the greatest abunance, with over 90\% of the produced atoms being Hydrogen, approximately 8\% being Helium with smaller abundancies of other light elements. Furthermore, during the epoch of reionization the average time between atomic excitations was large compared to the decay times of the excited states, meaning that the vast majority of HI atoms were in the ground state. This meant that the neutral IGM was highly resonant with photons of Lyman-$\alpha$ frequency, and was largely incapable of absorbtion of lower freqencies (ignoring the effects of fine and hyperfine line splitting).
+		The Lyman-$\alpha$ line is the spectral line corresponding to the $n=1$ to $n=2$ electron level transition in neutral Hydrogen; it is the first transition in the Lyman series and the lowest energy level transition a Hydrogen atom is capable of undergoing from its ground state. This transition is of particular relevance to cosmology and cosmic reionization, firstly, because during primordial nucleosynthesis, Hydrogen atoms were created in the greatest abunance, with over 90\% of the produced atoms being Hydrogen, approximately 8\% being Helium with smaller abundancies of other light elements \cite{BBNabundance}. Furthermore, during the epoch of reionization the average time between atomic excitations was large compared to the decay times of the excited states, meaning that the vast majority of HI atoms were in the ground state. This meant that the neutral IGM was highly resonant with photons of Lyman-$\alpha$ frequency, and was largely incapable of absorbtion of lower freqencies (ignoring the effects of fine and hyperfine line splitting).
 
 		The proportion of radiation of some frequency which penetrates a medium is characterised by the medium's optical depth, $\tau$, for that wavelength, such that:
 		\begin{align}
-			I = I_0 e^{-\tau}.
+			I = I_0 e^{-\tau}. \label{eq:optical_depth}
 		\end{align}
 		The optical depth of neutral Hydrogen to Lyman-$\alpha$ photons can be approximated by
 		\begin{align}
 			\tau_{GP} = 3.6 \times 10^5	\left ( 	\frac{\Omega_m h^2}{0.13}	\right ) ^{-1/2}
 										\left ( 	\frac{\Omega_b h^2}{0.02}	\right )
 										\left ( 	\frac{1+z}{7}			\right )^{3/2}
-										\left ( 	\frac{n_{HI}}{n_H}			\right ) .
+										\left ( 	\frac{n_{HI}}{n_H}			\right ) . \label{eq:gunn-peterson_tau}
 		\end{align}
-		The full derivation of this formula is given in Appendix~\ref{app:derivation_of_the_gunn_peterson_optical_depth}.
+		The full derivation of this formula is given in appendix~\ref{app:derivation_of_the_gunn_peterson_optical_depth}.
 
 		Using conventional values for $\Omega_b$ and $\Omega_m$ it can be shown that, for redshifts $>6$, the fraction of neutral Hydrogen required to reduce the transmitted intensity to less than 1\% of the incident value is of the order of $10^{-5}$. Therefore, only a small amount of neutral Hydrogen must occupy the intervening space between the distant galaxy and the observer to effectively eliminate the Lyman-$\alpha$ frequency from the object's spectrum.
 
@@ -30,11 +30,11 @@
 		This effect, discovered by Gunn and Peterson in 1965, results in the extinction of a large portion of the flux from distant galaxies in the region blueward of the object's rest frame  Lyman-$\alpha$ line, known as the Lyman-$\alpha$ break, or the Gunn-Peterson trough.
 		\begin{figure}[htbp]
 			\centering
-			\includegraphics[width=0.6\textwidth]{../Images/dropout.jpg}
+			\includegraphics[width=0.7\textwidth]{../Images/dropout.jpg}
 			\caption{Gunn-Peterson dropout in the spectrum of a galaxy at $z=6.4$.}\label{fig:dropout}
 		\end{figure}
 
-		The spectral flux from distant galaxies redward of the Lyman break is unaffected by Gunn Peterson scattering and remains representative of the true brightness of the luminous object, while the region of the spectrum blueward of the break is highly obscured by the scattering effect of neutral hydrogen. While the portion of the true emitted spectrum in this region is lost, the extent of the loss contains infomation regarding the optical depth of the intervening space and, thereby, the density of neutral hydrogen at the redshift at which the Lyman break falls on that wavelength. Moreover, because the Lyman alpha line invariably falls at a specific point in the emitted spectrum, the redshift of any observed spectrum with an identifiable Lyman break can be measured easily. The break is such a strong spectral feature that it can be located even using broad band photometry, which is a significant advantage for objects at distances such that very little of their emitted light reaches us.
+		The spectral flux from distant galaxies redward of the Lyman break is unaffected by Gunn-Peterson scattering and remains representative of the true brightness of the luminous object, while the region of the spectrum blueward of the break is highly obscured by the scattering effect of neutral hydrogen. While the portion of the true emitted spectrum in this region is lost, the extent of the loss contains infomation regarding the optical depth of the intervening space and, thereby, the density of neutral hydrogen at the redshift at which the Lyman break falls on that wavelength. Moreover, because the Lyman alpha line invariably falls at a specific point in the emitted spectrum, the redshift of any observed spectrum with an identifiable Lyman break can be measured easily. The break is such a strong spectral feature that it can be located even using broad band photometry, which is a significant advantage for objects at distances such that very little of their emitted light reaches us.
 	% subsection the_lyman_break (end)
 
 	\subsection{The Lyman-Alpha Forest} % (fold)
@@ -45,11 +45,11 @@
 		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width=0.7\textwidth]{../Images/forest.png}
-			\caption{The spectra of two similar galaxies. Above: the spectrum of a galaxy at z=0.158 showing no significant extinction from Gunn Peterson scattering. Below: the spectrum of a galaxy at z=3.62 showing a Lyman forest caused by fluctuations in Hydrogen netrual fraction.}
+			\caption{The spectra of two similar galaxies. Above: the spectrum of a galaxy at z=0.158 showing no significant extinction from Gunn-Peterson scattering. Below: the spectrum of a galaxy at z=3.62 showing a Lyman forest caused by fluctuations in Hydrogen netrual fraction.}
 			\label{fig:forest}
 		\end{figure}
 
-		It paradoxically seems, therefore, that the loss of flux caused by the Gunn-Peterson effect is extremely fortuitous to the observational cosmologist. Since the true emitted spectra of Lyman break galaxies are similar in nature to the spectra of closer galaxies with negligible Gunn Peterson absorption, it is possible, in theory, to probe the density of neutral Hydrogen at every point between the observed galaxy and the end of reionization.
+		It paradoxically seems, therefore, that the loss of flux caused by the Gunn-Peterson effect is extremely fortuitous to the observational cosmologist. Since the true emitted spectra of Lyman break galaxies are similar in nature to the spectra of closer galaxies with negligible Gunn-Peterson absorption, it is possible, in theory, to probe the density of neutral Hydrogen at every point between the observed galaxy and the end of reionization.
 	% subsection the_lyman_alpha_forest (end)
 
 	\subsection{Properties of the Lyman Alpha line} % (fold)

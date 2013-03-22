@@ -17,14 +17,14 @@
 	\subsection{Astronomical Seeing} % (fold)
 	\label{sub:astronomical_seeing}
 		Plane waves from a source being observed are distorted by the Earth's atmosphere and so upon reaching a telescope within the atmosphere are slightly perturbed and the image formed, blurred. This effect is contributed to by numerous layers where different temperatures or the interaction of different wind speed causes this effect with ``Seeing'' the term used to describe the total distortion of the wavefront\cite[p.~188]{Diffraction_Limited_Imaging_Saha}. This effect is shown below in Figure~\ref{fig:Seeing} where a turbulent layer of the atmosphere causes a change in the shape of the wavefront. This turbulence is caused by micro-thermal fluctuations which can be caused by a variety of reasons such as friction encountered by air flow at the Earth's surface or differential heating of the Earth's surface\cite[p.~161]{Diffraction_Limited_Imaging_Saha}.
-		\begin{figure}[!htbp]
+		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width=0.4\textwidth]{../Images/Seeing.png}
 			\caption{The perturbation of a wavefront due to the atmosphere\cite{Seeing}\label{fig:Seeing}}
 		\end{figure}
 
 		Whilst the resolving power of a telescope is generally largely dependent on its diameter, this seeing limitation becomes the major source of error when resolving a point source from within the Earth's atmosphere. This is consequently the main limitation for ground based telescopes which are therefore known as being seeing limited. A point spread function (PSF) imaged in these circumstances produces what is known as a seeing disc due to the atmospheric turbulence and the most common measurement used to describe this effect is the full width at half maximum (FWHM), shown below in Figure~\ref{fig:FWHM} where a peak shape is produced by this overall blurring of the source. When measuring the flux arriving at the CCD from a particular source, an area of radius four times the FWHM is recorded over and so a larger value of FWHM also increases the integration time required to observe the source. A derivation of how to calculate the FWHM is given in Section~\ref{sub:full_width_at_half_maximum}.
-		\begin{figure}[!htbp]
+		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width=0.5\textwidth]{../Images/FWHM.png}
 			\caption{A peak produced by the blurring of a point source}\label{fig:FWHM}
@@ -37,8 +37,8 @@
 
 		\subsubsection{Adaptive Optics} % (fold)
 		\label{ssub:adaptive_optics}
-			As described earlier in astronomical seeing, light passing through the atmosphere from a source, such as a distant galaxy, is perturbed due to atmospheric turbulence and so the images produced by ground based telescopes are blurred. Adaptive optics works by first sensing the wavefront perturbations and then counteracting this blurring in real time thus enabling the telescopes to hold a much larger resolving power. This is usually done with light from a guide star although as sufficiently bright natural guide stars are not readily available, it is possible to use a laser guide stars produced by the observatory. This system will be used on future ground based telescopes ensuring they are no longer limited by the ability to resolve a source. An example of how this is set up, as on the Subaru Telescope, is shown below in Figure~\ref{fig:AdaptiveOptics}.
-			\begin{figure}[!htbp]
+			As described earlier in astronomical seeing, light passing through the atmosphere from a source, such as a distant galaxy, is perturbed due to atmospheric turbulence and so the images produced by ground based telescopes are blurred. Adaptive optics works by first sensing the wavefront perturbations and then counteracting this blurring in real time thus enabling the telescopes to hold a much larger resolving power. This is usually done with light from a guide star although as sufficiently bright natural guide stars are not readily available, it is possible to use a laser guide star produced by the observatory. This system will be used on future ground based telescopes ensuring they are no longer limited by the ability to resolve a source. An example of how this is set up, as on the Subaru Telescope, is shown below in Figure~\ref{fig:AdaptiveOptics}.
+			\begin{figure}[htbp]
 				\centering
 				\includegraphics[width=0.5\textwidth]{../Images/AdaptiveOptics.png}
 				\caption{A schematic of an adaptive optics system\cite{Adaptive}}\label{fig:AdaptiveOptics}

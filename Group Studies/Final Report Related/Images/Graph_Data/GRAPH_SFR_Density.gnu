@@ -4,7 +4,7 @@ set output "GRAPH_SFR_Density.tex"
 
 set title ""
 set xlabel 'Redshift ($z$)'
-set ylabel 'Star Formation Raet Density ($\M_\odot$\si{\per\year\per\cubic\mega\parsec})'
+set ylabel 'Star Formation Rate Density)'
 unset key
 #set xrange[0:16]
 #set yrange[-2.3:-1.2]
