@@ -9,7 +9,7 @@
 	Where $R$ is the resolving power of the diffraction grating or prism and $\lambda$ is the red-shifted wavelength of the Lyman-$\alpha$ absorption line. If these are both known then, $\Delta\lambda$ the spectral resolution can be found for the diffraction grating or prism being used. This is put in place of the band width used in photometry. Light will fall on the CCD in a narrow strip across its width. For the purposes of simplicity, this report will assume that light falls across the entire width of the CCD. This is shown in Figure~\ref{fig:multi_object_spectrum}.
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=0.5\textwidth]{../Images/Multi_Object_spectrum_picture.png}
+		\includegraphics[width=0.4\textwidth]{../Images/Multi_Object_spectrum_picture.png}
 		\caption{Photograph showing the spectrum of multiple galaxies.\label{fig:multi_object_spectrum}}
 	\end{figure}
 
@@ -47,7 +47,7 @@
 		\item $N_{\lambda \text{spix}} =$ Number of pixels in the spatial direction,
 		\item $N_{\lambda \text{spix}} =$ Number of pixels in the spectral direction.
 	\end{itemize}
-	Having found the Counts we can then use equation~\ref{eq:Counts}\cite{Counts} to find the time required for a desired signal to noise ratio
+	Having found the counts we can then use equation~\ref{eq:Counts}\cite{Counts} to find the time required for a desired signal to noise ratio
 	\begin{align}
 		\frac{S}{N} &= \frac{CtG}{\sqrt{CtG + N_\text{pix}(B_\text{sky} + B_\text{det}) Gt + \frac{N_\text{pix}}{N_\text{bin}}(N_\text{read} R^2)}} \label{eq:Counts}
 	\end{align}
@@ -58,6 +58,6 @@
 		\item $B_\text{sky} =$ Sky background (photons/sec/pixel),
 		\item $N_\text{bin} =$ Total number of binned pixels on CCD,
 		\item $N_\text{read} =$ Number of CCD readouts,
-		\item $R =$ Read noise (electrons)\cite{}[18]\cite{}[19].
+		\item $R =$ Read noise (electrons)\cite{Counts}\cite{Signal}.
 	\end{itemize}
 % subsection calculation_of_exposure_times (end)
