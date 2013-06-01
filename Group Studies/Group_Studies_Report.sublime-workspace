@@ -19,64 +19,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "Final Report Related/Final Report/mainfile.tex",
-			"settings":
-			{
-				"buffer_size": 11350,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Searching 85 files for \"umber of galaxies for set total observing time given different magnitudes/ survey areas for\" (regex)\n\n/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Candiate_Telescopes_J-Shepley.tex:\n   40: 				\\caption{Number of galaxies for set total observing time given different magnitudes/ survey areas for JWST.\\label{tab:galaxies_for_set_total_observing_time_JWST}}\n   74: 				\\caption{Number of galaxies for set total observing time given different magnitudes/ survey areas for JWST.\\label{tab:galaxies_for_set_total_observing_time_JWST}}\n\n/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observing_strategy_redshift_6-8.tex:\n  109: 			\\caption{Number of galaxies for set total observing time given different magnitudes/ survey areas for JWST.\\label{tab:galaxies_for_set_total_observing_time_JWST}}\n\n3 matches across 2 files\n\n\nSearching 85 files for \"Determining the Observation Strategy\" (regex)\n\n/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Method_for_Strategy_Choosing_D-Stonell.tex:\n    4: \\section{Determining the Observation Strategy} % (fold)\n\n1 match in 1 file\n\n\nSearching 85 files for \"Photograph showing the spectrum\" (regex)\n\n/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Calculations_of_Exposure_times_J-Shepely.tex:\n   13: 		\\caption{Photograph showing the spectrum of multiple galaxies.\\label{fig:multi_object_spectrum}}\n\n1 match in 1 file\n\n\nSearching 80 files for \"the flux missing in the galaxy’s spectrum\" (regex)\n\n0 matches across 0 files\n\n\nSearching 80 files for \"the flux missing in the galaxy\" (regex)\n\n/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Results_planned_use_of_gravitational_lensing_C-McDonald.tex:\n  120: 		Once candidates have been identified behind these clusters, spectroscopy will be used to confirm the source redshift and therefore the distance to the source. The mass and redshift of the lenses are known so equation~(\\ref{eq:Einstein_radius}) can be used to find the Einstein angle. The magnification can then be calculated from equation~(\\ref{eq:magnification_equation}). The flux from the images can be obtained from observations and can be used in conjunction with the magnification factor to calculate the intrinsic brightness of the source in bands redward of the drop from equation~(\\ref{eq:mu_magnification}). Using model galaxy spectra, the flux in the band blueward of the drop can be estimated. This gives a lower limit on the neutral hydrogen fraction, since there must be at least enough to absorb the flux missing in the galaxy's spectrum\\cite{lower_limit_H}.\n\n1 match in 1 file\n",
-			"settings":
-			{
-				"buffer_size": 2737,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "Final Report Related/Final Report/Results_planned_use_of_gravitational_lensing_C-McDonald.tex",
-			"settings":
-			{
-				"buffer_size": 13183,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Final Report Related/Final Report/Calculations_of_Exposure_times_J-Shepely.tex",
-			"settings":
-			{
-				"buffer_size": 5558,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Final Report Related/Final Report/Method_for_Strategy_Choosing_D-Stonell.tex",
-			"settings":
-			{
-				"buffer_size": 4520,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Final Report Related/Final Report/Observing_strategy_redshift_6-8.tex",
-			"settings":
-			{
-				"buffer_size": 11024,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Final Report Related/Final Report/references.bib",
-			"settings":
-			{
-				"buffer_size": 78595,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -174,10 +116,13 @@
 	},
 	"file_history":
 	[
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/app_Derivation_of_magnitude_schechter_function.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/references.bib",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Calculating_timescale_reionization_O-McConnel.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Results_planned_use_of_gravitational_lensing_C-McDonald.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Calculations_of_Exposure_times_J-Shepely.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Method_for_Strategy_Choosing_D-Stonell.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observing_strategy_redshift_6-8.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/references.bib",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/app_Derivation_of_magnitude_schechter_function.tex",
+		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Calculating_timescale_reionization_O-McConnel.tex",
 		"/home/josh/Dropbox/ExtraGalactic Group Studies/Final Report Related/contributions.txt",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Predictions_Intro_B-Johnson.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Assumptions_J-Wainwright.tex",
@@ -200,12 +145,10 @@
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/titlepage.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/E-ELT_R-Topadar.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.toc",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Results_planned_use_of_gravitational_lensing_C-McDonald.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observations_conclusion_M-ONeill.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Project_conclusion.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/app_Derivation_of_Thermal_Background.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Candiate_Telescopes_J-Shepley.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Method_for_Strategy_Choosing_D-Stonell.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/mainfile.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/FWHM_M-ONeill.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Exposure_times_R-Topadar.tex",
@@ -226,7 +169,6 @@
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Calculating_exposure_time_R-Topadar.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observational_Gravitational_Lensing_C-McDonald.tex.old",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Including_Recombinations_J-Bryant.tex",
-		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Observing_strategy_redshift_6-8.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/Contaminants_M-ONeil.tex",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Final Report/build/mainfile.blg",
 		"/home/josh/Documents/Physics/Year 3/Group Studies/Final Report Related/Submissions/Colour Photometry Joe.tex",
@@ -523,244 +465,8 @@
 	"groups":
 	[
 		{
-			"selected": 6,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Final Report Related/Final Report/mainfile.tex",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 11350,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10350,
-								10350
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2737,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										266,
-										357
-									],
-									[
-										440,
-										531
-									],
-									[
-										735,
-										826
-									],
-									[
-										1131,
-										1167
-									],
-									[
-										1413,
-										1444
-									],
-									[
-										2655,
-										2685
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								2681,
-								2681
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 5,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 840.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Final Report Related/Final Report/Results_planned_use_of_gravitational_lensing_C-McDonald.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 13183,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								12861,
-								12861
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3452.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Final Report Related/Final Report/Calculations_of_Exposure_times_J-Shepely.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5558,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1332,
-								1332
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Final Report Related/Final Report/Method_for_Strategy_Choosing_D-Stonell.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4520,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								26,
-								26
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Final Report Related/Final Report/Observing_strategy_redshift_6-8.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11024,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6531,
-								6531
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2398.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "Final Report Related/Final Report/references.bib",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 78595,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								64180,
-								64180
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/Bibtex.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 37319.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
